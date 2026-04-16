@@ -6,6 +6,8 @@
     <title>Ứng dụng Trắc nghiệm Online</title>
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Thư viện MD5 cho bảo mật mật khẩu -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"></script>
     <!-- Thư viện Supabase Client -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <!-- Thư viện Chart.js cho biểu đồ -->
@@ -338,13 +340,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-900 font-medium">
+<body class="bg-gray-100 text-gray-900 font-medium relative">
+
+    <!-- Login Overlay -->
+    <div id="login-overlay" class="fixed inset-0 z-[3000] flex items-center justify-center bg-bidv-green transition-opacity duration-300">
+        <div class="bg-white p-8 rounded-xl shadow-2xl max-w-sm w-full text-center mx-4">
+            <div class="mb-4 flex justify-center">
+                <i class="fas fa-lock text-5xl text-bidv-yellow"></i>
+            </div>
+            <h2 class="text-2xl font-bold text-bidv-green mb-2">Bảo mật hệ thống</h2>
+            <p class="text-gray-600 mb-6 text-sm font-medium">Vui lòng nhập mật khẩu để truy cập ứng dụng.</p>
+            <input type="password" id="app-password" class="w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-bidv-green focus:border-bidv-green mb-2 text-center font-bold text-lg" placeholder="Nhập mật khẩu...">
+            <p id="login-error" class="text-red-500 text-sm mb-4 hidden font-semibold animate-pulse">Mật khẩu không chính xác!</p>
+            <button id="login-btn" class="w-full py-3 bg-bidv-yellow text-gray-900 font-bold rounded-md shadow hover:opacity-90 transition-opacity uppercase tracking-wide">Đăng nhập</button>
+        </div>
+    </div>
 
     <div id="app" class="container mx-auto p-4 md:p-8 max-w-6xl">
         
         <!-- Banner (BIDV Look and Feel) -->
         <div class="mb-6 rounded-xl shadow-lg overflow-hidden">
-            <img src="https://quantrh.github.io/Quantrh/Bannerluyenthi.png" alt="Banner Luyện Thi" class="w-full h-auto object-cover">
+            <img src="https://quantrh.github.io/CDS/Bannerluyenthi.png" alt="Banner Luyện Thi" class="w-full h-auto object-cover">
         </div>
 
         <!-- Header -->
@@ -815,6 +831,44 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+
+    // --- XỬ LÝ ĐĂNG NHẬP (PASSWORD PROTECTION) ---
+    const loginOverlay = document.getElementById('login-overlay');
+    const loginBtn = document.getElementById('login-btn');
+    const passwordInput = document.getElementById('app-password');
+    const loginError = document.getElementById('login-error');
+
+    // Mật khẩu hiện tại để test đang là "123456". 
+    
+    const EXPECTED_HASH = '803b24430dbb0b20d285fbeb9d9e2fed';
+
+    // Bỏ qua màn hình đăng nhập nếu đã nhập đúng ở lần trước trong cùng 1 tab (session)
+    if (sessionStorage.getItem('appUnlocked') === 'true') {
+        loginOverlay.style.display = 'none';
+    }
+
+    const checkPassword = () => {
+        const pwd = passwordInput.value.trim(); // Thêm trim() để xóa dấu cách thừa nếu lỡ paste nhầm
+        if (md5(pwd) === EXPECTED_HASH) {
+            sessionStorage.setItem('appUnlocked', 'true');
+            loginOverlay.style.opacity = '0'; // Hiệu ứng fade-out
+            setTimeout(() => {
+                loginOverlay.style.display = 'none';
+            }, 300);
+        } else {
+            loginError.classList.remove('hidden');
+            passwordInput.value = '';
+            passwordInput.focus();
+        }
+    };
+
+    loginBtn.addEventListener('click', checkPassword);
+    passwordInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') checkPassword();
+    });
+    passwordInput.addEventListener('input', () => {
+        loginError.classList.add('hidden'); // Ẩn thông báo lỗi khi đang gõ
+    });
     
     // --- CẤU HÌNH SUPABASE ---
     const SUPABASE_URL = 'https://rmbsxccrwrktbjlnezpu.supabase.co'; 
@@ -896,7 +950,6 @@ document.addEventListener('DOMContentLoaded', () => {
             practice: document.getElementById('practice-screen')
         },
         buttons: {
-            // ... (Giữ nguyên)
             home: document.getElementById('home-btn'),
             history: document.getElementById('history-btn'),
             start: document.getElementById('start-btn'),
@@ -937,7 +990,6 @@ document.addEventListener('DOMContentLoaded', () => {
             dashboardFilter: document.getElementById('dashboard-filter'),
         },
         displays: {
-            // ... (Giữ nguyên các display cũ)
             dataStatus: document.getElementById('data-status'),
             currentQNum: document.getElementById('current-q-num'),
             totalQNum: document.getElementById('total-q-num'),
@@ -982,7 +1034,6 @@ document.addEventListener('DOMContentLoaded', () => {
             tabVideoContent: document.getElementById('tab-video-content'),
             practiceImage: document.getElementById('practice-image'),
             imgCounter: document.getElementById('img-counter'),
-            // practiceVideo: document.getElementById('practice-video'), // Removed static ref
             videoContainer: document.getElementById('video-container'),
             videoTitle: document.getElementById('video-title'),
             vidCounter: document.getElementById('vid-counter'),
@@ -1027,7 +1078,6 @@ document.addEventListener('DOMContentLoaded', () => {
             this.loadGlobalStats();
         },
 
-        // ... (Giữ nguyên các hàm loadTheme, setTheme, log, tracking, stats)
         loadTheme() { const t = localStorage.getItem('quizTheme')||'theme-flower'; this.setTheme(t); },
         setTheme(t) { this.displays.mainContainer.classList.remove('theme-flower','theme-white','theme-cream'); this.displays.mainContainer.classList.add(t); localStorage.setItem('quizTheme',t); },
         async initializeTracking() { await this.getVisitorIP(); await this.logPageVisit(); },
@@ -1273,7 +1323,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         },
 
-        // ... (Giữ nguyên các hàm handleSearch, toggleHelpContent, calculateTotalTime...) ...
         toggleHelpContent() {
             const container = this.displays.helpContentContainer;
             if (container.style.display === 'none') {
@@ -1367,7 +1416,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Logic xáo trộn đáp án
             if (this.inputs.shuffleAnswers.checked) {
-                // (Giữ nguyên logic xáo trộn cũ của bạn ở đây để ngắn gọn code hiển thị)
                 const fixedIDs = [2,6,9,10,11,17,18,20,21,27,29,30,41,43,44,45,46,59,65,66,67,71,73,74,85,87,89,90,92,93,94,95,100,101,103,107,108,110,113,115,117,118,120,123,125,131,132,135,138,139,148,149,165,170,174,176,178,183,184,186,193,201,209,211,213,214,215,221,222,224,230,231,232,233,234,237,238,241,242,243,247,250,252,253,254,255,256,260,261,262,265,269,272,273,274,275,276,277,286,293,294,295,296,298,299,300,301,312,314,318,339];
                 this.quizQuestions.forEach(q => {
                     if (fixedIDs.includes(parseInt(q.id))) return;
@@ -1394,7 +1442,6 @@ document.addEventListener('DOMContentLoaded', () => {
             this.showScreen('quiz');
         },
 
-        // ... (Các hàm displayQuestion, navigate, submit, showModal giữ nguyên như file gốc) ...
         renderQuestionNav() {
             this.displays.questionNavList.innerHTML = '';
             this.quizQuestions.forEach((q, i) => {
@@ -1487,7 +1534,6 @@ document.addEventListener('DOMContentLoaded', () => {
             h.unshift(res); if(h.length>20) h=h.slice(0,20);
             localStorage.setItem('quizHistory', JSON.stringify(h));
         },
-        // --- DISPLAY RESULT (UPDATED) ---
         displayResult(res) {
             const pct = (res.score/res.totalQuestions*100).toFixed(1);
             this.displays.resultSummary.innerHTML = `<p class="text-xl">Điểm: <b class="${pct>=50?'text-green-700':'text-red-600'}">${res.score}/${res.totalQuestions}</b> (${pct}%)</p><p class="text-sm">Thời gian: ${this.formatTime(res.timeTaken)}</p>`;
@@ -1502,7 +1548,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.className = `p-4 border rounded ${right?'bg-green-50 border-green-300':'bg-red-50 border-red-300'}`;
                 
                 let expl = '';
-                // THÊM: Hiển thị đầy đủ cả 3 loại giải thích nếu có
                 if(q.explanation_right) expl += `<div class="mt-2 text-sm text-green-800 bg-green-100 p-2 rounded">✅ <b>Giải thích đúng:</b> ${q.explanation_right}</div>`;
                 if(q.explanation_wrong) expl += `<div class="mt-2 text-sm text-red-800 bg-red-100 p-2 rounded">❌ <b>Giải thích sai:</b> ${q.explanation_wrong}</div>`;
                 if(q.explanation_question) expl += `<div class="mt-2 text-sm text-blue-800 bg-blue-100 p-2 rounded">🕵️ <b>Bóc phốt đề:</b> ${q.explanation_question}</div>`;
@@ -1539,7 +1584,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if(confirm('Xóa hết lịch sử?')) { localStorage.removeItem('quizHistory'); this.showHistory(); }
         },
         
-        // --- SHOW CURRENT ANSWER POPUP (UPDATED) ---
         showCurrentAnswer() {
              const q = this.quizQuestions[this.currentQuestionIndex];
              const u = this.userAnswers[this.currentQuestionIndex];
@@ -1547,7 +1591,6 @@ document.addEventListener('DOMContentLoaded', () => {
              const ph = document.getElementById('modal-content-placeholder');
              
              let expl = '';
-             // THÊM: Hiển thị đầy đủ cả 3 loại giải thích trong popup
              if(q.explanation_right) expl += `<div class="mt-2 text-sm text-green-800 bg-green-100 p-2 rounded">✅ <b>Giải thích đúng:</b> ${q.explanation_right}</div>`;
              if(q.explanation_wrong) expl += `<div class="mt-2 text-sm text-red-800 bg-red-100 p-2 rounded">❌ <b>Giải thích sai:</b> ${q.explanation_wrong}</div>`;
              if(q.explanation_question) expl += `<div class="mt-2 text-sm text-blue-800 bg-blue-100 p-2 rounded">🕵️ <b>Bóc phốt đề:</b> ${q.explanation_question}</div>`;
@@ -1573,14 +1616,13 @@ document.addEventListener('DOMContentLoaded', () => {
              document.getElementById('review-modal-backdrop').classList.add('active');
         },
 
-        // --- DASHBOARD (Logic giữ nguyên) ---
+        // --- DASHBOARD ---
         async loadDashboardData() {
             if(!supabaseClient) return alert('Cần Supabase.');
             this.displays.dashboardBackdrop.classList.add('active');
             this.displays.dashboardLoading.style.display = 'block';
             this.displays.dashboardContent.classList.add('hidden');
             try {
-                // (Logic fetch data đơn giản hóa cho ngắn gọn)
                 const { data } = await supabaseClient.from('quiz_results').select('score, student_name').limit(1000);
                 this.dashboardRawData = data;
                 this.filterAndRenderDashboard();
@@ -1594,7 +1636,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if(scores.length===0) return;
             this.displays.dashTotalExams.textContent = scores.length;
             this.displays.dashAvgScore.textContent = (scores.reduce((a,b)=>a+b,0)/scores.length).toFixed(1);
-            // Render chart & table logic here (simplified)
         },
         exportDashboardToExcel() { /* Logic export */ },
 
