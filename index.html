@@ -280,7 +280,7 @@
         
         <!-- Banner (BIDV Look and Feel) -->
         <div class="mb-6 rounded-xl shadow-lg overflow-hidden">
-            <img src="https://quantrh.github.io/Quantrh/Bannerluyenthi.png" alt="Banner Luyện Thi" class="w-full h-auto object-cover">
+            <img src="https://quantrh.github.io/CDS/Bannerluyenthi.png" alt="Banner Luyện Thi" class="w-full h-auto object-cover">
         </div>
 
         <!-- Header -->
@@ -399,10 +399,10 @@
                             <div>
                                 <label for="num-questions" class="block text-sm font-bold text-gray-900 mb-1">Số câu hỏi:</label>
                                 <select id="num-questions" class="w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-bidv-green focus:border-bidv-green bg-white/70 backdrop-blur-sm text-black font-semibold">
-                                    <option value="40">40 câu (Tiêu chuẩn)</option>
                                     <option value="10">10 câu</option>
-                                    <option value="20">20 câu</option>
+                                    <option value="20" selected>20 câu (Tiêu chuẩn)</option>
                                     <option value="30">30 câu</option>
+                                    <option value="40">40 câu</option>
                                     <option value="50">50 câu</option>
                                     <option value="70">70 câu</option>
                                     <option value="100">100 câu</option>
@@ -412,8 +412,9 @@
                             <div>
                                 <label for="time-per-question" class="block text-sm font-bold text-gray-900 mb-1">Thời gian mỗi câu (giây):</label>
                                 <select id="time-per-question" class="w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-bidv-green focus:border-bidv-green bg-white/70 backdrop-blur-sm text-black font-semibold">
-                                    <option value="51">51 giây (cho 70 câu)</option>
+                                    <option value="15" selected>15 giây</option>
                                     <option value="30">30 giây</option>
+                                    <option value="51">51 giây (cho 70 câu)</option>
                                     <option value="60">60 giây</option>
                                     <option value="90">90 giây</option>
                                     <option value="120">120 giây</option>
@@ -445,10 +446,10 @@
                             <div>
                                 <label for="timing-mode" class="block text-sm font-bold text-gray-900 mb-1">Chế độ tính giờ:</label>
                                 <select id="timing-mode" class="w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-bidv-green focus:border-bidv-green bg-white/70 backdrop-blur-sm text-black font-semibold">
-                                    <option value="total">Tổng thời gian (Mặc định)</option>
-                                    <option value="per_question">Tính giờ mỗi câu hỏi</option>
+                                    <option value="per_question" selected>Tính giờ mỗi câu hỏi</option>
+                                    <option value="total">Tổng thời gian</option>
                                     <option value="no_timer">Không tính giờ (Thoải mái)</option>
-                                   </select>
+                                </select>
                             </div>
                         </div>
                         
@@ -505,26 +506,30 @@
                                     <p><strong>Thống kê & Phổ điểm:</strong> Xem tổng lượt truy cập, điểm trung bình của cộng đồng và biểu đồ phổ điểm chi tiết bằng cách nhấn "Xem Phổ điểm".</p>
                                     <p><strong>Cấu hình bài thi:</strong>
                                         <ul class="list-disc ml-6 mt-2 space-y-1">
-                                            <li><strong>Số câu hỏi:</strong> Chọn số lượng từ 10 đến toàn bộ 400 câu. Mặc định là 40 câu.</li>
-                                            <li><strong>Thời gian:</strong> Tùy chỉnh thời gian cho mỗi câu hỏi.</li>
+                                            <li><strong>Số câu hỏi:</strong> Chọn số lượng từ 10 đến toàn bộ 400 câu. Mặc định là 20 câu.</li>
+                                            <li><strong>Thời gian:</strong> Tùy chỉnh thời gian cho mỗi câu hỏi. (Mặc định 15 giây)</li>
                                             <li><strong>Thứ tự:</strong> Chọn "Ngẫu nhiên" để thi thử hoặc "Theo thứ tự ID" để học tuần tự. Bạn có thể chọn bắt đầu từ ID câu hỏi cụ thể nếu học theo thứ tự.</li>
                                             <li><strong>Chế độ tính giờ:</strong> Tổng thời gian, đếm ngược từng câu, hoặc không tính giờ.</li>
                                         </ul>
                                     </p>
                                 </div>
 
-                                <h3 class="text-xl font-bold mb-3 text-black">2. Quá trình làm bài</h3>
+                                <h3 class="text-xl font-bold mb-3 text-black">2. Cơ chế tính điểm linh hoạt theo thời gian</h3>
                                 <div class="space-y-3 ml-4 text-gray-900 font-medium mb-6">
-                                    <p>Giao diện thi cung cấp danh sách câu hỏi bên phải màn hình để bạn dễ dàng theo dõi tiến độ (câu đã làm đổi màu xanh, chưa làm màu xám, đang xem màu vàng).</p>
-                                    <p>Trong quá trình làm, bạn có thể nhấn nút <strong>"Xem đáp án"</strong> để biết ngay kết quả và đọc phần giải thích chi tiết (Rất hữu ích trong giai đoạn học tập).</p>
-                                    <p>Hệ thống tự động nộp bài khi hết giờ, hoặc bạn có thể chủ động nhấn <strong>"Nộp bài"</strong> khi đi đến câu hỏi cuối cùng.</p>
+                                    <p>Điểm của mỗi câu phụ thuộc vào tốc độ trả lời (thời gian tính từ lúc xem câu hỏi đến lúc chọn đáp án):</p>
+                                    <ul class="list-disc ml-6 mt-2 space-y-1">
+                                        <li><strong>Trả lời đúng < 5s:</strong> Được 2 điểm.</li>
+                                        <li><strong>Trả lời đúng từ =5s đến ≤ 10s:</strong> Được 1.75 điểm.</li>
+                                        <li><strong>Trả lời đúng từ >10s đến ≤ 15s:</strong> Được 1.5 điểm.</li>
+                                        <li><strong>Trả lời đúng > 15s hoặc trả lời sai:</strong> Được 0 điểm.</li>
+                                    </ul>
                                 </div>
 
                                 <h3 class="text-xl font-bold mb-3 text-black">3. Xem Kết quả chi tiết</h3>
                                 <div class="space-y-3 ml-4 text-gray-900 font-medium mb-6">
                                     <p>Hệ thống chấm điểm, quy đổi ra phần trăm (%) và hiển thị tổng thời gian bạn đã làm bài.</p>
                                     <p>Cung cấp tính năng "Mục lục câu hỏi" giúp bạn click để nhảy nhanh đến câu trả lời đúng (màu xanh) hoặc sai (màu đỏ).</p>
-                                    <p>Phần xem lại cực kỳ chi tiết với các ghi chú: <strong>Giải thích đúng, Giải thích sai</strong> giúp bạn nắm vững kiến thức chuyển đổi số.</p>
+                                    <p>Phần xem lại cực kỳ chi tiết hiển thị số điểm nhận được cho mỗi câu cùng thời gian suy nghĩ, kèm theo các ghi chú: <strong>Giải thích đúng, Giải thích sai</strong> giúp bạn nắm vững kiến thức chuyển đổi số.</p>
                                 </div>
 
                                 <h3 class="text-xl font-bold mb-3 text-black">4. Lịch sử làm bài</h3>
@@ -844,9 +849,11 @@ document.addEventListener('DOMContentLoaded', () => {
         allQuestions: [],
         quizQuestions: [],
         userAnswers: [],
+        questionTimeTaken: [], // Theo dõi tổng thời gian dùng cho mỗi câu
+        answerTimeTaken: [], // Theo dõi thời điểm chốt đáp án
         currentQuestionIndex: 0,
-        timePerQuestion: 60,
-        timingMode: 'total',
+        timePerQuestion: 15,
+        timingMode: 'per_question',
         visitorIP: null,
         searchDebounceTimer: null,
         currentTheme: 'theme-flower',
@@ -880,17 +887,43 @@ document.addEventListener('DOMContentLoaded', () => {
         async loadGlobalStats() {
             if(!supabaseClient) { this.displays.statsLoading.innerHTML=''; return; }
             try {
-                const {data,error} = await supabaseClient.rpc('get_global_stats');
-                if(!error && data && data.length>0) {
-                    const s = data[0];
-                    this.displays.statsTotalVisits.textContent = s.total_visits||0;
-                    this.displays.statsTotalQuizzes.textContent = s.total_quizzes||0;
-                    this.displays.statsAvgScore.textContent = (s.avg_score||0).toFixed(1);
-                    this.displays.statsAvgQuestions.textContent = s.total_quizzes>0 ? (s.total_questions_all_quizzes/s.total_quizzes).toFixed(1):0;
-                    this.displays.statsAvgTimePerQ.textContent = s.total_questions_all_quizzes>0 ? (s.total_time_all_quizzes/s.total_questions_all_quizzes).toFixed(1):0;
-                    this.displays.statsLoading.style.display='none'; this.displays.statsContent.classList.remove('hidden');
+                // Lấy tổng lượt truy cập từ bảng page_visits
+                const { count: totalVisits } = await supabaseClient
+                    .from('page_visits')
+                    .select('*', { count: 'exact', head: true });
+
+                // Lấy dữ liệu bài thi từ bảng mới (quiz_results_cds) để tự tính toán
+                const { data: quizData, error } = await supabaseClient
+                    .from('quiz_results_cds')
+                    .select('score, total_questions, time_taken_seconds')
+                    .limit(10000);
+
+                if (!error && quizData) {
+                    const totalQuizzes = quizData.length;
+                    let totalScorePct = 0;
+                    let totalQs = 0;
+                    let totalTime = 0;
+
+                    quizData.forEach(q => {
+                        const qs = q.total_questions || 40; 
+                        // Mọi truy vấn bây giờ đều tính max_score = qs * 2
+                        totalScorePct += (q.score / (qs * 2)) * 100;
+                        totalQs += qs;
+                        totalTime += (q.time_taken_seconds || 0);
+                    });
+
+                    this.displays.statsTotalVisits.textContent = totalVisits || 0;
+                    this.displays.statsTotalQuizzes.textContent = totalQuizzes;
+                    this.displays.statsAvgScore.textContent = totalQuizzes > 0 ? (totalScorePct / totalQuizzes).toFixed(1) + '%' : '0%';
+                    this.displays.statsAvgQuestions.textContent = totalQuizzes > 0 ? Math.round(totalQs / totalQuizzes) : 0;
+                    this.displays.statsAvgTimePerQ.textContent = totalQs > 0 ? (totalTime / totalQs).toFixed(1) : 0;
+
+                    this.displays.statsLoading.style.display = 'none'; 
+                    this.displays.statsContent.classList.remove('hidden');
                 }
-            } catch(e) { this.displays.statsLoading.innerHTML='<p class="text-xs text-red-500">Lỗi thống kê</p>'; }
+            } catch(e) { 
+                this.displays.statsLoading.innerHTML='<p class="text-xs text-red-500">Lỗi thống kê</p>'; 
+            }
         },
 
         addEventListeners() {
@@ -1060,6 +1093,11 @@ document.addEventListener('DOMContentLoaded', () => {
             this.timePerQuestion = parseInt(this.inputs.timePerQuestion.value);
             this.timers.remainingTotalSeconds = this.quizQuestions.length * this.timePerQuestion;
             this.userAnswers = new Array(this.quizQuestions.length).fill(null);
+            
+            // Thiết lập mảng theo dõi thời gian
+            this.questionTimeTaken = new Array(this.quizQuestions.length).fill(0);
+            this.answerTimeTaken = new Array(this.quizQuestions.length).fill(-1);
+            
             this.currentQuestionIndex = 0;
             
             this.displays.totalQNum.textContent = this.quizQuestions.length;
@@ -1111,7 +1149,13 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         saveAnswer() {
             const sel = document.querySelector('input[name="q"]:checked');
-            if(sel) this.userAnswers[this.currentQuestionIndex] = sel.value;
+            if(sel) {
+                // Nếu lần đầu chọn đáp án hoặc thay đổi đáp án mới, ta cập nhật lại thời gian chốt đáp án
+                if (this.userAnswers[this.currentQuestionIndex] !== sel.value) {
+                    this.userAnswers[this.currentQuestionIndex] = sel.value;
+                    this.answerTimeTaken[this.currentQuestionIndex] = this.questionTimeTaken[this.currentQuestionIndex];
+                }
+            }
             this.updateQuestionNav();
         },
         navigateQuestion(dir) {
@@ -1138,17 +1182,40 @@ document.addEventListener('DOMContentLoaded', () => {
         submitQuiz() {
             this.stopTimers();
             let score = 0;
-            this.quizQuestions.forEach((q, i) => { if(q.answer === this.userAnswers[i]) score++; });
+            const maxScore = this.quizQuestions.length * 2;
+            
+            this.quizQuestions.forEach((q, i) => { 
+                if(q.answer === this.userAnswers[i]) {
+                    // Ưu tiên dùng thời gian tại thời điểm click, nếu chưa click bao giờ thì dùng tổng thời gian hiện tại
+                    const t = this.answerTimeTaken[i] !== -1 ? this.answerTimeTaken[i] : this.questionTimeTaken[i];
+                    if (t < 5) score += 2;
+                    else if (t <= 10) score += 1.75;
+                    else if (t <= 15) score += 1.5;
+                    else score += 0;
+                }
+            });
+            
             const result = {
                 name: this.inputs.studentName.value.trim(),
                 date: new Date().toISOString(),
                 score: score,
+                maxScore: maxScore,
                 totalQuestions: this.quizQuestions.length,
                 timeTaken: this.timers.totalSeconds,
                 questions: this.quizQuestions,
-                userAnswers: this.userAnswers
+                userAnswers: this.userAnswers,
+                answerTimeTaken: this.answerTimeTaken,
+                questionTimeTaken: this.questionTimeTaken
             };
-            this.logQuizResult(result, {num: this.inputs.numQuestions.value});
+            
+            const configObj = {
+                numQuestions: this.inputs.numQuestions.value,
+                timePerQuestion: this.inputs.timePerQuestion.value,
+                quizOrder: this.inputs.quizOrder.value,
+                timingMode: this.inputs.timingMode.value
+            };
+            
+            this.logQuizResult(result, configObj);
             this.saveResult(result);
             this.displayResult(result);
             this.showScreen('result');
@@ -1156,7 +1223,22 @@ document.addEventListener('DOMContentLoaded', () => {
         
         async logQuizResult(res, cfg) {
             if(!supabaseClient) return;
-            try { await supabaseClient.from('quiz_results_cds').insert({student_name: res.name, score: res.score, total_questions: res.totalQuestions, time_taken_seconds: res.timeTaken}); } catch(e){}
+            try { 
+                await supabaseClient.from('quiz_results_cds').insert({
+                    student_name: res.name, 
+                    score: res.score, 
+                    total_questions: res.totalQuestions, 
+                    time_taken_seconds: res.timeTaken,
+                    quiz_date: res.date,
+                    ip_address: this.visitorIP,
+                    config_num_questions: cfg.numQuestions,
+                    config_time_per_question: cfg.timePerQuestion,
+                    config_quiz_order: cfg.quizOrder,
+                    config_timing_mode: cfg.timingMode
+                }); 
+            } catch(e) {
+                console.error("Lỗi khi lưu kết quả bài thi: ", e);
+            }
         },
         saveResult(res) {
             let h = JSON.parse(localStorage.getItem('quizHistory')) || [];
@@ -1164,14 +1246,34 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('quizHistory', JSON.stringify(h));
         },
         displayResult(res) {
-            const pct = (res.score/res.totalQuestions*100).toFixed(1);
-            this.displays.resultSummary.innerHTML = `<p class="text-xl">Điểm: <b class="${pct>=50?'text-green-700':'text-red-600'}">${res.score}/${res.totalQuestions}</b> (${pct}%)</p><p class="text-sm">Thời gian: ${this.formatTime(res.timeTaken)}</p>`;
+            const max = res.maxScore || res.totalQuestions * 2;
+            const pct = ((res.score / max) * 100).toFixed(1);
+            this.displays.resultSummary.innerHTML = `<p class="text-xl">Điểm: <b class="${pct>=50?'text-green-700':'text-red-600'}">${res.score}/${max}</b> (${pct}%)</p><p class="text-sm">Thời gian: ${this.formatTime(res.timeTaken)}</p>`;
             this.displays.resultDetails.innerHTML = '';
             this.displays.resultNavList.innerHTML = '';
             
             res.questions.forEach((q, i) => {
                 const u = res.userAnswers[i];
                 const right = u === q.answer;
+                
+                let earned = 0;
+                let timeStr = "";
+                const ansTime = res.answerTimeTaken ? res.answerTimeTaken[i] : -1;
+                const qTime = res.questionTimeTaken ? res.questionTimeTaken[i] : 0;
+                const timeToUse = ansTime !== -1 ? ansTime : qTime;
+                
+                if (right) {
+                    if (timeToUse < 5) earned = 2;
+                    else if (timeToUse <= 10) earned = 1.75;
+                    else if (timeToUse <= 15) earned = 1.5;
+                    else earned = 0;
+                    timeStr = `(Trả lời trong: ${timeToUse}s)`;
+                } else if (u) {
+                    timeStr = `(Trả lời trong: ${timeToUse}s)`;
+                } else {
+                    timeStr = `(Bỏ qua)`;
+                }
+
                 const card = document.createElement('div');
                 card.id = `result-q-${i}`;
                 card.className = `p-4 border rounded ${right?'bg-green-50 border-green-300':'bg-red-50 border-red-300'}`;
@@ -1181,8 +1283,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 if(q.explanation_wrong) expl += `<div class="mt-2 text-sm text-red-800 bg-red-100 p-2 rounded">❌ <b>Giải thích sai:</b> ${q.explanation_wrong}</div>`;
                 if(q.explanation_question) expl += `<div class="mt-2 text-sm text-blue-800 bg-blue-100 p-2 rounded">🕵️ <b>Bóc phốt đề:</b> ${q.explanation_question}</div>`;
 
-                card.innerHTML = `<p class="font-bold">Câu ${i+1}: ${q.question}</p>
-                    <p class="text-sm mt-1">Bạn chọn: <b>${u||'--'}</b> | Đáp án: <b class="text-green-700">${q.answer}</b></p>
+                card.innerHTML = `<p class="font-bold">Câu ${i+1}: ${q.question} <span class="text-sm font-normal text-purple-700 ml-1">[+${earned} điểm]</span></p>
+                    <p class="text-sm mt-1">Bạn chọn: <b>${u||'--'}</b> | Đáp án: <b class="text-green-700">${q.answer}</b> <span class="text-gray-500 italic ml-2">${timeStr}</span></p>
                     ${expl}`;
                 this.displays.resultDetails.appendChild(card);
 
@@ -1200,10 +1302,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if(h.length===0) { this.displays.historyList.innerHTML = '<p class="text-center">Chưa có lịch sử.</p>'; }
             else {
                 h.forEach((r, i) => {
+                    const max = r.maxScore || r.totalQuestions * 2;
                     const d = document.createElement('div');
                     d.className = 'p-3 bg-white/60 rounded border flex justify-between items-center';
                     d.innerHTML = `<div><b class="text-bidv-green">${r.name}</b><br><span class="text-xs">${new Date(r.date).toLocaleString()}</span></div>
-                        <div class="flex gap-2 items-center"><span class="font-bold">${r.score}/${r.totalQuestions}</span>
+                        <div class="flex gap-2 items-center"><span class="font-bold">${r.score}/${max}</span>
                         <button class="px-2 py-1 bg-bidv-green text-white rounded text-xs" onclick="quizApp.displayResult(JSON.parse(localStorage.getItem('quizHistory'))[${i}]); quizApp.showScreen('result')">Xem</button></div>`;
                     this.displays.historyList.appendChild(d);
                 });
@@ -1264,10 +1367,10 @@ document.addEventListener('DOMContentLoaded', () => {
         filterAndRenderDashboard() {
             if(!this.dashboardRawData || this.dashboardRawData.length === 0) return;
             
-            // Tính điểm quy đổi ra % (vì có người làm 40 câu, người 70 câu, vv)
+            // Tính điểm quy đổi ra % (với thang điểm mới max = total_questions * 2)
             const scores = this.dashboardRawData.map(i => {
-                const total = i.total_questions || 40; // Mặc định chia 40 nếu không có dữ liệu
-                return Math.round((i.score / total) * 100);
+                const total = i.total_questions || 40; 
+                return Math.round((i.score / (total * 2)) * 100);
             });
             
             this.displays.dashTotalExams.textContent = scores.length;
@@ -1324,6 +1427,12 @@ document.addEventListener('DOMContentLoaded', () => {
             this.timers.totalSeconds = 0;
             this.timers.total = setInterval(() => {
                 this.timers.totalSeconds++;
+                
+                // Tăng bộ đếm thời gian cho câu hỏi hiện tại đang xem (bất kể chế độ nào)
+                if (this.currentQuestionIndex >= 0 && this.currentQuestionIndex < this.quizQuestions.length) {
+                    this.questionTimeTaken[this.currentQuestionIndex]++;
+                }
+                
                 if(this.timingMode !== 'total') {
                      this.displays.totalTimer.textContent = this.formatTime(this.timers.totalSeconds);
                 } else {
