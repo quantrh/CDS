@@ -255,86 +255,6 @@
         .delete-result-btn:hover {
             background-color: #dc2626;
         }
-
-        /* Practice Screen Styles */
-        #practice-screen-container {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            background-color: #f3f4f6;
-        }
-        .practice-tab-content {
-            flex: 1;
-            display: none; /* Hidden by default */
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #000;
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            height: calc(100vh - 60px); /* Adjust based on header height */
-        }
-        .practice-tab-content.active-tab {
-            display: flex;
-        }
-        .practice-control-bar {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(5px);
-            border-radius: 9999px;
-            padding: 0.5rem 1rem;
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-            margin-top: 1rem;
-            position: absolute;
-            bottom: 2rem;
-            z-index: 50;
-        }
-        /* Zoom class for Image */
-        .zoom-active {
-            transform: scale(1.8);
-            cursor: zoom-out;
-        }
-        #practice-image {
-            transition: transform 0.3s ease-in-out, opacity 0.2s ease;
-            cursor: zoom-in;
-            max-height: 80vh;
-            max-width: 95vw;
-            object-fit: contain;
-        }
-        
-        /* LOADING SPINNER */
-        .loading-spinner {
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            border-top: 4px solid #FFC62F; /* BIDV Yellow */
-            width: 40px;
-            height: 40px;
-            -webkit-animation: spin 1s linear infinite; /* Safari */
-            animation: spin 1s linear infinite;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 10;
-        }
-        @keyframes spin {
-            0% { transform: translate(-50%, -50%) rotate(0deg); }
-            100% { transform: translate(-50%, -50%) rotate(360deg); }
-        }
-        .loading-text {
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            transform: translateX(-50%);
-            color: white;
-            font-weight: bold;
-            font-size: 0.9rem;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-            z-index: 10;
-        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -360,21 +280,16 @@
         
         <!-- Banner (BIDV Look and Feel) -->
         <div class="mb-6 rounded-xl shadow-lg overflow-hidden">
-            <img src="https://quantrh.github.io/CDS/Bannerluyenthi.png" alt="Banner Luyện Thi" class="w-full h-auto object-cover">
+            <img src="https://quantrh.github.io/Quantrh/Bannerluyenthi.png" alt="Banner Luyện Thi" class="w-full h-auto object-cover">
         </div>
 
         <!-- Header -->
         <header class="mb-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <!-- YÊU CẦU 2: SỬA TIÊU ĐỀ -->
+            <!-- TIÊU ĐỀ -->
             <h1 class="text-3xl font-bold text-bidv-green drop-shadow-sm bg-white/50 px-2 rounded">Tìm hiểu chuyển đổi số ngành ngân hàng</h1>
             <div class="flex items-center space-x-2 relative">
                 <button id="home-btn" class="px-4 py-2 bg-bidv-green text-white rounded-lg shadow hover:opacity-90 transition-colors font-bold">Trang chủ</button>
                 
-                <!-- YÊU CẦU 3: NÚT LUYỆN ĐỀ -->
-                <button id="practice-btn" class="px-4 py-2 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 transition-colors font-bold flex items-center gap-2">
-                    <i class="fas fa-tv"></i> Luyện đề
-                </button>
-
                 <button id="history-btn" class="px-4 py-2 bg-gray-600 text-white rounded-lg shadow hover:bg-gray-700 transition-colors font-bold">Lịch sử</button>
                 
                 <!-- NÚT MÀU NỀN & DROPDOWN -->
@@ -457,7 +372,7 @@
                         </div>
                         
                         <div class="relative group">
-                            <input type="text" id="search-input" class="w-full px-5 py-4 pl-12 bg-white/70 border border-gray-400 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-bidv-green focus:border-bidv-green focus:bg-white transition-all text-black placeholder-gray-600 font-semibold" placeholder="Nhập từ khóa bất kỳ để tìm kiếm trong câu hỏi, đáp án hoặc giải thích... (Ví dụ: 'gói thầu', '45 ngày', 'điều 22')">
+                            <input type="text" id="search-input" class="w-full px-5 py-4 pl-12 bg-white/70 border border-gray-400 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-bidv-green focus:border-bidv-green focus:bg-white transition-all text-black placeholder-gray-600 font-semibold" placeholder="Nhập từ khóa bất kỳ để tìm kiếm... (Ví dụ: 'điện toán đám mây', 'mã hóa', 'sinh trắc học')">
                             <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                                 <i class="fas fa-search text-gray-700 group-focus-within:text-bidv-green"></i>
                             </div>
@@ -484,18 +399,14 @@
                             <div>
                                 <label for="num-questions" class="block text-sm font-bold text-gray-900 mb-1">Số câu hỏi:</label>
                                 <select id="num-questions" class="w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-bidv-green focus:border-bidv-green bg-white/70 backdrop-blur-sm text-black font-semibold">
-                                    <option value="70">70 câu (Tiêu chuẩn)</option>
-                                    <option value="1">1 câu</option>
+                                    <option value="40">40 câu (Tiêu chuẩn)</option>
                                     <option value="10">10 câu</option>
                                     <option value="20">20 câu</option>
                                     <option value="30">30 câu</option>
-                                    <option value="40">40 câu</option>
                                     <option value="50">50 câu</option>
+                                    <option value="70">70 câu</option>
                                     <option value="100">100 câu</option>
-                                    <option value="150">150 câu</option>
-                                    <option value="200">200 câu</option>
-                                    <option value="250">250 câu</option>
-                                    <option value="0">Tất cả</option>
+                                    <option value="0">Tất cả (400 câu)</option>
                                 </select>
                             </div>
                             <div>
@@ -560,8 +471,7 @@
                             <!-- HELP CONTENT -->
                             <div id="help-content-container" class="mt-4 p-6 border border-gray-300 rounded-xl shadow-inner bg-white/80 help-content backdrop-blur-sm w-full h-auto overflow-hidden transition-all" style="display: none;">
                                 <h2 class="text-2xl font-bold text-bidv-green mb-4">I. TÓM TẮT TÍNH NĂNG NỔI TRỘI</h2>
-                                <!-- YÊU CẦU 1: BỔ SUNG HƯỚNG DẪN LINK -->
-                                <p class="mb-4 text-black font-medium">Hỗ trợ luyện thi theo bộ Ngân hàng câu hỏi thi nghiệp vụ chuyên môn về đấu thầu theo Thông báo số 1952/TB-QLĐT của Trung tâm đấu thầu, <a href="https://chungchidauthau.mpi.gov.vn/thong-bao-chung-tu-co-quan-don-vi?organization=&title=1952" target="_blank" class="text-blue-700 underline font-bold hover:text-blue-900">LINK THÔNG BÁO</a>.</p>
+                                <p class="mb-4 text-black font-medium">Hệ thống hỗ trợ ôn tập và kiểm tra kiến thức về <strong>Chuyển đổi số trong ngành Ngân hàng</strong>. Nội dung bám sát các chiến lược, nghị định và định hướng công nghệ số hiện hành.</p>
                                 <p class="mb-6 text-black font-medium">Ứng dụng được thiết kế nhằm mô phỏng sát nhất kỳ thi thực tế, đồng thời cung cấp các công cụ phân tích sâu sắc giúp thí sinh dễ dàng ôn tập và cải thiện kiến thức một cách hiệu quả.</p>
 
                                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -586,13 +496,42 @@
                                 <div class="my-8 h-px bg-gray-300"></div>
 
                                 <h2 class="text-2xl font-bold text-bidv-green mb-4">II. HƯỚNG DẪN CHI TIẾT CHỨC NĂNG</h2>
-                                <h3 class="text-xl font-bold mb-3 text-black">1. Màn hình Trang chủ (Cấu hình Bài thi)</h3>
-                                <div class="space-y-4 ml-4 text-gray-900 font-medium">
-                                    <p class="bg-blue-50 p-3 rounded-md border-l-4 border-blue-500 text-black font-semibold mb-4">
-                                        <strong>Mới:</strong> Sử dụng thanh tìm kiếm ở đầu trang để tra cứu nhanh bất kỳ câu hỏi hoặc nội dung nào. Theo dõi thống kê toàn hệ thống để biết mức độ chăm chỉ của cộng đồng!
+                                
+                                <h3 class="text-xl font-bold mb-3 text-black">1. Màn hình Trang chủ (Cấu hình & Tiện ích)</h3>
+                                <div class="space-y-3 ml-4 text-gray-900 font-medium mb-6">
+                                    <p class="bg-blue-50 p-3 rounded-md border-l-4 border-blue-500 text-black font-semibold">
+                                        <strong>Tra cứu nhanh:</strong> Sử dụng thanh tìm kiếm ở đầu trang để tìm nhanh câu hỏi, đáp án hoặc từ khóa liên quan đến chuyển đổi số.
+                                    </p>
+                                    <p><strong>Thống kê & Phổ điểm:</strong> Xem tổng lượt truy cập, điểm trung bình của cộng đồng và biểu đồ phổ điểm chi tiết bằng cách nhấn "Xem Phổ điểm".</p>
+                                    <p><strong>Cấu hình bài thi:</strong>
+                                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                                            <li><strong>Số câu hỏi:</strong> Chọn số lượng từ 10 đến toàn bộ 400 câu. Mặc định là 40 câu.</li>
+                                            <li><strong>Thời gian:</strong> Tùy chỉnh thời gian cho mỗi câu hỏi.</li>
+                                            <li><strong>Thứ tự:</strong> Chọn "Ngẫu nhiên" để thi thử hoặc "Theo thứ tự ID" để học tuần tự. Bạn có thể chọn bắt đầu từ ID câu hỏi cụ thể nếu học theo thứ tự.</li>
+                                            <li><strong>Chế độ tính giờ:</strong> Tổng thời gian, đếm ngược từng câu, hoặc không tính giờ.</li>
+                                        </ul>
                                     </p>
                                 </div>
-                                <!-- (Giữ nguyên phần hướng dẫn cũ) -->
+
+                                <h3 class="text-xl font-bold mb-3 text-black">2. Quá trình làm bài</h3>
+                                <div class="space-y-3 ml-4 text-gray-900 font-medium mb-6">
+                                    <p>Giao diện thi cung cấp danh sách câu hỏi bên phải màn hình để bạn dễ dàng theo dõi tiến độ (câu đã làm đổi màu xanh, chưa làm màu xám, đang xem màu vàng).</p>
+                                    <p>Trong quá trình làm, bạn có thể nhấn nút <strong>"Xem đáp án"</strong> để biết ngay kết quả và đọc phần giải thích chi tiết (Rất hữu ích trong giai đoạn học tập).</p>
+                                    <p>Hệ thống tự động nộp bài khi hết giờ, hoặc bạn có thể chủ động nhấn <strong>"Nộp bài"</strong> khi đi đến câu hỏi cuối cùng.</p>
+                                </div>
+
+                                <h3 class="text-xl font-bold mb-3 text-black">3. Xem Kết quả chi tiết</h3>
+                                <div class="space-y-3 ml-4 text-gray-900 font-medium mb-6">
+                                    <p>Hệ thống chấm điểm, quy đổi ra phần trăm (%) và hiển thị tổng thời gian bạn đã làm bài.</p>
+                                    <p>Cung cấp tính năng "Mục lục câu hỏi" giúp bạn click để nhảy nhanh đến câu trả lời đúng (màu xanh) hoặc sai (màu đỏ).</p>
+                                    <p>Phần xem lại cực kỳ chi tiết với các ghi chú: <strong>Giải thích đúng, Giải thích sai</strong> giúp bạn nắm vững kiến thức chuyển đổi số.</p>
+                                </div>
+
+                                <h3 class="text-xl font-bold mb-3 text-black">4. Lịch sử làm bài</h3>
+                                <div class="space-y-3 ml-4 text-gray-900 font-medium mb-6">
+                                    <p>Nhấn vào nút <strong>"Lịch sử"</strong> ở góc trên cùng của trang web để xem lại các bài đã làm (dữ liệu lưu cục bộ trên trình duyệt của bạn).</p>
+                                    <p>Bạn có thể nhấn "Xem" để mở lại chi tiết bài làm cũ hoặc nhấn "Xóa tất cả lịch sử thi" để dọn dẹp dữ liệu.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -722,7 +661,7 @@
     <div id="dashboard-modal-backdrop" class="modal-backdrop">
         <div class="modal-content w-full md:max-w-4xl bg-white rounded-lg shadow-2xl relative">
             <button id="dashboard-close-btn" class="absolute top-4 right-4 text-gray-500 hover:text-red-600 text-2xl font-bold">&times;</button>
-            <h2 class="text-2xl font-bold text-bidv-green mb-6 text-center border-b pb-4">Phổ điểm thi (Bộ đề 70 câu)</h2>
+            <h2 class="text-2xl font-bold text-bidv-green mb-6 text-center border-b pb-4">Thống kê Phổ điểm</h2>
             <div class="mb-4 flex justify-end">
                 <div class="relative inline-block text-left w-64">
                     <label for="dashboard-filter" class="block text-sm font-medium text-gray-700 mb-1">Lọc theo loại đề:</label>
@@ -761,66 +700,6 @@
                 <div class="text-center">
                     <button id="export-excel-btn" class="px-6 py-2 bg-green-600 text-white font-bold rounded shadow hover:bg-green-700 transition mx-auto">Xuất Excel</button>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- YÊU CẦU 3: MÀN HÌNH LUYỆN ĐỀ (FULLSCREEN MODAL) -->
-    <div id="practice-screen" class="fixed inset-0 z-[2000] hidden bg-gray-100">
-        <!-- Header Luyện Đề -->
-        <div class="flex justify-between items-center bg-white p-3 border-b shadow-sm h-[60px]">
-            <div class="flex space-x-2">
-                <button id="tab-info-btn" class="px-6 py-2 font-bold rounded-lg bg-bidv-green text-white shadow transition-all transform hover:scale-105">
-                    <i class="fas fa-image mr-2"></i> INFO (Hình ảnh)
-                </button>
-                <button id="tab-video-btn" class="px-6 py-2 font-bold rounded-lg bg-gray-200 text-gray-700 shadow hover:bg-gray-300 transition-all transform hover:scale-105">
-                    <i class="fas fa-video mr-2"></i> VIDEO
-                </button>
-            </div>
-            <button id="close-practice-btn" class="text-gray-500 hover:text-red-600 text-3xl font-bold px-4">
-                &times;
-            </button>
-        </div>
-
-        <!-- Content INFO Tab -->
-        <div id="tab-info-content" class="practice-tab-content active-tab">
-            <div class="relative w-full h-full flex items-center justify-center p-4">
-                <!-- Image Loading Indicator -->
-                <div id="img-loading" class="hidden">
-                    <div class="loading-spinner"></div>
-                    <div class="loading-text">Đang tải ảnh...</div>
-                </div>
-                <img id="practice-image" src="" alt="Tài liệu ôn thi" class="shadow-2xl rounded-lg" />
-            </div>
-            <!-- Controls INFO -->
-            <div class="practice-control-bar">
-                <button id="img-prev-btn" class="p-3 text-white hover:text-bidv-yellow transition-colors"><i class="fas fa-step-backward fa-lg"></i></button>
-                <span id="img-counter" class="text-white font-bold text-lg min-w-[80px] text-center">--/--</span>
-                <button id="img-next-btn" class="p-3 text-white hover:text-bidv-yellow transition-colors"><i class="fas fa-step-forward fa-lg"></i></button>
-                <div class="w-px h-6 bg-gray-500 mx-2"></div>
-                <button id="img-zoom-btn" class="p-3 text-white hover:text-bidv-yellow transition-colors" title="Phóng to/Thu nhỏ"><i class="fas fa-search-plus fa-lg"></i></button>
-            </div>
-        </div>
-
-        <!-- Content VIDEO Tab -->
-        <div id="tab-video-content" class="practice-tab-content">
-            <div id="video-container" class="w-full max-w-5xl aspect-video bg-black shadow-2xl rounded-lg overflow-hidden relative group flex items-center justify-center">
-                <!-- Video Loading Indicator -->
-                <div id="vid-loading" class="hidden">
-                    <div class="loading-spinner"></div>
-                    <div class="loading-text">Đang tải video...</div>
-                </div>
-                <!-- Video/Iframe will be injected here -->
-            </div>
-            <div class="text-white font-bold text-xl mt-4 px-4 py-2 bg-bidv-green/80 rounded" id="video-title">Tên Video</div>
-            
-            <!-- Controls VIDEO -->
-            <div class="practice-control-bar">
-                <button id="vid-prev-btn" class="p-3 text-white hover:text-bidv-yellow transition-colors"><i class="fas fa-step-backward fa-lg"></i></button>
-                <span id="vid-counter" class="text-white font-bold text-lg min-w-[60px] text-center">--</span>
-                <button id="vid-next-btn" class="p-3 text-white hover:text-bidv-yellow transition-colors"><i class="fas fa-step-forward fa-lg"></i></button>
-                <div class="w-px h-6 bg-gray-500 mx-2"></div>
-                <button id="vid-zoom-btn" class="p-3 text-white hover:text-bidv-yellow transition-colors" title="Toàn màn hình"><i class="fas fa-expand fa-lg"></i></button>
             </div>
         </div>
     </div>
@@ -883,71 +762,12 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Lỗi khởi tạo Supabase:', error);
     }
 
-    // --- CẤU HÌNH DỮ LIỆU LUYỆN ĐỀ ---
-    const PRACTICE_DATA = {
-        // CẤU HÌNH ẢNH: Dán 33 link embed từ OneDrive của bạn vào mảng dưới đây.
-        imageLinks: [
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQRqFH-xU1tmQ67QKOJG-uCaAZYBa3U0BZNHA1q0g6jwZ0o?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQRaaeXf_LT4TbvcIE9-fok5AWOzUz5d3tTyw1sCq6qf2WA?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQQmdgEnf68FQIeK5XSW1_4nAdJ7XhFi8gfDh4wFuKByqKI?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQRMiaBd3Y16S4ZI7uhuuTqgASMmnSvfLOQeGA9uFOVo9Jk?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQSWCDV-BIuuQa4CKjPk7eQnASi9lOaSUXumaa5BemxLQJ8?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQRZKeYiFlROS7_GphmO_20wAffdhFra8Thg0SB-jXoCLXU?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQTadnC0Tm1iR5A_hSAEG4G5AWiTEeRagg2PvaMnP--Vm3U?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQQPr1X1Vy4EQJMk6paoG_5XAXyzGYT8KBYXmZsiKhv_I-U?width=1408&height=768",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQTuVijuciE7RrDlFv7TBVZfAcVPHkKD8rDc6vWCJBWnVJk?width=1408&height=768",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQRlXcMZMs0ZRKoLNRZOLGoPAa3iLRSZkBsCXuwTW3mHwKM?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQRMoYDv0B4yQr96GjRxZBFgAYNkj5pxJdn8jLZ5O4308Ag?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQTPDDsl8ZjLS6lPWX0qagavAQC0LqmYASbfn5XFWICOwT8?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQS19BBuJZHKRrLhkR4WGXLYAUFERe-TZS6Q32Rmg8RSQz0?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQRlD_8pTd5EQLJGJtl3sRO4AbGfSlXX_b7vSqC9h3TgHpg?width=1408&height=768",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQQ5oryZHNGjR6rchFiu2JAeAaqWYOPyJG2UAqmkVPovPvg?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQQLJJP-4By5QazNLogBiIrtAZ-bCepdLpGaAjmbIqGBrjQ?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQRWCDwy-rR2SIT7-x-z1IO6AcHFwkgzqdO3P4LmtTt9dic?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQRTsbCGl1_XTL56RYodJ0XmAfUOkbd2h8fdinv3ye0dd6o?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQQ9OFYSQVAPRLnggcEvSvi3AfmfUEt1b7vilg7ubpfKRhA?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQSO6t-Jfye0TYcfiA5W2yzPAYcHJIQnNVCBIlNammqDW1g?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQSYWq63js0cS6UZP1DUJh_DAQ1FkCsDEiZtZKo3w8tLu1g?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQQ0RlooC9TdQItd4Y_rgfHqAaYM-ZpWL_oshe86ZcDLMxo?width=1408&height=768",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQQgLKmi0oA3SrPZ6Xo2hLX7Adfv8iJh9L_Q47ncroAqcl4?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQRps43JCgMZSLtR2tAFVyCyAQARAIrkCqMsvxw53lg1jo4?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQSETPBcyxd-RrUrQ5YpNCjLARag83SbcVQaTZ9_MGtfB4M?width=2816&height=1504",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQT8Ci-FfVhTSIvju5hM7e59AWYOR7cMGDK7WYM1hCg4ues?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQQhz7BUVfIUQb2ut7Lg4YU5ARpVQ_ytPkO3cXs6dx1bO4M?width=2816&height=1536",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQSYpxV28oCEQoFrSX3ivOlfAYK8aMvD6a1CzkNYLUbJVqc?width=2816&height=1504",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQQmbpgCHqRXQZ4Cas_mE3yuARIQVwmX_-VUMtUJGE2qh74?width=2816&height=1504",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQSel-MvOF6gSL7-1NcIB2gsAS1kLtKaH-8050T8hMZ9n3E?width=2816&height=1504",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQQtyAoVVInxT56VY8vLTLtEAZ5tky5iCz4zVotZz9Q59m8?width=2816&height=1504",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQSaSO73cFiLQ7jCV7YNz-PtAQ4y4MZmCBXJhOtzBQdRcvs?width=2816&height=1504",
-            "https://1drv.ms/i/c/0ad9a5e369cb0bf2/IQQy0J1ZrFHdQLE0MGFIymOxAWHDF1bmGVv8LLmgOCTOaoU?width=2816&height=1504"
-        ],
-        videoData: [
-            // CẤU HÌNH VIDEO:
-            // - Dán link "Embed" (Mã nhúng) từ OneDrive vào đây. 
-            // - OneDrive: Chọn file video -> Embed -> Copy link trong src="" của thẻ iframe.
-            { title: 'Chủ đề 01-02', url: 'https://1drv.ms/v/c/0ad9a5e369cb0bf2/IQQLkv_rzrBlSLB5TAitY4ZRAcgCM-ZctTGld_oIgc1Zdsc?width=1280&height=720' },
-            { title: 'Chủ đề 03-04', url: 'https://1drv.ms/v/c/0ad9a5e369cb0bf2/IQTLN9WOmIWgTrCEaoF57DviASJokVGY02zcVxVkNeOhnG4?width=1280&height=720' },
-            { title: 'Chủ đề 05-07', url: 'https://1drv.ms/v/c/0ad9a5e369cb0bf2/IQQRCFW94XfOSKsfK4r0O8TAAYFIKUlxB5gPrqcTanmFk2o?width=1280&height=720' },
-            { title: 'Chủ đề 08-10', url: 'https://1drv.ms/v/c/0ad9a5e369cb0bf2/IQQaGIaoJSIKQbwZRFcUb-kUAWgBliN25ny30V6TMD4rQFY?width=1280&height=720' },
-            { title: 'Chủ đề 11-13', url: 'https://1drv.ms/v/c/0ad9a5e369cb0bf2/IQRduUpeaOzBR4NZ0RfziDNRAYdwi5NoOihlM-r3xvgtfyc?width=1280&height=720' },
-            { title: 'Chủ đề 14-16', url: 'https://1drv.ms/v/c/0ad9a5e369cb0bf2/IQQKjUkAgeAkTp99l6kFrxmMAfpjV0LANjeM-HZJFp7MqDA?width=1280&height=720' },
-            { title: 'Chủ đề 17-19', url: 'https://1drv.ms/v/c/0ad9a5e369cb0bf2/IQQjOVuwdSuYTLt2CUXZckoQAbVMiXnC63Hncd8e4e0gXzY?width=1280&height=720' },
-            { title: 'Chủ đề 20-22', url: 'https://1drv.ms/v/c/0ad9a5e369cb0bf2/IQROrqxhLUJUTIN4voowEh1kAdTqoZrRFVVVkf5JWSX0Jjk?width=1280&height=720' },
-            { title: 'Chủ đề 23-24', url: 'https://1drv.ms/v/c/0ad9a5e369cb0bf2/IQTYnlZenW59Q6IqGScZkbaiAQu9Py3lnfwZDjUW1TNoSRg?width=1280&height=720' },
-            { title: 'Chủ đề 25-27', url: 'https://1drv.ms/v/c/0ad9a5e369cb0bf2/IQRJFBaUAmqgRKM7j8LoCvaOARs7qdoppIUp19kTvZif9y4?width=1280&height=720' },
-            { title: 'Chủ đề 28-30', url: 'https://1drv.ms/v/c/0ad9a5e369cb0bf2/IQRdYlmHVC5GQ62bN-Zfpw1EASKW6mKpxWDfnCsbJjo_2pA?width=1280&height=720' },
-            { title: 'Chủ đề 31-33', url: 'https://1drv.ms/v/c/0ad9a5e369cb0bf2/IQSOY_7leku1TqnAQ1Jf2uSsAQIrQ79LC7JLkTRsu9-aHuk?width=1280&height=720' }
-            
-        ]
-    };
-
     const quizApp = {
         screens: {
             start: document.getElementById('start-screen'),
             quiz: document.getElementById('quiz-screen'),
             result: document.getElementById('result-screen'),
-            history: document.getElementById('history-screen'),
-            practice: document.getElementById('practice-screen')
+            history: document.getElementById('history-screen')
         },
         buttons: {
             home: document.getElementById('home-btn'),
@@ -965,18 +785,7 @@ document.addEventListener('DOMContentLoaded', () => {
             scrollToTop: document.getElementById('scroll-to-top-btn'),
             openDashboard: document.getElementById('open-dashboard-btn'),
             closeDashboard: document.getElementById('dashboard-close-btn'),
-            exportExcel: document.getElementById('export-excel-btn'),
-            // PRACTICE BUTTONS
-            practice: document.getElementById('practice-btn'),
-            closePractice: document.getElementById('close-practice-btn'),
-            tabInfo: document.getElementById('tab-info-btn'),
-            tabVideo: document.getElementById('tab-video-btn'),
-            imgPrev: document.getElementById('img-prev-btn'),
-            imgNext: document.getElementById('img-next-btn'),
-            imgZoom: document.getElementById('img-zoom-btn'),
-            vidPrev: document.getElementById('vid-prev-btn'),
-            vidNext: document.getElementById('vid-next-btn'),
-            vidZoom: document.getElementById('vid-zoom-btn')
+            exportExcel: document.getElementById('export-excel-btn')
         },
         inputs: {
             studentName: document.getElementById('student-name'),
@@ -1028,17 +837,7 @@ document.addEventListener('DOMContentLoaded', () => {
             dashTotalExams: document.getElementById('dash-total-exams'),
             dashAvgScore: document.getElementById('dash-avg-score'),
             dashMaxScore: document.getElementById('dash-max-score'),
-            dashMinScore: document.getElementById('dash-min-score'),
-            // PRACTICE DISPLAY (Updated)
-            tabInfoContent: document.getElementById('tab-info-content'),
-            tabVideoContent: document.getElementById('tab-video-content'),
-            practiceImage: document.getElementById('practice-image'),
-            imgCounter: document.getElementById('img-counter'),
-            videoContainer: document.getElementById('video-container'),
-            videoTitle: document.getElementById('video-title'),
-            vidCounter: document.getElementById('vid-counter'),
-            imgLoading: document.getElementById('img-loading'),
-            vidLoading: document.getElementById('vid-loading')
+            dashMinScore: document.getElementById('dash-min-score')
         },
 
         // State variables
@@ -1054,11 +853,6 @@ document.addEventListener('DOMContentLoaded', () => {
         dashboardChartInstance: null,
         dashboardDataCache: null,
         dashboardRawData: null,
-        
-        // Practice State
-        currentImgIndex: 0,
-        currentVidIndex: 0,
-        isImgZoomed: false,
 
         timers: {
             total: null,
@@ -1098,155 +892,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             } catch(e) { this.displays.statsLoading.innerHTML='<p class="text-xs text-red-500">Lỗi thống kê</p>'; }
         },
-        
-        // --- PRACTICE SCREEN FUNCTIONS (UPDATED) ---
-        openPracticeScreen() {
-            this.displays.practiceImage.src = ''; 
-            this.currentImgIndex = 0;
-            this.currentVidIndex = 0;
-            this.switchTab('info');
-            this.updatePracticeImage();
-            this.updatePracticeVideo();
-            this.screens.practice.classList.remove('hidden');
-            this.screens.practice.classList.add('active'); 
-            this.screens.practice.style.display = 'flex';
-            this.screens.practice.style.flexDirection = 'column';
-        },
-
-        closePracticeScreen() {
-            this.screens.practice.style.display = 'none';
-            // Stop video
-            this.displays.videoContainer.innerHTML = '<div id="vid-loading" class="hidden"><div class="loading-spinner"></div><div class="loading-text">Đang tải video...</div></div>';
-        },
-
-        switchTab(tabName) {
-            if (tabName === 'info') {
-                this.displays.tabInfoContent.classList.add('active-tab');
-                this.displays.tabVideoContent.classList.remove('active-tab');
-                this.buttons.tabInfo.classList.remove('bg-gray-200', 'text-gray-700');
-                this.buttons.tabInfo.classList.add('bg-bidv-green', 'text-white');
-                this.buttons.tabVideo.classList.remove('bg-bidv-green', 'text-white');
-                this.buttons.tabVideo.classList.add('bg-gray-200', 'text-gray-700');
-                // Stop video when switching tab
-                const iframe = this.displays.videoContainer.querySelector('iframe');
-                if(iframe) iframe.src = iframe.src; 
-                const vid = this.displays.videoContainer.querySelector('video');
-                if(vid) vid.pause();
-            } else {
-                this.displays.tabInfoContent.classList.remove('active-tab');
-                this.displays.tabVideoContent.classList.add('active-tab');
-                this.buttons.tabVideo.classList.remove('bg-gray-200', 'text-gray-700');
-                this.buttons.tabVideo.classList.add('bg-bidv-green', 'text-white');
-                this.buttons.tabInfo.classList.remove('bg-bidv-green', 'text-white');
-                this.buttons.tabInfo.classList.add('bg-gray-200', 'text-gray-700');
-            }
-        },
-
-        updatePracticeImage() {
-            const links = PRACTICE_DATA.imageLinks;
-            if (links.length === 0) return;
-            
-            if (this.currentImgIndex < 0) this.currentImgIndex = links.length - 1;
-            if (this.currentImgIndex >= links.length) this.currentImgIndex = 0;
-
-            // SHOW LOADING STATE
-            this.displays.imgLoading.classList.remove('hidden');
-            this.displays.practiceImage.style.opacity = '0'; // Hide current image immediately
-            this.displays.practiceImage.classList.remove('zoom-active');
-            this.buttons.imgZoom.innerHTML = '<i class="fas fa-search-plus fa-lg"></i>';
-            this.isImgZoomed = false;
-
-            this.displays.practiceImage.src = links[this.currentImgIndex];
-            this.displays.imgCounter.textContent = `${this.currentImgIndex + 1} / ${links.length}`;
-            
-            // Add onload handler
-            this.displays.practiceImage.onload = () => {
-                this.displays.imgLoading.classList.add('hidden');
-                this.displays.practiceImage.style.opacity = '1';
-            };
-        },
-
-        toggleImageZoom() {
-            this.isImgZoomed = !this.isImgZoomed;
-            if (this.isImgZoomed) {
-                this.displays.practiceImage.classList.add('zoom-active');
-                this.buttons.imgZoom.innerHTML = '<i class="fas fa-search-minus fa-lg"></i>';
-            } else {
-                this.displays.practiceImage.classList.remove('zoom-active');
-                this.buttons.imgZoom.innerHTML = '<i class="fas fa-search-plus fa-lg"></i>';
-            }
-        },
-
-        updatePracticeVideo() {
-            const videos = PRACTICE_DATA.videoData;
-            if (videos.length === 0) return;
-
-            if (this.currentVidIndex < 0) this.currentVidIndex = videos.length - 1;
-            if (this.currentVidIndex >= videos.length) this.currentVidIndex = 0;
-
-            const vidData = videos[this.currentVidIndex];
-            this.displays.videoTitle.textContent = vidData.title;
-            this.displays.vidCounter.textContent = `${this.currentVidIndex + 1}/${videos.length}`;
-
-            // SHOW LOADING STATE
-            // Re-create loading div because we might wipe innerHTML
-            const loadingDiv = document.createElement('div');
-            loadingDiv.id = 'vid-loading';
-            loadingDiv.className = 'loading-spinner'; // Re-use styling logic or distinct
-            loadingDiv.innerHTML = `
-                <div class="loading-spinner"></div>
-                <div class="loading-text">Đang tải video...</div>
-            `;
-            
-            // Clear container and add loading
-            this.displays.videoContainer.innerHTML = '';
-            this.displays.videoContainer.appendChild(loadingDiv);
-
-            // Determine if URL is standard video or needs iframe (OneDrive Embed)
-            // Simple check: if URL contains "embed" or doesn't end in mp4/webm, use iframe
-            const isVideoFile = vidData.url.match(/\.(mp4|webm|ogg)$/i);
-            
-            let element;
-            if (isVideoFile) {
-                element = document.createElement('video');
-                element.className = "w-full h-full";
-                element.controls = true;
-                element.src = vidData.url;
-                element.onloadeddata = () => { loadingDiv.remove(); };
-                element.onerror = () => { loadingDiv.innerHTML = '<p class="text-white">Lỗi tải video.</p>'; };
-            } else {
-                // Assume Embed / Iframe
-                element = document.createElement('iframe');
-                element.className = "w-full h-full border-0";
-                element.src = vidData.url;
-                element.setAttribute('allowfullscreen', 'true');
-                element.setAttribute('frameborder', '0');
-                element.setAttribute('scrolling', 'no');
-                
-                // Iframe load event
-                element.onload = () => { loadingDiv.remove(); };
-                element.onerror = () => { loadingDiv.innerHTML = '<p class="text-white">Lỗi tải video.</p>'; };
-            }
-            
-            this.displays.videoContainer.appendChild(element);
-        },
-
-        toggleVideoFullscreen() {
-             const videoContainer = this.displays.videoContainer; 
-             if (!document.fullscreenElement) {
-                if (videoContainer.requestFullscreen) {
-                    videoContainer.requestFullscreen();
-                } else if (videoContainer.webkitRequestFullscreen) { /* Safari */
-                    videoContainer.webkitRequestFullscreen();
-                }
-            } else {
-                if (document.exitFullscreen) {
-                    document.exitFullscreen();
-                }
-            }
-        },
-
-        // --- END PRACTICE SCREEN FUNCTIONS ---
 
         addEventListeners() {
             this.buttons.home?.addEventListener('click', () => this.showScreen('start'));
@@ -1276,22 +921,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 this.inputs.searchInput.value = '';
                 this.handleSearch('');
             });
-
-            // PRACTICE EVENTS
-            this.buttons.practice?.addEventListener('click', () => this.openPracticeScreen());
-            this.buttons.closePractice?.addEventListener('click', () => this.closePracticeScreen());
-            
-            this.buttons.tabInfo?.addEventListener('click', () => this.switchTab('info'));
-            this.buttons.tabVideo?.addEventListener('click', () => this.switchTab('video'));
-            
-            this.buttons.imgPrev?.addEventListener('click', () => { this.currentImgIndex--; this.updatePracticeImage(); });
-            this.buttons.imgNext?.addEventListener('click', () => { this.currentImgIndex++; this.updatePracticeImage(); });
-            this.buttons.imgZoom?.addEventListener('click', () => this.toggleImageZoom());
-            this.displays.practiceImage?.addEventListener('click', () => this.toggleImageZoom());
-
-            this.buttons.vidPrev?.addEventListener('click', () => { this.currentVidIndex--; this.updatePracticeVideo(); });
-            this.buttons.vidNext?.addEventListener('click', () => { this.currentVidIndex++; this.updatePracticeVideo(); });
-            this.buttons.vidZoom?.addEventListener('click', () => this.toggleVideoFullscreen());
 
             // Click outside bg dropdown
             document.addEventListener('click', (e) => {
@@ -1527,7 +1156,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         async logQuizResult(res, cfg) {
             if(!supabaseClient) return;
-            try { await supabaseClient.from('quiz_results').insert({student_name: res.name, score: res.score, total_questions: res.totalQuestions, time_taken_seconds: res.timeTaken}); } catch(e){}
+            try { await supabaseClient.from('quiz_results_cds').insert({student_name: res.name, score: res.score, total_questions: res.totalQuestions, time_taken_seconds: res.timeTaken}); } catch(e){}
         },
         saveResult(res) {
             let h = JSON.parse(localStorage.getItem('quizHistory')) || [];
@@ -1564,6 +1193,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 this.displays.resultNavList.appendChild(btn);
             });
         },
+
         showHistory() {
             const h = JSON.parse(localStorage.getItem('quizHistory')) || [];
             this.displays.historyList.innerHTML = '';
@@ -1616,14 +1246,15 @@ document.addEventListener('DOMContentLoaded', () => {
              document.getElementById('review-modal-backdrop').classList.add('active');
         },
 
-        // --- DASHBOARD ---
+        // --- DASHBOARD (Logic giữ nguyên) ---
         async loadDashboardData() {
             if(!supabaseClient) return alert('Cần Supabase.');
             this.displays.dashboardBackdrop.classList.add('active');
             this.displays.dashboardLoading.style.display = 'block';
             this.displays.dashboardContent.classList.add('hidden');
             try {
-                const { data } = await supabaseClient.from('quiz_results').select('score, student_name').limit(1000);
+                // Tăng limit lên 10000 để lấy đủ data, lấy thêm total_questions để tính %
+                const { data } = await supabaseClient.from('quiz_results_cds').select('score, total_questions, student_name').limit(10000);
                 this.dashboardRawData = data;
                 this.filterAndRenderDashboard();
                 this.displays.dashboardLoading.style.display = 'none';
@@ -1631,11 +1262,59 @@ document.addEventListener('DOMContentLoaded', () => {
             } catch(e) { alert('Lỗi tải Dashboard'); this.displays.dashboardBackdrop.classList.remove('active'); }
         },
         filterAndRenderDashboard() {
-            if(!this.dashboardRawData) return;
-            const scores = this.dashboardRawData.map(i=>i.score);
-            if(scores.length===0) return;
+            if(!this.dashboardRawData || this.dashboardRawData.length === 0) return;
+            
+            // Tính điểm quy đổi ra % (vì có người làm 40 câu, người 70 câu, vv)
+            const scores = this.dashboardRawData.map(i => {
+                const total = i.total_questions || 40; // Mặc định chia 40 nếu không có dữ liệu
+                return Math.round((i.score / total) * 100);
+            });
+            
             this.displays.dashTotalExams.textContent = scores.length;
-            this.displays.dashAvgScore.textContent = (scores.reduce((a,b)=>a+b,0)/scores.length).toFixed(1);
+            this.displays.dashAvgScore.textContent = (scores.reduce((a,b)=>a+b,0)/scores.length).toFixed(1) + '%';
+            this.displays.dashMaxScore.textContent = Math.max(...scores) + '%';
+            this.displays.dashMinScore.textContent = Math.min(...scores) + '%';
+
+            // Chia nhóm điểm 10 mốc
+            const bins = Array(10).fill(0);
+            scores.forEach(s => {
+                let binIdx = Math.floor(s / 10);
+                if(binIdx >= 10) binIdx = 9;
+                bins[binIdx]++;
+            });
+
+            const labels = ['0-10%', '11-20%', '21-30%', '31-40%', '41-50%', '51-60%', '61-70%', '71-80%', '81-90%', '91-100%'];
+
+            this.displays.dashboardTableBody.innerHTML = '';
+            bins.forEach((count, i) => {
+                const tr = document.createElement('tr');
+                const pct = ((count / scores.length) * 100).toFixed(1);
+                tr.innerHTML = `<td class="py-2 px-4 border text-left font-semibold">${labels[i]}</td>
+                                <td class="py-2 px-4 border text-center font-bold text-gray-800">${count}</td>
+                                <td class="py-2 px-4 border text-center">${pct}%</td>`;
+                this.displays.dashboardTableBody.appendChild(tr);
+            });
+
+            // Vẽ biểu đồ
+            const ctx = document.getElementById('scoreDistributionChart');
+            if(this.dashboardChartInstance) this.dashboardChartInstance.destroy();
+            this.dashboardChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Số lượng bài thi',
+                        data: bins,
+                        backgroundColor: '#006B68',
+                        borderRadius: 4
+                    }]
+                },
+                options: { 
+                    responsive: true, 
+                    maintainAspectRatio: false,
+                    scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }
+                }
+            });
         },
         exportDashboardToExcel() { /* Logic export */ },
 
