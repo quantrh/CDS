@@ -4,17 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ứng dụng Trắc nghiệm Online</title>
-    <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Thư viện MD5 cho bảo mật mật khẩu -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"></script>
-    <!-- Thư viện Supabase Client -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <!-- Thư viện Chart.js cho biểu đồ -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Thư viện SheetJS để xuất Excel -->
     <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
-    <!-- Thư viện Font Awesome cho icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -255,86 +249,6 @@
         .delete-result-btn:hover {
             background-color: #dc2626;
         }
-
-        /* Practice Screen Styles */
-        #practice-screen-container {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            background-color: #f3f4f6;
-        }
-        .practice-tab-content {
-            flex: 1;
-            display: none; /* Hidden by default */
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #000;
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            height: calc(100vh - 60px); /* Adjust based on header height */
-        }
-        .practice-tab-content.active-tab {
-            display: flex;
-        }
-        .practice-control-bar {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(5px);
-            border-radius: 9999px;
-            padding: 0.5rem 1rem;
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-            margin-top: 1rem;
-            position: absolute;
-            bottom: 2rem;
-            z-index: 50;
-        }
-        /* Zoom class for Image */
-        .zoom-active {
-            transform: scale(1.8);
-            cursor: zoom-out;
-        }
-        #practice-image {
-            transition: transform 0.3s ease-in-out, opacity 0.2s ease;
-            cursor: zoom-in;
-            max-height: 80vh;
-            max-width: 95vw;
-            object-fit: contain;
-        }
-        
-        /* LOADING SPINNER */
-        .loading-spinner {
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            border-top: 4px solid #FFC62F; /* BIDV Yellow */
-            width: 40px;
-            height: 40px;
-            -webkit-animation: spin 1s linear infinite; /* Safari */
-            animation: spin 1s linear infinite;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 10;
-        }
-        @keyframes spin {
-            0% { transform: translate(-50%, -50%) rotate(0deg); }
-            100% { transform: translate(-50%, -50%) rotate(360deg); }
-        }
-        .loading-text {
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            transform: translateX(-50%);
-            color: white;
-            font-weight: bold;
-            font-size: 0.9rem;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-            z-index: 10;
-        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -342,7 +256,6 @@
 </head>
 <body class="bg-gray-100 text-gray-900 font-medium">
 
-    <!-- Login Overlay -->
     <div id="login-overlay" class="fixed inset-0 z-[3000] flex items-center justify-center bg-bidv-green transition-opacity duration-300">
         <div class="bg-white p-8 rounded-xl shadow-2xl max-w-sm w-full text-center mx-4">
             <div class="mb-4 flex justify-center">
@@ -358,27 +271,22 @@
 
     <div id="app" class="container mx-auto p-4 md:p-8 max-w-6xl">
         
-        <!-- Banner (BIDV Look and Feel) -->
         <div class="mb-6 rounded-xl shadow-lg overflow-hidden">
             <img src="https://quantrh.github.io/CDS/Bannerluyenthi.png" alt="Banner Luyện Thi" class="w-full h-auto object-cover">
         </div>
 
-        <!-- Header -->
         <header class="mb-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <!-- TIÊU ĐỀ -->
             <h1 class="text-3xl font-bold text-bidv-green drop-shadow-sm bg-white/50 px-2 rounded">Tìm hiểu chuyển đổi số ngành ngân hàng</h1>
             <div class="flex items-center space-x-2 relative">
                 <button id="home-btn" class="px-4 py-2 bg-bidv-green text-white rounded-lg shadow hover:opacity-90 transition-colors font-bold">Trang chủ</button>
                 
                 <button id="history-btn" class="px-4 py-2 bg-gray-600 text-white rounded-lg shadow hover:bg-gray-700 transition-colors font-bold">Lịch sử</button>
                 
-                <!-- NÚT MÀU NỀN & DROPDOWN -->
                 <div class="relative inline-block text-left">
                     <button id="bg-settings-btn" class="px-4 py-2 bg-bidv-yellow text-gray-900 rounded-lg shadow hover:opacity-90 transition-colors flex items-center font-bold">
                         <span>Màu nền</span>
                         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
-                    <!-- Dropdown Menu -->
                     <div id="bg-dropdown-menu" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-xl z-50 ring-1 ring-black ring-opacity-5 focus:outline-none">
                         <div class="py-1">
                             <button class="bg-option w-full text-left px-4 py-2 text-sm text-gray-800 hover:bg-gray-100 hover:text-bidv-green font-semibold" data-theme="theme-flower">
@@ -396,18 +304,12 @@
             </div>
         </header>
 
-        <!-- Main Content -->
         <main id="main-container" class="theme-flower p-6 rounded-xl shadow-lg min-h-[500px] transition-all duration-300 relative">
             
-            <!-- Start Screen -->
             <div id="start-screen" class="screen active">
-                <div class="screen-content-wrapper"> <!-- Wrapper nền trắng mờ -->
-
-                    <!-- KHỐI THỐNG KÊ TOÀN TRANG -->
-                    <div id="global-stats-section" class="mb-6 p-4 bg-white/30 rounded-lg shadow-inner backdrop-blur-sm border border-white/40">
+                <div class="screen-content-wrapper"> <div id="global-stats-section" class="mb-6 p-4 bg-white/30 rounded-lg shadow-inner backdrop-blur-sm border border-white/40">
                         <div class="flex justify-between items-center mb-4 border-b border-bidv-green/30 pb-2">
                             <h3 class="text-xl font-bold text-bidv-green">Thống kê Toàn hệ thống</h3>
-                            <!-- NÚT MỞ DASHBOARD PHỔ ĐIỂM -->
                             <button id="open-dashboard-btn" class="px-3 py-1 bg-bidv-green text-white text-sm rounded shadow hover:opacity-90 flex items-center gap-1">
                                 <i class="fas fa-chart-bar"></i> Xem Phổ điểm
                             </button>
@@ -443,7 +345,6 @@
                         </div>
                     </div>
 
-                    <!-- KHỐI TÌM KIẾM TRA CỨU -->
                     <div id="search-section" class="mb-8 p-6 bg-white/30 border-2 border-bidv-yellow/50 rounded-xl shadow-md backdrop-blur-sm">
                         <div class="flex items-center mb-4 border-b border-gray-400 pb-2">
                             <i class="fas fa-search text-bidv-green mr-2 text-xl"></i>
@@ -461,8 +362,7 @@
                         </div>
                         <div id="search-status" class="mt-2 text-sm text-gray-900 font-bold italic hidden">Đang tìm kiếm...</div>
                         <div id="search-results" class="mt-4 space-y-4 max-h-[500px] overflow-y-auto hidden pr-2 custom-scrollbar">
-                            <!-- Search results will appear here -->
-                        </div>
+                            </div>
                     </div>
 
                     <h2 class="text-2xl font-bold mb-4 text-center text-bidv-green drop-shadow-sm">Cấu hình Bài thi</h2>
@@ -548,7 +448,6 @@
                             <button id="toggle-help-btn" class="w-full py-2 px-4 bg-bidv-yellow text-gray-900 font-bold rounded-lg shadow-md hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-bidv-yellow">
                                 Hiển thị Hướng dẫn sử dụng
                             </button>
-                            <!-- HELP CONTENT -->
                             <div id="help-content-container" class="mt-4 p-6 border border-gray-300 rounded-xl shadow-inner bg-white/80 help-content backdrop-blur-sm w-full h-auto overflow-hidden transition-all" style="display: none;">
                                 <h2 class="text-2xl font-bold text-bidv-green mb-4">I. TÓM TẮT TÍNH NĂNG NỔI TRỘI</h2>
                                 <p class="mb-4 text-black font-medium">Hệ thống hỗ trợ ôn tập và kiểm tra kiến thức về <strong>Chuyển đổi số trong ngành Ngân hàng</strong>. Nội dung bám sát các chiến lược, nghị định và định hướng công nghệ số hiện hành.</p>
@@ -622,7 +521,6 @@
                 </div> 
             </div>
 
-            <!-- Quiz Screen -->
             <div id="quiz-screen" class="screen">
                 <div class="screen-content-wrapper"> 
                     <div class="md:flex md:space-x-6">
@@ -679,7 +577,6 @@
                 </div>
             </div>
 
-            <!-- Result Screen -->
             <div id="result-screen" class="screen">
                 <div class="screen-content-wrapper">
                     <h2 class="text-2xl font-bold mb-4 text-center text-bidv-green bg-white/60 py-2 rounded">Kết quả bài làm</h2>
@@ -710,7 +607,6 @@
                 </div>
             </div>
 
-            <!-- History Screen -->
             <div id="history-screen" class="screen">
                 <div class="screen-content-wrapper">
                     <h2 class="text-2xl font-bold mb-4 text-bidv-green bg-white/50 inline-block px-2 rounded">Lịch sử làm bài</h2>
@@ -727,21 +623,18 @@
             
         </main>
         
-        <!-- Footer -->
         <footer class="mt-8 text-center text-gray-900 font-bold text-sm bg-white/40 py-2 rounded">
             <p>Bản quyền thuộc về: Trương Hồng Quân</p>
             <p>Email: <a href="mailto:Quantrhvn@gmail.com" class="text-bidv-green hover:underline">Quantrhvn@gmail.com</a></p>
         </footer>
     </div>
 
-    <!-- Review Modal -->
     <div id="review-modal-backdrop" class="modal-backdrop">
         <div id="review-modal" class="modal-content md:max-w-3xl">
             <div id="modal-content-placeholder"></div>
         </div>
     </div>
 
-    <!-- Dashboard Modal -->
     <div id="dashboard-modal-backdrop" class="modal-backdrop">
         <div class="modal-content w-full md:max-w-4xl bg-white rounded-lg shadow-2xl relative">
             <button id="dashboard-close-btn" class="absolute top-4 right-4 text-gray-500 hover:text-red-600 text-2xl font-bold">&times;</button>
@@ -961,13 +854,16 @@ document.addEventListener('DOMContentLoaded', () => {
         setTheme(t) { this.displays.mainContainer.classList.remove('theme-flower','theme-white','theme-cream'); this.displays.mainContainer.classList.add(t); localStorage.setItem('quizTheme',t); },
         async initializeTracking() { await this.getVisitorIP(); await this.logPageVisit(); },
         async getVisitorIP() { try { const r = await fetch('https://api.ipify.org?format=json'); if(r.ok) this.visitorIP=(await r.json()).ip; else this.visitorIP='unknown'; } catch(e){ this.visitorIP='unknown';} },
-        async logPageVisit() { if(!supabaseClient) return; try{ await supabaseClient.from('page_visits').insert({ip_address:this.visitorIP}); }catch(e){} },
+        async logPageVisit() { 
+            if(!supabaseClient) return; 
+            try{ await supabaseClient.from('page_visits_cds').insert({ip_address:this.visitorIP}); }catch(e){} 
+        },
         async loadGlobalStats() {
             if(!supabaseClient) { this.displays.statsLoading.innerHTML=''; return; }
             try {
-                // Lấy tổng lượt truy cập từ bảng page_visits
+                // Lấy tổng lượt truy cập từ bảng page_visits_cds
                 const { count: totalVisits } = await supabaseClient
-                    .from('page_visits')
+                    .from('page_visits_cds')
                     .select('*', { count: 'exact', head: true });
 
                 // Lấy dữ liệu bài thi từ bảng mới (quiz_results_cds) để tự tính toán
@@ -1228,7 +1124,7 @@ document.addEventListener('DOMContentLoaded', () => {
         saveAnswer() {
             const sel = document.querySelector('input[name="q"]:checked');
             if(sel) {
-                // Cập nhật lại thời gian chốt đáp án
+                // Nếu lần đầu chọn đáp án hoặc thay đổi đáp án mới, ta cập nhật lại thời gian chốt đáp án
                 if (this.userAnswers[this.currentQuestionIndex] !== sel.value) {
                     this.userAnswers[this.currentQuestionIndex] = sel.value;
                     this.answerTimeTaken[this.currentQuestionIndex] = this.questionTimeTaken[this.currentQuestionIndex];
@@ -1264,6 +1160,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             this.quizQuestions.forEach((q, i) => { 
                 if(q.answer === this.userAnswers[i]) {
+                    // Ưu tiên dùng thời gian tại thời điểm click, nếu chưa click bao giờ thì dùng tổng thời gian hiện tại
                     const t = this.answerTimeTaken[i] !== -1 ? this.answerTimeTaken[i] : this.questionTimeTaken[i];
                     if (t < 5) score += 2;
                     else if (t <= 10) score += 1.75;
@@ -1285,7 +1182,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 questionTimeTaken: this.questionTimeTaken
             };
             
-            // Lấy thông số thiết lập gửi kèm
             const configObj = {
                 numQuestions: this.inputs.numQuestions.value,
                 timePerQuestion: this.inputs.timePerQuestion.value,
