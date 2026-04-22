@@ -1501,10 +1501,10 @@
         "id": 108,
         "question": "Trong hệ thống AI chấm điểm tín dụng, ngân hàng phát hiện rò rỉ dữ liệu khách hàng. Theo luật, thời hạn thông báo cho cơ quan quản lý là bao lâu?",
         "options": {
-            "A": "3 ngày",
-            "B": "7 ngày",
-            "C": "48 giờ",
-            "D": "24 giờ"
+            "A": "Chậm nhất 72 giờ",
+            "B": "Chậm nhất 7 ngày",
+            "C": "Chậm nhất 48 giờ",
+            "D": "Chậm nhất 24 giờ"
         },
         "answer": "A",
         "explanation_right": "Luật bảo vệ dữ liệu cá nhân số 91/2025/QH15",
@@ -2248,7 +2248,7 @@
             "C": "Cấp độ 5",
             "D": "Cấp độ 6"
         },
-        "answer": "C",
+        "answer": "B",
         "explanation_right": "Theo Quyết định 2629/QĐ-TTg ngày 01/12/2025, mục tiêu cụ thể giai đoạn 2028-2030 của Chương trình phát triển Chính phủ số, 100% bộ, ngành, địa phương đạt cấp độ mấy trong trưởng thành về quản trị dữ liệu?",
         "explanation_wrong": "",
         "explanation_question": ""
@@ -5216,7 +5216,7 @@
             "C": "Cho phép song song Excel và hệ thống mới vô thời hạn để tránh gián đoạn",
             "D": "Giao phó toàn bộ trách nhiệm cho bộ phận công nghệ thông tin (IT) tự điều chỉnh hệ thống mà không cần các khối nghiệp vụ tham gia thay đổi quy trình"
         },
-        "answer": "Phương án B",
+        "answer": "B",
         "explanation_right": "Quyết định 749/QĐ-TTg, Mục III",
         "explanation_wrong": "",
         "explanation_question": ""
