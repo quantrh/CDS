@@ -6858,5 +6858,545 @@
       "D": "Sai."
     },
     "explanation_question": "Gắn luật với tình huống thực tế ngành ngân hàng."
+  },
+ {
+    "id": 471,
+    "question": "Theo Luật Chuyển đổi số 2025, 'Chuyển đổi số' được hiểu là gì?",
+    "options": {
+      "A": "Quá trình số hóa tài liệu giấy",
+      "B": "Quá trình ứng dụng công nghệ số, dữ liệu số, hệ thống số, nền tảng số, quy trình số nhằm tạo ra giá trị mới, hiệu quả và minh bạch",
+      "C": "Hoạt động mua sắm phần mềm",
+      "D": "Xây dựng website cho cơ quan"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 3 khoản 1 Luật số 148/2025/QH15.",
+    "explanation_wrong": {
+      "A": "Sai vì số hóa chỉ là một phần của chuyển đổi số.",
+      "C": "Sai vì mua sắm phần mềm không đồng nghĩa chuyển đổi số.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu hỏi nền tảng phân biệt số hóa và chuyển đổi số."
+  },
+  {
+    "id": 472,
+    "question": "Hành vi nào sau đây bị nghiêm cấm trong hoạt động chuyển đổi số?",
+    "options": {
+      "A": "Lợi dụng chuyển đổi số để lừa đảo, thao túng, trục lợi",
+      "B": "Triển khai dịch vụ công trực tuyến",
+      "C": "Xây dựng nền tảng số dùng chung",
+      "D": "Phân tích dữ liệu để cải tiến dịch vụ"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 5 khoản 4.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Nhóm hành vi cấm dễ được hỏi."
+  },
+  {
+    "id": 473,
+    "question": "Nguyên tắc chuyển đổi số nào sau đây được quy định trong luật?",
+    "options": {
+      "A": "Lấy người dùng làm trung tâm",
+      "B": "Bảo đảm an ninh mạng, dữ liệu và quyền riêng tư",
+      "C": "Triển khai linh hoạt, thích ứng công nghệ",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 6.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Tổng hợp nguyên tắc cốt lõi."
+  },
+  {
+    "id": 474,
+    "question": "Theo Luật, dữ liệu là trung tâm trong thiết kế hệ thống số có nghĩa là gì?",
+    "options": {
+      "A": "Bảo đảm dữ liệu được thu thập, quản lý, chia sẻ và khai thác đúng mục đích",
+      "B": "Thu thập mọi dữ liệu có thể",
+      "C": "Không chia sẻ dữ liệu",
+      "D": "Chỉ lưu trữ nội bộ"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 7 khoản 5.",
+    "explanation_wrong": {
+      "B": "Sai vì trái nguyên tắc tối thiểu hóa.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Gắn với kiến trúc dữ liệu trong chuyển đổi số."
+  },
+  {
+    "id": 475,
+    "question": "Chính sách của Nhà nước về chuyển đổi số bao gồm nội dung nào?",
+    "options": {
+      "A": "Phát triển hạ tầng chuyển đổi số thống nhất, an toàn",
+      "B": "Phát triển dữ liệu số",
+      "C": "Khuyến khích đổi mới sáng tạo và thử nghiệm có kiểm soát",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 9.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Câu hỏi tổng hợp chính sách."
+  },
+  {
+    "id": 476,
+    "question": "Cơ quan nào phê duyệt Chiến lược quốc gia về chuyển đổi số?",
+    "options": {
+      "A": "Chính phủ",
+      "B": "Thủ tướng Chính phủ",
+      "C": "Bộ Khoa học và Công nghệ",
+      "D": "Bộ Công an"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 12 khoản 1.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra thẩm quyền."
+  },
+  {
+    "id": 477,
+    "question": "Theo Luật, ngân sách nhà nước dành cho chuyển đổi số hằng năm tối thiểu bao nhiêu phần trăm tổng chi ngân sách?",
+    "options": {
+      "A": "0,5%",
+      "B": "1%",
+      "C": "2%",
+      "D": "5%"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 20 khoản 1.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu hỏi nhớ số liệu."
+  },
+  {
+    "id": 478,
+    "question": "Dịch vụ công trực tuyến mặc định được cung cấp theo hình thức nào?",
+    "options": {
+      "A": "Toàn trình",
+      "B": "Một phần",
+      "C": "Trực tiếp tại quầy",
+      "D": "Qua điện thoại"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 32 khoản 1 điểm a.",
+    "explanation_wrong": {
+      "B": "Sai trừ trường hợp ngoại lệ.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Điểm quan trọng về Chính phủ số."
+  },
+  {
+    "id": 479,
+    "question": "Phát triển kinh tế số phải bảo đảm yếu tố nào?",
+    "options": {
+      "A": "Lấy doanh nghiệp là trung tâm",
+      "B": "Ưu tiên phát triển hệ thống số, nền tảng số, hệ sinh thái số",
+      "C": "Tuân thủ an ninh mạng và bảo vệ dữ liệu cá nhân",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 36.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Tổng hợp yêu cầu phát triển kinh tế số."
+  },
+  {
+    "id": 480,
+    "question": "Luật Chuyển đổi số có hiệu lực thi hành từ ngày nào?",
+    "options": {
+      "A": "01/01/2026",
+      "B": "01/07/2026",
+      "C": "11/12/2025",
+      "D": "31/12/2025"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 47: Luật có hiệu lực từ ngày 01/07/2026.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai vì là ngày Quốc hội thông qua.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra mốc hiệu lực thi hành."
+  },
+{
+    "id": 481,
+    "question": "Nghị định 53/2022/NĐ-CP có hiệu lực thi hành từ ngày nào?",
+    "options": {
+      "A": "01/01/2022",
+      "B": "01/10/2022",
+      "C": "15/08/2022",
+      "D": "01/01/2023"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 29 Nghị định 53/2022/NĐ-CP: có hiệu lực từ ngày 01/10/2022.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai vì là ngày ký ban hành.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu hỏi kiểm tra mốc hiệu lực văn bản."
+  },
+  {
+    "id": 482,
+    "question": "Theo Nghị định 53, 'Dữ liệu cá nhân' được hiểu là gì?",
+    "options": {
+      "A": "Thông tin dưới dạng ký hiệu, chữ viết, chữ số, hình ảnh, âm thanh hoặc dạng tương tự trên môi trường điện tử gắn với một con người cụ thể hoặc giúp xác định một con người cụ thể",
+      "B": "Mọi dữ liệu của doanh nghiệp",
+      "C": "Dữ liệu tài chính của tổ chức",
+      "D": "Thông tin bí mật nhà nước"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 2 khoản 1.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Khái niệm cơ bản rất dễ hỏi."
+  },
+  {
+    "id": 483,
+    "question": "Lực lượng chuyên trách bảo vệ an ninh mạng bao gồm đơn vị nào?",
+    "options": {
+      "A": "A05 Bộ Công an",
+      "B": "Bộ Tư lệnh 86 Bộ Quốc phòng",
+      "C": "Cả A và B",
+      "D": "Bộ Thông tin và Truyền thông"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 2 khoản 9.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "D": "Sai."
+    },
+    "explanation_question": "Dễ nhầm giữa cơ quan quản lý và lực lượng chuyên trách."
+  },
+  {
+    "id": 484,
+    "question": "Điều kiện an ninh mạng đối với hệ thống thông tin quan trọng về an ninh quốc gia bao gồm nhóm nào?",
+    "options": {
+      "A": "Quy định nội bộ về bảo vệ an ninh mạng",
+      "B": "Nhân sự vận hành, quản trị, bảo vệ",
+      "C": "Thiết bị, phần cứng, phần mềm và biện pháp kỹ thuật",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo các Điều 8, 9, 10, 11 và 12.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Câu tổng hợp nhóm điều kiện an ninh mạng."
+  },
+  {
+    "id": 485,
+    "question": "Doanh nghiệp nước ngoài cung cấp dịch vụ trên không gian mạng tại Việt Nam có thể bị yêu cầu lưu trữ dữ liệu tại Việt Nam khi nào?",
+    "options": {
+      "A": "Khi không có lợi nhuận",
+      "B": "Khi vi phạm pháp luật về an ninh mạng và được yêu cầu",
+      "C": "Khi có dưới 1 triệu người dùng",
+      "D": "Khi doanh nghiệp tự nguyện"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 26 khoản 3 và khoản 4.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai vì không phải điều kiện pháp lý bắt buộc."
+    },
+    "explanation_question": "Nội dung rất quan trọng với cloud và Big Tech."
+  },
+  {
+    "id": 486,
+    "question": "Thời gian lưu trữ dữ liệu tại Việt Nam tối thiểu đối với doanh nghiệp thuộc diện áp dụng là bao lâu?",
+    "options": {
+      "A": "12 tháng",
+      "B": "24 tháng",
+      "C": "36 tháng",
+      "D": "05 năm"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 27 khoản 1.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu hỏi nhớ số liệu dễ nhầm."
+  },
+  {
+    "id": 487,
+    "question": "Biện pháp nào có thể áp dụng đối với thông tin trên không gian mạng xâm phạm an ninh quốc gia, trật tự an toàn xã hội?",
+    "options": {
+      "A": "Yêu cầu xóa bỏ thông tin",
+      "B": "Thu thập dữ liệu điện tử",
+      "C": "Ngừng hoặc tạm đình chỉ hoạt động hệ thống thông tin",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo các Điều 19, 20 và 21.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Câu hỏi tổng hợp các biện pháp bảo vệ an ninh mạng."
+  },
+  {
+    "id": 488,
+    "question": "Hệ thống thông tin quan trọng về an ninh quốc gia phải sao lưu dữ liệu nhật ký tối thiểu trong bao lâu?",
+    "options": {
+      "A": "03 tháng",
+      "B": "06 tháng",
+      "C": "12 tháng",
+      "D": "24 tháng"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 11 khoản 2: dữ liệu nhật ký phát sinh phải lưu tối thiểu 12 tháng.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Nội dung thực tế rất quan trọng với vận hành SOC/SIEM."
+  },
+  {
+    "id": 489,
+    "question": "Cơ quan nào là đầu mối chủ trì hoạt động giám sát an toàn thông tin và dữ liệu giám sát?",
+    "options": {
+      "A": "Bộ Công an",
+      "B": "Bộ Thông tin và Truyền thông",
+      "C": "Bộ Quốc phòng",
+      "D": "Ngân hàng Nhà nước"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 22 khoản 5 điểm a.",
+    "explanation_wrong": {
+      "A": "Sai vì chủ trì bảo vệ an ninh mạng, không phải ATTT.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Dễ nhầm giữa an ninh mạng và an toàn thông tin."
+  },
+  {
+    "id": 490,
+    "question": "Doanh nghiệp phải hoàn thành việc lưu trữ dữ liệu hoặc đặt chi nhánh/văn phòng đại diện tại Việt Nam trong thời hạn bao lâu kể từ ngày có yêu cầu?",
+    "options": {
+      "A": "06 tháng",
+      "B": "12 tháng",
+      "C": "18 tháng",
+      "D": "24 tháng"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 26 khoản 6.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu hỏi về thời hạn tuân thủ."
+  },
+  {
+    "id": 491,
+    "question": "Theo Nghị định 94/2025/NĐ-CP, các giải pháp công nghệ tài chính (Fintech) nào được tham gia thử nghiệm tại Cơ chế thử nghiệm?",
+    "options": {
+      "A": "Chấm điểm tín dụng; Chia sẻ dữ liệu qua Open API; Cho vay ngang hàng",
+      "B": "Tiền mã hóa; Phát hành chứng khoán số",
+      "C": "Kinh doanh bảo hiểm số",
+      "D": "Thanh toán quốc tế bằng blockchain"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 1 khoản 2: các giải pháp được tham gia thử nghiệm gồm chấm điểm tín dụng, chia sẻ dữ liệu qua giao diện lập trình ứng dụng mở (Open API), và cho vay ngang hàng. ",
+    "explanation_wrong": {
+      "B": "Sai vì chưa thuộc phạm vi thử nghiệm theo Nghị định.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Bẫy bằng các xu hướng Fintech phổ biến nhưng chưa nằm trong sandbox."
+  },
+  {
+    "id": 492,
+    "question": "Mục tiêu của Cơ chế thử nghiệm có kiểm soát trong lĩnh vực ngân hàng là gì?",
+    "options": {
+      "A": "Thúc đẩy đổi mới sáng tạo và hiện đại hóa lĩnh vực ngân hàng",
+      "B": "Tạo lập môi trường thử nghiệm nhằm đánh giá rủi ro, lợi ích",
+      "C": "Hạn chế rủi ro cho khách hàng khi sử dụng giải pháp Fintech",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 4.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Câu hỏi tổng hợp mục tiêu sandbox."
+  },
+  {
+    "id": 493,
+    "question": "Thời gian thử nghiệm tối đa của một giải pháp Fintech theo Giấy chứng nhận tham gia Cơ chế thử nghiệm là bao lâu?",
+    "options": {
+      "A": "01 năm",
+      "B": "02 năm",
+      "C": "03 năm",
+      "D": "05 năm"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 6 khoản 1: thời gian thử nghiệm không quá 02 năm và có thể được gia hạn.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra nhớ mốc thời gian quan trọng."
+  },
+  {
+    "id": 494,
+    "question": "Không gian thử nghiệm của các giải pháp Fintech được giới hạn như thế nào?",
+    "options": {
+      "A": "Trên toàn cầu",
+      "B": "Trên lãnh thổ Việt Nam",
+      "C": "Chỉ tại Hà Nội",
+      "D": "Chỉ tại TP.HCM"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 6 khoản 2.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Dễ nhầm với mô hình xuyên biên giới."
+  },
+  {
+    "id": 495,
+    "question": "Một nguyên tắc xét duyệt tổ chức tham gia Cơ chế thử nghiệm là gì?",
+    "options": {
+      "A": "Công khai, khách quan, minh bạch",
+      "B": "Ưu tiên doanh nghiệp lớn",
+      "C": "Ưu tiên doanh nghiệp nhà nước",
+      "D": "Không cần đáp ứng pháp luật hiện hành"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 5.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu kiểm tra nguyên tắc quản lý."
+  },
+  {
+    "id": 496,
+    "question": "Thời hạn Ngân hàng Nhà nước cấp Giấy chứng nhận tham gia Cơ chế thử nghiệm sau khi nhận đủ hồ sơ hợp lệ là bao lâu?",
+    "options": {
+      "A": "30 ngày",
+      "B": "60 ngày",
+      "C": "90 ngày",
+      "D": "120 ngày"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 10 khoản 4 và Điều 13 khoản 4.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Mốc thời gian xử lý hồ sơ dễ hỏi."
+  },
+  {
+    "id": 497,
+    "question": "Giải pháp cho vay ngang hàng trong sandbox phải có biện pháp bảo đảm thời hạn hợp đồng giữa bên vay và bên cho vay không vượt quá bao lâu?",
+    "options": {
+      "A": "12 tháng",
+      "B": "24 tháng",
+      "C": "36 tháng",
+      "D": "60 tháng"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 11 khoản 1 điểm c: thời hạn hợp đồng không vượt quá 02 năm.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Chi tiết riêng cho P2P Lending."
+  },
+  {
+    "id": 498,
+    "question": "Khi phát hiện sự cố gây gián đoạn hoạt động hoặc rủi ro nghiêm trọng, tổ chức tham gia thử nghiệm phải báo cáo trong bao lâu?",
+    "options": {
+      "A": "Ngay lập tức và không quá 24 giờ kể từ khi phát hiện",
+      "B": "03 ngày",
+      "C": "07 ngày",
+      "D": "15 ngày"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 15 khoản 7.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Quan trọng trong quản trị vận hành."
+  },
+  {
+    "id": 499,
+    "question": "Thời gian mỗi lần gia hạn thử nghiệm không quá bao lâu?",
+    "options": {
+      "A": "06 tháng",
+      "B": "01 năm",
+      "C": "02 năm",
+      "D": "03 năm"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 20 khoản 3: mỗi lần gia hạn không quá 01 năm và tối đa 02 lần.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Bẫy giữa thời hạn thử nghiệm ban đầu và gia hạn."
+  },
+  {
+    "id": 500,
+    "question": "Nghị định 94/2025/NĐ-CP có hiệu lực thi hành từ ngày nào?",
+    "options": {
+      "A": "01/01/2025",
+      "B": "01/07/2025",
+      "C": "29/04/2025",
+      "D": "01/01/2026"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 25: Nghị định có hiệu lực từ ngày 01/07/2025.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai vì là ngày ký ban hành.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu hỏi nhớ mốc hiệu lực."
   }
 ]
