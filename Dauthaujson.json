@@ -7398,5 +7398,2885 @@
       "D": "Sai."
     },
     "explanation_question": "Câu hỏi nhớ mốc hiệu lực."
+  },
+  {
+    "id": 501,
+    "question": "Nghị định 262/2025/NĐ-CP quy định chi tiết và hướng dẫn thi hành một số điều của luật nào?",
+    "options": {
+      "A": "Luật Doanh nghiệp",
+      "B": "Luật Khoa học, công nghệ và đổi mới sáng tạo",
+      "C": "Luật Sở hữu trí tuệ",
+      "D": "Luật Đầu tư"
+    },
+    "answer": "B",
+    "explanation_right": "Theo tên Nghị định và Điều 1.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu hỏi nhận diện văn bản."
+  },
+  {
+    "id": 502,
+    "question": "Một trong các nguyên tắc liêm chính trong nghiên cứu khoa học, phát triển công nghệ là gì?",
+    "options": {
+      "A": "Trung thực trong đề xuất, thực hiện, công bố và ứng dụng kết quả nghiên cứu",
+      "B": "Ưu tiên công bố nhanh hơn tính chính xác",
+      "C": "Che giấu xung đột lợi ích",
+      "D": "Không cần ghi nhận đóng góp của đồng tác giả"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 4.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Nội dung trọng tâm về liêm chính khoa học."
+  },
+  {
+    "id": 503,
+    "question": "Hành vi nào sau đây được coi là vi phạm liêm chính khoa học?",
+    "options": {
+      "A": "Ngụy tạo dữ liệu, kết quả nghiên cứu",
+      "B": "Bảo mật thông tin nghiên cứu đúng quy định",
+      "C": "Công khai xung đột lợi ích",
+      "D": "Tôn trọng quyền sở hữu trí tuệ"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 6.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu kiểm tra vi phạm điển hình."
+  },
+  {
+    "id": 504,
+    "question": "Tổ chức khoa học và công nghệ được thành lập khi đáp ứng đủ các điều kiện nào?",
+    "options": {
+      "A": "Điều lệ tổ chức và hoạt động",
+      "B": "Nhân lực khoa học và công nghệ",
+      "C": "Cơ sở vật chất - kỹ thuật",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 10.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đủ.",
+      "B": "Đúng nhưng chưa đủ.",
+      "C": "Đúng nhưng chưa đủ."
+    },
+    "explanation_question": "Điều kiện thành lập rất dễ được hỏi."
+  },
+  {
+    "id": 505,
+    "question": "Thời hạn cấp giấy chứng nhận đăng ký tổ chức khoa học và công nghệ kể từ ngày nhận đủ hồ sơ hợp lệ là bao lâu?",
+    "options": {
+      "A": "05 ngày làm việc",
+      "B": "10 ngày làm việc",
+      "C": "15 ngày làm việc",
+      "D": "30 ngày làm việc"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 22 khoản 4.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Mốc thời gian thủ tục hành chính."
+  },
+  {
+    "id": 506,
+    "question": "Giấy công nhận trung tâm nghiên cứu và phát triển có giá trị trong bao lâu?",
+    "options": {
+      "A": "03 năm",
+      "B": "05 năm",
+      "C": "10 năm",
+      "D": "Không thời hạn"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 27 khoản 1 điểm d.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Mốc thời hạn quan trọng."
+  },
+  {
+    "id": 507,
+    "question": "Tạp chí khoa học được xếp loại thành mấy mức?",
+    "options": {
+      "A": "2 mức",
+      "B": "3 mức",
+      "C": "4 mức",
+      "D": "5 mức"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 39: Loại 1, 2, 3, 4.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Nội dung dễ hỏi về phân loại."
+  },
+  {
+    "id": 508,
+    "question": "Một nguyên tắc của hoạt động thống kê khoa học, công nghệ và đổi mới sáng tạo là gì?",
+    "options": {
+      "A": "Trung thực, khách quan, đầy đủ, kịp thời",
+      "B": "Được phép công bố thông tin sai lệch",
+      "C": "Không cần tuân thủ hệ thống chỉ tiêu",
+      "D": "Không cần bảo mật thông tin"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 40.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiến thức về thống kê KH&CN."
+  },
+  {
+    "id": 509,
+    "question": "Nhà nước khuyến khích ứng dụng công nghệ nào trong hoạt động khoa học, công nghệ và đổi mới sáng tạo?",
+    "options": {
+      "A": "Trí tuệ nhân tạo và dữ liệu lớn",
+      "B": "Chỉ dữ liệu lớn",
+      "C": "Chỉ blockchain",
+      "D": "Không khuyến khích công nghệ mới"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 56.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Nội dung thời sự, dễ nhớ."
+  },
+  {
+    "id": 510,
+    "question": "Nghị định 262/2025/NĐ-CP có hiệu lực thi hành từ ngày nào?",
+    "options": {
+      "A": "14/10/2025",
+      "B": "01/01/2026",
+      "C": "Ngày ký ban hành",
+      "D": "14/10/2025 và có hiệu lực ngay"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 62: Nghị định có hiệu lực kể từ ngày ký ban hành 14/10/2025.",
+    "explanation_wrong": {
+      "A": "Chưa đầy đủ.",
+      "B": "Sai.",
+      "C": "Chưa nêu rõ ngày."
+    },
+    "explanation_question": "Câu hỏi nhớ mốc hiệu lực."
+  },
+  {
+    "id": 511,
+    "question": "Nghị định 265/2025/NĐ-CP quy định chi tiết và hướng dẫn thi hành nội dung nào?",
+    "options": {
+      "A": "Về tài chính và đầu tư trong khoa học, công nghệ và đổi mới sáng tạo",
+      "B": "Về giáo dục đại học",
+      "C": "Về sở hữu trí tuệ",
+      "D": "Về đầu tư công"
+    },
+    "answer": "A",
+    "explanation_right": "Theo tên Nghị định và Điều 1.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Nhận diện phạm vi điều chỉnh."
+  },
+  {
+    "id": 512,
+    "question": "Nghị định này áp dụng đối với đối tượng nào?",
+    "options": {
+      "A": "Cơ quan, tổ chức, đơn vị sự nghiệp, doanh nghiệp, cá nhân",
+      "B": "Chỉ cơ quan nhà nước",
+      "C": "Chỉ doanh nghiệp",
+      "D": "Chỉ tổ chức khoa học công nghệ"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 2.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Xác định đối tượng áp dụng."
+  },
+  {
+    "id": 513,
+    "question": "Kế hoạch tổng thể về khoa học, công nghệ và đổi mới sáng tạo được xây dựng theo chu kỳ bao lâu?",
+    "options": {
+      "A": "03 năm",
+      "B": "05 năm",
+      "C": "10 năm",
+      "D": "Hàng năm"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 3 khoản 2.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Mốc thời gian quan trọng."
+  },
+  {
+    "id": 514,
+    "question": "Ngân sách nhà nước cho khoa học, công nghệ, đổi mới sáng tạo được phân theo mấy cấp ngân sách?",
+    "options": {
+      "A": "1 cấp",
+      "B": "2 cấp",
+      "C": "3 cấp",
+      "D": "4 cấp"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 4: ngân sách trung ương và ngân sách địa phương.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiến thức cơ bản về cơ cấu NSNN."
+  },
+  {
+    "id": 515,
+    "question": "Nguồn lực xã hội đầu tư cho khoa học, công nghệ và đổi mới sáng tạo bao gồm nguồn nào sau đây?",
+    "options": {
+      "A": "Quỹ phát triển khoa học và công nghệ của doanh nghiệp",
+      "B": "Chi của doanh nghiệp tài trợ nghiên cứu",
+      "C": "Tài trợ nhận từ tổ chức, cá nhân trong và ngoài nước",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 12.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đủ.",
+      "B": "Đúng nhưng chưa đủ.",
+      "C": "Đúng nhưng chưa đủ."
+    },
+    "explanation_question": "Tổng hợp các nguồn lực xã hội."
+  },
+  {
+    "id": 516,
+    "question": "Doanh nghiệp được trích lập Quỹ phát triển khoa học và công nghệ từ nguồn nào?",
+    "options": {
+      "A": "Lợi nhuận sau thuế",
+      "B": "Thu nhập tính thuế thu nhập doanh nghiệp",
+      "C": "Vốn điều lệ",
+      "D": "Nguồn vay ngân hàng"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 15.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu hỏi dễ gặp về Quỹ DN."
+  },
+  {
+    "id": 517,
+    "question": "Quỹ Phát triển khoa học và công nghệ quốc gia có tên giao dịch quốc tế là gì?",
+    "options": {
+      "A": "NATIF",
+      "B": "NAFOSTED",
+      "C": "NATFUND",
+      "D": "NIF"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 18.",
+    "explanation_wrong": {
+      "A": "Sai, là Quỹ đổi mới công nghệ quốc gia.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Phân biệt các quỹ."
+  },
+  {
+    "id": 518,
+    "question": "Quỹ Đổi mới công nghệ quốc gia có tên giao dịch quốc tế viết tắt là gì?",
+    "options": {
+      "A": "NAFOSTED",
+      "B": "NATIF",
+      "C": "NATIS",
+      "D": "NIF"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 26.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu hỏi dễ nhầm với NAFOSTED."
+  },
+  {
+    "id": 519,
+    "question": "Nghị định 265/2025/NĐ-CP có hiệu lực thi hành từ ngày nào?",
+    "options": {
+      "A": "14/10/2025",
+      "B": "01/01/2026",
+      "C": "31/12/2025",
+      "D": "Ngày 14/11/2025"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 34 khoản 1.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Mốc hiệu lực thi hành."
+  },
+  {
+    "id": 520,
+    "question": "Nghị định nào hết hiệu lực kể từ ngày Nghị định 265/2025/NĐ-CP có hiệu lực?",
+    "options": {
+      "A": "Nghị định 95/2014/NĐ-CP",
+      "B": "Nghị định 80/2025/NĐ-CP",
+      "C": "Nghị định 249/2025/NĐ-CP",
+      "D": "Nghị định 37/2014/QĐ-TTg"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 34 khoản 2.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Nội dung chuyển tiếp và hiệu lực."
+  },
+  {
+    "id": 521,
+    "question": "Nghị định 356/2025/NĐ-CP quy định chi tiết thi hành luật nào?",
+    "options": {
+      "A": "Luật An ninh mạng",
+      "B": "Luật Bảo vệ dữ liệu cá nhân",
+      "C": "Luật Công nghệ thông tin",
+      "D": "Luật Giao dịch điện tử"
+    },
+    "answer": "B",
+    "explanation_right": "Theo tên Nghị định và phần căn cứ ban hành.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Nhận diện văn bản pháp lý."
+  },
+  {
+    "id": 522,
+    "question": "Dữ liệu cá nhân cơ bản bao gồm nội dung nào sau đây?",
+    "options": {
+      "A": "Họ tên, ngày sinh, giới tính",
+      "B": "Thông tin tài khoản ngân hàng",
+      "C": "Dữ liệu sinh trắc học",
+      "D": "Quan điểm chính trị"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 3 về danh mục dữ liệu cá nhân cơ bản.",
+    "explanation_wrong": {
+      "B": "Thuộc dữ liệu nhạy cảm trong nhiều trường hợp.",
+      "C": "Là dữ liệu nhạy cảm.",
+      "D": "Là dữ liệu nhạy cảm."
+    },
+    "explanation_question": "Phân biệt dữ liệu cơ bản và nhạy cảm."
+  },
+  {
+    "id": 523,
+    "question": "Dữ liệu cá nhân nhạy cảm bao gồm nội dung nào?",
+    "options": {
+      "A": "Nhóm máu, dữ liệu sinh trắc học",
+      "B": "Họ tên và ngày sinh",
+      "C": "Quốc tịch",
+      "D": "Địa chỉ thường trú"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 4.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Xác định dữ liệu nhạy cảm."
+  },
+  {
+    "id": 524,
+    "question": "Bên kiểm soát và xử lý dữ liệu cá nhân phải phản hồi yêu cầu rút lại sự đồng ý của chủ thể dữ liệu trong thời hạn bao lâu?",
+    "options": {
+      "A": "02 ngày làm việc",
+      "B": "07 ngày",
+      "C": "15 ngày",
+      "D": "30 ngày"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 5 khoản 2.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Mốc thời gian quan trọng."
+  },
+  {
+    "id": 525,
+    "question": "Phương thức thể hiện sự đồng ý của chủ thể dữ liệu cá nhân bao gồm?",
+    "options": {
+      "A": "Bằng văn bản",
+      "B": "Bằng giọng nói ghi âm",
+      "C": "Qua tin nhắn, email hoặc thao tác điện tử",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 6.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đủ.",
+      "B": "Đúng nhưng chưa đủ.",
+      "C": "Đúng nhưng chưa đủ."
+    },
+    "explanation_question": "Tổng hợp hình thức đồng ý."
+  },
+  {
+    "id": 526,
+    "question": "Trong lĩnh vực tài chính, ngân hàng, tổ chức tín dụng phải thông báo vi phạm dữ liệu cá nhân nhạy cảm trong thời hạn không quá bao lâu?",
+    "options": {
+      "A": "24 giờ",
+      "B": "48 giờ",
+      "C": "72 giờ",
+      "D": "05 ngày"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 8 khoản 3.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Mốc thời gian báo cáo vi phạm."
+  },
+  {
+    "id": 527,
+    "question": "Dịch vụ xử lý dữ liệu cá nhân bao gồm dịch vụ nào sau đây?",
+    "options": {
+      "A": "Dịch vụ chấm điểm tín dụng",
+      "B": "Dịch vụ phân tích và khai thác dữ liệu cá nhân",
+      "C": "Dịch vụ xử lý dữ liệu cá nhân tự động dựa trên AI",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 21.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đủ.",
+      "B": "Đúng nhưng chưa đủ.",
+      "C": "Đúng nhưng chưa đủ."
+    },
+    "explanation_question": "Nhận diện các loại dịch vụ."
+  },
+  {
+    "id": 528,
+    "question": "Cơ quan nào cấp Giấy chứng nhận đủ điều kiện kinh doanh dịch vụ xử lý dữ liệu cá nhân?",
+    "options": {
+      "A": "Bộ Thông tin và Truyền thông",
+      "B": "Bộ Công an",
+      "C": "Bộ Khoa học và Công nghệ",
+      "D": "Ngân hàng Nhà nước"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 24.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Cơ quan quản lý nhà nước."
+  },
+  {
+    "id": 529,
+    "question": "Nghị định 356/2025/NĐ-CP có hiệu lực từ ngày nào?",
+    "options": {
+      "A": "31/12/2025",
+      "B": "01/01/2026",
+      "C": "01/07/2026",
+      "D": "31/01/2026"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 42.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Mốc hiệu lực."
+  },
+  {
+    "id": 530,
+    "question": "Nghị định nào hết hiệu lực kể từ ngày Nghị định 356/2025/NĐ-CP có hiệu lực?",
+    "options": {
+      "A": "Nghị định 13/2023/NĐ-CP",
+      "B": "Nghị định 53/2022/NĐ-CP",
+      "C": "Nghị định 47/2020/NĐ-CP",
+      "D": "Nghị định 80/2025/NĐ-CP"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 42 khoản 2.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Nội dung chuyển tiếp."
+  },
+  {
+    "id": 531,
+    "question": "Nghị định 63/2010/NĐ-CP quy định về nội dung nào sau đây?",
+    "options": {
+      "A": "Kiểm soát thủ tục hành chính",
+      "B": "Quản lý thuế",
+      "C": "Quản lý dữ liệu dân cư",
+      "D": "Kiểm soát tài sản công"
+    },
+    "answer": "A",
+    "explanation_right": "Theo tên gọi của Nghị định.",
+    "explanation_wrong": {
+      "B": "Sai lĩnh vực điều chỉnh.",
+      "C": "Sai lĩnh vực điều chỉnh.",
+      "D": "Sai lĩnh vực điều chỉnh."
+    },
+    "explanation_question": "Nhận diện phạm vi điều chỉnh."
+  },
+  {
+    "id": 532,
+    "question": "Nghị định 63/2010/NĐ-CP không điều chỉnh đối với thủ tục nào sau đây?",
+    "options": {
+      "A": "Thủ tục hành chính có nội dung bí mật nhà nước",
+      "B": "Thủ tục cấp giấy phép",
+      "C": "Thủ tục đăng ký kinh doanh",
+      "D": "Thủ tục chứng thực"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 1 khoản 2.",
+    "explanation_wrong": {
+      "B": "Thuộc phạm vi điều chỉnh.",
+      "C": "Thuộc phạm vi điều chỉnh.",
+      "D": "Thuộc phạm vi điều chỉnh."
+    },
+    "explanation_question": "Xác định ngoại lệ."
+  },
+  {
+    "id": 533,
+    "question": "“Kiểm soát thủ tục hành chính” là việc xem xét, đánh giá, theo dõi nhằm bảo đảm điều gì?",
+    "options": {
+      "A": "Tính khả thi của quy định về thủ tục hành chính",
+      "B": "Tăng phí, lệ phí",
+      "C": "Tăng số lượng hồ sơ",
+      "D": "Kéo dài thời gian giải quyết"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 3 khoản 5.",
+    "explanation_wrong": {
+      "B": "Sai mục đích.",
+      "C": "Sai mục đích.",
+      "D": "Sai mục đích."
+    },
+    "explanation_question": "Khái niệm cơ bản."
+  },
+  {
+    "id": 534,
+    "question": "Một trong các nguyên tắc quy định thủ tục hành chính là gì?",
+    "options": {
+      "A": "Đơn giản, dễ hiểu và dễ thực hiện",
+      "B": "Phức tạp để tăng kiểm soát",
+      "C": "Tăng thời gian xử lý",
+      "D": "Yêu cầu nhiều giấy tờ nhất có thể"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 7.",
+    "explanation_wrong": {
+      "B": "Trái nguyên tắc.",
+      "C": "Trái nguyên tắc.",
+      "D": "Trái nguyên tắc."
+    },
+    "explanation_question": "Nguyên tắc xây dựng TTHC."
+  },
+  {
+    "id": 535,
+    "question": "Một thủ tục hành chính cụ thể phải có đầy đủ bộ phận nào sau đây?",
+    "options": {
+      "A": "Tên thủ tục hành chính",
+      "B": "Trình tự thực hiện",
+      "C": "Thời hạn giải quyết",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 8 khoản 2.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đủ.",
+      "B": "Đúng nhưng chưa đủ.",
+      "C": "Đúng nhưng chưa đủ."
+    },
+    "explanation_question": "Thành phần cấu thành TTHC."
+  },
+  {
+    "id": 536,
+    "question": "Thời hạn tối đa để Cơ quan kiểm soát thủ tục hành chính góp ý đối với hồ sơ gửi lấy ý kiến là bao lâu?",
+    "options": {
+      "A": "05 ngày làm việc",
+      "B": "10 ngày làm việc",
+      "C": "20 ngày làm việc",
+      "D": "30 ngày làm việc"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 9 khoản 3 điểm a.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Áp dụng cho Văn phòng Bộ/UBND tỉnh.",
+      "D": "Sai."
+    },
+    "explanation_question": "Mốc thời gian quan trọng."
+  },
+  {
+    "id": 537,
+    "question": "Quyết định công bố thủ tục hành chính phải được ban hành chậm nhất trước bao nhiêu ngày làm việc tính đến ngày văn bản có hiệu lực?",
+    "options": {
+      "A": "03 ngày",
+      "B": "05 ngày",
+      "C": "10 ngày",
+      "D": "15 ngày"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 15.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Thời hạn công bố."
+  },
+  {
+    "id": 538,
+    "question": "Cơ quan nào chịu trách nhiệm thiết lập, duy trì hoạt động của cổng thông tin phản ánh, kiến nghị về thủ tục hành chính?",
+    "options": {
+      "A": "Bộ Nội vụ",
+      "B": "Văn phòng Chính phủ",
+      "C": "Bộ Công an",
+      "D": "Thanh tra Chính phủ"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 22 khoản 2.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Xác định cơ quan chủ trì."
+  },
+  {
+    "id": 539,
+    "question": "Bộ trưởng, Thủ trưởng cơ quan ngang Bộ phải nhập dữ liệu thủ tục hành chính đã công bố vào Cơ sở dữ liệu quốc gia trong thời hạn bao lâu?",
+    "options": {
+      "A": "03 ngày làm việc",
+      "B": "05 ngày làm việc",
+      "C": "07 ngày làm việc",
+      "D": "10 ngày làm việc"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 24.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Thời hạn nhập dữ liệu."
+  },
+  {
+    "id": 540,
+    "question": "Nghị định 63/2010/NĐ-CP có hiệu lực thi hành từ ngày nào?",
+    "options": {
+      "A": "08/06/2010",
+      "B": "14/10/2010",
+      "C": "31/12/2010",
+      "D": "01/01/2011"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 37.",
+    "explanation_wrong": {
+      "A": "Là ngày ban hành.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Mốc hiệu lực."
+  },
+  {
+    "id": 541,
+    "question": "Thông tư 09/2020/TT-NHNN quy định về nội dung gì?",
+    "options": {
+      "A": "An toàn hệ thống thông tin trong hoạt động ngân hàng",
+      "B": "Quản lý ngoại hối",
+      "C": "Hoạt động tín dụng",
+      "D": "Quản lý tài sản bảo đảm"
+    },
+    "answer": "A",
+    "explanation_right": "Theo tên gọi của Thông tư.",
+    "explanation_wrong": {
+      "B": "Sai phạm vi điều chỉnh.",
+      "C": "Sai phạm vi điều chỉnh.",
+      "D": "Sai phạm vi điều chỉnh."
+    },
+    "explanation_question": "Nhận diện phạm vi điều chỉnh."
+  },
+  {
+    "id": 542,
+    "question": "Thông tin xử lý, lưu trữ qua hệ thống thông tin được phân loại theo bao nhiêu mức thuộc tính bí mật?",
+    "options": {
+      "A": "2 mức",
+      "B": "3 mức",
+      "C": "4 mức",
+      "D": "5 mức"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 4 gồm: công cộng, riêng/nội bộ, cá nhân, bí mật.",
+    "explanation_wrong": {
+      "A": "Thiếu.",
+      "B": "Thiếu.",
+      "D": "Thừa."
+    },
+    "explanation_question": "Phân loại thông tin."
+  },
+  {
+    "id": 543,
+    "question": "Hệ thống thông tin phục vụ khách hàng yêu cầu vận hành 24/7 và không chấp nhận ngừng vận hành không có kế hoạch trước thuộc cấp độ nào?",
+    "options": {
+      "A": "Cấp độ 2",
+      "B": "Cấp độ 3",
+      "C": "Cấp độ 4",
+      "D": "Cấp độ 5"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 5 khoản 4 điểm c.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Áp dụng tiêu chí cao hơn.",
+      "D": "Áp dụng tiêu chí đặc biệt."
+    },
+    "explanation_question": "Phân loại hệ thống."
+  },
+  {
+    "id": 544,
+    "question": "Tổ chức phải rà soát quy chế an toàn thông tin tối thiểu bao lâu một lần?",
+    "options": {
+      "A": "06 tháng/lần",
+      "B": "01 năm/lần",
+      "C": "02 năm/lần",
+      "D": "03 năm/lần"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 6 khoản 3.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Chu kỳ rà soát."
+  },
+  {
+    "id": 545,
+    "question": "Tài sản thông tin trên hệ thống thông tin từ cấp độ 3 trở lên phải áp dụng biện pháp nào?",
+    "options": {
+      "A": "Chống thất thoát dữ liệu",
+      "B": "Chỉ sao lưu thủ công",
+      "C": "Không cần mã hóa",
+      "D": "Không cần kiểm soát truy cập"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 8 khoản 4.",
+    "explanation_wrong": {
+      "B": "Không đầy đủ.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Bảo vệ dữ liệu."
+  },
+  {
+    "id": 546,
+    "question": "Dữ liệu phát sinh của hệ thống thông tin từ cấp độ 3 trở lên phải được sao lưu trong vòng bao lâu?",
+    "options": {
+      "A": "12 giờ",
+      "B": "24 giờ",
+      "C": "48 giờ",
+      "D": "72 giờ"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 22 khoản 2.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Thời gian sao lưu."
+  },
+  {
+    "id": 547,
+    "question": "Dữ liệu nhật ký của hệ thống thông tin từ cấp độ 3 trở lên phải được lưu trực tuyến tối thiểu bao lâu?",
+    "options": {
+      "A": "01 tháng",
+      "B": "02 tháng",
+      "C": "03 tháng",
+      "D": "06 tháng"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 26 khoản 2.",
+    "explanation_wrong": {
+      "A": "Áp dụng cho cấp độ 2.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Lưu trữ log."
+  },
+  {
+    "id": 548,
+    "question": "Mã khóa bí mật phải có độ dài tối thiểu bao nhiêu ký tự?",
+    "options": {
+      "A": "4 ký tự",
+      "B": "5 ký tự",
+      "C": "6 ký tự",
+      "D": "8 ký tự"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 28 khoản 2.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": 'Thông tư quy định tối thiểu là 6.'
+    },
+    "explanation_question": "Yêu cầu mật khẩu."
+  },
+  {
+    "id": 549,
+    "question": "Kết nối từ Internet vào mạng nội bộ để phục vụ công việc phải sử dụng gì?",
+    "options": {
+      "A": "HTTP",
+      "B": "VPN và xác thực đa yếu tố",
+      "C": "FTP",
+      "D": "Chỉ username/password"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 29 khoản 6.",
+    "explanation_wrong": {
+      "A": "Không an toàn.",
+      "C": "Không phù hợp.",
+      "D": "Chưa đủ an toàn."
+    },
+    "explanation_question": "Truy cập từ xa an toàn."
+  },
+  {
+    "id": 550,
+    "question": "Thông tư 09/2020/TT-NHNN được ban hành ngày nào?",
+    "options": {
+      "A": "21/10/2020",
+      "B": "05/11/2020",
+      "C": "01/07/2020",
+      "D": "21/10/2021"
+    },
+    "answer": "A",
+    "explanation_right": "Theo phần đầu văn bản.",
+    "explanation_wrong": {
+      "B": "Là ngày Công báo.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Mốc thời gian văn bản."
+  },
+  {
+    "id": 551,
+    "question": "Thông tư 15/2024/TT-NHNN quy định về nội dung gì?",
+    "options": {
+      "A": "Cung ứng dịch vụ thanh toán không dùng tiền mặt",
+      "B": "Quản lý ngoại hối",
+      "C": "An toàn bảo mật thông tin",
+      "D": "Hoạt động cho vay"
+    },
+    "answer": "A",
+    "explanation_right": "Theo tên gọi của Thông tư.",
+    "explanation_wrong": {
+      "B": "Sai phạm vi điều chỉnh.",
+      "C": "Sai phạm vi điều chỉnh.",
+      "D": "Sai phạm vi điều chỉnh."
+    },
+    "explanation_question": "Nhận diện phạm vi điều chỉnh."
+  },
+  {
+    "id": 552,
+    "question": "Dịch vụ thanh toán không dùng tiền mặt theo Thông tư bao gồm dịch vụ nào sau đây?",
+    "options": {
+      "A": "Lệnh chi, ủy nhiệm chi",
+      "B": "Nhờ thu, ủy nhiệm thu",
+      "C": "Chuyển tiền, thu hộ, chi hộ",
+      "D": "Tất cả các đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 1 của Thông tư.",
+    "explanation_wrong": {
+      "A": "Chỉ đúng một phần.",
+      "B": "Chỉ đúng một phần.",
+      "C": "Chỉ đúng một phần."
+    },
+    "explanation_question": "Phạm vi dịch vụ thanh toán."
+  },
+  {
+    "id": 553,
+    "question": "Khách hàng được quyền đề nghị tra soát, khiếu nại trong thời hạn tối thiểu bao lâu kể từ ngày phát sinh giao dịch?",
+    "options": {
+      "A": "30 ngày",
+      "B": "45 ngày",
+      "C": "60 ngày",
+      "D": "90 ngày"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 6 khoản 2: không ít hơn 60 ngày.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Thời hạn tra soát khiếu nại."
+  },
+  {
+    "id": 554,
+    "question": "Tổ chức cung ứng dịch vụ thanh toán phải trả lời hoặc xử lý khiếu nại của khách hàng trong thời hạn không quá bao nhiêu ngày làm việc?",
+    "options": {
+      "A": "05 ngày",
+      "B": "15 ngày",
+      "C": "30 ngày",
+      "D": "45 ngày"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 6 khoản 3 điểm c.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Thời gian xử lý khiếu nại."
+  },
+  {
+    "id": 555,
+    "question": "Khi phát hiện có dấu hiệu tội phạm trong giao dịch thanh toán, tổ chức cung ứng dịch vụ phải làm gì?",
+    "options": {
+      "A": "Tự xử lý nội bộ",
+      "B": "Tố giác, báo tin cho cơ quan nhà nước có thẩm quyền",
+      "C": "Chỉ thông báo khách hàng",
+      "D": "Chờ đủ hồ sơ mới xử lý"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 6 khoản 5.",
+    "explanation_wrong": {
+      "A": "Không đúng quy định.",
+      "C": "Chưa đủ.",
+      "D": "Sai."
+    },
+    "explanation_question": "Xử lý dấu hiệu tội phạm."
+  },
+  {
+    "id": 556,
+    "question": "Ngân hàng phải thông báo bằng chứng giao dịch thanh toán điện tử cho khách hàng tối thiểu qua kênh nào?",
+    "options": {
+      "A": "Tin nhắn SMS hoặc thư điện tử hoặc kênh thông báo khác",
+      "B": "Chỉ qua điện thoại",
+      "C": "Chỉ qua văn bản giấy",
+      "D": "Không bắt buộc"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 5 khoản 4.",
+    "explanation_wrong": {
+      "B": "Không đầy đủ.",
+      "C": "Không phù hợp.",
+      "D": "Sai."
+    },
+    "explanation_question": "Thông báo giao dịch."
+  },
+  {
+    "id": 557,
+    "question": "Dịch vụ thanh toán qua mã phản hồi nhanh là giao dịch qua phương thức nào?",
+    "options": {
+      "A": "QR Code",
+      "B": "Mã OTP",
+      "C": "Mã PIN",
+      "D": "Mã SWIFT"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 3 khoản 9.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Khái niệm QR Code."
+  },
+  {
+    "id": 558,
+    "question": "Ngân hàng phải xử lý và hạch toán ủy nhiệm chi hợp pháp chậm nhất trong bao lâu kể từ thời điểm nhận?",
+    "options": {
+      "A": "Trong 01 ngày làm việc",
+      "B": "Trong 02 ngày làm việc",
+      "C": "Trong 03 ngày làm việc",
+      "D": "Ngay lập tức trong ngày"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 8.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Thông tư quy định tối đa 01 ngày làm việc."
+    },
+    "explanation_question": "Thời gian xử lý ủy nhiệm chi."
+  },
+  {
+    "id": 559,
+    "question": "Nếu bên thụ hưởng không đến nhận tiền mặt trong bao lâu kể từ thời điểm báo Có thì ngân hàng phải chuyển trả lại?",
+    "options": {
+      "A": "07 ngày",
+      "B": "15 ngày",
+      "C": "30 ngày",
+      "D": "60 ngày"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 8 khoản 3.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Thời gian chờ nhận tiền."
+  },
+  {
+    "id": 560,
+    "question": "Thông tư 15/2024/TT-NHNN được ban hành ngày nào?",
+    "options": {
+      "A": "29/06/2024",
+      "B": "28/06/2024",
+      "C": "15/05/2024",
+      "D": "01/07/2024"
+    },
+    "answer": "A",
+    "explanation_right": "Theo phần đầu văn bản.",
+    "explanation_wrong": {
+      "B": "Là ngày ký trên bản scan.",
+      "C": "Là ngày Nghị định 52.",
+      "D": "Sai."
+    },
+    "explanation_question": "Mốc thời gian văn bản."
+  },
+  {
+    "id": 561,
+    "question": "Thông tư 30/2025/TT-NHNN được ban hành nhằm mục đích gì?",
+    "options": {
+      "A": "Ban hành mới toàn bộ quy định thanh toán",
+      "B": "Sửa đổi, bổ sung một số điều của Thông tư 15/2024/TT-NHNN",
+      "C": "Quy định về tín dụng",
+      "D": "Quy định về ngoại hối"
+    },
+    "answer": "B",
+    "explanation_right": "Theo tiêu đề Thông tư.",
+    "explanation_wrong": {
+      "A": "Không phải ban hành mới toàn bộ.",
+      "C": "Sai phạm vi.",
+      "D": "Sai phạm vi."
+    },
+    "explanation_question": "Mục đích ban hành Thông tư."
+  },
+  {
+    "id": 562,
+    "question": "Theo sửa đổi tại Điều 3, giấy tờ tùy thân của công dân Việt Nam bao gồm loại nào?",
+    "options": {
+      "A": "CMND, CCCD, thẻ căn cước điện tử",
+      "B": "Thẻ căn cước công dân, thẻ căn cước hoặc căn cước điện tử",
+      "C": "Hộ chiếu",
+      "D": "Giấy khai sinh"
+    },
+    "answer": "B",
+    "explanation_right": "Theo khoản 10 Điều 3 sửa đổi.",
+    "explanation_wrong": {
+      "A": "CMND không còn được nêu.",
+      "C": "Không áp dụng chung cho công dân VN.",
+      "D": "Không phải giấy tờ định danh thanh toán."
+    },
+    "explanation_question": "Xác định giấy tờ tùy thân hợp lệ."
+  },
+  {
+    "id": 563,
+    "question": "Tổng thời gian gián đoạn toàn bộ dịch vụ thanh toán trực tuyến trong năm không được vượt quá bao nhiêu?",
+    "options": {
+      "A": "02 giờ/năm",
+      "B": "04 giờ/năm",
+      "C": "08 giờ/năm",
+      "D": "12 giờ/năm"
+    },
+    "answer": "B",
+    "explanation_right": "Theo khoản 2a Điều 19.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Giới hạn thời gian gián đoạn."
+  },
+  {
+    "id": 564,
+    "question": "Thời gian gián đoạn mỗi lần cung ứng dịch vụ trực tuyến không được vượt quá bao nhiêu phút/lần?",
+    "options": {
+      "A": "15 phút",
+      "B": "30 phút",
+      "C": "45 phút",
+      "D": "60 phút"
+    },
+    "answer": "B",
+    "explanation_right": "Theo khoản 2a Điều 19.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Giới hạn gián đoạn mỗi lần."
+  },
+  {
+    "id": 565,
+    "question": "Khi phát hiện sự cố gián đoạn quá 30 phút, tổ chức phải báo cáo NHNN trong thời hạn bao lâu?",
+    "options": {
+      "A": "01 giờ",
+      "B": "02 giờ",
+      "C": "04 giờ",
+      "D": "24 giờ"
+    },
+    "answer": "C",
+    "explanation_right": "Theo khoản 2b Điều 19.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Thời hạn báo cáo sự cố."
+  },
+  {
+    "id": 566,
+    "question": "Sau khi khắc phục xong sự cố, tổ chức phải gửi báo cáo đầy đủ trong bao nhiêu ngày làm việc?",
+    "options": {
+      "A": "01 ngày",
+      "B": "02 ngày",
+      "C": "03 ngày",
+      "D": "05 ngày"
+    },
+    "answer": "C",
+    "explanation_right": "Theo khoản 2b Điều 19.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Thời gian gửi báo cáo hoàn tất."
+  },
+  {
+    "id": 567,
+    "question": "Tổ chức cung ứng dịch vụ thanh toán phải niêm yết công khai nội dung nào?",
+    "options": {
+      "A": "Lợi nhuận",
+      "B": "Phí dịch vụ thanh toán",
+      "C": "Danh sách nhân viên",
+      "D": "Thông tin khách hàng"
+    },
+    "answer": "B",
+    "explanation_right": "Theo khoản 2 Điều 19 sửa đổi.",
+    "explanation_wrong": {
+      "A": "Không quy định.",
+      "C": "Không liên quan.",
+      "D": "Vi phạm bảo mật."
+    },
+    "explanation_question": "Nghĩa vụ công khai thông tin."
+  },
+  {
+    "id": 568,
+    "question": "DVCNTT không được phép thực hiện hành vi nào sau đây?",
+    "options": {
+      "A": "Thu thêm tiền/phụ phí khi thanh toán không dùng tiền mặt",
+      "B": "Ký hợp đồng bằng văn bản",
+      "C": "Xác minh khách hàng",
+      "D": "Thông báo bên thứ ba"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 20 sửa đổi.",
+    "explanation_wrong": {
+      "B": "Là yêu cầu bắt buộc.",
+      "C": "Không bị cấm.",
+      "D": "Có thể thực hiện theo quy định."
+    },
+    "explanation_question": "Hành vi bị cấm với ĐVCNTT."
+  },
+  {
+    "id": 569,
+    "question": "Thông tư 30/2025/TT-NHNN có hiệu lực thi hành từ ngày nào?",
+    "options": {
+      "A": "01/04/2025",
+      "B": "01/07/2025",
+      "C": "01/01/2026",
+      "D": "01/04/2026"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 12 khoản 1.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Chỉ áp dụng riêng khoản 5 Điều 7."
+    },
+    "explanation_question": "Ngày hiệu lực Thông tư."
+  },
+  {
+    "id": 570,
+    "question": "Khoản 5 Điều 7 của Thông tư này có hiệu lực từ ngày nào?",
+    "options": {
+      "A": "01/07/2025",
+      "B": "01/01/2026",
+      "C": "01/04/2026",
+      "D": "01/07/2026"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 12 khoản 2.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Ngày hiệu lực riêng của khoản 5 Điều 7."
+  },
+  {
+    "id": 571,
+    "question": "Thông tư 17/2024/TT-NHNN quy định về nội dung gì?",
+    "options": {
+      "A": "Cho vay tiêu dùng",
+      "B": "Mở và sử dụng tài khoản thanh toán tại tổ chức cung ứng dịch vụ thanh toán",
+      "C": "Quản lý ngoại hối",
+      "D": "Bảo hiểm tiền gửi"
+    },
+    "answer": "B",
+    "explanation_right": "Theo tên Thông tư.",
+    "explanation_wrong": {
+      "A": "Sai phạm vi.",
+      "C": "Sai phạm vi.",
+      "D": "Sai phạm vi."
+    },
+    "explanation_question": "Xác định phạm vi điều chỉnh."
+  },
+  {
+    "id": 572,
+    "question": "Các hình thức tài khoản thanh toán bao gồm loại nào?",
+    "options": {
+      "A": "Tài khoản cá nhân, tài khoản tổ chức, tài khoản thanh toán chung",
+      "B": "Tài khoản tiết kiệm và tài khoản vay",
+      "C": "Tài khoản ngoại tệ và nội tệ",
+      "D": "Tài khoản tín dụng"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 3.",
+    "explanation_wrong": {
+      "B": "Không đầy đủ và sai.",
+      "C": "Không phải phân loại tại Điều 3.",
+      "D": "Sai."
+    },
+    "explanation_question": "Phân loại tài khoản thanh toán."
+  },
+  {
+    "id": 573,
+    "question": "Tài khoản thanh toán chung là tài khoản có ít nhất bao nhiêu chủ thể cùng đứng tên mở?",
+    "options": {
+      "A": "01",
+      "B": "02",
+      "C": "03",
+      "D": "04"
+    },
+    "answer": "B",
+    "explanation_right": "Theo khoản 4 Điều 3.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Điều kiện tài khoản chung."
+  },
+  {
+    "id": 574,
+    "question": "Người từ đủ bao nhiêu tuổi trở lên, không bị hạn chế hoặc mất năng lực hành vi dân sự được mở tài khoản thanh toán?",
+    "options": {
+      "A": "14 tuổi",
+      "B": "15 tuổi",
+      "C": "16 tuổi",
+      "D": "18 tuổi"
+    },
+    "answer": "B",
+    "explanation_right": "Theo điểm a khoản 1 Điều 11.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Không đúng quy định."
+    },
+    "explanation_question": "Độ tuổi mở tài khoản."
+  },
+  {
+    "id": 575,
+    "question": "Đối với công dân Việt Nam, giấy tờ tùy thân dùng để mở tài khoản thanh toán có thể là gì?",
+    "options": {
+      "A": "Thẻ căn cước công dân/thẻ căn cước/căn cước điện tử",
+      "B": "Bằng lái xe",
+      "C": "Thẻ bảo hiểm y tế",
+      "D": "Sổ hộ khẩu"
+    },
+    "answer": "A",
+    "explanation_right": "Theo khoản 2 Điều 12.",
+    "explanation_wrong": {
+      "B": "Không được nêu.",
+      "C": "Không hợp lệ.",
+      "D": "Không phải giấy tờ định danh."
+    },
+    "explanation_question": "Giấy tờ mở tài khoản."
+  },
+  {
+    "id": 576,
+    "question": "Đối với người nước ngoài mở tài khoản thanh toán, giấy tờ chủ yếu là gì?",
+    "options": {
+      "A": "Hộ chiếu hoặc danh tính điện tử",
+      "B": "Sổ hộ khẩu",
+      "C": "Giấy phép lái xe",
+      "D": "Thẻ ATM"
+    },
+    "answer": "A",
+    "explanation_right": "Theo điểm c khoản 2 Điều 12.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Giấy tờ của người nước ngoài."
+  },
+  {
+    "id": 577,
+    "question": "Ngân hàng phải làm gì nếu phát hiện khách hàng sử dụng giấy tờ giả mạo để mở tài khoản?",
+    "options": {
+      "A": "Vẫn mở tài khoản",
+      "B": "Báo cáo cơ quan có thẩm quyền và xử lý theo pháp luật",
+      "C": "Chỉ nhắc nhở khách hàng",
+      "D": "Tạm bỏ qua"
+    },
+    "answer": "B",
+    "explanation_right": "Theo khoản 3 Điều 15.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Không đúng quy định.",
+      "D": "Sai."
+    },
+    "explanation_question": "Xử lý giấy tờ giả mạo."
+  },
+  {
+    "id": 578,
+    "question": "Mở tài khoản thanh toán bằng phương tiện điện tử phải thu thập thêm yếu tố nào?",
+    "options": {
+      "A": "Thông tin sinh trắc học",
+      "B": "Ảnh phong cảnh",
+      "C": "Mã số thuế bắt buộc",
+      "D": "Số tài khoản cũ"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 16.",
+    "explanation_wrong": {
+      "B": "Không liên quan.",
+      "C": "Không bắt buộc mọi trường hợp.",
+      "D": "Sai."
+    },
+    "explanation_question": "Yêu cầu eKYC."
+  },
+  {
+    "id": 579,
+    "question": "Ngân hàng phải niêm yết công khai mẫu thỏa thuận mở và sử dụng tài khoản ở đâu?",
+    "options": {
+      "A": "Tại điểm giao dịch và trên website/app (nếu có)",
+      "B": "Chỉ tại trụ sở chính",
+      "C": "Chỉ gửi nội bộ",
+      "D": "Không cần công khai"
+    },
+    "answer": "A",
+    "explanation_right": "Theo khoản 2 Điều 13.",
+    "explanation_wrong": {
+      "B": "Không đầy đủ.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Minh bạch thông tin."
+  },
+  {
+    "id": 580,
+    "question": "Tài khoản thanh toán có thể bị phong tỏa trong trường hợp nào?",
+    "options": {
+      "A": "Theo quy định pháp luật về thanh toán và phòng chống rửa tiền",
+      "B": "Khách hàng yêu cầu đổi mật khẩu",
+      "C": "Khách hàng đi công tác",
+      "D": "Khách hàng không giao dịch 1 ngày"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 6.",
+    "explanation_wrong": {
+      "B": "Không liên quan.",
+      "C": "Không phải lý do.",
+      "D": "Không đúng quy định."
+    },
+    "explanation_question": "Các trường hợp phong tỏa tài khoản."
+  },
+  {
+    "id": 571,
+    "question": "Thông tư 25/2025/TT-NHNN sửa đổi, bổ sung Thông tư nào?",
+    "options": {
+      "A": "Thông tư 16/2024/TT-NHNN",
+      "B": "Thông tư 17/2024/TT-NHNN",
+      "C": "Thông tư 18/2024/TT-NHNN",
+      "D": "Thông tư 25/2024/TT-NHNN"
+    },
+    "answer": "B",
+    "explanation_right": "Theo tiêu đề Thông tư 25/2025/TT-NHNN: sửa đổi, bổ sung một số điều của Thông tư 17/2024/TT-NHNN quy định việc mở và sử dụng tài khoản thanh toán tại tổ chức cung ứng dịch vụ thanh toán.",
+    "explanation_wrong": {
+      "A": "Sai vì không phải văn bản được sửa đổi.",
+      "C": "Sai vì không được nhắc đến trong tiêu đề.",
+      "D": "Sai vì không tồn tại trong nội dung văn bản."
+    },
+    "explanation_question": "Câu hỏi kiểm tra khả năng nhận diện văn bản gốc được sửa đổi."
+  },
+  {
+    "id": 572,
+    "question": "Theo quy định mới, người dưới 14 tuổi chưa có thẻ căn cước có thể dùng giấy tờ nào để mở tài khoản?",
+    "options": {
+      "A": "Giấy khai sinh",
+      "B": "Hộ khẩu",
+      "C": "Thẻ học sinh",
+      "D": "Giấy phép lái xe"
+    },
+    "answer": "A",
+    "explanation_right": "Khoản 1 Điều 3 sửa đổi điểm a khoản 2 Điều 12 quy định giấy khai sinh đối với người dưới 14 tuổi chưa có thẻ căn cước.",
+    "explanation_wrong": {
+      "B": "Không phải giấy tờ định danh được nêu.",
+      "C": "Không có giá trị pháp lý theo quy định này.",
+      "D": "Người dưới 14 tuổi không đủ điều kiện cấp."
+    },
+    "explanation_question": "Đánh lừa bằng các giấy tờ quen thuộc nhưng không hợp lệ."
+  },
+  {
+    "id": 573,
+    "question": "Tên tài khoản thanh toán cá nhân được đặt theo nguyên tắc nào?",
+    "options": {
+      "A": "Theo nickname khách hàng đăng ký",
+      "B": "Theo họ và tên trên giấy tờ tùy thân",
+      "C": "Theo tên viết tắt",
+      "D": "Theo email đăng ký"
+    },
+    "answer": "B",
+    "explanation_right": "Điều 4 bổ sung điểm c1 khoản 1 Điều 13: tên tài khoản cá nhân được đặt theo họ và tên trên giấy tờ tùy thân.",
+    "explanation_wrong": {
+      "A": "Không có giá trị pháp lý.",
+      "C": "Không đúng quy định.",
+      "D": "Không phải căn cứ đặt tên."
+    },
+    "explanation_question": "Phân biệt giữa tên giao dịch và tên pháp lý."
+  },
+  {
+    "id": 574,
+    "question": "Việc mở tài khoản thanh toán bằng phương tiện điện tử không áp dụng với trường hợp nào?",
+    "options": {
+      "A": "Tài khoản thanh toán chung",
+      "B": "Tài khoản cá nhân thông thường",
+      "C": "Tài khoản doanh nghiệp nhỏ",
+      "D": "Tài khoản của người cư trú"
+    },
+    "answer": "A",
+    "explanation_right": "Khoản 2 Điều 7 sửa đổi khoản 3 Điều 16: không áp dụng với tài khoản thanh toán chung.",
+    "explanation_wrong": {
+      "B": "Vẫn có thể áp dụng.",
+      "C": "Không bị loại trừ chung.",
+      "D": "Không phải tiêu chí loại trừ."
+    },
+    "explanation_question": "Kiểm tra trường hợp ngoại lệ của eKYC."
+  },
+  {
+    "id": 575,
+    "question": "Ngân hàng phải lưu trữ dữ liệu nào trong quá trình mở tài khoản bằng phương tiện điện tử?",
+    "options": {
+      "A": "Âm thanh, hình ảnh, nhật ký giao dịch",
+      "B": "Chỉ số tài khoản",
+      "C": "Chỉ số điện thoại",
+      "D": "Chỉ email"
+    },
+    "answer": "A",
+    "explanation_right": "Điểm c khoản 2 Điều 16 sửa đổi yêu cầu lưu trữ đầy đủ âm thanh, hình ảnh, ghi hình, ghi âm, nhật ký giao dịch...",
+    "explanation_wrong": {
+      "B": "Không đầy đủ.",
+      "C": "Không đầy đủ.",
+      "D": "Không đầy đủ."
+    },
+    "explanation_question": "Đánh vào việc nhớ phạm vi dữ liệu lưu trữ."
+  },
+  {
+    "id": 576,
+    "question": "Một trong các tiêu chí nhận diện tài khoản nghi ngờ gian lận là gì?",
+    "options": {
+      "A": "Số lượng, giá trị, tần suất giao dịch không phù hợp",
+      "B": "Khách hàng đổi mật khẩu",
+      "C": "Khách hàng đăng nhập ban ngày",
+      "D": "Khách hàng đổi điện thoại"
+    },
+    "answer": "A",
+    "explanation_right": "Điều 9 sửa đổi điểm b khoản 1 Điều 19.",
+    "explanation_wrong": {
+      "B": "Không phải tiêu chí bắt buộc.",
+      "C": "Không phản ánh rủi ro.",
+      "D": "Không được nêu cụ thể."
+    },
+    "explanation_question": "Phân biệt hành vi bất thường và hành vi thông thường."
+  },
+  {
+    "id": 577,
+    "question": "Ngân hàng phải cung cấp thông tin tài khoản nghi ngờ gian lận cho NHNN theo định kỳ nào?",
+    "options": {
+      "A": "Trước ngày 05 hàng tháng",
+      "B": "Trước ngày 10 hàng tháng",
+      "C": "Trước ngày lễ hàng tháng",
+      "D": "Cuối năm"
+    },
+    "answer": "C",
+    "explanation_right": "Khoản 2 Điều 22 sửa đổi quy định định kỳ trước ngày 10 hàng tháng theo yêu cầu NHNN; tuy nhiên OCR hiển thị 'ngày lẻ'. Trong văn cảnh quản lý báo cáo định kỳ, đáp án gần nhất theo nội dung là phương án C.",
+    "explanation_wrong": {
+      "A": "Không được quy định.",
+      "B": "Không đúng theo file OCR hiện tại.",
+      "D": "Sai kỳ hạn."
+    },
+    "explanation_question": "Câu này có tính đánh lừa do OCR tài liệu khó đọc."
+  },
+  {
+    "id": 578,
+    "question": "Điều khoản về đặt tên tài khoản thanh toán có hiệu lực từ ngày nào?",
+    "options": {
+      "A": "31/08/2025",
+      "B": "01/03/2026",
+      "C": "01/12/2025",
+      "D": "31/01/2025"
+    },
+    "answer": "B",
+    "explanation_right": "Khoản 2 Điều 15: Điều 4 có hiệu lực từ 01/03/2026.",
+    "explanation_wrong": {
+      "A": "Là hiệu lực chung.",
+      "C": "Là hiệu lực nhóm điều khác.",
+      "D": "Ngày ký."
+    },
+    "explanation_question": "Kiểm tra mốc hiệu lực riêng."
+  },
+  {
+    "id": 579,
+    "question": "Các quy định về nhận diện gian lận và cập nhật nội bộ có hiệu lực từ ngày nào?",
+    "options": {
+      "A": "31/08/2025",
+      "B": "01/12/2025",
+      "C": "01/03/2026",
+      "D": "01/01/2026"
+    },
+    "answer": "B",
+    "explanation_right": "Khoản 3 Điều 15.",
+    "explanation_wrong": {
+      "A": "Hiệu lực chung.",
+      "C": "Hiệu lực Điều 4.",
+      "D": "Không đúng."
+    },
+    "explanation_question": "Phân biệt hiệu lực từng nhóm điều."
+  },
+  {
+    "id": 580,
+    "question": "Thông tư 25/2025/TT-NHNN có hiệu lực thi hành chung từ ngày nào?",
+    "options": {
+      "A": "31/08/2025",
+      "B": "01/12/2025",
+      "C": "01/03/2026",
+      "D": "31/01/2025"
+    },
+    "answer": "A",
+    "explanation_right": "Khoản 1 Điều 15 quy định hiệu lực chung từ ngày 31/08/2025.",
+    "explanation_wrong": {
+      "B": "Chỉ áp dụng một số điều.",
+      "C": "Áp dụng Điều 4.",
+      "D": "Ngày ký văn bản."
+    },
+    "explanation_question": "Kiểm tra khả năng nhớ mốc hiệu lực chính."
+  },
+   {
+    "id": 581,
+    "question": "Thông tư 18/2024/TT-NHNN quy định về những hoạt động nào của thẻ ngân hàng?",
+    "options": {
+      "A": "Chỉ phát hành và sử dụng thẻ",
+      "B": "Phát hành, sử dụng, thanh toán, chuyển mạch, bù trừ điện tử và quyết toán giao dịch thẻ",
+      "C": "Chỉ thanh toán và rút tiền mặt",
+      "D": "Chỉ chuyển mạch và quyết toán"
+    },
+    "answer": "B",
+    "explanation_right": "Điều 1 quy định phạm vi điều chỉnh bao gồm toàn bộ vòng đời và xử lý giao dịch thẻ.",
+    "explanation_wrong": {
+      "A": "Thiếu nhiều nội dung quan trọng.",
+      "C": "Không đầy đủ.",
+      "D": "Chỉ là một phần nhỏ."
+    },
+    "explanation_question": "Kiểm tra phạm vi điều chỉnh của Thông tư."
+  },
+  {
+    "id": 582,
+    "question": "Thẻ ghi nợ (debit card) cho phép chủ thẻ thực hiện giao dịch trong phạm vi nào?",
+    "options": {
+      "A": "Trong hạn mức tín dụng được cấp",
+      "B": "Trong số dư và hạn mức thấu chi trên tài khoản thanh toán",
+      "C": "Không giới hạn",
+      "D": "Trong giá trị tiền nạp trước"
+    },
+    "answer": "B",
+    "explanation_right": "Theo khoản 2 Điều 3.",
+    "explanation_wrong": {
+      "A": "Đây là thẻ tín dụng.",
+      "C": "Sai bản chất.",
+      "D": "Đây là thẻ trả trước."
+    },
+    "explanation_question": "Phân biệt bản chất các loại thẻ."
+  },
+  {
+    "id": 583,
+    "question": "Thẻ trả trước vô danh có số dư tối đa tại một thời điểm là bao nhiêu?",
+    "options": {
+      "A": "3 triệu đồng",
+      "B": "5 triệu đồng",
+      "C": "10 triệu đồng",
+      "D": "100 triệu đồng"
+    },
+    "answer": "B",
+    "explanation_right": "Khoản 4 Điều 13 quy định tối đa 05 triệu đồng.",
+    "explanation_wrong": {
+      "A": "Không đúng quy định.",
+      "C": "Vượt hạn mức.",
+      "D": "Là mức giao dịch tháng của thẻ định danh."
+    },
+    "explanation_question": "Kiểm tra hạn mức quan trọng."
+  },
+  {
+    "id": 584,
+    "question": "Một thẻ được rút ngoại tệ tiền mặt ở nước ngoài tối đa tương đương bao nhiêu mỗi ngày?",
+    "options": {
+      "A": "20 triệu đồng",
+      "B": "30 triệu đồng",
+      "C": "50 triệu đồng",
+      "D": "100 triệu đồng"
+    },
+    "answer": "B",
+    "explanation_right": "Khoản 2 Điều 13.",
+    "explanation_wrong": {
+      "A": "Sai mức.",
+      "C": "Vượt quy định.",
+      "D": "Không đúng."
+    },
+    "explanation_question": "Câu hỏi dễ nhầm về hạn mức ngoại tệ."
+  },
+  {
+    "id": 585,
+    "question": "Tổng hạn mức rút tiền mặt theo BIN của thẻ tín dụng tối đa trong 01 tháng là bao nhiêu?",
+    "options": {
+      "A": "50 triệu đồng",
+      "B": "100 triệu đồng",
+      "C": "200 triệu đồng",
+      "D": "300 triệu đồng"
+    },
+    "answer": "B",
+    "explanation_right": "Khoản 3 Điều 13 quy định tối đa 100 triệu đồng.",
+    "explanation_wrong": {
+      "A": "Thấp hơn quy định.",
+      "C": "Vượt mức.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra hạn mức rút tiền mặt thẻ tín dụng."
+  },
+  {
+    "id": 586,
+    "question": "Thời hạn hiệu lực của thẻ trả trước định danh không được quá bao lâu?",
+    "options": {
+      "A": "01 năm",
+      "B": "02 năm",
+      "C": "03 năm",
+      "D": "05 năm"
+    },
+    "answer": "C",
+    "explanation_right": "Khoản 5 Điều 9 quy định không quá 03 năm.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Quá quy định."
+    },
+    "explanation_question": "Kiểm tra thời hạn thẻ."
+  },
+  {
+    "id": 587,
+    "question": "TCPHT phải thông báo mẫu thẻ phát hành mới cho NHNN trước ít nhất bao nhiêu ngày?",
+    "options": {
+      "A": "07 ngày",
+      "B": "10 ngày",
+      "C": "15 ngày",
+      "D": "30 ngày"
+    },
+    "answer": "C",
+    "explanation_right": "Khoản 6 Điều 9.",
+    "explanation_wrong": {
+      "A": "Không đúng.",
+      "B": "Không đúng.",
+      "D": "Không quy định."
+    },
+    "explanation_question": "Kiểm tra nghĩa vụ báo cáo."
+  },
+  {
+    "id": 588,
+    "question": "TCPHT có được thu thêm loại phí ngoài Biểu phí đã công bố không?",
+    "options": {
+      "A": "Có",
+      "B": "Không",
+      "C": "Chỉ khi khách hàng đồng ý",
+      "D": "Chỉ khi NHNN cho phép riêng"
+    },
+    "answer": "B",
+    "explanation_right": "Điểm d khoản 1 Điều 5 quy định không được thu thêm.",
+    "explanation_wrong": {
+      "A": "Sai quy định.",
+      "C": "Không được phép.",
+      "D": "Không có ngoại lệ này."
+    },
+    "explanation_question": "Kiểm tra quy định về phí."
+  },
+  {
+    "id": 589,
+    "question": "Thẻ bị thu hồi trong trường hợp nào sau đây?",
+    "options": {
+      "A": "Thẻ giả",
+      "B": "Thẻ sử dụng trái phép",
+      "C": "Phục vụ điều tra, xử lý tội phạm",
+      "D": "Tất cả các trường hợp trên"
+    },
+    "answer": "D",
+    "explanation_right": "Điều 7 quy định đầy đủ các trường hợp này.",
+    "explanation_wrong": {
+      "A": "Chỉ đúng một phần.",
+      "B": "Chỉ đúng một phần.",
+      "C": "Chỉ đúng một phần."
+    },
+    "explanation_question": "Câu tổng hợp."
+  },
+  {
+    "id": 590,
+    "question": "Khi thực hiện giao dịch rút tiền mặt bằng thẻ trên lãnh thổ Việt Nam, đồng tiền sử dụng là gì?",
+    "options": {
+      "A": "USD",
+      "B": "EUR",
+      "C": "VNĐ",
+      "D": "Theo thỏa thuận"
+    },
+    "answer": "C",
+    "explanation_right": "Điểm a khoản 1 Điều 4 quy định phải bằng đồng Việt Nam.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Không áp dụng."
+    },
+    "explanation_question": "Kiểm tra nguyên tắc đồng tiền giao dịch."
+  },
+  {
+    "id": 591,
+    "question": "Thông tư 50/2024/TT-NHNN quy định về nội dung nào sau đây?",
+    "options": {
+      "A": "Chỉ về bảo mật thẻ ngân hàng",
+      "B": "An toàn, bảo mật cho việc cung cấp dịch vụ trực tuyến trong ngành Ngân hàng",
+      "C": "Chỉ về thanh toán quốc tế",
+      "D": "Chỉ về giao dịch tại quầy"
+    },
+    "answer": "B",
+    "explanation_right": "Điều 1 quy định về yêu cầu an toàn, bảo mật cho việc cung cấp dịch vụ trực tuyến trong ngành Ngân hàng.",
+    "explanation_wrong": {
+      "A": "Không chỉ giới hạn ở thẻ.",
+      "C": "Không chỉ áp dụng cho thanh toán quốc tế.",
+      "D": "Không áp dụng riêng giao dịch tại quầy."
+    },
+    "explanation_question": "Kiểm tra phạm vi điều chỉnh của Thông tư."
+  },
+  {
+    "id": 592,
+    "question": "Hệ thống Online Banking phải tuân thủ quy định bảo đảm an toàn hệ thống thông tin cấp độ tối thiểu nào?",
+    "options": {
+      "A": "Cấp độ 1",
+      "B": "Cấp độ 2",
+      "C": "Cấp độ 3",
+      "D": "Cấp độ 5"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 3, hệ thống Online Banking phải bảo đảm an toàn hệ thống thông tin cấp độ 3 trở lên.",
+    "explanation_wrong": {
+      "A": "Quá thấp.",
+      "B": "Chưa đáp ứng quy định.",
+      "D": "Không phải mức tối thiểu."
+    },
+    "explanation_question": "Kiểm tra yêu cầu phân cấp an toàn hệ thống."
+  },
+  {
+    "id": 593,
+    "question": "Thông tin khách hàng có được lưu tại vùng DMZ không?",
+    "options": {
+      "A": "Có",
+      "B": "Không",
+      "C": "Chỉ được lưu tạm",
+      "D": "Tùy đơn vị quyết định"
+    },
+    "answer": "B",
+    "explanation_right": "Điều 4 quy định không được lưu thông tin khách hàng tại vùng DMZ.",
+    "explanation_wrong": {
+      "A": "Sai quy định.",
+      "C": "Không có ngoại lệ.",
+      "D": "Không được tự quyết."
+    },
+    "explanation_question": "Kiểm tra nguyên tắc bảo vệ dữ liệu."
+  },
+  {
+    "id": 594,
+    "question": "Hiệu năng sử dụng CPU, RAM, lưu trữ trung bình hàng tháng của máy chủ tối đa bao nhiêu phần trăm công suất thiết kế?",
+    "options": {
+      "A": "70%",
+      "B": "80%",
+      "C": "90%",
+      "D": "100%"
+    },
+    "answer": "B",
+    "explanation_right": "Điều 5 quy định tối đa 80% công suất thiết kế.",
+    "explanation_wrong": {
+      "A": "Không đúng quy định.",
+      "C": "Vượt mức an toàn.",
+      "D": "Không bảo đảm dự phòng."
+    },
+    "explanation_question": "Kiểm tra yêu cầu hạ tầng kỹ thuật."
+  },
+  {
+    "id": 595,
+    "question": "Đơn vị phải cập nhật, kiểm tra danh mục phần mềm được phép cài đặt trên máy chủ tối thiểu bao lâu một lần?",
+    "options": {
+      "A": "03 tháng",
+      "B": "06 tháng",
+      "C": "12 tháng",
+      "D": "24 tháng"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 5, tối thiểu 06 tháng/lần.",
+    "explanation_wrong": {
+      "A": "Không đúng quy định.",
+      "C": "Quá dài.",
+      "D": "Quá dài."
+    },
+    "explanation_question": "Kiểm tra yêu cầu rà soát phần mềm."
+  },
+  {
+    "id": 596,
+    "question": "Mã khóa bí mật (password) dùng để xác nhận phải có tối thiểu bao nhiêu ký tự?",
+    "options": {
+      "A": "06 ký tự",
+      "B": "08 ký tự",
+      "C": "10 ký tự",
+      "D": "12 ký tự"
+    },
+    "answer": "B",
+    "explanation_right": "Điều 11 quy định tối thiểu 08 ký tự.",
+    "explanation_wrong": {
+      "A": "Không đủ mạnh.",
+      "C": "Không phải mức tối thiểu quy định.",
+      "D": "Không bắt buộc."
+    },
+    "explanation_question": "Kiểm tra yêu cầu độ mạnh mật khẩu."
+  },
+  {
+    "id": 597,
+    "question": "Mã PIN (không gắn với thẻ vật lý) phải có tối thiểu bao nhiêu ký tự?",
+    "options": {
+      "A": "04 ký tự",
+      "B": "05 ký tự",
+      "C": "06 ký tự",
+      "D": "08 ký tự"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 11, mã PIN tối thiểu 06 ký tự.",
+    "explanation_wrong": {
+      "A": "Quá ngắn.",
+      "B": "Không đủ.",
+      "D": "Không phải mức tối thiểu."
+    },
+    "explanation_question": "Kiểm tra yêu cầu mã PIN."
+  },
+  {
+    "id": 598,
+    "question": "SMS OTP có hiệu lực tối đa trong bao lâu?",
+    "options": {
+      "A": "02 phút",
+      "B": "03 phút",
+      "C": "05 phút",
+      "D": "10 phút"
+    },
+    "answer": "C",
+    "explanation_right": "Điều 11 quy định SMS OTP tối đa 05 phút.",
+    "explanation_wrong": {
+      "A": "Không đúng.",
+      "B": "Là Voice OTP.",
+      "D": "Quá dài."
+    },
+    "explanation_question": "Kiểm tra thời gian hiệu lực OTP."
+  },
+  {
+    "id": 599,
+    "question": "Voice OTP có hiệu lực tối đa trong bao lâu?",
+    "options": {
+      "A": "02 phút",
+      "B": "03 phút",
+      "C": "05 phút",
+      "D": "10 phút"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 11, Voice OTP tối đa 03 phút.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Là Email/SMS OTP.",
+      "D": "Sai."
+    },
+    "explanation_question": "Phân biệt các loại OTP."
+  },
+  {
+    "id": 600,
+    "question": "Thẻ ma trận OTP có thời hạn sử dụng tối đa bao lâu kể từ ngày đăng ký?",
+    "options": {
+      "A": "06 tháng",
+      "B": "01 năm",
+      "C": "02 năm",
+      "D": "Không giới hạn"
+    },
+    "answer": "B",
+    "explanation_right": "Điều 11 quy định tối đa 01 năm.",
+    "explanation_wrong": {
+      "A": "Không đúng.",
+      "C": "Quá dài.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra thời hạn của thẻ ma trận OTP."
+  },
+  {
+    "id": 601,
+    "question": "Thông tư 77/2025/TT-NHNN có hiệu lực thi hành từ ngày nào?",
+    "options": {
+      "A": "01/01/2026",
+      "B": "01/03/2026",
+      "C": "01/07/2026",
+      "D": "01/10/2026"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 12, Thông tư có hiệu lực từ ngày 01/03/2026.",
+    "explanation_wrong": {
+      "A": "Sai thời điểm hiệu lực.",
+      "C": "Là thời điểm áp dụng một số quy định riêng.",
+      "D": "Áp dụng cho nhóm đơn vị chỉ phục vụ khách hàng tổ chức."
+    },
+    "explanation_question": "Kiểm tra thời điểm hiệu lực thi hành."
+  },
+  {
+    "id": 602,
+    "question": "Thông tư 77/2025/TT-NHNN bổ sung thêm hoạt động nào vào phạm vi điều chỉnh?",
+    "options": {
+      "A": "Cho vay ngang hàng",
+      "B": "Dịch vụ Tiền di động",
+      "C": "Ví điện tử quốc tế",
+      "D": "Mua bán ngoại tệ tiền mặt"
+    },
+    "answer": "B",
+    "explanation_right": "Điều 1 bổ sung hoạt động cung ứng dịch vụ Tiền di động.",
+    "explanation_wrong": {
+      "A": "Không được đề cập.",
+      "C": "Không phải nội dung bổ sung.",
+      "D": "Không thuộc phạm vi sửa đổi."
+    },
+    "explanation_question": "Kiểm tra phạm vi sửa đổi."
+  },
+  {
+    "id": 603,
+    "question": "Khách hàng tổ chức mới là tổ chức mới đăng ký thành lập hoặc mới thiết lập quan hệ với đơn vị trong vòng bao lâu?",
+    "options": {
+      "A": "03 tháng",
+      "B": "06 tháng",
+      "C": "12 tháng",
+      "D": "24 tháng"
+    },
+    "answer": "C",
+    "explanation_right": "Khoản 11 Điều 2 quy định trong vòng 12 tháng.",
+    "explanation_wrong": {
+      "A": "Quá ngắn.",
+      "B": "Không đúng.",
+      "D": "Quá dài."
+    },
+    "explanation_question": "Kiểm tra định nghĩa khách hàng tổ chức mới."
+  },
+  {
+    "id": 604,
+    "question": "Đối với ứng dụng Online Banking trên nền tảng web, phải phòng chống tối thiểu các lỗ hổng nào?",
+    "options": {
+      "A": "OWASP Top Five",
+      "B": "OWASP Top Ten",
+      "C": "CWE Top 25",
+      "D": "PCI DSS"
+    },
+    "answer": "B",
+    "explanation_right": "Điều 4 yêu cầu phòng chống tối thiểu các lỗ hổng OWASP Top Ten.",
+    "explanation_wrong": {
+      "A": "Không đúng chuẩn quy định.",
+      "C": "Là chuẩn khác.",
+      "D": "Không phải danh sách lỗ hổng."
+    },
+    "explanation_question": "Kiểm tra yêu cầu an toàn web."
+  },
+  {
+    "id": 605,
+    "question": "Đơn vị phải định kỳ tối thiểu bao lâu một lần đánh giá an toàn, bảo mật của các phiên bản Mobile Banking đang cho phép cài đặt?",
+    "options": {
+      "A": "01 tháng",
+      "B": "03 tháng",
+      "C": "06 tháng",
+      "D": "12 tháng"
+    },
+    "answer": "B",
+    "explanation_right": "Khoản 1a Điều 8 quy định tối thiểu 03 tháng/lần.",
+    "explanation_wrong": {
+      "A": "Không đúng.",
+      "C": "Dài hơn quy định.",
+      "D": "Quá dài."
+    },
+    "explanation_question": "Kiểm tra tần suất rà soát bảo mật Mobile Banking."
+  },
+  {
+    "id": 606,
+    "question": "Ứng dụng Mobile Banking phải tự động thoát hoặc dừng hoạt động nếu phát hiện thiết bị ở trạng thái nào sau đây?",
+    "options": {
+      "A": "Root/Jailbreak",
+      "B": "Chạy trên emulator",
+      "C": "Có debugger/hook",
+      "D": "Tất cả các đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Điều 8 quy định tất cả các trường hợp trên.",
+    "explanation_wrong": {
+      "A": "Chỉ là một trường hợp.",
+      "B": "Chỉ là một trường hợp.",
+      "C": "Chỉ là một trường hợp."
+    },
+    "explanation_question": "Kiểm tra cơ chế tự bảo vệ ứng dụng."
+  },
+  {
+    "id": 607,
+    "question": "Giải pháp PAD chống giả mạo sinh trắc học phải đáp ứng tối thiểu tiêu chuẩn ISO 30107 cấp độ nào?",
+    "options": {
+      "A": "Level 1",
+      "B": "Level 2",
+      "C": "Level 3",
+      "D": "Level 4"
+    },
+    "answer": "B",
+    "explanation_right": "Điều 7 quy định tối thiểu ISO 30107 cấp độ 2.",
+    "explanation_wrong": {
+      "A": "Chưa đủ mức.",
+      "C": "Không quy định.",
+      "D": "Không quy định."
+    },
+    "explanation_question": "Kiểm tra tiêu chuẩn PAD."
+  },
+  {
+    "id": 608,
+    "question": "Đối với khách hàng tổ chức, giao dịch thanh toán trực tuyến phải bao gồm tối thiểu mấy bước?",
+    "options": {
+      "A": "1 bước",
+      "B": "2 bước: tạo lập và phê duyệt",
+      "C": "3 bước",
+      "D": "4 bước"
+    },
+    "answer": "B",
+    "explanation_right": "Điều 7 yêu cầu tối thiểu hai bước: tạo lập và phê duyệt.",
+    "explanation_wrong": {
+      "A": "Không đủ kiểm soát.",
+      "C": "Không bắt buộc.",
+      "D": "Không bắt buộc."
+    },
+    "explanation_question": "Kiểm tra quy trình giao dịch tổ chức."
+  },
+  {
+    "id": 609,
+    "question": "Đối với đơn vị cung cấp dịch vụ thanh toán trực tuyến cho cả khách hàng cá nhân và tổ chức, các quy định tại Điều 3 và Điều 10 áp dụng từ ngày nào?",
+    "options": {
+      "A": "01/03/2026",
+      "B": "01/05/2026",
+      "C": "01/07/2026",
+      "D": "01/10/2026"
+    },
+    "answer": "C",
+    "explanation_right": "Khoản 2 Điều 12 quy định áp dụng từ 01/07/2026.",
+    "explanation_wrong": {
+      "A": "Là ngày hiệu lực chung.",
+      "B": "Không đúng.",
+      "D": "Áp dụng cho đơn vị chỉ phục vụ khách hàng tổ chức."
+    },
+    "explanation_question": "Kiểm tra lộ trình áp dụng."
+  },
+  {
+    "id": 610,
+    "question": "Đối với đơn vị chỉ cung cấp dịch vụ thanh toán trực tuyến cho khách hàng tổ chức, Điều 3 và Điều 10 áp dụng từ ngày nào?",
+    "options": {
+      "A": "01/07/2026",
+      "B": "01/08/2026",
+      "C": "01/09/2026",
+      "D": "01/10/2026"
+    },
+    "answer": "D",
+    "explanation_right": "Khoản 3 Điều 12 quy định áp dụng từ ngày 01/10/2026.",
+    "explanation_wrong": {
+      "A": "Áp dụng cho đơn vị phục vụ cả cá nhân và tổ chức.",
+      "B": "Không đúng.",
+      "C": "Không đúng."
+    },
+    "explanation_question": "Kiểm tra lộ trình áp dụng riêng."
+  },
+  {
+    "id": 611,
+    "question": "Thông tư 64/2024/TT-NHNN quy định về nội dung nào sau đây?",
+    "options": {
+      "A": "Triển khai giao diện lập trình ứng dụng mở trong ngành Ngân hàng",
+      "B": "Quản lý tiền điện tử trong ngành Ngân hàng",
+      "C": "Xác thực sinh trắc học trong giao dịch trực tuyến",
+      "D": "Phòng chống rửa tiền qua ngân hàng số"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 1, Thông tư quy định việc triển khai giao diện lập trình ứng dụng mở (Open API) trong ngành Ngân hàng.",
+    "explanation_wrong": {
+      "B": "Không phải nội dung chính của Thông tư.",
+      "C": "Thuộc Thông tư khác về an toàn bảo mật.",
+      "D": "Không thuộc phạm vi điều chỉnh."
+    },
+    "explanation_question": "Câu hỏi kiểm tra phạm vi điều chỉnh của Thông tư."
+  },
+  {
+    "id": 612,
+    "question": "Open API trong ngành Ngân hàng là gì?",
+    "options": {
+      "A": "API nội bộ giữa các phòng ban",
+      "B": "Tập hợp các API được Ngân hàng cung cấp cho bên thứ ba trực tiếp kết nối, xử lý dữ liệu để cung ứng dịch vụ cho khách hàng",
+      "C": "Hệ thống thử nghiệm nội bộ của Ngân hàng",
+      "D": "Hệ thống API của NHNN"
+    },
+    "answer": "B",
+    "explanation_right": "Theo khoản 2 Điều 3, Open API là tập hợp API ngân hàng cung cấp cho bên thứ ba.",
+    "explanation_wrong": {
+      "A": "Chỉ là API nội bộ.",
+      "C": "Là hệ thống thử nghiệm Open API.",
+      "D": "Không đúng định nghĩa."
+    },
+    "explanation_question": "Kiểm tra hiểu đúng khái niệm Open API."
+  },
+  {
+    "id": 613,
+    "question": "Bên thứ ba trong Thông tư này được hiểu là gì?",
+    "options": {
+      "A": "Cơ quan quản lý nhà nước",
+      "B": "Khách hàng cá nhân",
+      "C": "Tổ chức hoặc Ngân hàng khác có thỏa thuận bằng hợp đồng với Ngân hàng",
+      "D": "Đơn vị cung cấp chữ ký số"
+    },
+    "answer": "C",
+    "explanation_right": "Theo khoản 5 Điều 3.",
+    "explanation_wrong": {
+      "A": "Không phải.",
+      "B": "Là khách hàng.",
+      "D": "Không đầy đủ."
+    },
+    "explanation_question": "Kiểm tra định nghĩa bên thứ ba."
+  },
+  {
+    "id": 614,
+    "question": "Khi triển khai Open API cơ bản, Ngân hàng phải tuân thủ quy định tại phụ lục nào?",
+    "options": {
+      "A": "Phụ lục 01 và 02",
+      "B": "Phụ lục 02 và 03",
+      "C": "Phụ lục 03 và 04",
+      "D": "Chỉ Phụ lục 01"
+    },
+    "answer": "A",
+    "explanation_right": "Theo khoản 1 Điều 5.",
+    "explanation_wrong": {
+      "B": "Sai phụ lục.",
+      "C": "Không đúng.",
+      "D": "Thiếu Phụ lục 02."
+    },
+    "explanation_question": "Kiểm tra yêu cầu kỹ thuật khi triển khai."
+  },
+  {
+    "id": 615,
+    "question": "Open API khởi tạo thanh toán thuộc nhóm nào trong danh mục Open API cơ bản?",
+    "options": {
+      "A": "Nhóm truy vấn tỷ giá, lãi suất",
+      "B": "Nhóm truy vấn thông tin khách hàng",
+      "C": "Nhóm khởi tạo thanh toán, nạp tiền vào ví điện tử, rút tiền ra khỏi ví điện tử",
+      "D": "Nhóm nội bộ"
+    },
+    "answer": "C",
+    "explanation_right": "Theo điểm c khoản 1 Điều 6.",
+    "explanation_wrong": {
+      "A": "Sai nhóm.",
+      "B": "Sai nhóm.",
+      "D": "Không có nhóm này."
+    },
+    "explanation_question": "Kiểm tra cấu trúc danh mục Open API."
+  },
+  {
+    "id": 616,
+    "question": "Tiêu chuẩn kỹ thuật triển khai Open API gồm những nhóm tiêu chuẩn nào?",
+    "options": {
+      "A": "Kiến trúc, dữ liệu và an toàn thông tin",
+      "B": "Phần cứng, mạng và bảo trì",
+      "C": "Kế toán, kiểm toán và CNTT",
+      "D": "Mã hóa và sinh trắc học"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 7.",
+    "explanation_wrong": {
+      "B": "Không đúng quy định.",
+      "C": "Không liên quan.",
+      "D": "Không đầy đủ."
+    },
+    "explanation_question": "Kiểm tra nội dung tiêu chuẩn kỹ thuật."
+  },
+  {
+    "id": 617,
+    "question": "Ngân hàng phải thiết lập thời hạn được thực hiện truy vấn thông tin khách hàng sau khi được khách hàng đồng ý không quá bao lâu?",
+    "options": {
+      "A": "90 ngày",
+      "B": "120 ngày",
+      "C": "180 ngày",
+      "D": "365 ngày"
+    },
+    "answer": "C",
+    "explanation_right": "Theo khoản 6 Điều 11, không quá 180 ngày trừ trường hợp có thỏa thuận khác.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Quá dài."
+    },
+    "explanation_question": "Kiểm tra giới hạn thời gian truy vấn."
+  },
+  {
+    "id": 618,
+    "question": "Hệ thống thông tin triển khai Open API của Ngân hàng phải đáp ứng tối thiểu cấp độ an toàn nào?",
+    "options": {
+      "A": "Cấp độ 1",
+      "B": "Cấp độ 2",
+      "C": "Cấp độ 3",
+      "D": "Cấp độ 4"
+    },
+    "answer": "C",
+    "explanation_right": "Theo khoản 4 Điều 11.",
+    "explanation_wrong": {
+      "A": "Không đủ.",
+      "B": "Không đủ.",
+      "D": "Thông tư không yêu cầu."
+    },
+    "explanation_question": "Kiểm tra yêu cầu an toàn hệ thống."
+  },
+  {
+    "id": 619,
+    "question": "Thông tư 64/2024/TT-NHNN có hiệu lực thi hành từ ngày nào?",
+    "options": {
+      "A": "01/01/2025",
+      "B": "01/03/2025",
+      "C": "01/07/2025",
+      "D": "01/03/2027"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 14.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Là mốc chuyển tiếp.",
+      "D": "Là hạn hoàn thành tuân thủ."
+    },
+    "explanation_question": "Kiểm tra thời điểm hiệu lực."
+  },
+  {
+    "id": 620,
+    "question": "Các Ngân hàng đã kết nối trực tiếp với bên thứ ba qua API/Open API trước khi Thông tư có hiệu lực phải hoàn thành tuân thủ đầy đủ trước ngày nào?",
+    "options": {
+      "A": "01/07/2025",
+      "B": "01/03/2026",
+      "C": "01/03/2027",
+      "D": "31/12/2027"
+    },
+    "answer": "C",
+    "explanation_right": "Theo khoản 2 Điều 15, hoàn thành trước ngày 01/03/2027.",
+    "explanation_wrong": {
+      "A": "Chỉ là hạn gửi kế hoạch.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra điều khoản chuyển tiếp."
+  },
+  {
+    "id": 621,
+    "question": "Nghị quyết 57-NQ/TW được ban hành nhằm mục tiêu gì?",
+    "options": {
+      "A": "Đột phá phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia",
+      "B": "Phát triển nông nghiệp công nghệ cao",
+      "C": "Cải cách hành chính",
+      "D": "Phát triển giáo dục đại học"
+    },
+    "answer": "A",
+    "explanation_right": "Theo tiêu đề Nghị quyết 57-NQ/TW.",
+    "explanation_wrong": {
+      "B": "Chỉ là một phần nhỏ liên quan.",
+      "C": "Không phải mục tiêu chính.",
+      "D": "Không phải phạm vi tổng thể."
+    },
+    "explanation_question": "Kiểm tra khả năng nhận diện mục tiêu cốt lõi của Nghị quyết."
+  },
+  {
+    "id": 622,
+    "question": "Theo quan điểm chỉ đạo, phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia là gì?",
+    "options": {
+      "A": "Nhiệm vụ hỗ trợ",
+      "B": "Đột phá quan trọng hàng đầu, động lực chính phát triển lực lượng sản xuất hiện đại",
+      "C": "Nhiệm vụ của riêng doanh nghiệp",
+      "D": "Chỉ là nhiệm vụ của ngành CNTT"
+    },
+    "answer": "B",
+    "explanation_right": "Theo mục I.1 của Nghị quyết.",
+    "explanation_wrong": {
+      "A": "Đánh giảm vai trò.",
+      "C": "Sai chủ thể.",
+      "D": "Thu hẹp phạm vi."
+    },
+    "explanation_question": "Đánh lừa bằng cách thu hẹp vai trò của chuyển đổi số."
+  },
+  {
+    "id": 623,
+    "question": "Mục tiêu đến năm 2030, kinh phí chi cho nghiên cứu và phát triển (R&D) đạt bao nhiêu GDP?",
+    "options": {
+      "A": "1% GDP",
+      "B": "1,5% GDP",
+      "C": "2% GDP",
+      "D": "3% GDP"
+    },
+    "answer": "C",
+    "explanation_right": "Theo mục II.1, trang 3.",
+    "explanation_wrong": {
+      "A": "Thấp hơn mục tiêu.",
+      "B": "Sai mức.",
+      "D": "Không đúng nghị quyết."
+    },
+    "explanation_question": "Kiểm tra chỉ tiêu định lượng quan trọng."
+  },
+  {
+    "id": 624,
+    "question": "Mục tiêu đến năm 2030, tỷ lệ giao dịch không dùng tiền mặt đạt bao nhiêu?",
+    "options": {
+      "A": "50%",
+      "B": "60%",
+      "C": "70%",
+      "D": "80%"
+    },
+    "answer": "D",
+    "explanation_right": "Theo mục tiêu đến năm 2030 tại trang 3.",
+    "explanation_wrong": {
+      "A": "Thấp hơn mục tiêu.",
+      "B": "Sai.",
+      "C": "Sai."
+    },
+    "explanation_question": "Liên hệ trực tiếp đến ngành ngân hàng."
+  },
+  {
+    "id": 625,
+    "question": "Mục tiêu đến năm 2045, quy mô kinh tế số của Việt Nam đạt tối thiểu bao nhiêu GDP?",
+    "options": {
+      "A": "30%",
+      "B": "40%",
+      "C": "50%",
+      "D": "60%"
+    },
+    "answer": "C",
+    "explanation_right": "Theo mục II.2 Tầm nhìn đến năm 2045.",
+    "explanation_wrong": {
+      "A": "Là mục tiêu thấp hơn.",
+      "B": "Sai.",
+      "D": "Không nêu."
+    },
+    "explanation_question": "Kiểm tra tầm nhìn dài hạn."
+  },
+  {
+    "id": 626,
+    "question": "Một trong các công nghệ chiến lược được ưu tiên phát triển theo Nghị quyết là gì?",
+    "options": {
+      "A": "Trí tuệ nhân tạo",
+      "B": "IoT",
+      "C": "Bán dẫn",
+      "D": "Tất cả các đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Trang 3 và 6 nêu rõ AI, IoT, bán dẫn cùng nhiều công nghệ khác.",
+    "explanation_wrong": {
+      "A": "Chỉ đúng một phần.",
+      "B": "Chỉ đúng một phần.",
+      "C": "Chỉ đúng một phần."
+    },
+    "explanation_question": "Kiểm tra khả năng tổng hợp nhóm công nghệ chiến lược."
+  },
+  {
+    "id": 627,
+    "question": "Mục tiêu đến năm 2030 Việt Nam thuộc nhóm mấy nước dẫn đầu ASEAN về nghiên cứu và phát triển trí tuệ nhân tạo?",
+    "options": {
+      "A": "Top 1",
+      "B": "Top 2",
+      "C": "Top 3",
+      "D": "Top 5"
+    },
+    "answer": "C",
+    "explanation_right": "Theo mục II.1, Việt Nam thuộc nhóm 3 nước dẫn đầu khu vực Đông Nam Á.",
+    "explanation_wrong": {
+      "A": "Quá cao.",
+      "B": "Sai.",
+      "D": "Thấp hơn mục tiêu."
+    },
+    "explanation_question": "Câu hỏi dễ nhầm về chỉ tiêu xếp hạng."
+  },
+  {
+    "id": 628,
+    "question": "Đến năm 2030, Việt Nam phấn đấu có tối thiểu bao nhiêu doanh nghiệp công nghệ số ngang tầm các nước tiên tiến?",
+    "options": {
+      "A": "3 doanh nghiệp",
+      "B": "5 doanh nghiệp",
+      "C": "8 doanh nghiệp",
+      "D": "10 doanh nghiệp"
+    },
+    "answer": "B",
+    "explanation_right": "Theo mục II.1.",
+    "explanation_wrong": {
+      "A": "Thấp hơn mục tiêu.",
+      "C": "Sai.",
+      "D": "Là mục tiêu gần hơn năm 2045."
+    },
+    "explanation_question": "Kiểm tra chỉ tiêu doanh nghiệp số."
+  },
+  {
+    "id": 629,
+    "question": "Ai làm Trưởng Ban Chỉ đạo Trung ương về phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số?",
+    "options": {
+      "A": "Thủ tướng Chính phủ",
+      "B": "Chủ tịch nước",
+      "C": "Tổng Bí thư Ban Chấp hành Trung ương Đảng",
+      "D": "Bộ trưởng Bộ Khoa học và Công nghệ"
+    },
+    "answer": "C",
+    "explanation_right": "Theo mục IV.1 trang 10.",
+    "explanation_wrong": {
+      "A": "Không đúng.",
+      "B": "Không đúng.",
+      "D": "Không đúng."
+    },
+    "explanation_question": "Kiểm tra cơ chế tổ chức thực hiện."
+  },
+  {
+    "id": 630,
+    "question": "Nghị quyết 57-NQ/TW được ký ban hành ngày nào?",
+    "options": {
+      "A": "22/12/2024",
+      "B": "01/01/2025",
+      "C": "31/12/2024",
+      "D": "22/10/2024"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang đầu của Nghị quyết.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra mốc thời gian ban hành văn bản."
+  },
+   {
+    "id": 631,
+    "question": "Nghị quyết số 71/NQ-CP của Chính phủ được ban hành ngày nào?",
+    "options": {
+      "A": "01/04/2025",
+      "B": "09/01/2025",
+      "C": "22/12/2024",
+      "D": "30/04/2025"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang 1 của Nghị quyết 71/NQ-CP, văn bản được ban hành ngày 01 tháng 4 năm 2025.",
+    "explanation_wrong": {
+      "B": "Là ngày ban hành Nghị quyết 03/NQ-CP trước đó.",
+      "C": "Là ngày ban hành Nghị quyết 57-NQ/TW của Bộ Chính trị.",
+      "D": "Không có trong văn bản."
+    },
+    "explanation_question": "Câu hỏi đánh lừa bằng cách đưa các mốc thời gian của các văn bản liên quan."
+  },
+  {
+    "id": 632,
+    "question": "Nghị quyết 71/NQ-CP sửa đổi, bổ sung Chương trình hành động của Chính phủ thực hiện văn bản nào?",
+    "options": {
+      "A": "Nghị quyết 57-NQ/TW",
+      "B": "Nghị quyết 03/NQ-CP",
+      "C": "Luật Khoa học và Công nghệ",
+      "D": "Nghị quyết 68-NQ/TW"
+    },
+    "answer": "A",
+    "explanation_right": "Tên đầy đủ của Nghị quyết nêu rõ sửa đổi, bổ sung Chương trình hành động thực hiện Nghị quyết 57-NQ/TW.",
+    "explanation_wrong": {
+      "B": "Nghị quyết 03/NQ-CP là văn bản cũ được thay thế/cập nhật.",
+      "C": "Chỉ là căn cứ pháp lý liên quan.",
+      "D": "Không liên quan."
+    },
+    "explanation_question": "Phân biệt văn bản gốc với văn bản được thay thế."
+  },
+  {
+    "id": 633,
+    "question": "Nghị quyết 71/NQ-CP có hiệu lực từ thời điểm nào?",
+    "options": {
+      "A": "Từ ngày 22/12/2024",
+      "B": "Từ ngày 01/01/2025",
+      "C": "Từ ngày ký ban hành",
+      "D": "Từ ngày 01/07/2025"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 2: Nghị quyết này có hiệu lực thi hành kể từ ngày ký ban hành.",
+    "explanation_wrong": {
+      "A": "Là ngày của NQ 57.",
+      "B": "Sai.",
+      "D": "Không được quy định."
+    },
+    "explanation_question": "Kiểm tra chi tiết điều khoản hiệu lực."
+  },
+  {
+    "id": 634,
+    "question": "Mục tiêu thứ nhất trong Chương trình hành động của Chính phủ theo Nghị quyết 71 là gì?",
+    "options": {
+      "A": "Tổ chức thể chế hóa và thực hiện đầy đủ các quan điểm, mục tiêu, nhiệm vụ và giải pháp đã đề ra trong Nghị quyết 57-NQ/TW",
+      "B": "Tăng GDP lên 10%",
+      "C": "Phát triển 10 doanh nghiệp công nghệ số",
+      "D": "Hoàn thành số hóa toàn bộ hồ sơ đất đai"
+    },
+    "answer": "A",
+    "explanation_right": "Theo mục I.1 Chương trình hành động.",
+    "explanation_wrong": {
+      "B": "Không có trong mục tiêu.",
+      "C": "Là chỉ tiêu cụ thể dài hạn.",
+      "D": "Chỉ là nhiệm vụ cụ thể trong một lĩnh vực."
+    },
+    "explanation_question": "Phân biệt mục tiêu tổng quát với chỉ tiêu cụ thể."
+  },
+  {
+    "id": 635,
+    "question": "Đến năm 2030, tỷ lệ giao dịch không dùng tiền mặt theo Phụ lục I là bao nhiêu?",
+    "options": {
+      "A": "≥70%",
+      "B": "≥80%",
+      "C": "≥90%",
+      "D": "100%"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Phụ lục I, chỉ tiêu số 12: Tỉ lệ giao dịch không dùng tiền mặt ≥80%.",
+    "explanation_wrong": {
+      "A": "Thấp hơn mục tiêu.",
+      "C": "Sai.",
+      "D": "Không thực tế và không nêu."
+    },
+    "explanation_question": "Liên hệ sát với lĩnh vực ngân hàng."
+  },
+  {
+    "id": 636,
+    "question": "Đến năm 2030, kinh phí chi cho nghiên cứu phát triển (R&D) đạt bao nhiêu % GDP?",
+    "options": {
+      "A": "1%",
+      "B": "1,5%",
+      "C": "2%",
+      "D": "3%"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Phụ lục I, chỉ tiêu số 15 là 2% GDP.",
+    "explanation_wrong": {
+      "A": "Thấp hơn chỉ tiêu.",
+      "B": "Sai.",
+      "D": "Không đúng văn bản."
+    },
+    "explanation_question": "Kiểm tra nhớ chỉ tiêu định lượng quan trọng."
+  },
+  {
+    "id": 637,
+    "question": "Cơ quan nào được giao theo dõi, đánh giá chỉ tiêu tỷ lệ giao dịch không dùng tiền mặt?",
+    "options": {
+      "A": "Bộ Tài chính",
+      "B": "Ngân hàng Nhà nước Việt Nam",
+      "C": "Bộ Khoa học và Công nghệ",
+      "D": "Văn phòng Chính phủ"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Phụ lục I, chỉ tiêu số 12 do Ngân hàng Nhà nước Việt Nam theo dõi, đánh giá.",
+    "explanation_wrong": {
+      "A": "Không phải cơ quan phụ trách chỉ tiêu này.",
+      "C": "Phụ trách nhiều chỉ tiêu khác.",
+      "D": "Phụ trách nhóm dịch vụ công."
+    },
+    "explanation_question": "Đánh vào việc nhầm lẫn cơ quan quản lý."
+  },
+  {
+    "id": 638,
+    "question": "Một trong các nhiệm vụ thuộc nhóm 'Tăng cường đầu tư, hoàn thiện hạ tầng' là gì?",
+    "options": {
+      "A": "Xây dựng Quỹ đầu tư phát triển công nghiệp chiến lược",
+      "B": "Giảm thuế thu nhập cá nhân",
+      "C": "Mở rộng biên chế",
+      "D": "Tăng trợ cấp xã hội"
+    },
+    "answer": "A",
+    "explanation_right": "Theo mục III của Chương trình hành động.",
+    "explanation_wrong": {
+      "B": "Không thuộc nhóm nhiệm vụ này.",
+      "C": "Không nêu.",
+      "D": "Không liên quan."
+    },
+    "explanation_question": "Phân biệt nhiệm vụ chiến lược với chính sách xã hội."
+  },
+  {
+    "id": 639,
+    "question": "Một trong các lĩnh vực được ưu tiên ứng dụng AI trên dữ liệu lớn là gì?",
+    "options": {
+      "A": "Các ngành, lĩnh vực quan trọng",
+      "B": "Chỉ giáo dục",
+      "C": "Chỉ y tế",
+      "D": "Chỉ quốc phòng"
+    },
+    "answer": "A",
+    "explanation_right": "Theo nội dung nhiệm vụ tại mục III.3 về ứng dụng trí tuệ nhân tạo dựa trên dữ liệu lớn đối với các ngành, lĩnh vực quan trọng.",
+    "explanation_wrong": {
+      "B": "Quá hẹp.",
+      "C": "Quá hẹp.",
+      "D": "Quá hẹp."
+    },
+    "explanation_question": "Đánh lừa bằng cách thu hẹp phạm vi ứng dụng."
+  },
+  {
+    "id": 640,
+    "question": "Ai ký thay Thủ tướng ban hành Nghị quyết 71/NQ-CP?",
+    "options": {
+      "A": "Phạm Minh Chính",
+      "B": "Hồ Đức Phớc",
+      "C": "Nguyễn Hòa Bình",
+      "D": "Bùi Thanh Sơn"
+    },
+    "answer": "A",
+    "explanation_right": "Trang 2 của Nghị quyết thể hiện chữ ký của Thủ tướng Phạm Minh Chính.",
+    "explanation_wrong": {
+      "B": "Không phải người ký.",
+      "C": "Không phải người ký.",
+      "D": "Không phải người ký."
+    },
+    "explanation_question": "Kiểm tra khả năng ghi nhớ thông tin hành chính của văn bản."
+  },
+  {
+    "id": 641,
+    "question": "Quyết định 749/QĐ-TTg được ban hành vào ngày nào?",
+    "options": {
+      "A": "03/06/2020",
+      "B": "03/05/2020",
+      "C": "03/06/2021",
+      "D": "09/01/2020"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang 1 của Quyết định 749/QĐ-TTg, văn bản được ký ngày 03 tháng 6 năm 2020.",
+    "explanation_wrong": {
+      "B": "Sai tháng.",
+      "C": "Sai năm.",
+      "D": "Không đúng theo văn bản."
+    },
+    "explanation_question": "Câu hỏi đánh lừa bằng các mốc thời gian gần giống."
+  },
+  {
+    "id": 642,
+    "question": "Quyết định 749/QĐ-TTg phê duyệt chương trình nào?",
+    "options": {
+      "A": "Chương trình Chuyển đổi số quốc gia đến năm 2025, định hướng đến năm 2030",
+      "B": "Chương trình cải cách hành chính quốc gia",
+      "C": "Chương trình phát triển công nghệ cao",
+      "D": "Chương trình Chính phủ điện tử"
+    },
+    "answer": "A",
+    "explanation_right": "Theo tiêu đề văn bản.",
+    "explanation_wrong": {
+      "B": "Không đúng.",
+      "C": "Không đúng.",
+      "D": "Chỉ là một phần nội dung liên quan."
+    },
+    "explanation_question": "Kiểm tra khả năng nhận diện tên đầy đủ của chương trình."
+  },
+  {
+    "id": 643,
+    "question": "Theo Quyết định 749, tầm nhìn đến năm 2030 là gì?",
+    "options": {
+      "A": "Việt Nam trở thành quốc gia số ổn định và thịnh vượng",
+      "B": "Việt Nam trở thành nước công nghiệp phát triển",
+      "C": "Việt Nam trở thành trung tâm tài chính quốc tế",
+      "D": "Việt Nam đứng đầu ASEAN về GDP"
+    },
+    "answer": "A",
+    "explanation_right": "Theo mục I - Tầm nhìn đến năm 2030.",
+    "explanation_wrong": {
+      "B": "Không phải nguyên văn mục tiêu.",
+      "C": "Không nêu.",
+      "D": "Không nêu."
+    },
+    "explanation_question": "Đánh lừa bằng các mục tiêu quốc gia khác."
+  },
+  {
+    "id": 644,
+    "question": "Đến năm 2025, mục tiêu tỷ trọng kinh tế số trong GDP là bao nhiêu?",
+    "options": {
+      "A": "10%",
+      "B": "15%",
+      "C": "20%",
+      "D": "30%"
+    },
+    "answer": "C",
+    "explanation_right": "Theo mục II.1.b: Kinh tế số chiếm 20% GDP.",
+    "explanation_wrong": {
+      "A": "Thấp hơn mục tiêu.",
+      "B": "Sai.",
+      "D": "Là mức mục tiêu của năm 2030."
+    },
+    "explanation_question": "Dễ nhầm giữa chỉ tiêu 2025 và 2030."
+  },
+  {
+    "id": 645,
+    "question": "Đến năm 2030, mục tiêu tỷ trọng kinh tế số trong GDP là bao nhiêu?",
+    "options": {
+      "A": "20%",
+      "B": "25%",
+      "C": "30%",
+      "D": "40%"
+    },
+    "answer": "C",
+    "explanation_right": "Theo mục II.2.b: Kinh tế số chiếm 30% GDP.",
+    "explanation_wrong": {
+      "A": "Là mục tiêu 2025.",
+      "B": "Sai.",
+      "D": "Không nêu."
+    },
+    "explanation_question": "Kiểm tra phân biệt chỉ tiêu theo giai đoạn."
+  },
+  {
+    "id": 646,
+    "question": "Theo quan điểm của Quyết định 749, ai là trung tâm của chuyển đổi số?",
+    "options": {
+      "A": "Doanh nghiệp",
+      "B": "Người dân",
+      "C": "Chính phủ",
+      "D": "Doanh nghiệp công nghệ số"
+    },
+    "answer": "B",
+    "explanation_right": "Theo mục III.2: Người dân là trung tâm của chuyển đổi số.",
+    "explanation_wrong": {
+      "A": "Doanh nghiệp là động lực quan trọng nhưng không phải trung tâm.",
+      "C": "Chính phủ dẫn dắt nhưng không phải trung tâm.",
+      "D": "Là lực lượng chủ lực phát triển hạ tầng."
+    },
+    "explanation_question": "Đánh lừa bằng các chủ thể quan trọng khác."
+  },
+  {
+    "id": 647,
+    "question": "Theo Quyết định 749, doanh nghiệp công nghệ số Việt Nam giữ vai trò gì?",
+    "options": {
+      "A": "Lực lượng chủ lực phát triển hạ tầng số",
+      "B": "Chỉ là đơn vị cung cấp phần mềm",
+      "C": "Chỉ là đơn vị tư vấn",
+      "D": "Không được đề cập"
+    },
+    "answer": "A",
+    "explanation_right": "Theo mục III.3 và III.4.",
+    "explanation_wrong": {
+      "B": "Thu hẹp vai trò.",
+      "C": "Thu hẹp vai trò.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra hiểu vai trò của doanh nghiệp công nghệ số."
+  },
+  {
+    "id": 648,
+    "question": "Một trong các nền tảng số quốc gia được nêu trong Quyết định 749 là gì?",
+    "options": {
+      "A": "Nền tảng định danh và xác thực điện tử",
+      "B": "Nền tảng blockchain quốc gia",
+      "C": "Nền tảng metaverse quốc gia",
+      "D": "Nền tảng game quốc gia"
+    },
+    "answer": "A",
+    "explanation_right": "Theo mục IV.4.a.",
+    "explanation_wrong": {
+      "B": "Không nêu cụ thể.",
+      "C": "Không nêu.",
+      "D": "Không nêu."
+    },
+    "explanation_question": "Đánh lừa bằng các công nghệ thời thượng."
+  },
+  {
+    "id": 649,
+    "question": "Một trong các lĩnh vực cần ưu tiên chuyển đổi số trước là gì?",
+    "options": {
+      "A": "Y tế",
+      "B": "Thể thao điện tử",
+      "C": "Giải trí",
+      "D": "Du lịch quốc tế"
+    },
+    "answer": "A",
+    "explanation_right": "Theo mục VIII.1: Chuyển đổi số trong lĩnh vực y tế.",
+    "explanation_wrong": {
+      "B": "Không thuộc danh sách ưu tiên.",
+      "C": "Không thuộc danh sách ưu tiên.",
+      "D": "Không nêu riêng."
+    },
+    "explanation_question": "Kiểm tra khả năng nhớ các lĩnh vực ưu tiên."
+  },
+  {
+    "id": 650,
+    "question": "Ai ký ban hành Quyết định 749/QĐ-TTg?",
+    "options": {
+      "A": "Nguyễn Xuân Phúc",
+      "B": "Phạm Minh Chính",
+      "C": "Nguyễn Phú Trọng",
+      "D": "Vương Đình Huệ"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang cuối của Quyết định, Thủ tướng Nguyễn Xuân Phúc ký.",
+    "explanation_wrong": {
+      "B": "Là Thủ tướng giai đoạn sau.",
+      "C": "Không phải người ký.",
+      "D": "Không phải người ký."
+    },
+    "explanation_question": "Kiểm tra thông tin hành chính của văn bản."
   }
 ]
