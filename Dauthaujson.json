@@ -5598,5 +5598,1265 @@
         "explanation_right": "Quyết định số 3579/QĐ-NHNN ngày 03/11/2025",
         "explanation_wrong": "",
         "explanation_question": ""
-    }
+    },
+    {
+    "id": 401,
+    "question": "Theo Luật Phòng, chống rửa tiền 2022, 'Rửa tiền' được hiểu là hành vi nào sau đây?",
+    "options": {
+      "A": "Che giấu doanh thu để trốn thuế",
+      "B": "Hợp pháp hóa nguồn gốc của tài sản do phạm tội mà có",
+      "C": "Chuyển tiền ra nước ngoài không khai báo",
+      "D": "Sử dụng tài khoản người khác để giao dịch"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 3 khoản 1 Luật số 14/2022/QH15: Rửa tiền là hành vi của tổ chức, cá nhân nhằm hợp pháp hóa nguồn gốc của tài sản do phạm tội mà có.",
+    "explanation_wrong": {
+      "A": "Sai vì trốn thuế có thể là hành vi vi phạm khác nhưng không đồng nghĩa với rửa tiền.",
+      "C": "Sai vì đây có thể là dấu hiệu vi phạm ngoại hối hoặc đáng ngờ, chưa đủ để kết luận là rửa tiền.",
+      "D": "Sai vì đây chỉ là hành vi đáng ngờ hoặc gian lận."
+    },
+    "explanation_question": "Câu này đánh lừa bằng cách đưa các hành vi dễ liên tưởng đến rửa tiền nhưng chỉ có định nghĩa pháp lý tại Điều 3 là chính xác."
+  },
+  {
+    "id": 402,
+    "question": "Theo Luật Phòng, chống rửa tiền 2022, hành vi nào bị nghiêm cấm?",
+    "options": {
+      "A": "Thiết lập, duy trì tài khoản vô danh hoặc tài khoản sử dụng tên giả",
+      "B": "Mở tài khoản trực tuyến bằng eKYC",
+      "C": "Chuyển tiền điện tử liên ngân hàng",
+      "D": "Cho vay có tài sản bảo đảm"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 8 khoản 2 Luật số 14/2022/QH15, nghiêm cấm thiết lập, duy trì tài khoản vô danh hoặc tài khoản sử dụng tên giả.",
+    "explanation_wrong": {
+      "B": "Sai vì mở tài khoản eKYC hợp pháp nếu tuân thủ quy định.",
+      "C": "Sai vì chuyển tiền điện tử là hoạt động bình thường.",
+      "D": "Sai vì cho vay có tài sản bảo đảm là nghiệp vụ hợp pháp."
+    },
+    "explanation_question": "Phương án B dễ gây nhầm vì nhiều người nhầm eKYC với tài khoản ẩn danh."
+  },
+  {
+    "id": 403,
+    "question": "Tổ chức tài chính phải nhận biết khách hàng trong trường hợp nào sau đây?",
+    "options": {
+      "A": "Khách hàng lần đầu mở tài khoản hoặc thiết lập quan hệ",
+      "B": "Nghi ngờ giao dịch liên quan đến rửa tiền",
+      "C": "Nghi ngờ tính chính xác của thông tin khách hàng đã thu thập",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 9 khoản 2 Luật số 14/2022/QH15.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Đây là dạng câu hỏi tổng hợp nhiều trường hợp trong cùng điều luật."
+  },
+  {
+    "id": 404,
+    "question": "Theo Luật Phòng, chống rửa tiền 2022, kết quả đánh giá rủi ro về rửa tiền của đối tượng báo cáo phải được cập nhật với tần suất nào?",
+    "options": {
+      "A": "6 tháng/lần",
+      "B": "Hằng năm",
+      "C": "2 năm/lần",
+      "D": "5 năm/lần"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 15 khoản 1 Luật số 14/2022/QH15: Kết quả đánh giá rủi ro về rửa tiền của đối tượng báo cáo phải được cập nhật hằng năm.",
+    "explanation_wrong": {
+      "A": "Sai vì luật không yêu cầu 6 tháng/lần.",
+      "C": "Sai vì không đúng chu kỳ luật định.",
+      "D": "Sai vì 5 năm là chu kỳ đánh giá rủi ro quốc gia."
+    },
+    "explanation_question": "Dễ nhầm giữa đánh giá rủi ro quốc gia (5 năm) và đánh giá rủi ro của đối tượng báo cáo (hằng năm)."
+  },
+  {
+    "id": 405,
+    "question": "Đối với khách hàng có mức độ rủi ro rửa tiền cao, đối tượng báo cáo phải áp dụng biện pháp nào?",
+    "options": {
+      "A": "Giảm nhẹ việc xác minh thông tin",
+      "B": "Chỉ theo dõi khi có giao dịch lớn",
+      "C": "Thu thập, cập nhật, xác minh tăng cường và giám sát chặt chẽ",
+      "D": "Từ chối phục vụ ngay"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 16 khoản 2 điểm c.",
+    "explanation_wrong": {
+      "A": "Sai vì chỉ áp dụng cho khách hàng rủi ro thấp.",
+      "B": "Sai vì không đủ mức kiểm soát.",
+      "D": "Sai vì luật không bắt buộc từ chối ngay."
+    },
+    "explanation_question": "Bẫy ở việc nhiều người nghĩ rủi ro cao thì từ chối ngay."
+  },
+  {
+    "id": 406,
+    "question": "Theo Luật Phòng, chống rửa tiền 2022, cá nhân nước ngoài có ảnh hưởng chính trị (PEP) là ai?",
+    "options": {
+      "A": "Người nước ngoài cư trú tại Việt Nam",
+      "B": "Người giữ chức vụ cấp cao trong cơ quan, tổ chức nước ngoài và tổ chức quốc tế",
+      "C": "Nhà đầu tư nước ngoài",
+      "D": "Người nổi tiếng trên mạng xã hội"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 3 khoản 15.",
+    "explanation_wrong": {
+      "A": "Sai vì không phải mọi người nước ngoài cư trú đều là PEP.",
+      "C": "Sai vì nhà đầu tư không mặc nhiên là PEP.",
+      "D": "Sai vì người nổi tiếng không đồng nghĩa với PEP."
+    },
+    "explanation_question": "Bẫy bằng cách đánh đồng người có ảnh hưởng xã hội với người có ảnh hưởng chính trị."
+  },
+  {
+    "id": 407,
+    "question": "Thời hạn báo cáo giao dịch đáng ngờ là bao lâu?",
+    "options": {
+      "A": "01 ngày làm việc kể từ ngày phát sinh",
+      "B": "03 ngày làm việc kể từ ngày phát sinh hoặc 01 ngày làm việc kể từ ngày phát hiện",
+      "C": "05 ngày làm việc",
+      "D": "07 ngày làm việc"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 37 khoản 2.",
+    "explanation_wrong": {
+      "A": "Sai vì đây thường áp dụng cho giao dịch giá trị lớn/chuyển tiền điện tử.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu này đánh lừa giữa thời hạn báo cáo các loại giao dịch khác nhau."
+  },
+  {
+    "id": 408,
+    "question": "Đối tượng báo cáo phải lưu trữ thông tin, hồ sơ, tài liệu nhận biết khách hàng trong bao lâu?",
+    "options": {
+      "A": "03 năm",
+      "B": "05 năm kể từ ngày kết thúc giao dịch hoặc đóng tài khoản",
+      "C": "10 năm",
+      "D": "Vĩnh viễn"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 38 khoản 2 điểm a.",
+    "explanation_wrong": {
+      "A": "Sai vì không đủ thời gian luật định.",
+      "C": "Sai vì luật không yêu cầu 10 năm.",
+      "D": "Sai vì không phải lưu trữ vĩnh viễn."
+    },
+    "explanation_question": "Dễ nhầm với quy định lưu trữ của một số lĩnh vực khác."
+  },
+  {
+    "id": 409,
+    "question": "Trong lĩnh vực ngân hàng, dấu hiệu đáng ngờ nào sau đây được quy định?",
+    "options": {
+      "A": "Tiền vào và rút ra nhanh khỏi tài khoản",
+      "B": "Doanh số lớn trong ngày nhưng số dư rất nhỏ hoặc bằng 0",
+      "C": "Nhiều giao dịch gần mức phải báo cáo",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 28 Luật số 14/2022/QH15.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Câu tổng hợp nhiều dấu hiệu đáng ngờ kinh điển trong AML."
+  },
+  {
+    "id": 410,
+    "question": "Đối tượng báo cáo và người lao động không được tiết lộ thông tin nào sau đây?",
+    "options": {
+      "A": "Việc đã báo cáo giao dịch đáng ngờ",
+      "B": "Biểu phí dịch vụ",
+      "C": "Lãi suất tiền gửi",
+      "D": "Thông tin quảng cáo sản phẩm"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 40 khoản 2 Luật số 14/2022/QH15.",
+    "explanation_wrong": {
+      "B": "Sai vì đây là thông tin công khai.",
+      "C": "Sai vì đây là thông tin công khai.",
+      "D": "Sai vì không thuộc diện bí mật AML."
+    },
+    "explanation_question": "Kiểm tra hiểu biết về nguyên tắc chống tipping-off trong AML."
+  },
+{
+    "id": 411,
+    "question": "Theo Luật Giao dịch điện tử 2023, 'Giao dịch điện tử' được hiểu là gì?",
+    "options": {
+      "A": "Giao dịch được thực hiện bằng văn bản điện tử",
+      "B": "Giao dịch được thực hiện bằng phương tiện điện tử",
+      "C": "Giao dịch được thực hiện trên Internet",
+      "D": "Giao dịch có sử dụng chữ ký số"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 3 khoản 1 Luật số 20/2023/QH15: Giao dịch điện tử là giao dịch được thực hiện bằng phương tiện điện tử.",
+    "explanation_wrong": {
+      "A": "Sai vì văn bản điện tử chỉ là một hình thức thể hiện.",
+      "C": "Sai vì không chỉ giới hạn trên Internet.",
+      "D": "Sai vì không bắt buộc phải có chữ ký số."
+    },
+    "explanation_question": "Câu này dễ nhầm giữa phạm vi rộng của 'phương tiện điện tử' và Internet/chữ ký số."
+  },
+  {
+    "id": 412,
+    "question": "Theo Luật Giao dịch điện tử 2023, hành vi nào sau đây bị nghiêm cấm?",
+    "options": {
+      "A": "Sử dụng chữ ký số công cộng",
+      "B": "Chuyển đổi văn bản giấy sang dữ liệu điện tử",
+      "C": "Giả mạo, làm sai lệch hoặc xóa trái pháp luật thông điệp dữ liệu",
+      "D": "Lưu trữ dữ liệu trên môi trường mạng"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 6 khoản 4.",
+    "explanation_wrong": {
+      "A": "Sai vì hợp pháp.",
+      "B": "Sai vì được luật cho phép nếu đáp ứng điều kiện.",
+      "D": "Sai vì là hoạt động bình thường."
+    },
+    "explanation_question": "Kiểm tra hiểu biết về các hành vi bị nghiêm cấm."
+  },
+  {
+    "id": 413,
+    "question": "Thông tin trong thông điệp dữ liệu có bị phủ nhận giá trị pháp lý chỉ vì được thể hiện dưới dạng thông điệp dữ liệu không?",
+    "options": {
+      "A": "Có",
+      "B": "Không",
+      "C": "Chỉ trong lĩnh vực ngân hàng",
+      "D": "Chỉ khi có chữ ký số"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 8.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai vì áp dụng chung.",
+      "D": "Sai vì giá trị pháp lý không phụ thuộc riêng chữ ký số."
+    },
+    "explanation_question": "Đây là nguyên tắc nền tảng của luật."
+  },
+  {
+    "id": 414,
+    "question": "Thông điệp dữ liệu có giá trị như bản gốc khi đáp ứng điều kiện nào?",
+    "options": {
+      "A": "Được in ra giấy",
+      "B": "Có thể truy cập và sử dụng được dưới dạng hoàn chỉnh, bảo đảm toàn vẹn",
+      "C": "Được gửi qua email",
+      "D": "Có xác nhận của người nhận"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 10.",
+    "explanation_wrong": {
+      "A": "Sai vì in ra giấy không làm phát sinh giá trị bản gốc.",
+      "C": "Sai vì email chỉ là hình thức truyền.",
+      "D": "Sai vì chưa đủ điều kiện."
+    },
+    "explanation_question": "Dễ nhầm giữa phương thức gửi và điều kiện pháp lý."
+  },
+  {
+    "id": 415,
+    "question": "Chữ ký số bảo đảm các yếu tố nào?",
+    "options": {
+      "A": "Tính xác thực, toàn vẹn và chống chối bỏ",
+      "B": "Tính bí mật tuyệt đối",
+      "C": "Ẩn danh người ký",
+      "D": "Không cần chứng thư số"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 3 khoản 12.",
+    "explanation_wrong": {
+      "B": "Sai vì chữ ký số không bảo đảm tính bí mật của thông điệp.",
+      "C": "Sai vì phải xác định được chủ thể ký.",
+      "D": "Sai vì phải có chứng thư chữ ký số."
+    },
+    "explanation_question": "Bẫy ở tính bí mật – nhiều người hiểu nhầm chữ ký số là mã hóa."
+  },
+  {
+    "id": 416,
+    "question": "Dịch vụ tin cậy bao gồm những dịch vụ nào?",
+    "options": {
+      "A": "Dịch vụ cấp dấu thời gian",
+      "B": "Dịch vụ chứng thực thông điệp dữ liệu",
+      "C": "Dịch vụ chứng thực chữ ký số công cộng",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 28 khoản 1.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Câu hỏi tổng hợp các loại dịch vụ tin cậy."
+  },
+  {
+    "id": 417,
+    "question": "Thời hạn giấy phép kinh doanh dịch vụ tin cậy là bao lâu?",
+    "options": {
+      "A": "05 năm",
+      "B": "07 năm",
+      "C": "10 năm",
+      "D": "15 năm"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 28 khoản 3.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra nhớ số liệu cụ thể."
+  },
+  {
+    "id": 418,
+    "question": "Hợp đồng điện tử có bị phủ nhận giá trị pháp lý nếu được giao kết bởi hệ thống thông tin tự động mà không có can thiệp của con người không?",
+    "options": {
+      "A": "Có",
+      "B": "Không",
+      "C": "Chỉ khi có chữ ký số",
+      "D": "Chỉ trong thương mại điện tử"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 34 khoản 1.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Quan trọng với hợp đồng số và AI/automation."
+  },
+  {
+    "id": 419,
+    "question": "Cơ quan nhà nước có được yêu cầu tổ chức, cá nhân cung cấp lại dữ liệu mà cơ quan khác đã sẵn sàng chia sẻ không?",
+    "options": {
+      "A": "Có, trong mọi trường hợp",
+      "B": "Không, trừ một số trường hợp luật quy định",
+      "C": "Chỉ khi dữ liệu ở dạng giấy",
+      "D": "Chỉ khi có thu phí"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 41 khoản 3.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Đây là tinh thần 'một lần khai báo' trong chuyển đổi số."
+  },
+  {
+    "id": 420,
+    "question": "Lịch sử giao dịch của tài khoản giao dịch điện tử có giá trị pháp lý để chứng minh giao dịch khi đáp ứng điều kiện nào?",
+    "options": {
+      "A": "Hệ thống an toàn, gắn duy nhất với chủ tài khoản và có thời gian chính xác",
+      "B": "Được in ra giấy",
+      "C": "Có chữ ký tay của người dùng",
+      "D": "Có xác nhận của ngân hàng"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 46 khoản 4.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Quan trọng trong tranh chấp giao dịch số."
+  },
+ {
+    "id": 421,
+    "question": "Theo Luật Các tổ chức tín dụng 2024, 'Hoạt động ngân hàng' là việc kinh doanh, cung ứng thường xuyên những nghiệp vụ nào?",
+    "options": {
+      "A": "Nhận tiền gửi, cấp tín dụng, cung ứng dịch vụ thanh toán qua tài khoản",
+      "B": "Cho vay, đầu tư chứng khoán, bảo hiểm",
+      "C": "Nhận tiền gửi và đầu tư bất động sản",
+      "D": "Cấp tín dụng và kinh doanh ngoại tệ"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 4 khoản 17.",
+    "explanation_wrong": {
+      "B": "Sai vì đầu tư chứng khoán, bảo hiểm không phải cấu phần cốt lõi của định nghĩa.",
+      "C": "Sai vì bất động sản không thuộc định nghĩa.",
+      "D": "Sai vì thiếu dịch vụ thanh toán qua tài khoản."
+    },
+    "explanation_question": "Đây là khái niệm gốc cần nhớ."
+  },
+  {
+    "id": 422,
+    "question": "Theo Luật, cổ đông lớn của tổ chức tín dụng là cổ đông sở hữu từ bao nhiêu phần trăm số cổ phần có quyền biểu quyết trở lên?",
+    "options": {
+      "A": "3%",
+      "B": "5%",
+      "C": "10%",
+      "D": "15%"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 4 khoản 8.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu hỏi kiểm tra nhớ số liệu."
+  },
+  {
+    "id": 423,
+    "question": "Tổ chức tín dụng phi ngân hàng không được thực hiện hoạt động nào sau đây?",
+    "options": {
+      "A": "Cho vay",
+      "B": "Bảo lãnh ngân hàng",
+      "C": "Nhận tiền gửi của cá nhân và cung ứng dịch vụ thanh toán qua tài khoản",
+      "D": "Bao thanh toán"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 4 khoản 41.",
+    "explanation_wrong": {
+      "A": "Sai vì được phép.",
+      "B": "Sai vì được phép theo phạm vi luật.",
+      "D": "Sai vì được phép."
+    },
+    "explanation_question": "Dễ nhầm giữa ngân hàng và tổ chức tín dụng phi ngân hàng."
+  },
+  {
+    "id": 424,
+    "question": "Hành vi nào sau đây bị nghiêm cấm theo Luật Các tổ chức tín dụng 2024?",
+    "options": {
+      "A": "Tổ chức tín dụng công bố công khai lãi suất",
+      "B": "Gắn việc bán bảo hiểm không bắt buộc với cung ứng sản phẩm, dịch vụ ngân hàng",
+      "C": "Tham gia bảo hiểm tiền gửi",
+      "D": "Từ chối cấp tín dụng khi không đủ điều kiện"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 15 khoản 5.",
+    "explanation_wrong": {
+      "A": "Sai vì đây là trách nhiệm công khai.",
+      "C": "Sai vì là nghĩa vụ.",
+      "D": "Sai vì tổ chức tín dụng có quyền từ chối."
+    },
+    "explanation_question": "Đây là điểm mới được quan tâm nhiều."
+  },
+  {
+    "id": 425,
+    "question": "Cơ quan nào có thẩm quyền cấp, sửa đổi, bổ sung và thu hồi Giấy phép của tổ chức tín dụng?",
+    "options": {
+      "A": "Bộ Tài chính",
+      "B": "Chính phủ",
+      "C": "Ngân hàng Nhà nước Việt Nam",
+      "D": "Ủy ban Chứng khoán Nhà nước"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 27.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra thẩm quyền quản lý."
+  },
+  {
+    "id": 426,
+    "question": "Thời hạn Ngân hàng Nhà nước cấp hoặc từ chối cấp Giấy phép thành lập và hoạt động của tổ chức tín dụng kể từ ngày nhận đủ hồ sơ hợp lệ là bao lâu?",
+    "options": {
+      "A": "60 ngày",
+      "B": "90 ngày",
+      "C": "120 ngày",
+      "D": "180 ngày"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 31 khoản 1.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "C": "Sai."
+    },
+    "explanation_question": "Câu hỏi về mốc thời gian."
+  },
+  {
+    "id": 427,
+    "question": "Tổ chức tín dụng phải công bố thông tin về khai trương hoạt động ít nhất bao nhiêu ngày trước ngày dự kiến khai trương?",
+    "options": {
+      "A": "07 ngày",
+      "B": "15 ngày",
+      "C": "30 ngày",
+      "D": "45 ngày"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 33.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu hỏi về công bố thông tin."
+  },
+  {
+    "id": 428,
+    "question": "Người đại diện theo pháp luật của tổ chức tín dụng phải là ai?",
+    "options": {
+      "A": "Chủ tịch HĐQT/HĐTV hoặc Tổng giám đốc (Giám đốc)",
+      "B": "Kế toán trưởng",
+      "C": "Trưởng Ban kiểm soát",
+      "D": "Cổ đông lớn nhất"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 11 khoản 1.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu hỏi về quản trị điều hành."
+  },
+  {
+    "id": 429,
+    "question": "Tổ chức tín dụng phải thông báo cho Ngân hàng Nhà nước về người đại diện theo pháp luật trong thời hạn bao nhiêu ngày kể từ ngày bổ nhiệm hoặc thay đổi?",
+    "options": {
+      "A": "05 ngày",
+      "B": "07 ngày",
+      "C": "10 ngày",
+      "D": "15 ngày"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 11 khoản 3.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra nhớ mốc thời gian."
+  },
+  {
+    "id": 430,
+    "question": "Tổ chức tín dụng phải bảo đảm điều gì theo quy định về an toàn dữ liệu và hoạt động liên tục?",
+    "options": {
+      "A": "An toàn hệ thống thông tin, bảo mật dữ liệu và hoạt động liên tục",
+      "B": "Chỉ bảo mật dữ liệu khách hàng",
+      "C": "Chỉ sao lưu dữ liệu định kỳ",
+      "D": "Chỉ duy trì hệ thống kế toán"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 14.",
+    "explanation_wrong": {
+      "B": "Sai vì chưa đầy đủ.",
+      "C": "Sai vì chỉ là một phần.",
+      "D": "Sai."
+    },
+    "explanation_question": "Rất quan trọng với quản trị vận hành hệ thống ngân hàng."
+  },
+  {
+    "id": 431,
+    "question": "Theo Luật Dữ liệu, dữ liệu số là gì?",
+    "options": {
+      "A": "Dữ liệu được lưu trữ trên giấy",
+      "B": "Dữ liệu về sự vật, hiện tượng, sự kiện được thể hiện dưới dạng kỹ thuật số",
+      "C": "Chỉ bao gồm dữ liệu văn bản",
+      "D": "Chỉ bao gồm dữ liệu hình ảnh và âm thanh"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 3 khoản 1.",
+    "explanation_wrong": {
+      "A": "Sai vì dữ liệu giấy không phải dữ liệu số.",
+      "C": "Sai vì dữ liệu số không chỉ là văn bản.",
+      "D": "Sai vì còn bao gồm chữ số, ký hiệu, chữ viết."
+    },
+    "explanation_question": "Khái niệm cơ bản nhất của Luật."
+  },
+  {
+    "id": 432,
+    "question": "Theo Luật Dữ liệu, dữ liệu mở là dữ liệu như thế nào?",
+    "options": {
+      "A": "Chỉ cơ quan nhà nước được dùng",
+      "B": "Chỉ doanh nghiệp được khai thác",
+      "C": "Mọi cơ quan, tổ chức, cá nhân có nhu cầu đều được tiếp cận, chia sẻ, khai thác, sử dụng",
+      "D": "Chỉ được sử dụng nội bộ"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 3 khoản 4.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai vì đó là dữ liệu dùng riêng."
+    },
+    "explanation_question": "Kiểm tra phân loại dữ liệu."
+  },
+  {
+    "id": 433,
+    "question": "Dữ liệu cốt lõi là gì?",
+    "options": {
+      "A": "Dữ liệu quan trọng trực tiếp tác động đến quốc phòng, an ninh, đối ngoại, kinh tế vĩ mô, ổn định xã hội",
+      "B": "Mọi dữ liệu của doanh nghiệp",
+      "C": "Dữ liệu lưu trên cloud",
+      "D": "Dữ liệu nội bộ của cá nhân"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 3 khoản 7.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Khái niệm dễ nhầm với dữ liệu quan trọng."
+  },
+  {
+    "id": 434,
+    "question": "Theo Luật Dữ liệu, cơ quan nào là đầu mối chịu trách nhiệm trước Chính phủ thực hiện quản lý nhà nước về dữ liệu?",
+    "options": {
+      "A": "Bộ Thông tin và Truyền thông",
+      "B": "Bộ Công an",
+      "C": "Bộ Tài chính",
+      "D": "Ngân hàng Nhà nước"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 8 khoản 2 điểm b.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu hỏi về cơ quan quản lý."
+  },
+  {
+    "id": 435,
+    "question": "Hành vi nào sau đây bị nghiêm cấm theo Luật Dữ liệu?",
+    "options": {
+      "A": "Giả mạo, cố ý làm sai lệch, làm mất, làm hư hỏng dữ liệu",
+      "B": "Công khai dữ liệu mở",
+      "C": "Chia sẻ dữ liệu đúng quy định",
+      "D": "Phân tích dữ liệu phục vụ quản lý"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 10 khoản 3.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Nội dung cấm rất hay hỏi."
+  },
+  {
+    "id": 436,
+    "question": "Cơ quan nhà nước phải phân loại dữ liệu theo tính chất chia sẻ dữ liệu gồm những loại nào?",
+    "options": {
+      "A": "Dữ liệu cốt lõi, dữ liệu quan trọng",
+      "B": "Dữ liệu dùng chung, dữ liệu dùng riêng, dữ liệu mở",
+      "C": "Dữ liệu số và dữ liệu giấy",
+      "D": "Dữ liệu công khai và dữ liệu bí mật"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 13 khoản 1 điểm a.",
+    "explanation_wrong": {
+      "A": "Sai vì đây là phân loại theo mức độ quan trọng.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Phân loại dữ liệu là nội dung trọng tâm."
+  },
+  {
+    "id": 437,
+    "question": "Trong trường hợp nào tổ chức, cá nhân phải cung cấp dữ liệu cho cơ quan nhà nước mà không cần chủ thể dữ liệu đồng ý?",
+    "options": {
+      "A": "Khi cơ quan nhà nước muốn nghiên cứu thị trường",
+      "B": "Ứng phó tình trạng khẩn cấp, thảm họa, chống khủng bố",
+      "C": "Khi doanh nghiệp yêu cầu",
+      "D": "Khi báo chí yêu cầu"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 18 khoản 2.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Điểm pháp lý quan trọng."
+  },
+  {
+    "id": 438,
+    "question": "Dữ liệu thuộc danh mục bí mật nhà nước phải được mã hóa bằng gì khi lưu trữ, truyền, nhận trên mạng?",
+    "options": {
+      "A": "Mật mã dân sự",
+      "B": "Mật mã của cơ yếu",
+      "C": "OTP",
+      "D": "Mã QR"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 22 khoản 1.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Liên quan an ninh bảo mật."
+  },
+  {
+    "id": 439,
+    "question": "Luật Dữ liệu có hiệu lực thi hành từ ngày nào?",
+    "options": {
+      "A": "01/01/2025",
+      "B": "01/07/2025",
+      "C": "30/11/2024",
+      "D": "01/01/2026"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 45.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai vì là ngày thông qua.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu hỏi nhớ mốc thời gian."
+  },
+  {
+    "id": 440,
+    "question": "Trung tâm dữ liệu quốc gia có trách nhiệm nào sau đây?",
+    "options": {
+      "A": "Tích hợp, đồng bộ, lưu trữ, phân tích, khai thác dữ liệu của cơ quan nhà nước",
+      "B": "Cấp tín dụng cho doanh nghiệp",
+      "C": "Quản lý thuế thu nhập cá nhân",
+      "D": "Cấp giấy phép kinh doanh"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 31 khoản 1.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Nội dung trọng yếu về Trung tâm dữ liệu quốc gia."
+  },
+  {
+    "id": 441,
+    "question": "Theo Luật Công nghiệp công nghệ số 2025, 'Công nghiệp công nghệ số' là gì?",
+    "options": {
+      "A": "Ngành kinh tế - kỹ thuật dựa trên quy trình công nghệ, kỹ thuật số để tạo ra sản phẩm, dịch vụ công nghệ số",
+      "B": "Ngành chỉ sản xuất phần cứng máy tính",
+      "C": "Ngành cung cấp dịch vụ Internet",
+      "D": "Ngành sản xuất linh kiện điện tử truyền thống"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 3 khoản 2 Luật số 71/2025/QH15.",
+    "explanation_wrong": {
+      "B": "Sai vì chỉ là một phần của công nghiệp công nghệ số.",
+      "C": "Sai vì chỉ là một dịch vụ trong hệ sinh thái số.",
+      "D": "Sai vì phạm vi luật rộng hơn nhiều."
+    },
+    "explanation_question": "Câu hỏi kiểm tra định nghĩa nền tảng của luật."
+  },
+  {
+    "id": 442,
+    "question": "Theo Luật, 'Thiết bị công nghệ số' là thiết bị được sử dụng để làm gì?",
+    "options": {
+      "A": "Chỉ để lưu trữ dữ liệu",
+      "B": "Để xử lý, lưu trữ, trao đổi thông tin, dữ liệu số và số hóa thế giới thực",
+      "C": "Chỉ để truyền thông tin",
+      "D": "Chỉ để giải trí"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 3 khoản 3.",
+    "explanation_wrong": {
+      "A": "Sai vì chưa đầy đủ.",
+      "C": "Sai vì chỉ là một chức năng.",
+      "D": "Sai."
+    },
+    "explanation_question": "Đánh lừa bằng cách thu hẹp phạm vi chức năng."
+  },
+  {
+    "id": 443,
+    "question": "Cơ quan nào thống nhất quản lý nhà nước về công nghiệp công nghệ số?",
+    "options": {
+      "A": "Bộ Khoa học và Công nghệ",
+      "B": "Chính phủ",
+      "C": "Bộ Công an",
+      "D": "Bộ Thông tin và Truyền thông"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 5 khoản 2.",
+    "explanation_wrong": {
+      "A": "Sai vì là cơ quan chuyên ngành chủ trì nhiều nhiệm vụ nhưng không thống nhất quản lý.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Dễ nhầm giữa cơ quan quản lý thống nhất và cơ quan đầu mối chuyên môn."
+  },
+  {
+    "id": 444,
+    "question": "Hành vi nào sau đây bị nghiêm cấm theo Luật Công nghiệp công nghệ số?",
+    "options": {
+      "A": "Lợi dụng hoạt động công nghiệp công nghệ số xâm phạm lợi ích quốc gia",
+      "B": "Nghiên cứu phát triển AI",
+      "C": "Đầu tư trung tâm dữ liệu",
+      "D": "Đào tạo nhân lực công nghệ số"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 12 khoản 1.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra nhóm hành vi bị cấm."
+  },
+  {
+    "id": 445,
+    "question": "Sản phẩm, dịch vụ công nghệ số trọng điểm là sản phẩm, dịch vụ công nghệ số đáp ứng tiêu chí nào?",
+    "options": {
+      "A": "Thị trường trong nước có nhu cầu lớn và tạo ra giá trị gia tăng cao",
+      "B": "Thị trường thế giới có nhu cầu và có tiềm năng xuất khẩu",
+      "C": "Thúc đẩy các nhiệm vụ trọng điểm chuyển đổi số quốc gia",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 14 khoản 1.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Câu hỏi tổng hợp các tiêu chí."
+  },
+  {
+    "id": 446,
+    "question": "Nhà nước có chính sách gì đối với phát triển nhân lực công nghiệp công nghệ số?",
+    "options": {
+      "A": "Hỗ trợ giáo dục phổ cập công nghệ số",
+      "B": "Đào tạo, đào tạo lại, bồi dưỡng về công nghệ số",
+      "C": "Hỗ trợ học phí, miễn giảm học phí theo quy định",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 18 khoản 1.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Nội dung trọng tâm về phát triển nhân lực."
+  },
+  {
+    "id": 447,
+    "question": "Theo Luật, hệ thống trí tuệ nhân tạo rủi ro cao là hệ thống AI có khả năng gây ra rủi ro đáng kể trong trường hợp nào?",
+    "options": {
+      "A": "Ảnh hưởng đến tính mạng, sức khỏe con người",
+      "B": "Ảnh hưởng đến quyền con người, an ninh quốc gia, trật tự an toàn xã hội",
+      "C": "Ảnh hưởng đến tài sản hoặc môi trường",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 43 khoản 1.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Điểm rất mới của luật liên quan AI."
+  },
+  {
+    "id": 448,
+    "question": "Tài sản số là gì theo Luật?",
+    "options": {
+      "A": "Tài sản theo Bộ luật Dân sự được thể hiện dưới dạng dữ liệu số",
+      "B": "Chỉ là tiền điện tử",
+      "C": "Chỉ là tài sản mã hóa",
+      "D": "Chỉ là NFT"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 46 khoản 1.",
+    "explanation_wrong": {
+      "B": "Sai vì tiền điện tử không bao quát hết.",
+      "C": "Sai vì tài sản mã hóa chỉ là một loại.",
+      "D": "Sai."
+    },
+    "explanation_question": "Dễ nhầm giữa tài sản số và tài sản mã hóa."
+  },
+  {
+    "id": 449,
+    "question": "Luật Công nghiệp công nghệ số có hiệu lực từ ngày nào?",
+    "options": {
+      "A": "01/01/2025",
+      "B": "01/07/2025",
+      "C": "01/01/2026",
+      "D": "14/06/2025"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 50 khoản 2: Luật có hiệu lực thi hành từ ngày 01/01/2026.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai vì là ngày thông qua."
+    },
+    "explanation_question": "Câu hỏi về mốc hiệu lực."
+  },
+  {
+    "id": 450,
+    "question": "Theo Luật, tài sản mã hóa không bao gồm loại tài sản nào sau đây?",
+    "options": {
+      "A": "Chứng khoán",
+      "B": "Tài sản số dùng công nghệ mã hóa để xác thực",
+      "C": "Tài sản mã hóa trên môi trường điện tử",
+      "D": "Tài sản số khác"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 47 khoản 2: Tài sản mã hóa không bao gồm chứng khoán, công cụ tài chính và tài sản tài chính khác.",
+    "explanation_wrong": {
+      "B": "Sai vì đây là bản chất tài sản mã hóa.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Phân biệt tài sản mã hóa với tài sản tài chính truyền thống."
+  },
+  {
+    "id": 451,
+    "question": "Theo Luật Bảo vệ dữ liệu cá nhân 2025, 'Dữ liệu cá nhân' là gì?",
+    "options": {
+      "A": "Thông tin dưới dạng chữ viết về một tổ chức",
+      "B": "Dữ liệu hoặc thông tin dưới dạng ký hiệu, chữ viết, chữ số, hình ảnh, âm thanh hoặc dạng tương tự gắn với một con người cụ thể hoặc giúp xác định một con người cụ thể",
+      "C": "Chỉ là dữ liệu điện tử trên môi trường mạng",
+      "D": "Thông tin bí mật kinh doanh"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 2 khoản 1 Luật Bảo vệ dữ liệu cá nhân 2025.",
+    "explanation_wrong": {
+      "A": "Sai vì dữ liệu cá nhân gắn với con người, không phải tổ chức.",
+      "C": "Sai vì không chỉ giới hạn dữ liệu điện tử.",
+      "D": "Sai vì bí mật kinh doanh là khái niệm khác."
+    },
+    "explanation_question": "Câu hỏi nền tảng về định nghĩa dữ liệu cá nhân."
+  },
+  {
+    "id": 452,
+    "question": "Nguyên tắc nào sau đây KHÔNG thuộc nguyên tắc bảo vệ dữ liệu cá nhân?",
+    "options": {
+      "A": "Xử lý dữ liệu đúng mục đích, rõ ràng, hợp pháp",
+      "B": "Thu thập tối đa dữ liệu để dùng về sau",
+      "C": "Dữ liệu phải chính xác, được cập nhật",
+      "D": "Bảo mật và bảo vệ dữ liệu trong suốt quá trình xử lý"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 3, luật yêu cầu thu thập trong phạm vi cần thiết, không phải thu thập tối đa.",
+    "explanation_wrong": {
+      "A": "Sai vì đây là nguyên tắc đúng.",
+      "C": "Sai vì đây là nguyên tắc đúng.",
+      "D": "Sai vì đây là nguyên tắc đúng."
+    },
+    "explanation_question": "Bẫy bằng tư duy 'thu thập càng nhiều càng tốt'."
+  },
+  {
+    "id": 453,
+    "question": "Chủ thể dữ liệu cá nhân có quyền nào sau đây?",
+    "options": {
+      "A": "Được biết về hoạt động xử lý dữ liệu cá nhân",
+      "B": "Đồng ý hoặc rút lại sự đồng ý",
+      "C": "Xem, chỉnh sửa, yêu cầu xóa dữ liệu",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 4 khoản 1.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Câu tổng hợp quyền chủ thể dữ liệu."
+  },
+  {
+    "id": 454,
+    "question": "Sự đồng ý của chủ thể dữ liệu cá nhân phải đáp ứng điều kiện nào?",
+    "options": {
+      "A": "Tự nguyện, rõ ràng, cụ thể",
+      "B": "Có thể suy diễn từ sự im lặng",
+      "C": "Chỉ cần thông báo là đủ",
+      "D": "Không cần thể hiện bằng hình thức nào"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 9 khoản 2 và khoản 3.",
+    "explanation_wrong": {
+      "B": "Sai vì im lặng không được coi là đồng ý.",
+      "C": "Sai vì thông báo không thay thế sự đồng ý.",
+      "D": "Sai vì phải thể hiện rõ ràng."
+    },
+    "explanation_question": "Điểm rất dễ nhầm trong thực tế."
+  },
+  {
+    "id": 455,
+    "question": "Trong trường hợp nào được xử lý dữ liệu cá nhân mà không cần sự đồng ý?",
+    "options": {
+      "A": "Bảo vệ tính mạng, sức khỏe trong tình huống khẩn cấp",
+      "B": "Theo yêu cầu quảng cáo",
+      "C": "Nghiên cứu thị trường nội bộ",
+      "D": "Bán dữ liệu khách hàng"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 19 khoản 1.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai và vi phạm pháp luật."
+    },
+    "explanation_question": "Phân biệt ngoại lệ hợp pháp và mục đích thương mại."
+  },
+  {
+    "id": 456,
+    "question": "Khi chuyển dữ liệu cá nhân xuyên biên giới, tổ chức phải thực hiện nghĩa vụ nào?",
+    "options": {
+      "A": "Lập hồ sơ đánh giá tác động chuyển dữ liệu xuyên biên giới",
+      "B": "Không cần thông báo",
+      "C": "Chỉ cần có email nội bộ",
+      "D": "Không cần lưu hồ sơ"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 20 và Điều 22.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Nội dung rất quan trọng với ngân hàng và cloud."
+  },
+  {
+    "id": 457,
+    "question": "Dữ liệu cá nhân nhạy cảm bao gồm thông tin nào?",
+    "options": {
+      "A": "Thông tin sức khỏe, tài chính, sinh trắc học",
+      "B": "Thông tin công khai trên website",
+      "C": "Tên sản phẩm",
+      "D": "Địa chỉ website doanh nghiệp"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 2 khoản 3.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu hỏi nhận diện dữ liệu nhạy cảm."
+  },
+  {
+    "id": 458,
+    "question": "Mức xử phạt hành chính tối đa đối với hành vi vi phạm quy định chuyển dữ liệu cá nhân xuyên biên giới là bao nhiêu?",
+    "options": {
+      "A": "1% doanh thu",
+      "B": "3% doanh thu năm trước",
+      "C": "5% doanh thu năm trước",
+      "D": "10% doanh thu năm trước"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 8 khoản 4.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu nhớ số liệu dễ gây nhầm."
+  },
+  {
+    "id": 459,
+    "question": "Luật Bảo vệ dữ liệu cá nhân có hiệu lực từ ngày nào?",
+    "options": {
+      "A": "01/01/2025",
+      "B": "01/01/2026",
+      "C": "01/07/2026",
+      "D": "26/06/2025"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 38 khoản 1.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai vì là ngày thông qua."
+    },
+    "explanation_question": "Kiểm tra mốc hiệu lực."
+  },
+  {
+    "id": 460,
+    "question": "Trong lĩnh vực ngân hàng, tổ chức tín dụng phải làm gì khi xử lý dữ liệu cá nhân của khách hàng?",
+    "options": {
+      "A": "Áp dụng biện pháp bảo mật, chống truy cập trái phép và thông báo khi xảy ra vi phạm",
+      "B": "Được bán dữ liệu cho bên thứ ba",
+      "C": "Không cần xin đồng ý",
+      "D": "Chỉ cần lưu nội bộ"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 27 và Điều 23 của Luật về bảo vệ dữ liệu khách hàng và thông báo vi phạm.",
+    "explanation_wrong": {
+      "B": "Sai và vi phạm pháp luật.",
+      "C": "Sai trừ trường hợp ngoại lệ luật định.",
+      "D": "Sai vì chưa đáp ứng yêu cầu bảo vệ đầy đủ."
+    },
+    "explanation_question": "Gắn với thực tế ngành ngân hàng."
+  },
+  {
+    "id": 461,
+    "question": "Theo Luật Trí tuệ nhân tạo 2025, 'Trí tuệ nhân tạo' là gì?",
+    "options": {
+      "A": "Việc thực hiện bằng điện tử các năng lực trí tuệ của con người như học hỏi, suy luận, nhận thức, phán đoán và điều khiển tự nhiên",
+      "B": "Phần mềm kế toán",
+      "C": "Hệ thống mạng máy tính",
+      "D": "Thiết bị điện tử thông thường"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 3 khoản 1 Luật số 134/2025/QH15.",
+    "explanation_wrong": {
+      "B": "Sai vì không phải mọi phần mềm đều là AI.",
+      "C": "Sai vì mạng máy tính chỉ là hạ tầng.",
+      "D": "Sai."
+    },
+    "explanation_question": "Câu hỏi nền tảng về khái niệm AI."
+  },
+  {
+    "id": 462,
+    "question": "Nguyên tắc nào sau đây thuộc nguyên tắc hoạt động của trí tuệ nhân tạo?",
+    "options": {
+      "A": "Lấy con người làm trung tâm",
+      "B": "Bảo đảm quyền con người và quyền riêng tư",
+      "C": "Bảo đảm minh bạch, không thiên lệch",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 4.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Tổng hợp các nguyên tắc cốt lõi của AI có trách nhiệm."
+  },
+  {
+    "id": 463,
+    "question": "Hành vi nào sau đây bị nghiêm cấm theo Luật Trí tuệ nhân tạo?",
+    "options": {
+      "A": "Sử dụng AI để lừa đảo hoặc thao túng hành vi của con người",
+      "B": "Nghiên cứu AI phục vụ giáo dục",
+      "C": "Ứng dụng AI trong y tế theo quy định",
+      "D": "Phát triển AI hỗ trợ hành chính"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 7 khoản 2 điểm b.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Điểm dễ hỏi trong nhóm hành vi cấm."
+  },
+  {
+    "id": 464,
+    "question": "Theo Luật, hệ thống trí tuệ nhân tạo được phân loại theo mức độ rủi ro thành mấy mức?",
+    "options": {
+      "A": "2 mức",
+      "B": "3 mức",
+      "C": "4 mức",
+      "D": "5 mức"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 9: rủi ro thấp, trung bình, cao, rất cao.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra khả năng nhớ mô hình phân loại."
+  },
+  {
+    "id": 465,
+    "question": "Hệ thống AI rủi ro rất cao phải thực hiện nghĩa vụ nào trước khi đưa vào sử dụng?",
+    "options": {
+      "A": "Chỉ cần gắn nhãn",
+      "B": "Đăng ký, đánh giá sự phù hợp và có thể phải chứng nhận",
+      "C": "Không cần thủ tục",
+      "D": "Chỉ cần thông báo nội bộ"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 13.",
+    "explanation_wrong": {
+      "A": "Sai vì chưa đủ.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Quan trọng với AI trong ngân hàng, y tế, giáo dục."
+  },
+  {
+    "id": 466,
+    "question": "Yêu cầu minh bạch đối với hệ thống AI là gì?",
+    "options": {
+      "A": "Thông báo cho người dùng biết đang tương tác với AI",
+      "B": "Gắn nhãn nội dung do AI tạo ra",
+      "C": "Cảnh báo deepfake hoặc nội dung tổng hợp",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 11.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Nội dung rất thời sự liên quan GenAI."
+  },
+  {
+    "id": 467,
+    "question": "Khung đạo đức trí tuệ nhân tạo quốc gia được ban hành dựa trên nguyên tắc nào?",
+    "options": {
+      "A": "An toàn, độ tin cậy và không gây hại",
+      "B": "Tôn trọng quyền con người và công bằng",
+      "C": "Thúc đẩy phát triển bền vững",
+      "D": "Cả 3 đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo Điều 26.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Câu tổng hợp về AI Ethics."
+  },
+  {
+    "id": 468,
+    "question": "Quỹ Phát triển trí tuệ nhân tạo quốc gia được thành lập nhằm mục đích gì?",
+    "options": {
+      "A": "Hỗ trợ tài chính cho nghiên cứu, phát triển và ứng dụng AI",
+      "B": "Cho vay tiêu dùng",
+      "C": "Kinh doanh đầu tư chứng khoán",
+      "D": "Tài trợ hoạt động thương mại thông thường"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 22.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra hiểu biết về chính sách hỗ trợ AI."
+  },
+  {
+    "id": 469,
+    "question": "Luật Trí tuệ nhân tạo có hiệu lực từ ngày nào?",
+    "options": {
+      "A": "01/01/2026",
+      "B": "01/03/2026",
+      "C": "01/07/2026",
+      "D": "10/12/2025"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 34.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai vì là ngày thông qua."
+    },
+    "explanation_question": "Câu hỏi nhớ mốc hiệu lực."
+  },
+  {
+    "id": 470,
+    "question": "Trong lĩnh vực ngân hàng, hệ thống AI nào sau đây có khả năng thuộc nhóm rủi ro cao hoặc rất cao?",
+    "options": {
+      "A": "AI chấm điểm tín dụng và phê duyệt khoản vay tự động",
+      "B": "AI tạo slogan marketing",
+      "C": "AI chỉnh màu ảnh",
+      "D": "AI đề xuất nhạc nền"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 6 và Điều 9, các lĩnh vực tài chính – ngân hàng có thể thuộc nhóm yêu cầu kiểm soát cao do ảnh hưởng đến quyền, tài sản và lợi ích của cá nhân.",
+    "explanation_wrong": {
+      "B": "Sai vì thường rủi ro thấp hơn.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Gắn luật với tình huống thực tế ngành ngân hàng."
+  }
 ]
