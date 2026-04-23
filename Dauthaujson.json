@@ -10278,5 +10278,2236 @@
       "D": "Không phải người ký."
     },
     "explanation_question": "Kiểm tra thông tin hành chính của văn bản."
+  },
+   {
+    "id": 651,
+    "question": "Quyết định số 31/2021/QĐ-TTg được ký ban hành ngày nào?",
+    "options": {
+      "A": "11/10/2021",
+      "B": "09/12/2021",
+      "C": "11/10/2020",
+      "D": "03/06/2020"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang 1 của Quyết định số 31/2021/QĐ-TTg, văn bản được ký ngày 11/10/2021.",
+    "explanation_wrong": {
+      "B": "Là ngày văn bản có hiệu lực.",
+      "C": "Sai năm.",
+      "D": "Là ngày của Quyết định 749/QĐ-TTg."
+    },
+    "explanation_question": "Câu hỏi đánh lừa giữa ngày ký và ngày hiệu lực."
+  },
+  {
+    "id": 652,
+    "question": "Quyết định 31/2021/QĐ-TTg có hiệu lực từ ngày nào?",
+    "options": {
+      "A": "11/10/2021",
+      "B": "09/12/2021",
+      "C": "01/01/2022",
+      "D": "31/12/2021"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 2 của Quyết định, có hiệu lực từ ngày 09/12/2021.",
+    "explanation_wrong": {
+      "A": "Là ngày ký.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra phân biệt ngày ký và ngày hiệu lực."
+  },
+  {
+    "id": 653,
+    "question": "Cổng Dịch vụ công quốc gia hoạt động liên tục bao nhiêu giờ trong ngày?",
+    "options": {
+      "A": "8 giờ",
+      "B": "12 giờ",
+      "C": "24 giờ",
+      "D": "Theo giờ hành chính"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 4 khoản 3, Cổng Dịch vụ công quốc gia hoạt động 24 giờ tất cả các ngày trong tuần.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Không giới hạn giờ hành chính."
+    },
+    "explanation_question": "Kiểm tra nguyên tắc vận hành liên tục."
+  },
+  {
+    "id": 654,
+    "question": "Ai là cơ quan chủ quản Cổng Dịch vụ công quốc gia?",
+    "options": {
+      "A": "Bộ Thông tin và Truyền thông",
+      "B": "Văn phòng Chính phủ",
+      "C": "Bộ Công an",
+      "D": "Bộ Nội vụ"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 3 khoản 1, Văn phòng Chính phủ là cơ quan chủ quản.",
+    "explanation_wrong": {
+      "A": "Chỉ phối hợp ở một số nội dung.",
+      "C": "Chỉ phối hợp dữ liệu định danh/an ninh.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Đánh lừa bằng các cơ quan cùng tham gia."
+  },
+  {
+    "id": 655,
+    "question": "Single-Sign-On (SSO) trên Cổng Dịch vụ công quốc gia là gì?",
+    "options": {
+      "A": "Đăng nhập một lần để truy nhập nhiều hệ thống",
+      "B": "Đăng nhập bằng chữ ký số",
+      "C": "Đăng nhập bằng OTP",
+      "D": "Đăng nhập qua email"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 3 khoản 2, SSO là cơ chế cho phép đăng nhập một lần để truy nhập nhiều hệ thống.",
+    "explanation_wrong": {
+      "B": "Là phương thức xác thực.",
+      "C": "Là phương thức xác thực.",
+      "D": "Không phải định nghĩa."
+    },
+    "explanation_question": "Kiểm tra hiểu thuật ngữ kỹ thuật."
+  },
+  {
+    "id": 656,
+    "question": "Một trong các hợp phần của Cổng Dịch vụ công quốc gia là gì?",
+    "options": {
+      "A": "Hệ thống thanh toán trực tuyến",
+      "B": "Hệ thống ERP quốc gia",
+      "C": "Hệ thống quản lý nhân sự",
+      "D": "Hệ thống quản lý đất đai"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 5 khoản 4.",
+    "explanation_wrong": {
+      "B": "Không thuộc hợp phần.",
+      "C": "Không thuộc hợp phần.",
+      "D": "Không thuộc hợp phần."
+    },
+    "explanation_question": "Kiểm tra cấu trúc thành phần của Cổng."
+  },
+  {
+    "id": 657,
+    "question": "Tổ chức, cá nhân có thể đăng ký tài khoản trực tiếp trên Cổng Dịch vụ công quốc gia bằng cách nào?",
+    "options": {
+      "A": "Qua ứng dụng di động hoặc website",
+      "B": "Chỉ trực tiếp tại cơ quan nhà nước",
+      "C": "Chỉ bằng văn bản giấy",
+      "D": "Chỉ qua bưu điện"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 9 khoản 2.",
+    "explanation_wrong": {
+      "B": "Không đúng.",
+      "C": "Không đúng.",
+      "D": "Không đúng."
+    },
+    "explanation_question": "Kiểm tra hình thức đăng ký tài khoản."
+  },
+  {
+    "id": 658,
+    "question": "Nếu tài khoản không đăng nhập trong thời gian 02 năm liên tục thì có thể bị xử lý thế nào?",
+    "options": {
+      "A": "Tự động nâng cấp",
+      "B": "Bị khóa tài khoản",
+      "C": "Được miễn xác thực",
+      "D": "Không ảnh hưởng"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 13 khoản 2.",
+    "explanation_wrong": {
+      "A": "Không có quy định.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra quy định về quản lý tài khoản."
+  },
+  {
+    "id": 659,
+    "question": "Chất lượng giải quyết thủ tục hành chính được phân loại theo mấy mức?",
+    "options": {
+      "A": "3 mức",
+      "B": "4 mức",
+      "C": "5 mức",
+      "D": "6 mức"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 32 khoản 2: Xuất sắc, Tốt, Khá, Trung bình, Yếu.",
+    "explanation_wrong": {
+      "A": "Thiếu.",
+      "B": "Thiếu.",
+      "D": "Thừa."
+    },
+    "explanation_question": "Kiểm tra chi tiết phân loại đánh giá."
+  },
+  {
+    "id": 660,
+    "question": "Ai ký thay Thủ tướng ban hành Quyết định 31/2021/QĐ-TTg?",
+    "options": {
+      "A": "Phạm Minh Chính",
+      "B": "Vũ Đức Đam",
+      "C": "Nguyễn Xuân Phúc",
+      "D": "Trương Hòa Bình"
+    },
+    "answer": "B",
+    "explanation_right": "Theo trang 2, KT. Thủ tướng, Phó Thủ tướng Vũ Đức Đam ký.",
+    "explanation_wrong": {
+      "A": "Không phải người ký.",
+      "C": "Không phải người ký.",
+      "D": "Không phải người ký."
+    },
+    "explanation_question": "Kiểm tra thông tin hành chính của văn bản."
+  },
+  {
+    "id": 661,
+    "question": "Quyết định số 06/QĐ-TTg được ban hành ngày nào?",
+    "options": {
+      "A": "06/01/2022",
+      "B": "11/10/2021",
+      "C": "06/01/2021",
+      "D": "03/06/2020"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang 1 của Quyết định số 06/QĐ-TTg, văn bản được ký ngày 06/01/2022.",
+    "explanation_wrong": {
+      "B": "Là ngày của Quyết định 31/2021/QĐ-TTg.",
+      "C": "Sai năm.",
+      "D": "Là ngày của Quyết định 749/QĐ-TTg."
+    },
+    "explanation_question": "Đánh lừa bằng các mốc thời gian của các văn bản liên quan."
+  },
+  {
+    "id": 662,
+    "question": "Mục tiêu tổng quát của Đề án 06 là gì?",
+    "options": {
+      "A": "Ứng dụng Cơ sở dữ liệu quốc gia về dân cư, định danh và xác thực điện tử để phục vụ 5 nhóm tiện ích",
+      "B": "Phát triển công nghiệp bán dẫn",
+      "C": "Xây dựng trung tâm dữ liệu quốc gia",
+      "D": "Tăng trưởng GDP 10%"
+    },
+    "answer": "A",
+    "explanation_right": "Theo mục II.1 trang 3 của Đề án 06.",
+    "explanation_wrong": {
+      "B": "Không phải mục tiêu chính của Đề án.",
+      "C": "Chỉ là một phần hạ tầng.",
+      "D": "Không nêu."
+    },
+    "explanation_question": "Kiểm tra hiểu đúng mục tiêu cốt lõi của Đề án."
+  },
+  {
+    "id": 663,
+    "question": "Đề án 06 phục vụ bao nhiêu nhóm tiện ích chính?",
+    "options": {
+      "A": "3 nhóm",
+      "B": "4 nhóm",
+      "C": "5 nhóm",
+      "D": "6 nhóm"
+    },
+    "answer": "C",
+    "explanation_right": "Theo mục tiêu tổng quát, Đề án phục vụ 5 nhóm tiện ích.",
+    "explanation_wrong": {
+      "A": "Thiếu.",
+      "B": "Thiếu.",
+      "D": "Thừa."
+    },
+    "explanation_question": "Kiểm tra khả năng nhớ cấu trúc Đề án."
+  },
+  {
+    "id": 664,
+    "question": "Theo Đề án 06, đến năm 2025 mục tiêu 100% người đủ điều kiện được cấp thẻ CCCD gắn chip là gì?",
+    "options": {
+      "A": "Đúng",
+      "B": "Sai",
+      "C": "Chỉ áp dụng ở thành phố",
+      "D": "Chỉ áp dụng cho công chức"
+    },
+    "answer": "A",
+    "explanation_right": "Theo mục II.2.a, hoàn thành cấp thẻ CCCD gắn chip cho 100% công dân đủ điều kiện.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Không giới hạn.",
+      "D": "Không giới hạn."
+    },
+    "explanation_question": "Câu hỏi kiểm tra chỉ tiêu cụ thể."
+  },
+  {
+    "id": 665,
+    "question": "Ứng dụng VNeID được nhắc đến trong Đề án 06 nhằm mục đích gì?",
+    "options": {
+      "A": "Phục vụ định danh điện tử và cung cấp tiện ích số",
+      "B": "Chỉ để khai báo y tế",
+      "C": "Chỉ để tra cứu CCCD",
+      "D": "Chỉ để thanh toán điện"
+    },
+    "answer": "A",
+    "explanation_right": "Theo các mục II và III của Đề án.",
+    "explanation_wrong": {
+      "B": "Quá hẹp.",
+      "C": "Quá hẹp.",
+      "D": "Chỉ là một tiện ích nhỏ."
+    },
+    "explanation_question": "Đánh lừa bằng cách thu hẹp chức năng VNeID."
+  },
+  {
+    "id": 666,
+    "question": "Một trong các lĩnh vực được ưu tiên triển khai ứng dụng chip điện tử trên thẻ CCCD là gì?",
+    "options": {
+      "A": "Ngân hàng",
+      "B": "Tài chính",
+      "C": "Viễn thông",
+      "D": "Tất cả các đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo mục III.3.a trang 14-15.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Kiểm tra khả năng tổng hợp nhiều lĩnh vực ứng dụng."
+  },
+  {
+    "id": 667,
+    "question": "Cơ quan thường trực của Đề án 06 là cơ quan nào?",
+    "options": {
+      "A": "Văn phòng Chính phủ",
+      "B": "Bộ Công an",
+      "C": "Bộ Thông tin và Truyền thông",
+      "D": "Bộ Tài chính"
+    },
+    "answer": "B",
+    "explanation_right": "Theo mục IV.2, Bộ Công an là cơ quan thường trực của Tổ công tác.",
+    "explanation_wrong": {
+      "A": "Là cơ quan phối hợp.",
+      "C": "Phối hợp.",
+      "D": "Phối hợp."
+    },
+    "explanation_question": "Đánh lừa bằng các cơ quan tham gia mạnh."
+  },
+  {
+    "id": 668,
+    "question": "Ai là Tổ trưởng Tổ công tác triển khai Đề án 06?",
+    "options": {
+      "A": "Phó Thủ tướng Vũ Đức Đam",
+      "B": "Bộ trưởng Bộ Công an",
+      "C": "Thủ tướng Chính phủ",
+      "D": "Bộ trưởng Bộ Thông tin và Truyền thông"
+    },
+    "answer": "B",
+    "explanation_right": "Theo mục IV.2, Bộ trưởng Bộ Công an làm Tổ trưởng.",
+    "explanation_wrong": {
+      "A": "Là người phụ trách trước đây ở lĩnh vực khác.",
+      "C": "Chỉ đạo chung.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Kiểm tra thông tin tổ chức triển khai."
+  },
+  {
+    "id": 669,
+    "question": "Quyết định 06/QĐ-TTg có hiệu lực từ thời điểm nào?",
+    "options": {
+      "A": "Ngày 01/01/2022",
+      "B": "Ngày ký ban hành",
+      "C": "Ngày 01/07/2022",
+      "D": "Ngày 31/12/2022"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 2, Quyết định có hiệu lực từ ngày ký ban hành.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra điều khoản hiệu lực."
+  },
+  {
+    "id": 670,
+    "question": "Ai ký ban hành Quyết định 06/QĐ-TTg?",
+    "options": {
+      "A": "Nguyễn Xuân Phúc",
+      "B": "Phạm Minh Chính",
+      "C": "Vũ Đức Đam",
+      "D": "Tô Lâm"
+    },
+    "answer": "B",
+    "explanation_right": "Theo trang cuối văn bản, Thủ tướng Phạm Minh Chính ký.",
+    "explanation_wrong": {
+      "A": "Không đúng thời kỳ.",
+      "C": "Không phải người ký.",
+      "D": "Không phải người ký."
+    },
+    "explanation_question": "Kiểm tra thông tin hành chính cuối văn bản."
+  },
+  {
+    "id": 671,
+    "question": "Quyết định số 411/QĐ-TTg được ban hành ngày nào?",
+    "options": {
+      "A": "31/03/2022",
+      "B": "06/01/2022",
+      "C": "31/03/2021",
+      "D": "11/10/2021"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang 1 của Quyết định 411/QĐ-TTg, văn bản được ký ngày 31/03/2022.",
+    "explanation_wrong": {
+      "B": "Là ngày của Quyết định 06/QĐ-TTg.",
+      "C": "Sai năm.",
+      "D": "Là ngày của Quyết định 31/2021/QĐ-TTg."
+    },
+    "explanation_question": "Đánh lừa bằng các ngày của văn bản liên quan."
+  },
+  {
+    "id": 672,
+    "question": "Mục tiêu đến năm 2025, tỷ trọng kinh tế số đạt bao nhiêu % GDP?",
+    "options": {
+      "A": "10%",
+      "B": "15%",
+      "C": "20%",
+      "D": "30%"
+    },
+    "answer": "C",
+    "explanation_right": "Theo mục III.1.a trang 4, mục tiêu cơ bản đến năm 2025 tỷ trọng kinh tế số đạt 20% GDP.",
+    "explanation_wrong": {
+      "A": "Thấp hơn mục tiêu.",
+      "B": "Sai.",
+      "D": "Là mục tiêu năm 2030."
+    },
+    "explanation_question": "Kiểm tra chỉ tiêu trọng yếu."
+  },
+  {
+    "id": 673,
+    "question": "Mục tiêu đến năm 2030, tỷ trọng kinh tế số đạt bao nhiêu % GDP?",
+    "options": {
+      "A": "20%",
+      "B": "25%",
+      "C": "30%",
+      "D": "40%"
+    },
+    "answer": "C",
+    "explanation_right": "Theo mục III.1.b trang 4, mục tiêu đến năm 2030 đạt 30% GDP.",
+    "explanation_wrong": {
+      "A": "Là mục tiêu năm 2025.",
+      "B": "Sai.",
+      "D": "Không nêu."
+    },
+    "explanation_question": "Kiểm tra phân biệt chỉ tiêu 2025 và 2030."
+  },
+  {
+    "id": 674,
+    "question": "Đến năm 2025, tỷ lệ dân số trưởng thành có điện thoại thông minh đạt bao nhiêu?",
+    "options": {
+      "A": "70%",
+      "B": "80%",
+      "C": "90%",
+      "D": "95%"
+    },
+    "answer": "B",
+    "explanation_right": "Theo mục III.2.a trang 5, đạt 80%.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Là mục tiêu 2030 gần hơn."
+    },
+    "explanation_question": "Kiểm tra mục tiêu xã hội số."
+  },
+  {
+    "id": 675,
+    "question": "Đến năm 2030, tỷ lệ dân số trưởng thành có điện thoại thông minh đạt bao nhiêu?",
+    "options": {
+      "A": "80%",
+      "B": "90%",
+      "C": "95%",
+      "D": "100%"
+    },
+    "answer": "C",
+    "explanation_right": "Theo mục III.2.b trang 5, đạt 95%.",
+    "explanation_wrong": {
+      "A": "Là mục tiêu 2025.",
+      "B": "Sai.",
+      "D": "Không nêu."
+    },
+    "explanation_question": "So sánh chỉ tiêu theo giai đoạn."
+  },
+  {
+    "id": 676,
+    "question": "Một trong các nền tảng số quốc gia được ưu tiên phát triển là gì?",
+    "options": {
+      "A": "Nền tảng điện toán đám mây",
+      "B": "Nền tảng MOOC",
+      "C": "Nền tảng AI",
+      "D": "Tất cả các đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo mục IV của Chiến lược, các nền tảng số quốc gia bao gồm nhiều loại như cloud, học trực tuyến, AI.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đủ.",
+      "B": "Đúng nhưng chưa đủ.",
+      "C": "Đúng nhưng chưa đủ."
+    },
+    "explanation_question": "Kiểm tra khả năng tổng hợp."
+  },
+  {
+    "id": 677,
+    "question": "Cơ quan thường trực của Ủy ban Quốc gia về chuyển đổi số là ai trong triển khai Chiến lược này?",
+    "options": {
+      "A": "Bộ Công an",
+      "B": "Bộ Thông tin và Truyền thông",
+      "C": "Bộ Tài chính",
+      "D": "Ngân hàng Nhà nước"
+    },
+    "answer": "B",
+    "explanation_right": "Theo mục VI.1, Bộ Thông tin và Truyền thông là cơ quan thường trực.",
+    "explanation_wrong": {
+      "A": "Không phải.",
+      "C": "Không phải.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Kiểm tra vai trò điều phối."
+  },
+  {
+    "id": 678,
+    "question": "Ai ký thay Thủ tướng ban hành Quyết định 411/QĐ-TTg?",
+    "options": {
+      "A": "Phạm Minh Chính",
+      "B": "Vũ Đức Đam",
+      "C": "Lê Minh Khái",
+      "D": "Tô Lâm"
+    },
+    "answer": "B",
+    "explanation_right": "Theo trang 34, KT. Thủ tướng, Phó Thủ tướng Vũ Đức Đam ký.",
+    "explanation_wrong": {
+      "A": "Không phải người ký.",
+      "C": "Không phải.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Kiểm tra thông tin hành chính."
+  },
+  {
+    "id": 679,
+    "question": "Quyết định 411/QĐ-TTg có hiệu lực từ khi nào?",
+    "options": {
+      "A": "01/01/2023",
+      "B": "Ngày ký ban hành",
+      "C": "31/12/2022",
+      "D": "01/07/2022"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 3, quyết định có hiệu lực từ ngày ký ban hành.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra điều khoản hiệu lực."
+  },
+  {
+    "id": 680,
+    "question": "Trong lĩnh vực thanh toán số, cơ quan chủ trì triển khai sandbox fintech trong ngân hàng là cơ quan nào?",
+    "options": {
+      "A": "Bộ Tài chính",
+      "B": "Ngân hàng Nhà nước Việt Nam",
+      "C": "Bộ Thông tin và Truyền thông",
+      "D": "Bộ Công Thương"
+    },
+    "answer": "B",
+    "explanation_right": "Theo mục V.9 và phụ lục, Ngân hàng Nhà nước chủ trì sandbox fintech.",
+    "explanation_wrong": {
+      "A": "Có liên quan chính sách tài chính nhưng không chủ trì.",
+      "C": "Không chủ trì.",
+      "D": "Không chủ trì."
+    },
+    "explanation_question": "Đánh lừa giữa các cơ quan quản lý tài chính - công nghệ."
+  },
+  {
+    "id": 681,
+    "question": "Quyết định số 20/2025/QĐ-TTg được ban hành ngày nào?",
+    "options": {
+      "A": "01/07/2025",
+      "B": "30/06/2025",
+      "C": "01/01/2025",
+      "D": "01/07/2024"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang 1 của Quyết định số 20/2025/QĐ-TTg, văn bản được ký ngày 01/07/2025.",
+    "explanation_wrong": {
+      "B": "Là ngày của Nghị định 165/2025/NĐ-CP được viện dẫn.",
+      "C": "Sai.",
+      "D": "Sai năm."
+    },
+    "explanation_question": "Đánh lừa bằng các mốc thời gian gần giống."
+  },
+  {
+    "id": 682,
+    "question": "Quyết định 20/2025/QĐ-TTg ban hành danh mục nào?",
+    "options": {
+      "A": "Danh mục dữ liệu cá nhân",
+      "B": "Danh mục dữ liệu quan trọng, dữ liệu cốt lõi",
+      "C": "Danh mục dữ liệu mở",
+      "D": "Danh mục dữ liệu dùng chung"
+    },
+    "answer": "B",
+    "explanation_right": "Theo tên Quyết định.",
+    "explanation_wrong": {
+      "A": "Không đúng.",
+      "C": "Không đúng.",
+      "D": "Không đúng."
+    },
+    "explanation_question": "Kiểm tra phạm vi điều chỉnh."
+  },
+  {
+    "id": 683,
+    "question": "Cơ quan nào chủ trì triển khai, hướng dẫn, kiểm tra, đôn đốc việc thực hiện Quyết định này?",
+    "options": {
+      "A": "Bộ Thông tin và Truyền thông",
+      "B": "Bộ Công an",
+      "C": "Bộ Quốc phòng",
+      "D": "Văn phòng Chính phủ"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 2 khoản 1.",
+    "explanation_wrong": {
+      "A": "Không phải cơ quan chủ trì.",
+      "C": "Chỉ phụ trách dữ liệu lĩnh vực quân sự, quốc phòng.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Phân biệt cơ quan chủ trì và cơ quan phối hợp."
+  },
+  {
+    "id": 684,
+    "question": "Quyết định 20/2025/QĐ-TTg có hiệu lực từ ngày nào?",
+    "options": {
+      "A": "Ngày ký ban hành",
+      "B": "01/07/2025",
+      "C": "01/08/2025",
+      "D": "31/12/2025"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 3 khoản 1: có hiệu lực từ ngày 01/07/2025.",
+    "explanation_wrong": {
+      "A": "Trùng với ngày ký nhưng câu hỏi hỏi ngày hiệu lực chính thức theo điều khoản.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra điều khoản hiệu lực."
+  },
+  {
+    "id": 685,
+    "question": "Dữ liệu về biên giới quốc gia, chủ quyền lãnh thổ chưa công khai thuộc loại nào?",
+    "options": {
+      "A": "Dữ liệu mở",
+      "B": "Dữ liệu dùng chung",
+      "C": "Dữ liệu cốt lõi",
+      "D": "Dữ liệu cá nhân"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Mục I Phụ lục - Danh mục dữ liệu cốt lõi.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra phân loại dữ liệu."
+  },
+  {
+    "id": 686,
+    "question": "Dữ liệu về hoạt động thanh tra, giải quyết khiếu nại, tố cáo và phòng chống tham nhũng thuộc loại nào?",
+    "options": {
+      "A": "Dữ liệu quan trọng",
+      "B": "Dữ liệu cốt lõi",
+      "C": "Dữ liệu mở",
+      "D": "Dữ liệu mật cá nhân"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Mục II Phụ lục - Danh mục dữ liệu quan trọng.",
+    "explanation_wrong": {
+      "B": "Không thuộc nhóm cốt lõi.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Đánh lừa giữa dữ liệu quan trọng và dữ liệu cốt lõi."
+  },
+  {
+    "id": 687,
+    "question": "Dữ liệu tài khoản ngân hàng, lịch sử thanh toán, nghĩa vụ nợ của 100.000 doanh nghiệp, tổ chức Việt Nam trở lên thuộc loại nào?",
+    "options": {
+      "A": "Dữ liệu cốt lõi",
+      "B": "Dữ liệu quan trọng",
+      "C": "Dữ liệu mở",
+      "D": "Dữ liệu thống kê"
+    },
+    "answer": "A",
+    "explanation_right": "Theo mục I.26.c Phụ lục.",
+    "explanation_wrong": {
+      "B": "Sai nhóm.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Liên hệ trực tiếp lĩnh vực ngân hàng."
+  },
+  {
+    "id": 688,
+    "question": "Dữ liệu tài khoản ngân hàng, lịch sử thanh toán, nghĩa vụ nợ của 10.000 doanh nghiệp, tổ chức Việt Nam trở lên thuộc loại nào?",
+    "options": {
+      "A": "Dữ liệu cốt lõi",
+      "B": "Dữ liệu quan trọng",
+      "C": "Dữ liệu cá nhân",
+      "D": "Dữ liệu dùng chung"
+    },
+    "answer": "B",
+    "explanation_right": "Theo mục II.18.c Phụ lục.",
+    "explanation_wrong": {
+      "A": "Sai ngưỡng và sai nhóm.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Đánh lừa bằng ngưỡng số lượng khác nhau."
+  },
+  {
+    "id": 689,
+    "question": "Ai ký ban hành Quyết định số 20/2025/QĐ-TTg?",
+    "options": {
+      "A": "Phạm Minh Chính",
+      "B": "Nguyễn Chí Dũng",
+      "C": "Tô Lâm",
+      "D": "Lương Tam Quang"
+    },
+    "answer": "B",
+    "explanation_right": "Theo trang 2 của văn bản, KT. Thủ tướng, Phó Thủ tướng Nguyễn Chí Dũng ký.",
+    "explanation_wrong": {
+      "A": "Không phải người ký.",
+      "C": "Không phải.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Kiểm tra thông tin hành chính."
+  },
+  {
+    "id": 690,
+    "question": "Dữ liệu về quỹ bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp thuộc nhóm nào?",
+    "options": {
+      "A": "Dữ liệu cốt lõi",
+      "B": "Dữ liệu quan trọng",
+      "C": "Dữ liệu mở",
+      "D": "Dữ liệu nội bộ thông thường"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Mục II.10 Phụ lục.",
+    "explanation_wrong": {
+      "A": "Sai nhóm.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra khả năng nhớ danh mục dữ liệu quan trọng."
+  },
+  {
+    "id": 691,
+    "question": "Quyết định số 2439/QĐ-TTg được ban hành ngày nào?",
+    "options": {
+      "A": "04/11/2025",
+      "B": "01/07/2025",
+      "C": "22/10/2025",
+      "D": "04/11/2024"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang 1 của Quyết định 2439/QĐ-TTg, văn bản được ký ngày 04/11/2025.",
+    "explanation_wrong": {
+      "B": "Là ngày của Quyết định 20/2025/QĐ-TTg.",
+      "C": "Là ngày của Nghị định 278/2025/NĐ-CP được viện dẫn.",
+      "D": "Sai năm."
+    },
+    "explanation_question": "Đánh lừa bằng các mốc thời gian liên quan."
+  },
+  {
+    "id": 692,
+    "question": "Quyết định 2439/QĐ-TTg ban hành nội dung nào sau đây?",
+    "options": {
+      "A": "Khung kiến trúc dữ liệu quốc gia",
+      "B": "Khung quản trị, quản lý dữ liệu quốc gia",
+      "C": "Từ điển dữ liệu dùng chung",
+      "D": "Tất cả các đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo tên Quyết định, văn bản ban hành đồng thời 3 cấu phần trên (Phiên bản 1.0).",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đầy đủ.",
+      "B": "Đúng nhưng chưa đầy đủ.",
+      "C": "Đúng nhưng chưa đầy đủ."
+    },
+    "explanation_question": "Kiểm tra khả năng bao quát phạm vi văn bản."
+  },
+  {
+    "id": 693,
+    "question": "Cơ quan nào được giao chủ trì ban hành các quy chế, tiêu chuẩn và hướng dẫn kỹ thuật về cơ sở dữ liệu dùng chung?",
+    "options": {
+      "A": "Bộ Công an",
+      "B": "Bộ Thông tin và Truyền thông",
+      "C": "Bộ Khoa học và Công nghệ",
+      "D": "Văn phòng Chính phủ"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 2 khoản 1, Bộ Công an chủ trì ban hành các quy chế, tiêu chuẩn và hướng dẫn kỹ thuật.",
+    "explanation_wrong": {
+      "B": "Không phải cơ quan được giao chủ trì trong Quyết định này.",
+      "C": "Không phải.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Dễ nhầm với vai trò của Bộ TT&TT trong chuyển đổi số."
+  },
+  {
+    "id": 694,
+    "question": "Quyết định 2439/QĐ-TTg có hiệu lực từ khi nào?",
+    "options": {
+      "A": "Ngày ký ban hành",
+      "B": "01/01/2026",
+      "C": "04/12/2025",
+      "D": "Sau 45 ngày"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 3 khoản 1, Quyết định có hiệu lực thi hành kể từ ngày ký ban hành.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Không quy định."
+    },
+    "explanation_question": "Kiểm tra điều khoản hiệu lực."
+  },
+  {
+    "id": 695,
+    "question": "Tên của nền tảng chia sẻ, điều phối dữ liệu quốc gia được nêu trong văn bản là gì?",
+    "options": {
+      "A": "NDXP",
+      "B": "NDOP",
+      "C": "LGSP",
+      "D": "NGSP"
+    },
+    "answer": "B",
+    "explanation_right": "Theo các sơ đồ và nội dung tại Chương II, nền tảng chia sẻ, điều phối dữ liệu quốc gia là NDOP (National Data Orchestration Platform).",
+    "explanation_wrong": {
+      "A": "Không được nêu.",
+      "C": "Là nền tảng tích hợp, chia sẻ dữ liệu cấp bộ/tỉnh.",
+      "D": "Không phải tên trong văn bản."
+    },
+    "explanation_question": "Đánh lừa bằng các nền tảng tích hợp dữ liệu quen thuộc."
+  },
+  {
+    "id": 696,
+    "question": "Từ điển dữ liệu dùng chung là gì?",
+    "options": {
+      "A": "Tập hợp các định nghĩa, cấu trúc dữ liệu mô hình nghiệp vụ",
+      "B": "Danh mục dữ liệu cá nhân",
+      "C": "Hệ thống lưu trữ dữ liệu mở",
+      "D": "Kho dữ liệu phân tích"
+    },
+    "answer": "A",
+    "explanation_right": "Theo mục I.3 Chương I, Từ điển dữ liệu dùng chung là tập hợp các định nghĩa, cấu trúc dữ liệu mô hình nghiệp vụ và quy tắc chuẩn hóa dữ liệu.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra hiểu đúng khái niệm nền tảng."
+  },
+  {
+    "id": 697,
+    "question": "Theo mô hình các lớp dữ liệu, lớp nào nằm ngoài cùng?",
+    "options": {
+      "A": "Dữ liệu danh mục",
+      "B": "Dữ liệu giao dịch",
+      "C": "Dữ liệu mở",
+      "D": "Siêu dữ liệu"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Hình 12 trang 28, lớp ngoài cùng là Dữ liệu mở.",
+    "explanation_wrong": {
+      "A": "Nằm ở lớp trong hơn.",
+      "B": "Nằm ở lớp trong hơn.",
+      "D": "Là lớp lõi."
+    },
+    "explanation_question": "Kiểm tra khả năng nhớ sơ đồ lớp dữ liệu."
+  },
+  {
+    "id": 698,
+    "question": "Trong phân loại theo mức độ quan trọng của dữ liệu, mức cao nhất là gì?",
+    "options": {
+      "A": "Dữ liệu quan trọng",
+      "B": "Dữ liệu cốt lõi",
+      "C": "Dữ liệu mật",
+      "D": "Dữ liệu dùng chung"
+    },
+    "answer": "B",
+    "explanation_right": "Theo bảng phân loại tại trang 35, dữ liệu cốt lõi là mức cao hơn dữ liệu quan trọng.",
+    "explanation_wrong": {
+      "A": "Thấp hơn dữ liệu cốt lõi.",
+      "C": "Là phân loại theo bí mật nhà nước, không phải mức độ quan trọng dữ liệu.",
+      "D": "Không phải cấp độ quan trọng."
+    },
+    "explanation_question": "Đánh lừa giữa nhiều tiêu chí phân loại."
+  },
+  {
+    "id": 699,
+    "question": "Ai ký thay Thủ tướng ban hành Quyết định 2439/QĐ-TTg?",
+    "options": {
+      "A": "Phạm Minh Chính",
+      "B": "Nguyễn Chí Dũng",
+      "C": "Lương Tam Quang",
+      "D": "Nguyễn Hòa Bình"
+    },
+    "answer": "B",
+    "explanation_right": "Theo trang 2 của văn bản: KT. Thủ tướng, Phó Thủ tướng Nguyễn Chí Dũng ký.",
+    "explanation_wrong": {
+      "A": "Không phải người ký trực tiếp.",
+      "C": "Không phải.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Kiểm tra thông tin hành chính."
+  },
+  {
+    "id": 700,
+    "question": "Khung quản trị, quản lý dữ liệu quốc gia gồm mấy lớp?",
+    "options": {
+      "A": "2 lớp",
+      "B": "3 lớp",
+      "C": "4 lớp",
+      "D": "8 lớp"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Hình 22 và nội dung Chương III, Khung quản trị, quản lý dữ liệu quốc gia gồm 3 lớp: Lớp quản lý nhà nước về dữ liệu; Lớp quản trị dữ liệu; Lớp vận hành dữ liệu.",
+    "explanation_wrong": {
+      "A": "Thiếu.",
+      "C": "Sai.",
+      "D": "Là số lớp trong kiến trúc an toàn dữ liệu."
+    },
+    "explanation_question": "Đánh lừa với kiến trúc an toàn dữ liệu 8 lớp."
+  },
+  {
+    "id": 701,
+    "question": "Quyết định số 2711/QĐ-TTg được ban hành ngày nào?",
+    "options": {
+      "A": "12/12/2025",
+      "B": "04/11/2025",
+      "C": "12/12/2024",
+      "D": "01/01/2026"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang 1 của Quyết định 2711/QĐ-TTg, văn bản được ký ngày 12/12/2025.",
+    "explanation_wrong": {
+      "B": "Là ngày của Quyết định 2439/QĐ-TTg.",
+      "C": "Sai năm.",
+      "D": "Sai."
+    },
+    "explanation_question": "Đánh lừa bằng các mốc thời gian gần nhau."
+  },
+  {
+    "id": 702,
+    "question": "Tầm nhìn của Chiến lược quốc gia về phát triển đội ngũ trí thức là đến năm nào?",
+    "options": {
+      "A": "2030",
+      "B": "2035",
+      "C": "2040",
+      "D": "2045"
+    },
+    "answer": "D",
+    "explanation_right": "Theo tên Quyết định và Điều 1, Chiến lược có tầm nhìn đến năm 2045.",
+    "explanation_wrong": {
+      "A": "Là mốc mục tiêu trung hạn.",
+      "B": "Không nêu.",
+      "C": "Không nêu."
+    },
+    "explanation_question": "Kiểm tra khả năng nhớ mốc thời gian."
+  },
+  {
+    "id": 703,
+    "question": "Đến năm 2030, tỷ lệ người học các ngành khoa học cơ bản, kỹ thuật và công nghệ đạt ít nhất bao nhiêu?",
+    "options": {
+      "A": "25%",
+      "B": "30%",
+      "C": "35%",
+      "D": "40%"
+    },
+    "answer": "C",
+    "explanation_right": "Theo mục II.2.a trang 3, đạt ít nhất 35%.",
+    "explanation_wrong": {
+      "A": "Thấp hơn quy định.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra chỉ tiêu định lượng."
+  },
+  {
+    "id": 704,
+    "question": "Đến năm 2030, số lượng nghiên cứu sinh tối thiểu là bao nhiêu?",
+    "options": {
+      "A": "10.000",
+      "B": "15.000",
+      "C": "20.000",
+      "D": "25.000"
+    },
+    "answer": "C",
+    "explanation_right": "Theo mục II.2.a trang 3, có ít nhất 20.000 người học các chương trình tài năng, trong đó có 20.000 nghiên cứu sinh.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Đánh lừa bằng các con số gần nhau."
+  },
+  {
+    "id": 705,
+    "question": "Đến năm 2030, tỷ lệ lực lượng lao động trí thức trong các ngành công nghiệp công nghệ cao, công nghiệp chiến lược đạt ít nhất bao nhiêu?",
+    "options": {
+      "A": "20%",
+      "B": "25%",
+      "C": "30%",
+      "D": "40%"
+    },
+    "answer": "B",
+    "explanation_right": "Theo mục II.2.a trang 3, đạt ít nhất 25%.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra chỉ tiêu lao động trí thức."
+  },
+  {
+    "id": 706,
+    "question": "Cơ quan nào là đầu mối chủ trì, tổng hợp, báo cáo Thủ tướng Chính phủ về tình hình thực hiện Chiến lược?",
+    "options": {
+      "A": "Bộ Nội vụ",
+      "B": "Bộ Khoa học và Công nghệ",
+      "C": "Bộ Giáo dục và Đào tạo",
+      "D": "Bộ Công an"
+    },
+    "answer": "B",
+    "explanation_right": "Theo mục IV.1.a trang 7, Bộ Khoa học và Công nghệ là cơ quan đầu mối chủ trì.",
+    "explanation_wrong": {
+      "A": "Phối hợp ở một số nhiệm vụ.",
+      "C": "Không phải đầu mối chính.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Dễ nhầm giữa các bộ liên quan."
+  },
+  {
+    "id": 707,
+    "question": "Ai ký ban hành Quyết định 2711/QĐ-TTg?",
+    "options": {
+      "A": "Phạm Minh Chính",
+      "B": "Nguyễn Chí Dũng",
+      "C": "Nguyễn Hòa Bình",
+      "D": "Lương Tam Quang"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang 10, Thủ tướng Phạm Minh Chính ký ban hành.",
+    "explanation_wrong": {
+      "B": "Không phải người ký.",
+      "C": "Không phải.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Kiểm tra thông tin hành chính."
+  },
+  {
+    "id": 708,
+    "question": "Quyết định 2711/QĐ-TTg có hiệu lực từ khi nào?",
+    "options": {
+      "A": "Sau 15 ngày",
+      "B": "Ngày ký ban hành",
+      "C": "01/01/2026",
+      "D": "01/07/2026"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 2, Quyết định có hiệu lực thi hành từ ngày ký ban hành.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra điều khoản hiệu lực."
+  },
+  {
+    "id": 709,
+    "question": "Một trong các nhóm giải pháp lớn của Chiến lược là gì?",
+    "options": {
+      "A": "Giải pháp thể chế, quản trị",
+      "B": "Giải pháp phát triển nguồn nhân lực",
+      "C": "Giải pháp trọng dụng, đãi ngộ, tôn vinh trí thức",
+      "D": "Tất cả các đáp án trên"
+    },
+    "answer": "D",
+    "explanation_right": "Theo mục III, Chiến lược bao gồm nhiều nhóm giải pháp lớn như trên.",
+    "explanation_wrong": {
+      "A": "Đúng nhưng chưa đủ.",
+      "B": "Đúng nhưng chưa đủ.",
+      "C": "Đúng nhưng chưa đủ."
+    },
+    "explanation_question": "Kiểm tra khả năng tổng hợp nội dung."
+  },
+  {
+    "id": 710,
+    "question": "Đến năm 2030, ít nhất bao nhiêu % trí thức dưới 45 tuổi trong khu vực công được đào tạo và bồi dưỡng theo các chương trình kỹ năng cao?",
+    "options": {
+      "A": "30%",
+      "B": "40%",
+      "C": "50%",
+      "D": "60%"
+    },
+    "answer": "C",
+    "explanation_right": "Theo mục II.2.a trang 3, ít nhất 50% trí thức dưới 45 tuổi trong khu vực công được đào tạo, bồi dưỡng.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Đánh lừa bằng các tỷ lệ gần nhau."
+  },
+  {
+    "id": 711,
+    "question": "Quyết định số 3579/QĐ-NHNN được ban hành ngày nào?",
+    "options": {
+      "A": "03/11/2025",
+      "B": "12/12/2025",
+      "C": "03/06/2020",
+      "D": "01/04/2025"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang 1 của Quyết định 3579/QĐ-NHNN, văn bản được ký ngày 03/11/2025.",
+    "explanation_wrong": {
+      "B": "Là ngày của văn bản khác.",
+      "C": "Là ngày của Quyết định 749/QĐ-TTg.",
+      "D": "Là ngày của Nghị quyết 71/NQ-CP."
+    },
+    "explanation_question": "Đánh lừa bằng các mốc thời gian của văn bản liên quan."
+  },
+  {
+    "id": 712,
+    "question": "Ai ký ban hành Quyết định 3579/QĐ-NHNN?",
+    "options": {
+      "A": "Phạm Minh Chính",
+      "B": "Nguyễn Thị Hồng",
+      "C": "Nguyễn Chí Dũng",
+      "D": "Lê Minh Khái"
+    },
+    "answer": "B",
+    "explanation_right": "Theo trang 2, Thống đốc Ngân hàng Nhà nước Nguyễn Thị Hồng ký ban hành.",
+    "explanation_wrong": {
+      "A": "Không phải người ký.",
+      "C": "Không phải.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Kiểm tra thông tin hành chính của văn bản."
+  },
+  {
+    "id": 713,
+    "question": "Theo Chiến lược, ai là trung tâm, là chủ thể và là động lực chính của công cuộc chuyển đổi số ngành Ngân hàng?",
+    "options": {
+      "A": "Ngân hàng Nhà nước",
+      "B": "Người dân và doanh nghiệp",
+      "C": "Các ngân hàng thương mại",
+      "D": "Các công ty công nghệ"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Mục I.2 trang 3: Người dân và doanh nghiệp là trung tâm, là chủ thể và là động lực chính.",
+    "explanation_wrong": {
+      "A": "NHNN giữ vai trò dẫn dắt, không phải trung tâm.",
+      "C": "Là đơn vị triển khai.",
+      "D": "Là đối tác hỗ trợ."
+    },
+    "explanation_question": "Kiểm tra quan điểm cốt lõi lấy khách hàng làm trung tâm."
+  },
+  {
+    "id": 714,
+    "question": "Theo Chiến lược, dữ liệu được xác định là gì?",
+    "options": {
+      "A": "Tài sản phụ trợ",
+      "B": "Nguồn lực chiến lược và nền tảng cốt lõi",
+      "C": "Thông tin tham khảo",
+      "D": "Tài sản nội bộ thông thường"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Mục I.5 trang 3: Dữ liệu là nền tảng cốt lõi, tài sản quan trọng và nguồn lực chiến lược.",
+    "explanation_wrong": {
+      "A": "Không đúng.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra nhận thức về vai trò của dữ liệu."
+  },
+  {
+    "id": 715,
+    "question": "Đến năm 2030, tỷ lệ dân số từ 15 tuổi trở lên có tài khoản giao dịch tại ngân hàng hoặc tổ chức được phép khác phấn đấu đạt bao nhiêu?",
+    "options": {
+      "A": "80%",
+      "B": "90%",
+      "C": "95%",
+      "D": "100%"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Mục III.2.a trang 5: Phấn đấu 95% dân số từ 15 tuổi trở lên có tài khoản giao dịch.",
+    "explanation_wrong": {
+      "A": "Thấp hơn mục tiêu.",
+      "B": "Sai.",
+      "D": "Không nêu."
+    },
+    "explanation_question": "Đánh lừa bằng các tỷ lệ gần nhau."
+  },
+  {
+    "id": 716,
+    "question": "Đến năm 2030, giá trị thanh toán không dùng tiền mặt góp bao nhiêu lần GDP?",
+    "options": {
+      "A": "10 lần GDP",
+      "B": "20 lần GDP",
+      "C": "30 lần GDP",
+      "D": "40 lần GDP"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Mục III.2.a trang 5: Giá trị thanh toán không dùng tiền mặt góp 30 lần GDP.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra chỉ tiêu thanh toán số."
+  },
+  {
+    "id": 717,
+    "question": "Đến năm 2030, tối thiểu bao nhiêu % ngân hàng có tỷ trọng doanh thu từ kênh số đạt trên 30%?",
+    "options": {
+      "A": "60%",
+      "B": "70%",
+      "C": "80%",
+      "D": "100%"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Mục III.2.b trang 7: Ít nhất 80% ngân hàng có tỷ trọng doanh thu từ kênh số đạt trên 30%.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Không yêu cầu 100%."
+    },
+    "explanation_question": "Kiểm tra mục tiêu cụ thể cho các ngân hàng."
+  },
+  {
+    "id": 718,
+    "question": "Theo Chiến lược, 100% ngân hàng cung ứng dịch vụ thanh toán trực tuyến phải tuân thủ tiêu chuẩn nào về định danh sinh trắc học?",
+    "options": {
+      "A": "PCI DSS",
+      "B": "NIST SP 800-63B / ISO 30107 / FIDO Biometric Requirements",
+      "C": "ISO 9001",
+      "D": "ITIL"
+    },
+    "answer": "B",
+    "explanation_right": "Theo trang 7, quy định tuân thủ các tiêu chuẩn quốc tế về định danh và sinh trắc học như NIST SP 800-63B, ISO 30107 hoặc FIDO.",
+    "explanation_wrong": {
+      "A": "Là tiêu chuẩn bảo mật thẻ.",
+      "C": "Là quản lý chất lượng.",
+      "D": "Là quản trị dịch vụ CNTT."
+    },
+    "explanation_question": "Đánh lừa giữa các bộ tiêu chuẩn công nghệ."
+  },
+  {
+    "id": 719,
+    "question": "Bao nhiêu % ngân hàng cung ứng dịch vụ thanh toán thẻ phải tuân thủ tiêu chuẩn PCI DSS?",
+    "options": {
+      "A": "50%",
+      "B": "70%",
+      "C": "80%",
+      "D": "100%"
+    },
+    "answer": "C",
+    "explanation_right": "Theo trang 7: 80% các ngân hàng cung ứng dịch vụ thanh toán thẻ tuân thủ PCI DSS.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Không yêu cầu 100%."
+    },
+    "explanation_question": "Kiểm tra khả năng nhớ chỉ tiêu an toàn bảo mật."
+  },
+  {
+    "id": 720,
+    "question": "Quyết định 3579/QĐ-NHNN có hiệu lực từ khi nào?",
+    "options": {
+      "A": "Sau 15 ngày",
+      "B": "Ngày ký ban hành",
+      "C": "01/01/2026",
+      "D": "01/07/2026"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 2 trang 2: Quyết định có hiệu lực thi hành kể từ ngày ký.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra điều khoản hiệu lực."
+  },
+  {
+    "id": 721,
+    "question": "Quyết định số 3580/QĐ-NHNN được ban hành ngày nào?",
+    "options": {
+      "A": "03/11/2025",
+      "B": "03/10/2025",
+      "C": "12/12/2025",
+      "D": "01/01/2026"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang 1 của Quyết định, văn bản được ký ngày 03/11/2025.",
+    "explanation_wrong": {
+      "B": "Sai tháng.",
+      "C": "Là ngày của văn bản khác.",
+      "D": "Không đúng."
+    },
+    "explanation_question": "Kiểm tra thông tin hành chính của văn bản."
+  },
+  {
+    "id": 722,
+    "question": "Ai ký ban hành Quyết định 3580/QĐ-NHNN?",
+    "options": {
+      "A": "Phạm Minh Chính",
+      "B": "Nguyễn Thị Hồng",
+      "C": "Nguyễn Chí Dũng",
+      "D": "Lê Minh Khái"
+    },
+    "answer": "B",
+    "explanation_right": "Theo trang 12, Thống đốc NHNN Nguyễn Thị Hồng ký ban hành.",
+    "explanation_wrong": {
+      "A": "Không phải.",
+      "C": "Không phải.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Kiểm tra người ký ban hành."
+  },
+  {
+    "id": 723,
+    "question": "Theo Chiến lược dữ liệu ngành Ngân hàng, dữ liệu được coi là gì?",
+    "options": {
+      "A": "Nguồn tài nguyên mới, tài nguyên số và nguồn lực chiến lược",
+      "B": "Thông tin tham khảo",
+      "C": "Tài sản nội bộ",
+      "D": "Nguồn lực phụ trợ"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Mục I.2 trang 2: dữ liệu là 'tài nguyên mới', 'tài nguyên số', được coi như nguồn lực chiến lược.",
+    "explanation_wrong": {
+      "B": "Không đầy đủ.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra nhận thức cốt lõi về dữ liệu."
+  },
+  {
+    "id": 724,
+    "question": "Nguyên tắc thu thập dữ liệu trong Chiến lược là gì?",
+    "options": {
+      "A": "Thu thập nhiều lần để đối chiếu",
+      "B": "Thu thập một lần, dùng nhiều lần",
+      "C": "Thu thập theo từng đơn vị",
+      "D": "Thu thập khi phát sinh yêu cầu"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Mục I.4 trang 2: thu thập một lần, dùng nhiều lần.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra nguyên tắc tích hợp và chia sẻ dữ liệu."
+  },
+  {
+    "id": 725,
+    "question": "Tầm nhìn của Chiến lược dữ liệu ngành Ngân hàng đến năm 2030 là gì?",
+    "options": {
+      "A": "Dữ liệu trở thành tài sản chiến lược, bảo đảm chuyển đổi số ngành ngân hàng thành công",
+      "B": "Dữ liệu chỉ phục vụ báo cáo",
+      "C": "Dữ liệu chỉ phục vụ thanh toán",
+      "D": "Dữ liệu chỉ phục vụ giám sát"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Mục II trang 3.",
+    "explanation_wrong": {
+      "B": "Quá hẹp.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra tầm nhìn chiến lược."
+  },
+  {
+    "id": 726,
+    "question": "Đến năm 2030, bao nhiêu % thủ tục hành chính của NHNN đủ điều kiện được nâng cấp lên dịch vụ công trực tuyến toàn trình?",
+    "options": {
+      "A": "70%",
+      "B": "80%",
+      "C": "90%",
+      "D": "100%"
+    },
+    "answer": "D",
+    "explanation_right": "Theo mục 2.2.1 trang 4: 100% thủ tục hành chính đủ điều kiện được nâng cấp.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "C": "Sai."
+    },
+    "explanation_question": "Kiểm tra mục tiêu dữ liệu phục vụ Chính phủ số."
+  },
+  {
+    "id": 727,
+    "question": "Đến năm 2030, giá trị thanh toán không dùng tiền mặt góp bao nhiêu lần GDP?",
+    "options": {
+      "A": "10 lần GDP",
+      "B": "20 lần GDP",
+      "C": "30 lần GDP",
+      "D": "40 lần GDP"
+    },
+    "answer": "C",
+    "explanation_right": "Theo mục 2.2.2 trang 5: góp 30 lần GDP.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Liên hệ với chỉ tiêu chuyển đổi số ngành ngân hàng."
+  },
+  {
+    "id": 728,
+    "question": "Tỷ lệ dân số từ 15 tuổi trở lên có tài khoản giao dịch tại ngân hàng hoặc tổ chức được phép khác đến năm 2030 là bao nhiêu?",
+    "options": {
+      "A": "80%",
+      "B": "90%",
+      "C": "95%",
+      "D": "100%"
+    },
+    "answer": "C",
+    "explanation_right": "Theo mục 2.2.2 trang 5: đạt từ 95% trở lên.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Không nêu."
+    },
+    "explanation_question": "Kiểm tra chỉ tiêu tài chính toàn diện."
+  },
+  {
+    "id": 729,
+    "question": "Mô hình hoạt động song song giữa các trung tâm dữ liệu của NHNN được nêu trong Chiến lược là gì?",
+    "options": {
+      "A": "Active/Passive",
+      "B": "Standby",
+      "C": "Active/Active",
+      "D": "Cold backup"
+    },
+    "answer": "C",
+    "explanation_right": "Theo trang 9: tiếp tục ứng dụng mô hình Active/Active.",
+    "explanation_wrong": {
+      "A": "Không đúng.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra nội dung hạ tầng dữ liệu và DR."
+  },
+  {
+    "id": 730,
+    "question": "Quyết định 3580/QĐ-NHNN có hiệu lực từ khi nào?",
+    "options": {
+      "A": "Sau 15 ngày",
+      "B": "Ngày ký",
+      "C": "01/01/2026",
+      "D": "Khi có hướng dẫn"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 2 trang 12: có hiệu lực thi hành kể từ ngày ký.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra điều khoản hiệu lực."
+  },
+  {
+    "id": 731,
+    "question": "Quyết định số 11/QĐ-HHNH ban hành kèm theo nội dung nào?",
+    "options": {
+      "A": "Bộ quy tắc quản trị ngân hàng",
+      "B": "Bộ chuẩn mực đạo đức nghề nghiệp và quy tắc ứng xử của cán bộ ngân hàng",
+      "C": "Bộ quy chế lao động ngành ngân hàng",
+      "D": "Bộ tiêu chuẩn kỹ năng cán bộ ngân hàng"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 1 của Quyết định, ban hành kèm theo 'Bộ chuẩn mực đạo đức nghề nghiệp và quy tắc ứng xử của cán bộ ngân hàng'.",
+    "explanation_wrong": {
+      "A": "Sai tên văn bản.",
+      "C": "Không đúng nội dung.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Đánh lừa bằng các tên văn bản gần nghĩa."
+  },
+  {
+    "id": 732,
+    "question": "Quyết định số 11/QĐ-HHNH có hiệu lực từ khi nào?",
+    "options": {
+      "A": "Sau 15 ngày",
+      "B": "Kể từ ngày ký ban hành",
+      "C": "01/01 năm sau",
+      "D": "Khi có hướng dẫn"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 2, Quyết định có hiệu lực kể từ ngày ký ban hành.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Không quy định.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra điều khoản hiệu lực."
+  },
+  {
+    "id": 733,
+    "question": "Bộ chuẩn mực áp dụng đối với đối tượng nào?",
+    "options": {
+      "A": "Tất cả doanh nghiệp",
+      "B": "Các tổ chức hội viên thuộc Hiệp hội Ngân hàng Việt Nam",
+      "C": "Chỉ Ngân hàng Nhà nước",
+      "D": "Chỉ ngân hàng thương mại nhà nước"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 1 Chương I, Bộ chuẩn mực áp dụng đối với các tổ chức hội viên thuộc Hiệp hội Ngân hàng Việt Nam.",
+    "explanation_wrong": {
+      "A": "Quá rộng.",
+      "C": "Sai.",
+      "D": "Không giới hạn như vậy."
+    },
+    "explanation_question": "Kiểm tra phạm vi áp dụng."
+  },
+  {
+    "id": 734,
+    "question": "Một trong các mục đích của Bộ chuẩn mực là gì?",
+    "options": {
+      "A": "Nâng cao ý thức tu dưỡng, rèn luyện đạo đức nghề nghiệp",
+      "B": "Tăng doanh thu ngân hàng",
+      "C": "Giảm lãi suất huy động",
+      "D": "Tăng số lượng nhân sự"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 2 Chương I.",
+    "explanation_wrong": {
+      "B": "Không phải mục đích của văn bản.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Phân biệt mục tiêu đạo đức với mục tiêu kinh doanh."
+  },
+  {
+    "id": 735,
+    "question": "Chuẩn mực đạo đức nghề nghiệp đầu tiên của cán bộ ngân hàng là gì?",
+    "options": {
+      "A": "Sự liêm chính",
+      "B": "Sự tận tâm",
+      "C": "Tính tuân thủ",
+      "D": "Sự sáng tạo"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 4 Chương II, chuẩn mực đầu tiên là Tính tuân thủ.",
+    "explanation_wrong": {
+      "A": "Là chuẩn mực khác.",
+      "B": "Không phải đầu tiên.",
+      "D": "Không nêu."
+    },
+    "explanation_question": "Kiểm tra thứ tự các chuẩn mực."
+  },
+  {
+    "id": 736,
+    "question": "Theo chuẩn mực 'Sự cẩn trọng', cán bộ ngân hàng không được làm gì?",
+    "options": {
+      "A": "Cân nhắc kỹ mọi rủi ro",
+      "B": "Tự giác chịu giám sát",
+      "C": "Chủ quan, liều lĩnh, dễ dãi, cả tin",
+      "D": "Đề cao tinh thần trách nhiệm"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 4 mục 2.b.",
+    "explanation_wrong": {
+      "A": "Là hành vi đúng.",
+      "B": "Là hành vi đúng.",
+      "D": "Là hành vi đúng."
+    },
+    "explanation_question": "Phân biệt hành vi được phép và bị cấm."
+  },
+  {
+    "id": 737,
+    "question": "Theo chuẩn mực 'Sự liêm chính', cán bộ ngân hàng không được làm gì?",
+    "options": {
+      "A": "Bảo vệ tài sản và lợi ích hợp pháp của tổ chức",
+      "B": "Tham ô, vụ lợi hoặc tiếp tay cho hành vi tham ô, vụ lợi",
+      "C": "Báo cáo kịp thời vi phạm",
+      "D": "Giữ sự minh bạch"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 4 mục 3.b.",
+    "explanation_wrong": {
+      "A": "Là hành vi đúng.",
+      "C": "Là hành vi đúng.",
+      "D": "Là hành vi đúng."
+    },
+    "explanation_question": "Đánh lừa giữa nghĩa vụ và hành vi cấm."
+  },
+  {
+    "id": 738,
+    "question": "Theo mục 'Ý thức bảo mật thông tin', cán bộ ngân hàng không được làm gì?",
+    "options": {
+      "A": "Lưu trữ hồ sơ theo quy định",
+      "B": "Không tùy tiện, sơ hở trong trao đổi thông tin nội bộ",
+      "C": "Đưa ra thông tin sai lệch, thiếu chính xác gây tổn hại uy tín",
+      "D": "Bảo quản tài liệu"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 4 mục 6.a.",
+    "explanation_wrong": {
+      "A": "Là hành vi đúng.",
+      "B": "Là yêu cầu đúng.",
+      "D": "Là hành vi đúng."
+    },
+    "explanation_question": "Kiểm tra nhận thức về bảo mật thông tin."
+  },
+  {
+    "id": 739,
+    "question": "Trong ứng xử nội bộ, cán bộ cấp trên cần làm gì?",
+    "options": {
+      "A": "Trù dập cấp dưới",
+      "B": "Lắng nghe, khuyến khích cấp dưới bày tỏ quan điểm",
+      "C": "Phân biệt đối xử",
+      "D": "Lạm dụng chức vụ để trục lợi"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 5 mục 1.b.",
+    "explanation_wrong": {
+      "A": "Bị cấm.",
+      "C": "Bị cấm.",
+      "D": "Bị cấm."
+    },
+    "explanation_question": "Phân biệt ứng xử chuẩn mực và hành vi vi phạm."
+  },
+  {
+    "id": 740,
+    "question": "Các tổ chức hội viên thuộc Hiệp hội Ngân hàng Việt Nam có trách nhiệm gì?",
+    "options": {
+      "A": "Hưởng ứng, phổ biến, tuyên truyền và quán triệt thực hiện Bộ chuẩn mực",
+      "B": "Tự sửa đổi Bộ chuẩn mực",
+      "C": "Không cần báo cáo",
+      "D": "Chỉ áp dụng nội bộ nếu muốn"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 6 Chương IV.",
+    "explanation_wrong": {
+      "B": "Không quy định.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra trách nhiệm tổ chức thực hiện."
+  },
+  
+    "question": "Trong thời gian chưa ban hành khung kiến trúc số cấp bộ, cấp tỉnh mới thì xử lý thế nào?",
+    "options": {
+      "A": "Ngừng áp dụng các khung hiện hành",
+      "B": "Tiếp tục thực hiện các khung kiến trúc số hiện hành",
+      "C": "Tự xây mới không cần phê duyệt",
+      "D": "Áp dụng theo từng địa phương"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 2 khoản 2.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Không đúng quy định.",
+      "D": "Không nêu."
+    },
+    "explanation_question": "Kiểm tra điều khoản chuyển tiếp."
+  },
+  {
+    "id": 748,
+    "question": "Theo đề nghị của ai mà Bộ trưởng ban hành Quyết định này?",
+    "options": {
+      "A": "Cục trưởng Cục Chuyển đổi số quốc gia",
+      "B": "Thủ tướng Chính phủ",
+      "C": "Bộ trưởng Bộ Công an",
+      "D": "Ngân hàng Nhà nước Việt Nam"
+    },
+    "answer": "A",
+    "explanation_right": "Theo phần căn cứ cuối cùng của văn bản.",
+    "explanation_wrong": {
+      "B": "Không phải.",
+      "C": "Không phải.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Kiểm tra chi tiết hành chính trong văn bản."
+  },
+  {
+    "id": 749,
+    "question": "Ai ký thay Bộ trưởng ban hành Quyết định số 3090/QĐ-BKHCN?",
+    "options": {
+      "A": "Phạm Đức Long",
+      "B": "Nguyễn Chí Dũng",
+      "C": "Nguyễn Mạnh Hùng",
+      "D": "Lương Tam Quang"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang 2: KT. Bộ trưởng, Thứ trưởng Phạm Đức Long ký.",
+    "explanation_wrong": {
+      "B": "Không phải.",
+      "C": "Không có trong văn bản.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Kiểm tra thông tin người ký."
+  },
+  {
+    "id": 750,
+    "question": "Nghị định số 55/2025/NĐ-CP được viện dẫn để quy định về nội dung gì?",
+    "options": {
+      "A": "Chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Khoa học và Công nghệ",
+      "B": "Quản lý dữ liệu quốc gia",
+      "C": "Quản lý hoạt động ngân hàng",
+      "D": "Quản lý đầu tư công"
+    },
+    "answer": "A",
+    "explanation_right": "Theo phần căn cứ đầu tiên của văn bản.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra căn cứ tổ chức bộ máy."
+  },
+  {
+    "id": 751,
+    "question": "Chỉ thị số 02/CT-NHNN được ban hành ngày nào?",
+    "options": {
+      "A": "08/01/2026",
+      "B": "03/11/2025",
+      "C": "06/01/2022",
+      "D": "15/12/2026"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang 1 của Chỉ thị, văn bản được ký ngày 08/01/2026.",
+    "explanation_wrong": {
+      "B": "Là ngày của Quyết định 3579 và 3580/QĐ-NHNN.",
+      "C": "Là ngày của Quyết định 06/QĐ-TTg.",
+      "D": "Là hạn báo cáo trong Chỉ thị."
+    },
+    "explanation_question": "Đánh lừa bằng các mốc ngày liên quan."
+  },
+  {
+    "id": 752,
+    "question": "Ai ký ban hành Chỉ thị số 02/CT-NHNN?",
+    "options": {
+      "A": "Phạm Minh Chính",
+      "B": "Nguyễn Thị Hồng",
+      "C": "Nguyễn Chí Dũng",
+      "D": "Lê Minh Khái"
+    },
+    "answer": "B",
+    "explanation_right": "Theo trang 6, Thống đốc NHNN Nguyễn Thị Hồng ký ban hành.",
+    "explanation_wrong": {
+      "A": "Không phải.",
+      "C": "Không phải.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Kiểm tra thông tin hành chính."
+  },
+  {
+    "id": 753,
+    "question": "Một trong các rủi ro, thách thức được nêu trong Chỉ thị là gì?",
+    "options": {
+      "A": "Tội phạm tấn công vào hệ thống thông tin hoặc lừa đảo chiếm đoạt tài sản qua mạng",
+      "B": "Thiếu vốn điều lệ của các ngân hàng",
+      "C": "Thiếu nhân sự kế toán",
+      "D": "Thiếu điểm giao dịch vật lý"
+    },
+    "answer": "A",
+    "explanation_right": "Theo phần mở đầu trang 1.",
+    "explanation_wrong": {
+      "B": "Không nêu.",
+      "C": "Không nêu.",
+      "D": "Không nêu."
+    },
+    "explanation_question": "Kiểm tra nhận diện rủi ro trọng yếu."
+  },
+  {
+    "id": 754,
+    "question": "Tỷ lệ tối thiểu kinh phí triển khai dành cho sản phẩm, dịch vụ an ninh mạng, bảo mật thông tin, dữ liệu là bao nhiêu?",
+    "options": {
+      "A": "5%",
+      "B": "10%",
+      "C": "15%",
+      "D": "20%"
+    },
+    "answer": "C",
+    "explanation_right": "Theo mục I.5 trang 2: tối thiểu 15% tổng kinh phí triển khai.",
+    "explanation_wrong": {
+      "A": "Thấp hơn quy định.",
+      "B": "Sai.",
+      "D": "Không nêu."
+    },
+    "explanation_question": "Kiểm tra chỉ tiêu cụ thể dễ bị bỏ sót."
+  },
+  {
+    "id": 755,
+    "question": "Theo Chỉ thị, yêu cầu chuyển đổi từ biện pháp phòng vệ thụ động sang gì?",
+    "options": {
+      "A": "Bỏ phòng vệ",
+      "B": "Tích cực chủ động phát hiện và xử lý sớm",
+      "C": "Chỉ thuê ngoài giám sát",
+      "D": "Chờ cảnh báo từ cơ quan quản lý"
+    },
+    "answer": "B",
+    "explanation_right": "Theo mục I.3 trang 2.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Không đầy đủ.",
+      "D": "Sai tinh thần chỉ đạo."
+    },
+    "explanation_question": "Kiểm tra tư duy an ninh chủ động."
+  },
+  {
+    "id": 756,
+    "question": "Đơn vị nào chủ trì, phối hợp theo dõi tình hình triển khai thực hiện Chỉ thị?",
+    "options": {
+      "A": "Cục Công nghệ thông tin NHNN",
+      "B": "Vụ Thanh toán",
+      "C": "Cơ quan Thanh tra giám sát ngân hàng",
+      "D": "Văn phòng Chính phủ"
+    },
+    "answer": "A",
+    "explanation_right": "Theo mục IV.3 trang 6.",
+    "explanation_wrong": {
+      "B": "Không phải đơn vị chủ trì chung.",
+      "C": "Không phải.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Kiểm tra đầu mối thực hiện."
+  },
+  {
+    "id": 757,
+    "question": "Các đơn vị phải gửi báo cáo tình hình thực hiện Chỉ thị về NHNN trước ngày nào?",
+    "options": {
+      "A": "31/12",
+      "B": "15/12",
+      "C": "01/12",
+      "D": "30/11"
+    },
+    "answer": "B",
+    "explanation_right": "Theo mục IV.2 trang 6: gửi trước ngày 15 tháng 12.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra mốc thời gian báo cáo."
+  },
+  {
+    "id": 758,
+    "question": "Một trong các mô hình kinh doanh mới được nêu trong Chỉ thị là gì?",
+    "options": {
+      "A": "Open Banking, Embedded Finance, Banking as a Service",
+      "B": "Chỉ Mobile Banking",
+      "C": "Chỉ ATM Banking",
+      "D": "Branch-only Banking"
+    },
+    "answer": "A",
+    "explanation_right": "Theo mục III.3 trang 5.",
+    "explanation_wrong": {
+      "B": "Không đầy đủ.",
+      "C": "Không đúng.",
+      "D": "Ngược xu hướng."
+    },
+    "explanation_question": "Kiểm tra nội dung đổi mới mô hình kinh doanh."
+  },
+  {
+    "id": 759,
+    "question": "Theo Chỉ thị, công nghệ nào được khuyến khích ứng dụng để nâng cao hiệu suất làm việc và phân tích dự báo?",
+    "options": {
+      "A": "AI/ML và GenAI",
+      "B": "Chỉ Excel",
+      "C": "Chỉ OCR",
+      "D": "Chỉ Blockchain"
+    },
+    "answer": "A",
+    "explanation_right": "Theo mục II.6 và III.2.",
+    "explanation_wrong": {
+      "B": "Quá hạn chế.",
+      "C": "Không đầy đủ.",
+      "D": "Không được nêu trực tiếp."
+    },
+    "explanation_question": "Kiểm tra xu hướng công nghệ trọng tâm."
+  },
+  {
+    "id": 760,
+    "question": "Chỉ thị số 02/CT-NHNN có hiệu lực từ khi nào?",
+    "options": {
+      "A": "Sau 15 ngày",
+      "B": "Kể từ ngày ký",
+      "C": "01/02/2026",
+      "D": "Khi có hướng dẫn"
+    },
+    "answer": "B",
+    "explanation_right": "Theo mục IV.1 trang 6: Chỉ thị có hiệu lực kể từ ngày ký.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Không nêu.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra điều khoản hiệu lực."
+  },
+  {
+    "id": 761,
+    "question": "Quyết định số 1938/QĐ-NHNN được ban hành ngày nào?",
+    "options": {
+      "A": "21/03/2025",
+      "B": "28/04/2025",
+      "C": "03/11/2025",
+      "D": "15/05/2025"
+    },
+    "answer": "B",
+    "explanation_right": "Theo trang 1 của Quyết định, văn bản được ký ngày 28/04/2025.",
+    "explanation_wrong": {
+      "A": "Là ngày của Kế hoạch số 01-KH/BCĐTW.",
+      "C": "Không đúng.",
+      "D": "Là mốc triển khai một nhiệm vụ."
+    },
+    "explanation_question": "Kiểm tra thông tin hành chính cơ bản."
+  },
+  {
+    "id": 762,
+    "question": "Phong trào được nhắc đến trong Quyết định số 1938/QĐ-NHNN là gì?",
+    "options": {
+      "A": "Toàn dân bảo vệ an ninh Tổ quốc",
+      "B": "Bình dân học vụ số",
+      "C": "Người Việt Nam ưu tiên dùng hàng Việt Nam",
+      "D": "Chuyển đổi số quốc gia"
+    },
+    "answer": "B",
+    "explanation_right": "Quyết định triển khai phong trào “Bình dân học vụ số”.",
+    "explanation_wrong": {
+      "A": "Không phải.",
+      "C": "Không phải.",
+      "D": "Là nội dung liên quan nhưng không phải tên phong trào."
+    },
+    "explanation_question": "Kiểm tra nội dung trọng tâm."
+  },
+  {
+    "id": 763,
+    "question": "Ai ký ban hành Quyết định số 1938/QĐ-NHNN?",
+    "options": {
+      "A": "Nguyễn Thị Hồng",
+      "B": "Phạm Minh Chính",
+      "C": "Nguyễn Chí Dũng",
+      "D": "Lê Minh Khái"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang 2, Thống đốc NHNN Nguyễn Thị Hồng ký.",
+    "explanation_wrong": {
+      "B": "Không phải.",
+      "C": "Không phải.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Kiểm tra thông tin người ký."
+  },
+  {
+    "id": 764,
+    "question": "Một trong các mục tiêu của phong trào “Bình dân học vụ số” là gì?",
+    "options": {
+      "A": "Phổ cập tri thức nền tảng về chuyển đổi số và kỹ năng số",
+      "B": "Tăng vốn điều lệ cho ngân hàng",
+      "C": "Giảm số lượng chi nhánh",
+      "D": "Tăng phí dịch vụ ngân hàng"
+    },
+    "answer": "A",
+    "explanation_right": "Theo mục I trang 3.",
+    "explanation_wrong": {
+      "B": "Không liên quan.",
+      "C": "Không nêu.",
+      "D": "Không nêu."
+    },
+    "explanation_question": "Kiểm tra mục tiêu chương trình."
+  },
+  {
+    "id": 765,
+    "question": "Vụ nào của NHNN có trách nhiệm theo dõi, đôn đốc, hướng dẫn triển khai Kế hoạch?",
+    "options": {
+      "A": "Vụ Tổ chức cán bộ",
+      "B": "Vụ Thanh toán",
+      "C": "Vụ Chính sách tiền tệ",
+      "D": "Vụ Tài chính kế toán"
+    },
+    "answer": "A",
+    "explanation_right": "Theo mục III trang 4.",
+    "explanation_wrong": {
+      "B": "Không phải.",
+      "C": "Không phải.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Kiểm tra đơn vị đầu mối."
+  },
+  {
+    "id": 766,
+    "question": "Các đơn vị phải định kỳ báo cáo kết quả triển khai Kế hoạch vào những ngày nào?",
+    "options": {
+      "A": "15/3, 15/6, 15/9 và 15/12",
+      "B": "01/1, 01/4, 01/7 và 01/10",
+      "C": "Cuối mỗi tháng",
+      "D": "31/12 hàng năm"
+    },
+    "answer": "A",
+    "explanation_right": "Theo mục III trang 4.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Không quy định.",
+      "D": "Không đầy đủ."
+    },
+    "explanation_question": "Kiểm tra mốc thời gian báo cáo."
+  },
+  {
+    "id": 767,
+    "question": "Mục tiêu đến 31/12/2025 là bao nhiêu phần trăm CBCCVC&NLD trong ngành Ngân hàng được phổ cập kiến thức chuyển đổi số ở cấp độ cơ bản?",
+    "options": {
+      "A": "50%",
+      "B": "80%",
+      "C": "100%",
+      "D": "70%"
+    },
+    "answer": "C",
+    "explanation_right": "Theo phụ lục trang 6.",
+    "explanation_wrong": {
+      "A": "Là mốc 30/6/2025.",
+      "B": "Là mốc 30/9/2025.",
+      "D": "Là mốc 31/3/2026 cho cấp độ nâng cao."
+    },
+    "explanation_question": "Kiểm tra KPI quan trọng."
+  },
+  {
+    "id": 768,
+    "question": "Đến 31/12/2026, mục tiêu về “Đại sứ số” và “Hạt nhân số” tại các đơn vị là gì?",
+    "options": {
+      "A": "100% các đơn vị đều có",
+      "B": "50% các đơn vị có",
+      "C": "Chỉ NHNN Trung ương có",
+      "D": "Không đặt mục tiêu"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang 8.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra chỉ tiêu tổ chức."
+  },
+  {
+    "id": 769,
+    "question": "Trước ngày 15/05/2025 phải hoàn thành việc gì?",
+    "options": {
+      "A": "Xây dựng chuyên mục về Phong trào Bình dân học vụ số trên Cổng thông tin điện tử NHNN, TBNH",
+      "B": "100% cán bộ đạt kỹ năng số nâng cao",
+      "C": "Hoàn thành khen thưởng năm 2025",
+      "D": "Ban hành Khung kỹ năng số"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang 8.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Mốc khác."
+    },
+    "explanation_question": "Kiểm tra mốc triển khai truyền thông."
+  },
+  {
+    "id": 770,
+    "question": "Có bao nhiêu nhóm đối tượng được xây dựng Khung kỹ năng số riêng?",
+    "options": {
+      "A": "4 nhóm",
+      "B": "5 nhóm",
+      "C": "6 nhóm",
+      "D": "7 nhóm"
+    },
+    "answer": "C",
+    "explanation_right": "Theo mục 2.1 trang 13 và các trang tiếp theo.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "B": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra cấu trúc chương trình đào tạo."
+  },
+  {
+    "id": 771,
+    "question": "Quyết định số 1789/2005/QĐ-NHNN được ban hành ngày nào?",
+    "options": {
+      "A": "12/12/2005",
+      "B": "04/12/1996",
+      "C": "16/09/1997",
+      "D": "17/06/2003"
+    },
+    "answer": "A",
+    "explanation_right": "Theo trang đầu của Quyết định, văn bản được ký ngày 12/12/2005.",
+    "explanation_wrong": {
+      "B": "Là ngày của Quyết định 321/QĐ-NH2.",
+      "C": "Là ngày của Quyết định 308/QĐ-NH2.",
+      "D": "Là ngày ban hành Luật Kế toán."
+    },
+    "explanation_question": "Đánh lừa bằng các mốc ngày xuất hiện trong phần căn cứ và văn bản bị thay thế."
+  },
+  {
+    "id": 772,
+    "question": "Quyết định 1789/2005/QĐ-NHNN ban hành kèm theo nội dung gì?",
+    "options": {
+      "A": "Chế độ chứng từ kế toán ngân hàng",
+      "B": "Chế độ kế toán doanh nghiệp",
+      "C": "Quy chế thanh toán điện tử liên ngân hàng",
+      "D": "Quy chế kho quỹ ngân hàng"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 1 của Quyết định.",
+    "explanation_wrong": {
+      "B": "Không đúng.",
+      "C": "Không phải nội dung văn bản.",
+      "D": "Không đúng."
+    },
+    "explanation_question": "Kiểm tra tên chính xác của phụ lục ban hành kèm."
+  },
+  {
+    "id": 773,
+    "question": "Quyết định này có hiệu lực thi hành khi nào?",
+    "options": {
+      "A": "Kể từ ngày ký",
+      "B": "Sau 15 ngày kể từ ngày đăng Công báo",
+      "C": "Sau 30 ngày",
+      "D": "01/01/2006"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 2 của Quyết định.",
+    "explanation_wrong": {
+      "A": "Sai vì không hiệu lực ngay.",
+      "C": "Sai.",
+      "D": "Không quy định."
+    },
+    "explanation_question": "Kiểm tra điều khoản hiệu lực."
+  },
+  {
+    "id": 774,
+    "question": "Chứng từ kế toán ngân hàng được thể hiện bằng những hình thức nào?",
+    "options": {
+      "A": "Chỉ chứng từ giấy",
+      "B": "Chỉ chứng từ điện tử",
+      "C": "Chứng từ giấy hoặc chứng từ điện tử",
+      "D": "Chứng từ giấy, điện tử và miệng"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 3 khoản 1.",
+    "explanation_wrong": {
+      "A": "Không đầy đủ.",
+      "B": "Không đầy đủ.",
+      "D": "Không có hình thức miệng."
+    },
+    "explanation_question": "Kiểm tra kiến thức nền tảng về hình thức chứng từ."
+  },
+  {
+    "id": 775,
+    "question": "Chứng từ kế toán ngân hàng hợp pháp, hợp lệ là căn cứ để làm gì?",
+    "options": {
+      "A": "Ghi sổ kế toán ngân hàng",
+      "B": "Chỉ để lưu hồ sơ",
+      "C": "Chỉ để kiểm tra nội bộ",
+      "D": "Làm báo cáo thuế"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 4: thông tin, số liệu trên chứng từ hợp pháp, hợp lệ là căn cứ để ghi sổ kế toán ngân hàng.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Không đầy đủ."
+    },
+    "explanation_question": "Kiểm tra giá trị pháp lý của chứng từ."
+  },
+  {
+    "id": 776,
+    "question": "Số tiền trên chứng từ kế toán ngân hàng bắt buộc phải ghi như thế nào?",
+    "options": {
+      "A": "Chỉ bằng số",
+      "B": "Chỉ bằng chữ",
+      "C": "Bằng số và bằng chữ",
+      "D": "Có thể bỏ trống nếu là chứng từ điện tử"
+    },
+    "answer": "C",
+    "explanation_right": "Theo Điều 7 khoản 7.",
+    "explanation_wrong": {
+      "A": "Không đúng quy định.",
+      "B": "Không đúng quy định.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra quy định bắt buộc dễ nhầm."
+  },
+  {
+    "id": 777,
+    "question": "Trên chứng từ kế toán bằng giấy, chữ ký phải được thực hiện như thế nào?",
+    "options": {
+      "A": "Ký bằng bút mực",
+      "B": "Ký bằng mực đỏ",
+      "C": "Đóng dấu chữ ký khắc sẵn",
+      "D": "Ký bằng bút chì"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 8 khoản 1.a: phải ký bằng bút mực; không được ký bằng mực đỏ hoặc đóng dấu chữ ký khắc sẵn.",
+    "explanation_wrong": {
+      "B": "Bị cấm.",
+      "C": "Bị cấm.",
+      "D": "Không hợp lệ."
+    },
+    "explanation_question": "Đánh lừa bằng các cách ký không hợp lệ."
+  },
+  {
+    "id": 778,
+    "question": "Nếu phát hiện chứng từ kế toán vi phạm pháp luật trong quá trình kiểm soát thì ngân hàng phải làm gì?",
+    "options": {
+      "A": "Vẫn thực hiện giao dịch",
+      "B": "Từ chối thực hiện và báo cáo lãnh đạo ngân hàng",
+      "C": "Tự ý sửa chứng từ",
+      "D": "Lưu hồ sơ rồi xử lý sau"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 9 khoản 2.",
+    "explanation_wrong": {
+      "A": "Sai nghiêm trọng.",
+      "C": "Không đúng thẩm quyền.",
+      "D": "Sai quy trình."
+    },
+    "explanation_question": "Kiểm tra quy trình xử lý rủi ro."
+  },
+  {
+    "id": 779,
+    "question": "Nguyên tắc đối với chứng từ nộp tiền mặt là gì?",
+    "options": {
+      "A": "Thu đủ tiền mới ghi sổ kế toán",
+      "B": "Ghi sổ trước rồi thu tiền",
+      "C": "Thu một phần rồi ghi sổ",
+      "D": "Không cần ghi sổ"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 10 khoản 3.a.",
+    "explanation_wrong": {
+      "B": "Áp dụng cho lĩnh tiền mặt là ghi sổ trước rồi chi tiền.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Phân biệt nguyên tắc nộp tiền và lĩnh tiền."
+  },
+  {
+    "id": 780,
+    "question": "Khi phát hiện chứng từ kế toán bị mất hoặc bị hủy hoại, việc đầu tiên phải làm là gì?",
+    "options": {
+      "A": "Lập biên bản xác định số lượng, hiện trạng, nguyên nhân và thông báo cơ quan liên quan",
+      "B": "Tiêu hủy toàn bộ hồ sơ",
+      "C": "Chờ kiểm toán xử lý",
+      "D": "Tự phục hồi ngay không cần báo cáo"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 15 khoản 1.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Không đúng quy trình.",
+      "D": "Thiếu bước bắt buộc."
+    },
+    "explanation_question": "Kiểm tra quy trình xử lý sự cố chứng từ."
   }
 ]
