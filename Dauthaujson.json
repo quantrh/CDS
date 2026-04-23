@@ -12079,15 +12079,7 @@
     },
     "explanation_question": "Kiểm tra căn cứ tổ chức bộ máy."
   },
-    "answer": "A",
-    "explanation_right": "Theo phần căn cứ đầu tiên của văn bản.",
-    "explanation_wrong": {
-      "B": "Sai.",
-      "C": "Sai.",
-      "D": "Sai."
-    },
-    "explanation_question": "Kiểm tra căn cứ tổ chức bộ máy."
-  },
+   
   {
     "id": 751,
     "question": "Chỉ thị số 02/CT-NHNN được ban hành ngày nào?",
