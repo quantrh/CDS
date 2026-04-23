@@ -8259,7 +8259,7 @@
     "explanation_wrong": {
       "A": "Sai.",
       "B": "Sai.",
-      "D": 'Thông tư quy định tối thiểu là 6.'
+      "D": "Thông tư quy định tối thiểu là 6."
     },
     "explanation_question": "Yêu cầu mật khẩu."
   },
@@ -11899,7 +11899,116 @@
     },
     "explanation_question": "Kiểm tra trách nhiệm tổ chức thực hiện."
   },
-  
+  {
+    "id": 741,
+    "question": "Quyết định số 3090/QĐ-BKHCN ban hành nội dung gì?",
+    "options": {
+      "A": "Khung quản trị dữ liệu quốc gia",
+      "B": "Khung kiến trúc tổng thể quốc gia số",
+      "C": "Khung chuyển đổi số ngành ngân hàng",
+      "D": "Khung an toàn thông tin quốc gia"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 1 của Quyết định, ban hành kèm theo Khung kiến trúc tổng thể quốc gia số.",
+    "explanation_wrong": {
+      "A": "Là nội dung của văn bản khác.",
+      "C": "Không thuộc Bộ KH&CN.",
+      "D": "Không đúng."
+    },
+    "explanation_question": "Đánh lừa bằng các loại 'khung' gần nghĩa."
+  },
+  {
+    "id": 742,
+    "question": "Cơ quan ban hành Quyết định số 3090/QĐ-BKHCN là cơ quan nào?",
+    "options": {
+      "A": "Ngân hàng Nhà nước Việt Nam",
+      "B": "Bộ Khoa học và Công nghệ",
+      "C": "Bộ Thông tin và Truyền thông",
+      "D": "Văn phòng Chính phủ"
+    },
+    "answer": "B",
+    "explanation_right": "Theo tiêu đề văn bản, cơ quan ban hành là Bộ Khoa học và Công nghệ.",
+    "explanation_wrong": {
+      "A": "Không phải.",
+      "C": "Dễ nhầm vì phụ trách chuyển đổi số trước đây.",
+      "D": "Không phải."
+    },
+    "explanation_question": "Kiểm tra nhận diện cơ quan ban hành."
+  },
+  {
+    "id": 743,
+    "question": "Theo Quyết định, văn bản nào bị thay thế?",
+    "options": {
+      "A": "Công văn số 1736/BKHCN-CĐSQG ngày 21/5/2025",
+      "B": "Nghị quyết 57-NQ/TW",
+      "C": "Nghị định 194/2025/NĐ-CP",
+      "D": "Quyết định 2439/QĐ-TTg"
+    },
+    "answer": "A",
+    "explanation_right": "Theo Điều 2 khoản 1, Quyết định này thay thế Công văn số 1736/BKHCN-CĐSQG ngày 21/5/2025.",
+    "explanation_wrong": {
+      "B": "Là căn cứ pháp lý.",
+      "C": "Là căn cứ pháp lý.",
+      "D": "Là văn bản khác."
+    },
+    "explanation_question": "Phân biệt văn bản bị thay thế và căn cứ pháp lý."
+  },
+  {
+    "id": 744,
+    "question": "Quyết định số 3090/QĐ-BKHCN có hiệu lực từ khi nào?",
+    "options": {
+      "A": "Sau 15 ngày",
+      "B": "Kể từ ngày ký",
+      "C": "01/01/2026",
+      "D": "Khi có hướng dẫn"
+    },
+    "answer": "B",
+    "explanation_right": "Theo Điều 2 khoản 1: Quyết định có hiệu lực thi hành kể từ ngày ký.",
+    "explanation_wrong": {
+      "A": "Sai.",
+      "C": "Không quy định.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra điều khoản hiệu lực."
+  },
+  {
+    "id": 745,
+    "question": "Nghị quyết nào của Bộ Chính trị được viện dẫn làm căn cứ trong Quyết định?",
+    "options": {
+      "A": "Nghị quyết 57-NQ/TW",
+      "B": "Nghị quyết 71/NQ-CP",
+      "C": "Nghị quyết 03/NQ-CP",
+      "D": "Nghị quyết 68-NQ/TW"
+    },
+    "answer": "A",
+    "explanation_right": "Theo phần căn cứ, viện dẫn Nghị quyết 57-NQ/TW ngày 22/12/2024.",
+    "explanation_wrong": {
+      "B": "Là nghị quyết của Chính phủ.",
+      "C": "Không phải.",
+      "D": "Không nêu."
+    },
+    "explanation_question": "Kiểm tra căn cứ chính trị của văn bản."
+  },
+  {
+    "id": 746,
+    "question": "Nghị định 194/2025/NĐ-CP quy định chi tiết về nội dung nào?",
+    "options": {
+      "A": "Cơ sở dữ liệu quốc gia, kết nối và chia sẻ dữ liệu, dữ liệu mở phục vụ giao dịch điện tử",
+      "B": "An toàn hệ thống thông tin",
+      "C": "Quản lý tài chính công",
+      "D": "Hoạt động ngân hàng số"
+    },
+    "answer": "A",
+    "explanation_right": "Theo phần căn cứ của Quyết định.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra hiểu các căn cứ pháp lý chuyên ngành."
+  },
+  {
+    "id": 747,
     "question": "Trong thời gian chưa ban hành khung kiến trúc số cấp bộ, cấp tỉnh mới thì xử lý thế nào?",
     "options": {
       "A": "Ngừng áp dụng các khung hiện hành",
@@ -11961,6 +12070,15 @@
       "C": "Quản lý hoạt động ngân hàng",
       "D": "Quản lý đầu tư công"
     },
+    "answer": "A",
+    "explanation_right": "Theo phần căn cứ đầu tiên của văn bản.",
+    "explanation_wrong": {
+      "B": "Sai.",
+      "C": "Sai.",
+      "D": "Sai."
+    },
+    "explanation_question": "Kiểm tra căn cứ tổ chức bộ máy."
+  },
     "answer": "A",
     "explanation_right": "Theo phần căn cứ đầu tiên của văn bản.",
     "explanation_wrong": {
