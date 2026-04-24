@@ -405,7 +405,9 @@
                             <div>
                                 <label for="quiz-order" class="block text-sm font-bold text-gray-900 mb-1">Thứ tự câu hỏi:</label>
                                 <select id="quiz-order" class="w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-bidv-green focus:border-bidv-green bg-white/70 backdrop-blur-sm text-black font-semibold">
-                                    <option value="random">Ngẫu nhiên (Đề thi thử)</option>
+                                    <option value="random_400" selected>Ngẫu nhiên 400 câu đầu</option>
+                                    <option value="random_rest">Ngẫu nhiên các câu còn lại</option>
+                                    <option value="random_all">Ngẫu nhiên toàn bộ bộ đề</option>
                                     <option value="sequential">Theo thứ tự ID (Để xem lại)</option>
                                 </select>
                                 
@@ -486,7 +488,7 @@
                                         <ul class="list-disc ml-6 mt-2 space-y-1">
                                             <li><strong>Số câu hỏi:</strong> Chọn số lượng từ 10 đến toàn bộ 400 câu. Mặc định là 20 câu.</li>
                                             <li><strong>Thời gian:</strong> Tùy chỉnh thời gian cho mỗi câu hỏi. (Mặc định 15 giây)</li>
-                                            <li><strong>Thứ tự:</strong> Chọn "Ngẫu nhiên" để thi thử hoặc "Theo thứ tự ID" để học tuần tự. Bạn có thể chọn bắt đầu từ ID câu hỏi cụ thể nếu học theo thứ tự.</li>
+                                            <li><strong>Thứ tự:</strong> Chọn theo nhóm câu hỏi đầu/sau 400 câu hoặc "Theo thứ tự ID" để học tuần tự. Bạn có thể chọn bắt đầu từ ID câu hỏi cụ thể nếu học theo thứ tự.</li>
                                             <li><strong>Chế độ tính giờ:</strong> Tổng thời gian, đếm ngược từng câu, hoặc không tính giờ.</li>
                                         </ul>
                                     </p>
@@ -1037,16 +1039,31 @@ document.addEventListener('DOMContentLoaded', () => {
             if (this.inputs.studentName.value.trim() === '') return alert('Vui lòng nhập tên.');
 
             this.timingMode = this.inputs.timingMode.value;
-            let selected = [...this.allQuestions];
-            if (this.inputs.quizOrder.value === 'sequential') {
+            let selected = [];
+            const orderVal = this.inputs.quizOrder.value;
+
+            // Xử lý Lọc bộ câu hỏi theo cấu hình "Thứ tự câu hỏi"
+            if (orderVal === 'sequential') {
+                selected = [...this.allQuestions];
                 selected.sort((a,b) => parseInt(a.id) - parseInt(b.id));
                 const startFrom = parseInt(this.inputs.startFromQuestion.value);
-                if (startFrom > 1 && startFrom <= selected.length) selected = selected.slice(startFrom - 1);
-            } else {
+                if (startFrom > 1) {
+                    const startIndex = selected.findIndex(q => parseInt(q.id) >= startFrom);
+                    if (startIndex !== -1) selected = selected.slice(startIndex);
+                }
+            } else if (orderVal === 'random_400') {
+                selected = this.allQuestions.filter(q => parseInt(q.id) <= 400);
+                selected.sort(() => 0.5 - Math.random());
+            } else if (orderVal === 'random_rest') {
+                selected = this.allQuestions.filter(q => parseInt(q.id) > 400);
+                selected.sort(() => 0.5 - Math.random());
+            } else { // random_all
+                selected = [...this.allQuestions];
                 selected.sort(() => 0.5 - Math.random());
             }
 
             const num = parseInt(this.inputs.numQuestions.value);
+            // Cắt lấy số lượng câu hỏi được yêu cầu (áp dụng cho tất cả các chế độ)
             if (num > 0 && num < selected.length) selected = selected.slice(0, num);
             this.quizQuestions = JSON.parse(JSON.stringify(selected));
 
