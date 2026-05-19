@@ -33,7 +33,7 @@
         }
     </script>
     <style>
-        /* Tối ưu thanh cuộn ngang mượt mà trên di động không hiện thanh xám xấu */
+        /* Tối ưu thanh cuộn ngang mượt mà trên di động không hiện thanh xám */
         .no-scrollbar::-webkit-scrollbar {
             display: none;
         }
@@ -57,8 +57,8 @@
     <!-- HEADER / HERO SECTION -->
     <header class="bg-gradient-to-r from-[#003B64] via-[#005B94] to-[#02A859] text-white shadow-md relative overflow-hidden">
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(251,176,59,0.12),transparent_45%)]"></div>
-        <div class="max-w-7xl mx-auto px-4 py-6 md:py-10 relative z-10">
-            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
+        <div class="max-w-5xl mx-auto px-4 py-6 md:py-8 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
                 
                 <div class="flex items-center gap-3 md:gap-4">
                     <!-- Logo BIDV truyền cảm hứng -->
@@ -71,27 +71,26 @@
                     </div>
                     <div>
                         <div class="flex flex-wrap items-center gap-1.5">
-                            <span class="bg-bidv-gold text-bidv-dark text-[10px] md:text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wider shadow">Đảng Bộ BIDV</span>
-                            <span class="bg-emerald-600 text-white text-[10px] md:text-xs font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">Kỷ Nguyên Số</span>
+                            <span class="bg-bidv-gold text-bidv-dark text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider shadow">Đảng Bộ BIDV</span>
+                            <span class="bg-emerald-600 text-white text-[10px] font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">Kỷ Nguyên Số</span>
                         </div>
-                        <h1 class="text-xl md:text-2xl lg:text-3xl font-extrabold tracking-tight mt-1 text-white">Study Hub & Tra Cứu Nghị Quyết</h1>
-                        <p class="text-blue-100 text-xs md:text-sm mt-0.5 font-light">Ứng dụng hỗ trợ ôn thi, kiểm tra và tra cứu nhanh các văn kiện Đảng & Chỉ thị chuyên đề</p>
+                        <h1 class="text-xl md:text-2xl font-extrabold tracking-tight mt-1 text-white">Study Hub & Tra Cứu Nghị Quyết</h1>
+                        <p class="text-blue-100 text-xs mt-0.5 font-light">Ứng dụng hỗ trợ ôn thi, kiểm tra và tra cứu nhanh các văn kiện Đảng & Chỉ thị chuyên đề</p>
                     </div>
                 </div>
                 
                 <!-- Bộ đếm tiến độ học tập -->
-                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 flex items-center gap-4 w-full lg:w-auto lg:min-w-[260px] shadow-sm">
-                    <div class="relative w-12 h-12 flex items-center justify-center shrink-0">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-3 flex items-center gap-3 w-full md:w-auto min-w-[220px] shadow-sm">
+                    <div class="relative w-10 h-10 flex items-center justify-center shrink-0">
                         <svg class="w-full h-full transform -rotate-90">
-                            <circle cx="24" cy="24" r="20" stroke="rgba(255,255,255,0.2)" stroke-width="4" fill="transparent" />
-                            <circle id="progressCircle" cx="24" cy="24" r="20" stroke="#FBB03B" stroke-width="4" fill="transparent" stroke-dasharray="125.6" stroke-dashoffset="125.6" />
+                            <circle cx="20" cy="20" r="17" stroke="rgba(255,255,255,0.2)" stroke-width="3" fill="transparent" />
+                            <circle id="progressCircle" cx="20" cy="20" r="17" stroke="#FBB03B" stroke-width="3" fill="transparent" stroke-dasharray="106.8" stroke-dashoffset="106.8" />
                         </svg>
-                        <span id="progressText" class="absolute text-xs font-bold text-white">0%</span>
+                        <span id="progressText" class="absolute text-[10px] font-bold text-white">0%</span>
                     </div>
                     <div>
-                        <div class="text-[11px] text-blue-200 uppercase tracking-wider font-semibold">Tiến độ thuộc lòng</div>
-                        <div class="text-base font-extrabold"><span id="learnedCount" class="text-bidv-gold">0</span> / <span id="totalQuestionsCount">141</span> câu</div>
-                        <div class="text-[11px] text-emerald-300 font-medium mt-0.5" id="cheeringMsg">Bắt đầu học ngay nào! 🎯</div>
+                        <div class="text-[10px] text-blue-200 uppercase tracking-wider font-semibold">Tiến độ thuộc bài</div>
+                        <div class="text-sm font-extrabold"><span id="learnedCount" class="text-bidv-gold">0</span> / <span id="totalQuestionsCount">141</span> câu</div>
                     </div>
                 </div>
                 
@@ -100,140 +99,148 @@
     </header>
 
     <!-- MAIN CONTAINER -->
-    <main class="max-w-7xl mx-auto px-4 py-6 md:py-8 flex-1 grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8 w-full">
-        
-        <!-- SIDEBAR CONTROLS & STATS (Chuyển đổi linh hoạt giữa dọc và ngang tùy màn hình) -->
-        <aside class="space-y-4 md:space-y-6 lg:col-span-1">
+    <main class="max-w-5xl mx-auto px-4 py-6 md:py-8 flex-1 w-full space-y-4 md:space-y-6">
+
+        <!-- THANH TÌM KIẾM NỔI BẬT & NÚT CẤU HÌNH -->
+        <div class="bg-white rounded-2xl p-4 shadow-md border border-slate-100 flex flex-col md:flex-row gap-3 items-stretch md:items-center">
+            <div class="relative flex-1">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                    <i class="fa-solid fa-magnifying-glass text-slate-400 text-lg"></i>
+                </div>
+                <input type="text" id="searchInput" oninput="handleSearch()" class="block w-full pl-11 pr-10 py-3.5 bg-slate-50 hover:bg-slate-100 focus:bg-white text-slate-900 placeholder-slate-400 border border-slate-200 focus:border-bidv-blue rounded-xl focus:ring-4 focus:ring-blue-100 transition-all text-base font-medium" placeholder="Nhập từ khóa hoặc số Nghị quyết... (VD: nghị quyết 91, dữ liệu sạch, 15...)">
+                <button onclick="clearSearch()" id="clearBtn" class="absolute inset-y-0 right-0 pr-4 flex items-center text-slate-400 hover:text-slate-600 hidden">
+                    <i class="fa-solid fa-circle-xmark text-lg"></i>
+                </button>
+            </div>
             
-            <!-- CẤU HÌNH ÔN LUYỆN -->
-            <div class="bg-white rounded-2xl p-4 md:p-5 shadow-sm border border-slate-100 space-y-4">
+            <div class="flex items-center gap-2 shrink-0">
+                <!-- NÚT BẤM "BỘ LỌC & CẤU HÌNH" (Toggles drawer) -->
+                <button onclick="toggleFilterPanel()" id="filterPanelBtn" class="flex-1 md:flex-initial px-5 py-3.5 bg-white hover:bg-slate-100 text-slate-700 font-bold border border-slate-200 rounded-xl text-sm transition-all shadow-sm flex items-center justify-center gap-2 hover:border-slate-300">
+                    <i class="fa-solid fa-sliders text-bidv-blue"></i>
+                    <span>Bộ lọc & Cấu hình</span>
+                    <i id="filterArrow" class="fa-solid fa-chevron-down text-xs transition-transform duration-200"></i>
+                </button>
+
+                <span id="resultsCount" class="px-4 py-3.5 text-sm font-bold text-slate-500 bg-slate-100 rounded-xl text-center min-w-[100px]">Đang tải...</span>
+            </div>
+        </div>
+
+        <!-- NGĂN KÉO CHỨA BỘ LỌC, PHẢN XẠ & DANH MỤC (Mặc định HẨN) -->
+        <div id="filterPanel" class="hidden bg-white rounded-2xl p-5 border border-slate-200 shadow-md grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-300">
+            
+            <!-- Phân khu 1: Cấu hình tự luyện & Lọc tiến trình -->
+            <div class="space-y-4">
                 <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
-                    <i class="fa-solid fa-sliders text-bidv-blue"></i> Cấu hình ôn luyện
+                    <i class="fa-solid fa-gear text-bidv-blue"></i> Thiết lập ôn thi
                 </h3>
                 
-                <!-- Chế độ tự luyện (Ẩn/Hiện đáp án) -->
+                <!-- Toggle Chế độ Tự Luyện -->
                 <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
                     <div class="flex items-center justify-between">
                         <div>
                             <span class="text-xs md:text-sm font-bold text-slate-700 block">Chế độ tự luyện</span>
-                            <span class="text-[10px] md:text-xs text-slate-400 font-light">Ẩn đáp án để tự ôn luyện</span>
+                            <span class="text-[10px] text-slate-400 font-light">Ẩn câu trả lời để tự nhẩm thuộc</span>
                         </div>
-                        <label class="relative inline-flex items-center cursor-pointer">
+                        <label class="relative inline-flex items-center cursor-pointer select-none">
                             <input type="checkbox" id="studyModeToggle" class="sr-only peer">
                             <div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-bidv-blue"></div>
                         </label>
                     </div>
                 </div>
 
-                <!-- Lọc theo Trạng Thái đã lưu -->
-                <div class="flex flex-col gap-2 pt-1">
-                    <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Lọc theo tiến độ học:</span>
+                <!-- Lọc tiến độ -->
+                <div class="space-y-2">
+                    <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">Lọc theo tiến độ học:</span>
                     <div class="grid grid-cols-2 gap-2">
-                        <button onclick="setFilterState('all')" id="stateBtn-all" class="px-2.5 py-2 text-xs font-semibold rounded-lg bg-bidv-blue text-white shadow-sm transition-all flex items-center justify-center gap-1">
+                        <button onclick="setFilterState('all')" id="stateBtn-all" class="px-2 py-1.5 text-xs font-semibold rounded-lg bg-bidv-blue text-white shadow-sm transition-all flex items-center justify-center gap-1">
                             Tất cả
                         </button>
-                        <button onclick="setFilterState('starred')" id="stateBtn-starred" class="px-2.5 py-2 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all flex items-center justify-center gap-1">
+                        <button onclick="setFilterState('starred')" id="stateBtn-starred" class="px-2 py-1.5 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all flex items-center justify-center gap-1">
                             <i class="fa-solid fa-star text-amber-400"></i> Đã thích
                         </button>
-                        <button onclick="setFilterState('unlearned')" id="stateBtn-unlearned" class="px-2.5 py-2 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all flex items-center justify-center gap-1">
+                        <button onclick="setFilterState('unlearned')" id="stateBtn-unlearned" class="px-2 py-1.5 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all flex items-center justify-center gap-1">
                             <i class="fa-regular fa-circle text-slate-400"></i> Chưa thuộc
                         </button>
-                        <button onclick="setFilterState('learned')" id="stateBtn-learned" class="px-2.5 py-2 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all flex items-center justify-center gap-1">
+                        <button onclick="setFilterState('learned')" id="stateBtn-learned" class="px-2 py-1.5 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all flex items-center justify-center gap-1">
                             <i class="fa-solid fa-circle-check text-bidv-green"></i> Đã thuộc
                         </button>
                     </div>
                 </div>
             </div>
 
-            <!-- THỬ THÁCH PHẢN XẠ NHANH (MINI GAME) -->
-            <div class="bg-gradient-to-br from-[#003B64] to-[#005B94] text-white rounded-2xl p-4 md:p-5 shadow-sm border border-blue-900 relative overflow-hidden">
-                <div class="absolute -right-6 -bottom-6 opacity-10 transform rotate-12">
-                    <i class="fa-solid fa-graduation-cap text-7xl"></i>
-                </div>
-                <h3 class="font-bold text-sm md:text-base flex items-center gap-2">
+            <!-- Phân khu 2: Phản xạ ngẫu nhiên (Mini-game trắc nghiệm) -->
+            <div class="space-y-4">
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
                     <i class="fa-solid fa-bolt text-bidv-gold"></i> Phản xạ ngẫu nhiên
                 </h3>
-                <p class="text-[11px] text-blue-100 font-light mt-1 mb-3">Tạo ngẫu nhiên một đề thi thử gồm 5 câu hỏi để tự kiểm tra kiến thức lập tức.</p>
-                <button onclick="generateRandomQuiz()" class="w-full bg-bidv-gold hover:bg-amber-400 text-bidv-dark font-bold py-2 px-3 rounded-xl text-xs shadow-md transition-all flex items-center justify-center gap-1.5">
-                    <i class="fa-solid fa-dice"></i> Làm đề trắc nghiệm (5 câu)
-                </button>
+                <div class="bg-gradient-to-br from-[#003B64] to-[#005B94] text-white rounded-xl p-4 relative overflow-hidden flex flex-col justify-between h-full min-h-[140px]">
+                    <div class="absolute -right-6 -bottom-6 opacity-10 transform rotate-12">
+                        <i class="fa-solid fa-graduation-cap text-6xl"></i>
+                    </div>
+                    <div>
+                        <p class="text-[11px] text-blue-100 font-light">Tạo ngẫu nhiên một đề thi thử mini gồm 5 câu hỏi để tự đánh giá mức độ phản xạ nhớ của bạn.</p>
+                    </div>
+                    <button onclick="generateRandomQuiz()" class="w-full mt-3 bg-bidv-gold hover:bg-amber-400 text-bidv-dark font-bold py-2 px-3 rounded-lg text-xs shadow-md transition-all flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-dice"></i> Làm đề trắc nghiệm ngẫu nhiên (5 câu)
+                    </button>
+                </div>
             </div>
 
-            <!-- DANH MỤC VĂN KIỆN (Thanh cuộn ngang trên Mobile, thanh dọc trên Desktop) -->
-            <div class="bg-white rounded-2xl p-4 md:p-5 shadow-sm border border-slate-100">
-                <div class="flex justify-between items-center mb-3">
+            <!-- Phân khu 3: Danh mục văn kiện -->
+            <div class="space-y-3">
+                <div class="flex justify-between items-center">
                     <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
                         <i class="fa-regular fa-folder-open text-bidv-blue"></i> Danh mục Văn kiện
                     </h3>
                     <button onclick="resetCategory()" class="text-xs text-bidv-blue hover:underline font-semibold">Bỏ lọc</button>
                 </div>
-                
-                <!-- Trên di động nó sẽ scroll ngang (flex-row), trên desktop nó sẽ sắp cột dọc (lg:flex-col) -->
-                <div class="flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-y-auto lg:max-h-[380px] pb-2 lg:pb-0 no-scrollbar" id="categoryList">
+                <!-- Cuộn mượt dạng danh sách dọc tinh gọn -->
+                <div class="flex flex-row md:flex-col gap-1.5 overflow-x-auto md:overflow-y-auto md:max-h-[160px] pb-2 md:pb-0 no-scrollbar" id="categoryList">
                     <!-- Javascript sinh tự động các nút danh mục -->
                 </div>
             </div>
-        </aside>
 
-        <!-- MAIN CONTENT AREA (3 Columns) -->
-        <section class="lg:col-span-3 space-y-4 md:space-y-6">
-            
-            <!-- SEARCH BAR COMPONENT -->
-            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 flex flex-col sm:flex-row gap-3 items-center">
-                <div class="relative flex-1 w-full">
-                    <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
-                        <i class="fa-solid fa-magnifying-glass text-slate-400 text-base"></i>
-                    </div>
-                    <input type="text" id="searchInput" oninput="handleSearch()" class="block w-full pl-10 pr-10 py-3 bg-slate-50 hover:bg-slate-100 focus:bg-white text-slate-900 placeholder-slate-400 border border-slate-200 focus:border-bidv-blue rounded-xl focus:ring-4 focus:ring-blue-100 transition-all text-sm md:text-base font-medium" placeholder="Nhập từ khóa hoặc số Nghị quyết... (VD: nghị quyết 91, tín dụng xanh...)">
-                    <button onclick="clearSearch()" id="clearBtn" class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-slate-600 hidden">
-                        <i class="fa-solid fa-circle-xmark text-lg"></i>
-                    </button>
-                </div>
-                <div class="flex items-center gap-2 shrink-0 w-full sm:w-auto">
-                    <span id="resultsCount" class="text-xs md:text-sm font-bold text-slate-500 bg-slate-100 px-4 py-3 rounded-xl text-center w-full sm:w-auto">Đang tải...</span>
-                </div>
-            </div>
+        </div>
 
-            <!-- CHỈ BÁO THÔNG BÁO CHẾ ĐỘ TỰ LUYỆN -->
-            <div id="quizTipAlert" class="bg-blue-50 border border-blue-200 text-bidv-blue rounded-xl p-3 text-xs flex items-center gap-2.5 hidden">
-                <i class="fa-solid fa-circle-info text-base shrink-0 animate-pulse"></i>
-                <span><strong>Chế độ tự luyện đang BẬT:</strong> Câu trả lời đã ẩn. Bạn hãy <strong>click vào bất kỳ thẻ câu hỏi nào</strong> bên dưới để xem/ẩn nhanh đáp án!</span>
-            </div>
+        <!-- CHỈ BÁO THÔNG BÁO CHẾ ĐỘ TỰ LUYỆN -->
+        <div id="quizTipAlert" class="bg-blue-50 border border-blue-200 text-bidv-blue rounded-xl p-3 text-xs flex items-center gap-2.5 hidden">
+            <i class="fa-solid fa-circle-info text-base shrink-0 animate-pulse"></i>
+            <span><strong>Chế độ tự luyện đang BẬT:</strong> Câu trả lời đã ẩn. Bạn hãy <strong>click trực tiếp vào bất kỳ thẻ câu hỏi nào</strong> bên dưới để xem/ẩn nhanh đáp án!</span>
+        </div>
 
-            <!-- ACTIVE FILTERS SUMMARY CHIPS -->
-            <div id="activeFilterChips" class="flex flex-wrap gap-2 items-center hidden">
-                <span class="text-xs font-semibold text-slate-400">Bộ lọc đang áp dụng:</span>
-                <span id="chipCategory" class="hidden text-xs font-bold text-bidv-blue bg-blue-50 border border-blue-200 px-3 py-1 rounded-full flex items-center gap-1">
-                    Danh mục: <span id="chipCategoryText"></span>
-                    <button onclick="resetCategory()"><i class="fa-solid fa-xmark hover:text-red-500 ml-1"></i></button>
-                </span>
-                <span id="chipSearch" class="hidden text-xs font-bold text-slate-700 bg-slate-100 border border-slate-200 px-3 py-1 rounded-full flex items-center gap-1">
-                    Từ khóa: "<span id="chipSearchText"></span>"
-                    <button onclick="clearSearch()"><i class="fa-solid fa-xmark hover:text-red-500 ml-1"></i></button>
-                </span>
-                <span id="chipQuizMode" class="hidden text-xs font-bold text-amber-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full flex items-center gap-1">
-                    Chế độ: Đề kiểm tra thử
-                    <button onclick="quitQuizMode()"><i class="fa-solid fa-xmark hover:text-red-500 ml-1"></i></button>
-                </span>
-            </div>
+        <!-- ACTIVE FILTERS SUMMARY CHIPS -->
+        <div id="activeFilterChips" class="flex flex-wrap gap-2 items-center hidden">
+            <span class="text-xs font-semibold text-slate-400">Bộ lọc đang áp dụng:</span>
+            <span id="chipCategory" class="hidden text-xs font-bold text-bidv-blue bg-blue-50 border border-blue-200 px-3 py-1 rounded-full flex items-center gap-1">
+                Danh mục: <span id="chipCategoryText"></span>
+                <button onclick="resetCategory()"><i class="fa-solid fa-xmark hover:text-red-500 ml-1"></i></button>
+            </span>
+            <span id="chipSearch" class="hidden text-xs font-bold text-slate-700 bg-slate-100 border border-slate-200 px-3 py-1 rounded-full flex items-center gap-1">
+                Từ khóa: "<span id="chipSearchText"></span>"
+                <button onclick="clearSearch()"><i class="fa-solid fa-xmark hover:text-red-500 ml-1"></i></button>
+            </span>
+            <span id="chipQuizMode" class="hidden text-xs font-bold text-amber-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full flex items-center gap-1">
+                Chế độ: Đề kiểm tra thử
+                <button onclick="quitQuizMode()"><i class="fa-solid fa-xmark hover:text-red-500 ml-1"></i></button>
+            </span>
+        </div>
 
-            <!-- CARDS CONTAINER -->
-            <div id="cardsContainer" class="space-y-4">
-                <!-- Danh sách câu hỏi render động ở đây -->
-            </div>
+        <!-- CARDS CONTAINER (RICH RESULTS FEED) -->
+        <div id="cardsContainer" class="space-y-4">
+            <!-- Danh sách câu hỏi render động ở đây -->
+        </div>
 
-            <!-- PAGINATION / SHOW MORE -->
-            <div id="showMoreContainer" class="flex justify-center pt-2 hidden">
-                <button onclick="loadMoreCards()" class="px-5 py-2.5 bg-white hover:bg-slate-50 text-bidv-blue font-bold border border-slate-200 hover:border-bidv-blue rounded-xl text-xs transition-all shadow-sm flex items-center gap-2">
-                    Xem thêm câu hỏi <i class="fa-solid fa-chevron-down"></i>
-                </button>
-            </div>
-        </section>
+        <!-- PAGINATION / SHOW MORE -->
+        <div id="showMoreContainer" class="flex justify-center pt-2 hidden">
+            <button onclick="loadMoreCards()" class="px-5 py-2.5 bg-white hover:bg-slate-50 text-bidv-blue font-bold border border-slate-200 hover:border-bidv-blue rounded-xl text-xs transition-all shadow-sm flex items-center gap-2">
+                Xem thêm câu hỏi <i class="fa-solid fa-chevron-down"></i>
+            </button>
+        </div>
     </main>
 
     <!-- FOOTER -->
     <footer class="bg-slate-900 text-slate-400 py-6 border-t border-slate-800 text-xs mt-10">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-3">
                 <div class="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center text-white border border-white/20 font-bold text-sm">B</div>
                 <div>
@@ -250,7 +257,7 @@
 
     <!-- APP SCRIPT -->
     <script>
-        // Cơ sở dữ liệu chuẩn hóa của 141+ câu hỏi
+        // Cơ sỡ dữ liệu 145 câu hỏi
         const rawDatabase = [
             // 1 - 10: Nghị quyết 57-NQ/TW
             { id: 1, catCode: "NQ-57", catName: "Nghị quyết 57-NQ/TW (Bộ Chính trị)", q: "Nghị quyết số 57-NQ/TW của Bộ Chính trị tập trung vào nội dung cốt lõi nào?", a: "Phát triển khoa học, công nghệ và đổi mới sáng tạo thúc đẩy chuyển đổi số quốc gia.", ref: "Tên Nghị quyết số 57-NQ/TW" },
@@ -312,7 +319,7 @@
             { id: 49, catCode: "NQ-70", catName: "Nghị quyết 70-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 70-NQ/TW, Đến năm 2030, cơ sở hạ tầng cung cấp khí thiên nhiên phải đáp ứng tối thiểu bao nhiêu phần trăm nhu cầu trong nước?", a: "Đáp ứng 100% nhu cầu tiêu thụ trong nước.", ref: "Mục II, Khoản 2, Điểm b (Mục tiêu hạ tầng cung ứng khí) - Nghị quyết 70" },
 
             // 50 - 59: Nghị quyết 71-NQ/TW (Giáo dục & Đào tạo)
-            { id: 50, catCode: "NQ-71", catName: "Nghị quyết 71-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 71-NQ/TW, Đảng và Nhà nước ta luôn coi giáo dục và đào tạo là gì?", a: "Giáo dục và đào tạo là quốc sách hàng đầu, là sự nghiệp của Đảng, Nhà nước và của toàn dân.", ref: "Mục I, Khoản 2 (Quan điểm chỉ đạo cốt lõi về giáo dục) - Nghị quyết 71" },
+            { id: 50, catCode: "NQ-71", catName: "Nghị quyết 71-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 71-NQ/TW, Đảng và Nhà nước ta luôn coi giáo dục và đào tạo là gì?", a: "Giáo dục và đào tạo là quốc sách hàng đầu, là sự nghiệp của Đảng, Nhà nước và của toàn dân.", ref: "Mục I, Khoản 2 (Quan điểm chỉ đạo cốt lộ về giáo dục) - Nghị quyết 71" },
             { id: 51, catCode: "NQ-71", catName: "Nghị quyết 71-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 71-NQ/TW, mục tiêu đến năm 2030, chỉ số phát triển con người (HDI) đạt mức bao nhiêu?", a: "Đạt mức cao (thuộc nhóm các quốc gia có HDI cao trên thế giới).", ref: "Mục II, Khoản 2, Điểm a (Mục tiêu cụ thể đến năm 2030) - Nghị quyết số 71-NQ/TW" },
             { id: 52, catCode: "NQ-71", catName: "Nghị quyết 71-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 71-NQ/TW, chi ngân sách nhà nước cho giáo dục và đào tạo phải đạt tối thiểu bao nhiêu % tổng chi ngân sách?", a: "Tối thiểu 20% tổng chi ngân sách nhà nước.", ref: "Mục III, Khoản 3, Điểm b (Nguồn lực tài chính cho giáo dục) - Nghị quyết số 71-NQ/TW" },
             { id: 53, catCode: "NQ-71", catName: "Nghị quyết 71-NQ/TW (Bộ Chính trị)", q: "Tại Nghị quyết số 71-NQ/TW, tầm nhìn đến năm 2045 xác định hệ thống giáo dục Việt Nam đứng vào nhóm bao nhiêu quốc gia hàng đầu thế giới?", a: "Đứng vào nhóm 3 quốc gia hàng đầu khu vực ASEAN và thuộc nhóm các quốc gia có hệ thống giáo dục tiên tiến trên thế giới.", ref: "Mục II, Khoản 3 (Tầm nhìn đến năm 2045) - Nghị quyết số 71-NQ/TW" },
@@ -416,7 +423,7 @@
             { id: 145, catCode: "NQ-91", catName: "Nghị quyết 91-NQ/ĐU (Chuyển đổi số)", q: "Theo Nghị quyết số 91-NQ/ĐU của Đảng ủy BIDV, tỷ lệ cán bộ có chuyên môn, kinh nghiệm về khoa học kỹ thuật trong cấp ủy và Ban lãnh đạo hệ thống cần đạt tối thiểu bao nhiêu?", a: "Đạt tỷ lệ tối thiểu theo lộ trình để đảm bảo năng lực dẫn dắt công nghệ, am hiểu và chỉ đạo trực tiếp chiến lược Chuyển đổi số thành công.", ref: "Mục III, Khoản 4 (Phát triển nguồn nhân lực và tổ chức bộ máy cấp ủy số) - Nghị quyết số 91-NQ/ĐU" }
         ];
 
-        // Định hình màu sắc riêng biệt cho từng loại Nghị quyết
+        // Màu sắc đồng bộ theo thương hiệu và từng loại Nghị quyết
         const categoryMeta = {
             "NQ-57": { label: "Bộ Chính Trị NQ 57", color: "bg-indigo-50 border-indigo-200 text-indigo-700", badge: "bg-indigo-600 text-white" },
             "NQ-68": { label: "Bộ Chính Trị NQ 68", color: "bg-amber-50 border-amber-200 text-amber-800", badge: "bg-amber-600 text-white" },
@@ -433,20 +440,19 @@
             "NQ-91": { label: "Đảng Ủy NQ 91 (Số)", color: "bg-blue-50 border-blue-200 text-blue-800", badge: "bg-bidv-blue text-white" }
         };
 
-        // Quản lý trạng thái ứng dụng
+        // Biến trạng thái
         let currentCategory = "";
         let searchQuery = "";
         let filterState = "all"; 
         let isQuizMode = false;
         let quizQuestions = [];
-        let revealedAnswers = {}; // Lưu vết ID các câu được click lật mở thủ công
-        let showLimit = 15; // Phân trang mặc định
+        let revealedAnswers = {}; 
+        let showLimit = 15; 
 
-        // Đồng bộ dữ liệu yêu thích và tiến trình đã thuộc vào bộ nhớ thiết bị
+        // Cache dữ liệu cục bộ
         let starredIds = JSON.parse(localStorage.getItem('bidv_hub_starred')) || [];
         let learnedIds = JSON.parse(localStorage.getItem('bidv_hub_learned')) || [];
 
-        // Hàm bỏ dấu tiếng Việt phục vụ tìm kiếm thông minh nhanh chóng
         function removeAccents(str) {
             return str.normalize("NFD")
                       .replace(/[\u0300-\u036f]/g, "")
@@ -460,18 +466,34 @@
             applyFilters();
         };
 
-        // Đồng bộ vẽ các thanh danh mục tùy chỉnh mượt mà theo giao diện
+        // Hàm Đóng / Mở Ngăn kéo Cấu hình & Bộ lọc nâng cao
+        function toggleFilterPanel() {
+            const panel = document.getElementById("filterPanel");
+            const btn = document.getElementById("filterPanelBtn");
+            const arrow = document.getElementById("filterArrow");
+            
+            if (panel.classList.contains("hidden")) {
+                panel.classList.remove("hidden");
+                // Thêm viền nổi bật khi mở
+                btn.classList.add("bg-slate-100", "border-bidv-blue");
+                arrow.classList.add("rotate-180");
+            } else {
+                panel.classList.add("hidden");
+                btn.classList.remove("bg-slate-100", "border-bidv-blue");
+                arrow.classList.remove("rotate-180");
+            }
+        }
+
+        // Vẽ các danh mục
         function renderCategories() {
             const listContainer = document.getElementById("categoryList");
             listContainer.innerHTML = "";
 
-            // Đếm số lượng câu hỏi thuộc mỗi nhóm
             const counts = {};
             rawDatabase.forEach(item => {
                 counts[item.catCode] = (counts[item.catCode] || 0) + 1;
             });
 
-            // Vẽ danh sách nút bấm
             Object.keys(categoryMeta).forEach(code => {
                 const meta = categoryMeta[code];
                 const count = counts[code] || 0;
@@ -483,12 +505,12 @@
                         : 'bg-slate-50 hover:bg-slate-100 text-slate-700 border-slate-200';
 
                     const itemHtml = `
-                        <button onclick="setCategory('${code}')" class="inline-flex lg:flex items-center justify-between gap-2 px-3 py-2 rounded-xl text-xs font-bold transition-all shrink-0 border duration-150 ${activeClass}">
-                            <span class="truncate flex items-center gap-1.5">
-                                <i class="fa-solid fa-folder text-[10px] ${isSelected ? 'text-bidv-gold' : 'text-slate-400'}"></i>
+                        <button onclick="setCategory('${code}')" class="inline-flex md:flex items-center justify-between gap-2 px-3 py-1.5 rounded-lg text-xs font-bold transition-all shrink-0 border duration-150 ${activeClass}">
+                            <span class="truncate flex items-center gap-1">
+                                <i class="fa-solid fa-folder text-[9px] ${isSelected ? 'text-bidv-gold' : 'text-slate-400'}"></i>
                                 ${meta.label}
                             </span>
-                            <span class="px-2 py-0.5 rounded-full text-[10px] ${isSelected ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-600'}">
+                            <span class="px-1.5 py-0.2 rounded-full text-[9px] ${isSelected ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-600'}">
                                 ${count}
                             </span>
                         </button>
@@ -499,7 +521,6 @@
         }
 
         function setCategory(code) {
-            // Click lại chính danh mục đang chọn thì bỏ lọc
             if (currentCategory === code) {
                 currentCategory = "";
             } else {
@@ -522,9 +543,9 @@
             states.forEach(s => {
                 const btn = document.getElementById(`stateBtn-${s}`);
                 if (s === state) {
-                    btn.className = "px-2.5 py-2 text-xs font-semibold rounded-lg bg-bidv-blue text-white shadow-sm transition-all flex items-center justify-center gap-1";
+                    btn.className = "px-2 py-1.5 text-xs font-semibold rounded-lg bg-bidv-blue text-white shadow-sm transition-all flex items-center justify-center gap-1";
                 } else {
-                    btn.className = "px-2.5 py-2 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all flex items-center justify-center gap-1";
+                    btn.className = "px-2 py-1.5 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all flex items-center justify-center gap-1";
                 }
             });
             applyFilters();
@@ -551,16 +572,17 @@
             applyFilters();
         }
 
-        // Tạo bộ đề trắc nghiệm thử thách phản xạ ngẫu nhiên
         function generateRandomQuiz() {
             const shuffled = [...rawDatabase].sort(() => 0.5 - Math.random());
             quizQuestions = shuffled.slice(0, 5);
             isQuizMode = true;
             revealedAnswers = {}; 
             
-            // Kích hoạt chế độ ôn luyện ẩn đáp án để thách thức người dùng tự nhẩm
+            // Tự động bật chế độ ôn luyện (ẩn đáp án) khi chơi mini-game
             document.getElementById("studyModeToggle").checked = true;
             
+            // Đóng bớt bảng lọc để tập trung trả lời
+            toggleFilterPanel();
             applyFilters();
         }
 
@@ -569,7 +591,7 @@
             applyFilters();
         }
 
-        // Động cơ Lọc & Tìm kiếm
+        // Lọc và Tìm kiếm cốt lõi
         function applyFilters() {
             let filteredList = isQuizMode ? quizQuestions : rawDatabase;
 
@@ -596,11 +618,10 @@
                 });
             }
 
-            // Đồng bộ bộ đếm kết quả
             const counter = document.getElementById("resultsCount");
-            counter.innerText = `${filteredList.length} kết quả`;
+            counter.innerText = `${filteredList.length} câu`;
 
-            // Chip thông báo bộ lọc
+            // Active Chips UI
             const chips = document.getElementById("activeFilterChips");
             const chipCat = document.getElementById("chipCategory");
             const chipSearch = document.getElementById("chipSearch");
@@ -629,7 +650,6 @@
                 chips.classList.add("hidden");
             }
 
-            // Hiển thị thanh cảnh báo chế độ tự luyện
             const isStudyMode = document.getElementById("studyModeToggle").checked;
             const tipAlert = document.getElementById("quizTipAlert");
             if (isStudyMode) {
@@ -641,7 +661,7 @@
             renderCards(filteredList);
         }
 
-        // Vẽ các thẻ câu hỏi lên giao diện
+        // Render thẻ câu hỏi lên màn hình
         function renderCards(list) {
             const container = document.getElementById("cardsContainer");
             container.innerHTML = "";
@@ -652,8 +672,8 @@
                         <div class="w-14 h-14 bg-slate-50 text-slate-400 rounded-full flex items-center justify-center mx-auto mb-3 border border-slate-100">
                             <i class="fa-solid fa-ban text-xl"></i>
                         </div>
-                        <h4 class="text-slate-700 font-bold text-base md:text-lg">Không tìm thấy câu hỏi phù hợp</h4>
-                        <p class="text-slate-400 text-xs md:text-sm mt-1 max-w-md mx-auto">Vui lòng điều chỉnh lại từ khóa hoặc bấm nút "Bỏ lọc" danh mục để xem lại toàn bộ câu hỏi.</p>
+                        <h4 class="text-slate-700 font-bold text-base">Không tìm thấy câu hỏi phù hợp</h4>
+                        <p class="text-slate-400 text-xs mt-1 max-w-md mx-auto">Vui lòng điều chỉnh lại từ khóa hoặc bấm để xem lại toàn bộ câu hỏi.</p>
                         <button onclick="clearAllFilters()" class="mt-4 px-4 py-2 bg-bidv-blue text-white font-bold text-xs rounded-xl hover:bg-bidv-dark shadow-sm transition-all">
                             Xem lại toàn bộ câu hỏi
                         </button>
@@ -683,61 +703,54 @@
                 const displayedAnswer = highlightMatch(item.a, searchQuery);
                 const displayedRef = highlightMatch(item.ref, searchQuery);
 
-                // Nếu bật chế độ ôn luyện, đáp án sẽ ẩn trừ phi đã lật mở thủ công
                 const isRevealed = !isStudyMode || revealedAnswers[item.id];
 
                 const cardHtml = `
                     <div onclick="handleCardClick(event, ${item.id})" class="bg-white rounded-2xl border ${isLearned ? 'border-emerald-200' : 'border-slate-100'} shadow-sm hover:shadow-md transition-all duration-200 relative overflow-hidden flex flex-col cursor-pointer hover:border-blue-100">
                         
-                        <!-- Top Metadata Header -->
-                        <div class="px-4 py-3 border-b border-slate-100 flex gap-2 justify-between items-center bg-slate-50/50">
+                        <!-- Header thẻ câu hỏi -->
+                        <div class="px-4 py-2.5 border-b border-slate-100 flex gap-2 justify-between items-center bg-slate-50/50">
                             <div class="flex items-center gap-2">
                                 <span class="text-xs font-extrabold text-slate-400">#${item.id}</span>
-                                <span class="text-[10px] md:text-xs font-extrabold px-2 py-0.5 rounded-full border ${meta.color}">
+                                <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full border ${meta.color}">
                                     ${meta.label}
                                 </span>
                             </div>
                             
-                            <!-- Bảng tương tác lưu nhãn trạng thái -->
                             <div class="flex items-center gap-2" onclick="preventPropagation(event)">
-                                <!-- Nhãn đã thuộc lòng -->
-                                <button onclick="toggleLearned(${item.id})" class="text-[10px] md:text-xs font-bold flex items-center gap-1 px-2.5 py-1.5 rounded-lg border transition-all ${isLearned ? 'bg-emerald-50 text-emerald-700 border-emerald-200' : 'bg-white text-slate-500 hover:text-slate-800 border-slate-200'}">
+                                <button onclick="toggleLearned(${item.id})" class="text-[10px] font-bold flex items-center gap-1 px-2.5 py-1 rounded-lg border transition-all ${isLearned ? 'bg-emerald-50 text-emerald-700 border-emerald-200' : 'bg-white text-slate-500 hover:text-slate-800 border-slate-200'}">
                                     <i class="${isLearned ? 'fa-solid fa-circle-check text-emerald-600' : 'fa-regular fa-circle text-slate-400'}"></i>
-                                    <span>${isLearned ? 'Thuộc lòng' : 'Chưa thuộc'}</span>
+                                    <span>${isLearned ? 'Đã thuộc' : 'Chưa thuộc'}</span>
                                 </button>
 
-                                <!-- Nút yêu thích -->
-                                <button onclick="toggleStarred(${item.id})" class="p-1.5 rounded-lg border border-slate-200 hover:bg-slate-50 text-slate-400 hover:text-amber-500 transition-all ${isStarred ? 'bg-amber-50 text-amber-500 border-amber-200' : 'bg-white'}">
-                                    <i class="${isStarred ? 'fa-solid' : 'fa-regular'} fa-star text-sm"></i>
+                                <button onclick="toggleStarred(${item.id})" class="p-1 rounded-lg border border-slate-200 hover:bg-slate-50 text-slate-400 hover:text-amber-500 transition-all ${isStarred ? 'bg-amber-50 text-amber-500 border-amber-200' : 'bg-white'}">
+                                    <i class="${isStarred ? 'fa-solid' : 'fa-regular'} fa-star text-xs"></i>
                                 </button>
                             </div>
                         </div>
 
-                        <!-- Card Body -->
+                        <!-- Thân câu hỏi và đáp án gợi ý -->
                         <div class="p-4 md:p-5 flex-1 flex flex-col justify-between space-y-3">
                             <div>
                                 <h4 class="text-sm md:text-base font-bold text-slate-800 leading-relaxed">${displayedQuestion}</h4>
                             </div>
 
-                            <!-- Vùng đáp án mặc định hiển thị -->
                             <div id="answer-block-${item.id}" class="transition-all duration-200 ${isRevealed ? 'block' : 'hidden'}">
                                 <div class="bg-slate-50 border-l-4 border-emerald-500 rounded-r-xl p-3 md:p-4">
-                                    <div class="text-[10px] md:text-xs font-bold text-emerald-600 uppercase tracking-wider flex items-center gap-1 mb-1.5">
+                                    <div class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider flex items-center gap-1 mb-1.5">
                                         <i class="fa-regular fa-lightbulb"></i> Câu trả lời gợi ý
                                     </div>
                                     <p class="text-slate-700 text-xs md:text-sm leading-relaxed font-semibold">${displayedAnswer}</p>
                                     
-                                    <!-- Tham chiếu gốc -->
-                                    <div class="mt-2 pt-2 border-t border-slate-200/50 flex items-start gap-1 text-[10px] md:text-xs text-slate-400 font-medium italic">
+                                    <div class="mt-2 pt-2 border-t border-slate-200/50 flex items-start gap-1 text-[10px] text-slate-400 font-medium italic">
                                         <i class="fa-solid fa-scroll text-slate-300 mt-0.5 shrink-0"></i>
                                         <span>Gốc: ${displayedRef}</span>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Trạng thái gợi ý tương tác lật thẻ khi ẩn -->
                             <div id="click-to-reveal-hint-${item.id}" class="${isRevealed ? 'hidden' : 'flex'} items-center gap-1.5 text-xs text-bidv-blue/80 font-semibold italic bg-blue-50/50 py-1.5 px-3 rounded-lg border border-blue-100/40 w-fit">
-                                <i class="fa-regular fa-hand-pointer animate-bounce"></i> Chạm vào thẻ này để lật mở câu trả lời
+                                <i class="fa-regular fa-hand-pointer animate-bounce"></i> Chạm vào đây để lật mở câu trả lời
                             </div>
                         </div>
                     </div>
@@ -746,15 +759,13 @@
             });
         }
 
-        // Chặn bọt sự kiện lan truyền khi bấm nút tương tác góc trên
         function preventPropagation(event) {
             event.stopPropagation();
         }
 
-        // Nhấp trực tiếp vào bất cứ vị trí nào trên thẻ câu hỏi để lật mở đáp án khi đang ẩn
         function handleCardClick(event, id) {
             const isStudyMode = document.getElementById("studyModeToggle").checked;
-            if (!isStudyMode) return; // Nếu không bật chế độ ôn luyện tự giấu thì không cần xử lý lật thẻ
+            if (!isStudyMode) return; 
 
             const ansBlock = document.getElementById(`answer-block-${id}`);
             const hintBlock = document.getElementById(`click-to-reveal-hint-${id}`);
@@ -776,12 +787,10 @@
         }
 
         document.getElementById("studyModeToggle").addEventListener("change", function() {
-            // Reset các câu lật mở thủ công về mặc định khi chuyển trạng thái cấu hình
             revealedAnswers = {};
             applyFilters();
         });
 
-        // Tìm kiếm thông minh bôi màu từ khóa
         function highlightMatch(text, query) {
             if (!query || query.trim().length === 0) return text;
             try {
@@ -814,7 +823,6 @@
             applyFilters();
         }
 
-        // Cập nhật biểu đồ tiến độ học tập trên header
         function updateProgressStats() {
             const total = rawDatabase.length;
             const learned = learnedIds.length;
@@ -829,14 +837,6 @@
             const circumference = 2 * Math.PI * radius;
             const offset = circumference - (percentage / 100) * circumference;
             circle.style.strokeDashoffset = offset;
-
-            const cheer = document.getElementById("cheeringMsg");
-            if (percentage === 0) cheer.innerText = "Bắt đầu học ngay thôi! 🎯";
-            else if (percentage < 30) cheer.innerText = "Tuyệt vời, cố gắng lên nào! 🚀";
-            else if (percentage < 60) cheer.innerText = "Tiến độ học tập rất vững chắc! 👏";
-            else if (percentage < 90) cheer.innerText = "Gần như đã nắm rõ mọi nghị quyết! 🔥";
-            else if (percentage < 100) cheer.innerText = "Hết mình vì kỷ nguyên mới! 🌟";
-            else cheer.innerText = "XUẤT SẮC! Sẵn sàng chinh phục mọi kỳ thi! 🏆";
         }
 
         function clearAllFilters() {
