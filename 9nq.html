@@ -52,7 +52,7 @@
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col relative">
 
     <!-- HEADER / HERO SECTION -->
     <header class="bg-gradient-to-r from-[#003B64] via-[#005B94] to-[#02A859] text-white shadow-md relative overflow-hidden">
@@ -255,6 +255,11 @@
         </div>
     </footer>
 
+    <!-- NÚT SCROLL TO TOP -->
+    <button id="scrollTopBtn" onclick="scrollToTop()" class="fixed bottom-6 right-6 z-50 bg-bidv-blue hover:bg-bidv-dark text-white w-12 h-12 rounded-full shadow-lg border border-white/10 flex items-center justify-center transition-all duration-300 transform translate-y-16 opacity-0 pointer-events-none hover:scale-110 active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-100" title="Cuộn lên đầu trang">
+        <i class="fa-solid fa-arrow-up text-lg"></i>
+    </button>
+
     <!-- APP SCRIPT -->
     <script>
         // Cơ sỡ dữ liệu 145 câu hỏi
@@ -306,7 +311,7 @@
             { id: 38, catCode: "NQ-68", catName: "Nghị quyết 68-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 68-NQ/TW, cơ chế đặc biệt hỗ trợ doanh nghiệp nhỏ và vừa là miễn thuế thu nhập doanh nghiệp trong mấy năm đầu thành lập?", a: "Miễn thuế thu nhập doanh nghiệp trong 2 năm đầu kể từ khi có thu nhập chịu thuế.", ref: "Mục III, Khoản 3, Điểm b (Chính sách ưu đãi thuế hỗ trợ SME) - Nghị quyết 68" },
             { id: 39, catCode: "NQ-68", catName: "Nghị quyết 68-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 68-NQ/TW, nhà nước có chính sách giảm bao nhiêu phần trăm tiền thuê đất cho các doanh nghiệp công nghệ cao trong 5 năm đầu?", a: "Giảm 50% tiền thuê đất.", ref: "Mục III, Khoản 4, Điểm a (Hỗ trợ tiếp cận đất đai cho DN công nghệ) - Nghị quyết 68" },
 
-            // 40 - 49: Nghị quyết 70-NQ/TW (Phát triển năng lượng)
+            // 40 - 49: Nghị quyết 70-NQ/TW (Phát triển Năng lượng)
             { id: 40, catCode: "NQ-70", catName: "Nghị quyết 70-NQ/TW (Bộ Chính trị)", q: "Để đáp ứng yêu cầu tăng trưởng liên tục trên 10%, Nghị quyết số 70-NQ/TW yêu cầu năng lượng phải thực hiện vai trò gì?", a: "Đi trước một bước, bảo đảm cung cấp đầy đủ, vững chắc, an toàn nguồn năng lượng cho phát triển kinh tế - xã hội.", ref: "Mục I, Khoản 2 (Quan điểm chỉ đạo phát triển ngành năng lượng) - Nghị quyết 70" },
             { id: 41, catCode: "NQ-70", catName: "Nghị quyết 70-NQ/TW (Bộ Chính trị)", q: "Tại Nghị quyết số 70-NQ/TW yêu cầu tổng cung năng lượng sơ cấp đến năm 2030 đạt khoảng bao nhiêu triệu tấn dầu quy đổi (MTOE)?", a: "Đạt khoảng 175 - 195 triệu tấn dầu quy đổi (MTOE).", ref: "Mục II, Khoản 2, Điểm a (Chỉ tiêu tổng cung năng lượng) - Nghị quyết 70" },
             { id: 42, catCode: "NQ-70", catName: "Nghị quyết 70-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 70-NQ/TW, tổng công suất các nguồn điện đến năm 2030 đạt khoảng bao nhiêu Giga-oát (GW)?", a: "Đạt khoảng 150 - 160 GW.", ref: "Mục II, Khoản 2, Điểm b (Chỉ tiêu tổng công suất nguồn điện) - Nghị quyết 70" },
@@ -464,7 +469,27 @@
             renderCategories();
             updateProgressStats();
             applyFilters();
+            
+            // Lắng nghe sự kiện cuộn trang để ẩn/hiện nút Scroll to Top
+            window.addEventListener('scroll', function() {
+                const scrollTopBtn = document.getElementById('scrollTopBtn');
+                if (window.scrollY > 300) {
+                    scrollTopBtn.classList.remove('opacity-0', 'translate-y-16', 'pointer-events-none');
+                    scrollTopBtn.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                } else {
+                    scrollTopBtn.classList.add('opacity-0', 'translate-y-16', 'pointer-events-none');
+                    scrollTopBtn.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                }
+            });
         };
+
+        // Hàm cuộn lên đầu trang mượt mà
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
 
         // Hàm Đóng / Mở Ngăn kéo Cấu hình & Bộ lọc nâng cao
         function toggleFilterPanel() {
@@ -781,6 +806,7 @@
             }
         }
 
+        // Tải thêm câu hỏi
         function loadMoreCards() {
             showLimit += 20;
             applyFilters();
@@ -791,6 +817,7 @@
             applyFilters();
         });
 
+        // Tìm kiếm có highlight
         function highlightMatch(text, query) {
             if (!query || query.trim().length === 0) return text;
             try {
@@ -802,6 +829,7 @@
             }
         }
 
+        // Thích câu hỏi
         function toggleStarred(id) {
             if (starredIds.includes(id)) {
                 starredIds = starredIds.filter(x => x !== id);
@@ -812,6 +840,7 @@
             applyFilters();
         }
 
+        // Thuộc câu hỏi
         function toggleLearned(id) {
             if (learnedIds.includes(id)) {
                 learnedIds = learnedIds.filter(x => x !== id);
@@ -823,6 +852,7 @@
             applyFilters();
         }
 
+        // Bộ đếm tiến độ
         function updateProgressStats() {
             const total = rawDatabase.length;
             const learned = learnedIds.length;
