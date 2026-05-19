@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIDV Study Hub - Tra Cứu & Ôn Luyện Nghị Quyết</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Be Vietnam Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bidv: {
+                            blue: '#005B94',
+                            dark: '#003B64',
+                            gold: '#FBB03B',
+                            green: '#02A859',
+                            lightgreen: '#E8F5E9',
+                            lightblue: '#F0F8FF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Be Vietnam Pro', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Tối ưu thanh cuộn ngang mượt mà trên di động không hiện thanh xám xấu */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        
+        /* Bôi đậm từ khóa tìm kiếm */
+        .highlight {
+            background-color: #fef08a;
+            color: #0f172a;
+            padding: 0 2px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- HEADER / HERO SECTION -->
+    <header class="bg-gradient-to-r from-[#003B64] via-[#005B94] to-[#02A859] text-white shadow-md relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(251,176,59,0.12),transparent_45%)]"></div>
+        <div class="max-w-7xl mx-auto px-4 py-6 md:py-10 relative z-10">
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
+                
+                <div class="flex items-center gap-3 md:gap-4">
+                    <!-- Logo BIDV truyền cảm hứng -->
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-white rounded-xl flex items-center justify-center shadow-md border-2 border-bidv-gold transform hover:rotate-3 transition-all shrink-0">
+                        <svg class="w-8 h-8 md:w-10 md:h-10 text-bidv-blue" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 22H22L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M12 6L5 20H19L12 6Z" fill="#02A859"/>
+                            <circle cx="12" cy="14" r="3" fill="#FBB03B"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap items-center gap-1.5">
+                            <span class="bg-bidv-gold text-bidv-dark text-[10px] md:text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wider shadow">Đảng Bộ BIDV</span>
+                            <span class="bg-emerald-600 text-white text-[10px] md:text-xs font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">Kỷ Nguyên Số</span>
+                        </div>
+                        <h1 class="text-xl md:text-2xl lg:text-3xl font-extrabold tracking-tight mt-1 text-white">Study Hub & Tra Cứu Nghị Quyết</h1>
+                        <p class="text-blue-100 text-xs md:text-sm mt-0.5 font-light">Ứng dụng hỗ trợ ôn thi, kiểm tra và tra cứu nhanh các văn kiện Đảng & Chỉ thị chuyên đề</p>
+                    </div>
+                </div>
+                
+                <!-- Bộ đếm tiến độ học tập -->
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 flex items-center gap-4 w-full lg:w-auto lg:min-w-[260px] shadow-sm">
+                    <div class="relative w-12 h-12 flex items-center justify-center shrink-0">
+                        <svg class="w-full h-full transform -rotate-90">
+                            <circle cx="24" cy="24" r="20" stroke="rgba(255,255,255,0.2)" stroke-width="4" fill="transparent" />
+                            <circle id="progressCircle" cx="24" cy="24" r="20" stroke="#FBB03B" stroke-width="4" fill="transparent" stroke-dasharray="125.6" stroke-dashoffset="125.6" />
+                        </svg>
+                        <span id="progressText" class="absolute text-xs font-bold text-white">0%</span>
+                    </div>
+                    <div>
+                        <div class="text-[11px] text-blue-200 uppercase tracking-wider font-semibold">Tiến độ thuộc lòng</div>
+                        <div class="text-base font-extrabold"><span id="learnedCount" class="text-bidv-gold">0</span> / <span id="totalQuestionsCount">141</span> câu</div>
+                        <div class="text-[11px] text-emerald-300 font-medium mt-0.5" id="cheeringMsg">Bắt đầu học ngay nào! 🎯</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-7xl mx-auto px-4 py-6 md:py-8 flex-1 grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8 w-full">
+        
+        <!-- SIDEBAR CONTROLS & STATS (Chuyển đổi linh hoạt giữa dọc và ngang tùy màn hình) -->
+        <aside class="space-y-4 md:space-y-6 lg:col-span-1">
+            
+            <!-- CẤU HÌNH ÔN LUYỆN -->
+            <div class="bg-white rounded-2xl p-4 md:p-5 shadow-sm border border-slate-100 space-y-4">
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
+                    <i class="fa-solid fa-sliders text-bidv-blue"></i> Cấu hình ôn luyện
+                </h3>
+                
+                <!-- Chế độ tự luyện (Ẩn/Hiện đáp án) -->
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-xs md:text-sm font-bold text-slate-700 block">Chế độ tự luyện</span>
+                            <span class="text-[10px] md:text-xs text-slate-400 font-light">Ẩn đáp án để tự ôn luyện</span>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" id="studyModeToggle" class="sr-only peer">
+                            <div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-bidv-blue"></div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Lọc theo Trạng Thái đã lưu -->
+                <div class="flex flex-col gap-2 pt-1">
+                    <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Lọc theo tiến độ học:</span>
+                    <div class="grid grid-cols-2 gap-2">
+                        <button onclick="setFilterState('all')" id="stateBtn-all" class="px-2.5 py-2 text-xs font-semibold rounded-lg bg-bidv-blue text-white shadow-sm transition-all flex items-center justify-center gap-1">
+                            Tất cả
+                        </button>
+                        <button onclick="setFilterState('starred')" id="stateBtn-starred" class="px-2.5 py-2 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-star text-amber-400"></i> Đã thích
+                        </button>
+                        <button onclick="setFilterState('unlearned')" id="stateBtn-unlearned" class="px-2.5 py-2 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all flex items-center justify-center gap-1">
+                            <i class="fa-regular fa-circle text-slate-400"></i> Chưa thuộc
+                        </button>
+                        <button onclick="setFilterState('learned')" id="stateBtn-learned" class="px-2.5 py-2 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-circle-check text-bidv-green"></i> Đã thuộc
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- THỬ THÁCH PHẢN XẠ NHANH (MINI GAME) -->
+            <div class="bg-gradient-to-br from-[#003B64] to-[#005B94] text-white rounded-2xl p-4 md:p-5 shadow-sm border border-blue-900 relative overflow-hidden">
+                <div class="absolute -right-6 -bottom-6 opacity-10 transform rotate-12">
+                    <i class="fa-solid fa-graduation-cap text-7xl"></i>
+                </div>
+                <h3 class="font-bold text-sm md:text-base flex items-center gap-2">
+                    <i class="fa-solid fa-bolt text-bidv-gold"></i> Phản xạ ngẫu nhiên
+                </h3>
+                <p class="text-[11px] text-blue-100 font-light mt-1 mb-3">Tạo ngẫu nhiên một đề thi thử gồm 5 câu hỏi để tự kiểm tra kiến thức lập tức.</p>
+                <button onclick="generateRandomQuiz()" class="w-full bg-bidv-gold hover:bg-amber-400 text-bidv-dark font-bold py-2 px-3 rounded-xl text-xs shadow-md transition-all flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-dice"></i> Làm đề trắc nghiệm (5 câu)
+                </button>
+            </div>
+
+            <!-- DANH MỤC VĂN KIỆN (Thanh cuộn ngang trên Mobile, thanh dọc trên Desktop) -->
+            <div class="bg-white rounded-2xl p-4 md:p-5 shadow-sm border border-slate-100">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
+                        <i class="fa-regular fa-folder-open text-bidv-blue"></i> Danh mục Văn kiện
+                    </h3>
+                    <button onclick="resetCategory()" class="text-xs text-bidv-blue hover:underline font-semibold">Bỏ lọc</button>
+                </div>
+                
+                <!-- Trên di động nó sẽ scroll ngang (flex-row), trên desktop nó sẽ sắp cột dọc (lg:flex-col) -->
+                <div class="flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-y-auto lg:max-h-[380px] pb-2 lg:pb-0 no-scrollbar" id="categoryList">
+                    <!-- Javascript sinh tự động các nút danh mục -->
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT AREA (3 Columns) -->
+        <section class="lg:col-span-3 space-y-4 md:space-y-6">
+            
+            <!-- SEARCH BAR COMPONENT -->
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 flex flex-col sm:flex-row gap-3 items-center">
+                <div class="relative flex-1 w-full">
+                    <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+                        <i class="fa-solid fa-magnifying-glass text-slate-400 text-base"></i>
+                    </div>
+                    <input type="text" id="searchInput" oninput="handleSearch()" class="block w-full pl-10 pr-10 py-3 bg-slate-50 hover:bg-slate-100 focus:bg-white text-slate-900 placeholder-slate-400 border border-slate-200 focus:border-bidv-blue rounded-xl focus:ring-4 focus:ring-blue-100 transition-all text-sm md:text-base font-medium" placeholder="Nhập từ khóa hoặc số Nghị quyết... (VD: nghị quyết 91, tín dụng xanh...)">
+                    <button onclick="clearSearch()" id="clearBtn" class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-slate-600 hidden">
+                        <i class="fa-solid fa-circle-xmark text-lg"></i>
+                    </button>
+                </div>
+                <div class="flex items-center gap-2 shrink-0 w-full sm:w-auto">
+                    <span id="resultsCount" class="text-xs md:text-sm font-bold text-slate-500 bg-slate-100 px-4 py-3 rounded-xl text-center w-full sm:w-auto">Đang tải...</span>
+                </div>
+            </div>
+
+            <!-- CHỈ BÁO THÔNG BÁO CHẾ ĐỘ TỰ LUYỆN -->
+            <div id="quizTipAlert" class="bg-blue-50 border border-blue-200 text-bidv-blue rounded-xl p-3 text-xs flex items-center gap-2.5 hidden">
+                <i class="fa-solid fa-circle-info text-base shrink-0 animate-pulse"></i>
+                <span><strong>Chế độ tự luyện đang BẬT:</strong> Câu trả lời đã ẩn. Bạn hãy <strong>click vào bất kỳ thẻ câu hỏi nào</strong> bên dưới để xem/ẩn nhanh đáp án!</span>
+            </div>
+
+            <!-- ACTIVE FILTERS SUMMARY CHIPS -->
+            <div id="activeFilterChips" class="flex flex-wrap gap-2 items-center hidden">
+                <span class="text-xs font-semibold text-slate-400">Bộ lọc đang áp dụng:</span>
+                <span id="chipCategory" class="hidden text-xs font-bold text-bidv-blue bg-blue-50 border border-blue-200 px-3 py-1 rounded-full flex items-center gap-1">
+                    Danh mục: <span id="chipCategoryText"></span>
+                    <button onclick="resetCategory()"><i class="fa-solid fa-xmark hover:text-red-500 ml-1"></i></button>
+                </span>
+                <span id="chipSearch" class="hidden text-xs font-bold text-slate-700 bg-slate-100 border border-slate-200 px-3 py-1 rounded-full flex items-center gap-1">
+                    Từ khóa: "<span id="chipSearchText"></span>"
+                    <button onclick="clearSearch()"><i class="fa-solid fa-xmark hover:text-red-500 ml-1"></i></button>
+                </span>
+                <span id="chipQuizMode" class="hidden text-xs font-bold text-amber-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full flex items-center gap-1">
+                    Chế độ: Đề kiểm tra thử
+                    <button onclick="quitQuizMode()"><i class="fa-solid fa-xmark hover:text-red-500 ml-1"></i></button>
+                </span>
+            </div>
+
+            <!-- CARDS CONTAINER -->
+            <div id="cardsContainer" class="space-y-4">
+                <!-- Danh sách câu hỏi render động ở đây -->
+            </div>
+
+            <!-- PAGINATION / SHOW MORE -->
+            <div id="showMoreContainer" class="flex justify-center pt-2 hidden">
+                <button onclick="loadMoreCards()" class="px-5 py-2.5 bg-white hover:bg-slate-50 text-bidv-blue font-bold border border-slate-200 hover:border-bidv-blue rounded-xl text-xs transition-all shadow-sm flex items-center gap-2">
+                    Xem thêm câu hỏi <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-6 border-t border-slate-800 text-xs mt-10">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center text-white border border-white/20 font-bold text-sm">B</div>
+                <div>
+                    <span class="text-white font-bold block text-sm">BIDV STUDY PORTAL 2026</span>
+                    <span class="text-[10px] font-light">Chương trình thi đua tìm hiểu nghị quyết và chuyển đổi số</span>
+                </div>
+            </div>
+            <p class="text-[10px] text-center md:text-right font-light leading-relaxed">
+                Nguồn tư liệu gốc trích từ Hệ thống các Nghị quyết Trung ương, Nghị quyết Đại hội XV Đảng bộ BIDV <br>
+                và các Quyết định hành động triển khai về Khoa học, Công nghệ, Số & Chuyển đổi xanh.
+            </p>
+        </div>
+    </footer>
+
+    <!-- APP SCRIPT -->
+    <script>
+        // Cơ sở dữ liệu chuẩn hóa của 141+ câu hỏi
+        const rawDatabase = [
+            // 1 - 10: Nghị quyết 57-NQ/TW
+            { id: 1, catCode: "NQ-57", catName: "Nghị quyết 57-NQ/TW (Bộ Chính trị)", q: "Nghị quyết số 57-NQ/TW của Bộ Chính trị tập trung vào nội dung cốt lõi nào?", a: "Phát triển khoa học, công nghệ và đổi mới sáng tạo thúc đẩy chuyển đổi số quốc gia.", ref: "Tên Nghị quyết số 57-NQ/TW" },
+            { id: 2, catCode: "NQ-57", catName: "Nghị quyết 57-NQ/TW (Bộ Chính trị)", q: "Để triển khai Nghị quyết 57-NQ/TW, BIDV ưu tiên nghiên cứu và ứng dụng xu hướng công nghệ nào?", a: "Điện toán đám mây (Cloud), Dữ liệu lớn (Big Data), Trí tuệ nhân tạo (AI/ML), Chuỗi khối (Blockchain) và tự động hóa quy trình (RPA) để nâng cao chất lượng dịch vụ và quản trị rủi ro.", ref: "Mục II, Khoản 2 (Nhiệm vụ giải pháp) - Nghị quyết 488/NQ-HĐQT của BIDV" },
+            { id: 3, catCode: "NQ-57", catName: "Nghị quyết 57-NQ/TW (Bộ Chính trị)", q: "Nghị quyết số 57-NQ/TW được Bộ Chính trị ban hành vào ngày tháng năm nào?", a: "Ngày 22 tháng 5 năm 2024.", ref: "Phần tiêu đề/Ban hành - Nghị quyết số 57-NQ/TW" },
+            { id: 4, catCode: "NQ-57", catName: "Nghị quyết 57-NQ/TW (Bộ Chính trị)", q: "Mục tiêu của Nghị quyết số 57-NQ/TW, đến năm 2030, kinh tế số phải chiếm tối thiểu bao nhiêu % GDP?", a: "Tối thiểu 30% GDP.", ref: "Mục II, Khoản 2, Điểm a (Mục tiêu cụ thể đến năm 2030) - Nghị quyết 57" },
+            { id: 5, catCode: "NQ-57", catName: "Nghị quyết 57-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 57-NQ/TW, đối tượng nào phải trực tiếp phụ trách và chịu trách nhiệm về kết quả chuyển đổi số tại cơ quan, đơn vị?", a: "Người đứng đầu cấp ủy, cơ quan, tổ chức, doanh nghiệp.", ref: "Mục III, Khoản 1 (Nhiệm vụ, giải pháp về nâng cao nhận thức, trách nhiệm) - Nghị quyết 57" },
+            { id: 6, catCode: "NQ-57", catName: "Nghị quyết 57-NQ/TW (Bộ Chính trị)", q: "Nghị quyết số 57-NQ/TW yêu cầu bố trí ít nhất bao nhiêu phần trăm ngân sách nhà nước chi sự nghiệp khoa học công nghệ phục vụ nghiên cứu công nghệ chiến lược?", a: "Ít nhất 2% tổng chi ngân sách nhà nước hằng năm.", ref: "Mục III, Khoản 3, Điểm b (Huy động nguồn lực tài chính) - Nghị quyết 57" },
+            { id: 7, catCode: "NQ-57", catName: "Nghị quyết 57-NQ/TW (Bộ Chính trị)", q: "Tỷ lệ doanh nghiệp có hoạt động đổi mới sáng tạo đến năm 2030 phấn đấu đạt trên bao nhiêu %?", a: "Đạt trên 50%.", ref: "Mục II, Khoản 2, Điểm b (Mục tiêu phát triển doanh nghiệp công nghệ) - Nghị quyết 57" },
+            { id: 8, catCode: "NQ-57", catName: "Nghị quyết 57-NQ/TW (Bộ Chính trị)", q: "Đến năm 2030, Việt Nam thuộc nhóm mấy nước dẫn đầu Đông Nam Á về nghiên cứu trí tuệ nhân tạo?", a: "Thuộc nhóm 4 nước dẫn đầu Đông Nam Á (Top 4 ASEAN).", ref: "Mục II, Khoản 2, Điểm a (Mục tiêu cụ thể về vị thế công nghệ) - Nghị quyết 57" },
+            { id: 9, catCode: "NQ-57", catName: "Nghị quyết 57-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 57, Mục tiêu trong quản trị quốc gia là nâng cao chất lượng dịch vụ công trực tuyến hướng tới cấp độ nào?", a: "Cung cấp dịch vụ công trực tuyến toàn trình (toàn bộ quy trình được thực hiện trên môi trường điện tử).", ref: "Mục II, Khoản 2, Điểm c (Mục tiêu về hạ tầng và dịch vụ công) - Nghị quyết 57" },
+            { id: 10, catCode: "NQ-57", catName: "Nghị quyết 57-NQ/TW (Bộ Chính trị)", q: "Để thu hút nhân tài, Nghị quyết số 57-NQ/TW cho phép xây dựng cơ chế đặc thù về những nội dung nào cho các nhà khoa học đầu ngành?", a: "Cơ chế đặc thù về tiền lương, tiền công, chế độ đãi ngộ, sử dụng kinh phí và giao quyền tự chủ tối đa trong thực hiện nhiệm vụ khoa học công nghệ.", ref: "Mục III, Khoản 4, Điểm a (Phát triển nguồn nhân lực và thu hút nhân tài) - Nghị quyết 57" },
+
+            // 11 - 19: Nghị quyết 59-NQ/TW / 79-NQ/TW (Hội nhập quốc tế)
+            { id: 11, catCode: "NQ-79", catName: "Nghị quyết 79-NQ/TW (Bộ Chính trị)", q: "Ngày ban hành Nghị quyết số 59-NQ/TW (trong danh mục tương ứng Nghị quyết 79-NQ/TW) của Bộ Chính trị là ngày nào?", a: "Ngày 12 tháng 6 năm 2024.", ref: "Phần tiêu đề ban hành - Nghị quyết số 79-NQ/TW" },
+            { id: 12, catCode: "NQ-79", catName: "Nghị quyết 79-NQ/TW (Bộ Chính trị)", q: "Theo quan điểm chỉ đạo điều hành tại Nghị quyết, hội nhập quốc tế là xây dựng nền kinh tế có tính chất gì?", a: "Xây dựng nền kinh tế độc lập, tự chủ, tự cường, gắn với chủ động, tích cực hội nhập quốc tế sâu rộng, thực chất, hiệu quả.", ref: "Mục I, Khoản 2 (Quan điểm chỉ đạo) - Nghị quyết 79" },
+            { id: 13, catCode: "NQ-79", catName: "Nghị quyết 79-NQ/TW (Bộ Chính trị)", q: "Mục tiêu tổng quát của Nghị quyết xác định đến giữa thế kỷ XXI, nước ta trở thành nước như thế nào?", a: "Trở thành nước phát triển, thu nhập cao, có vị thế và uy tín ngày càng gia tăng trên trường quốc tế.", ref: "Mục II, Khoản 1 (Mục tiêu tổng quát) - Nghị quyết 79" },
+            { id: 14, catCode: "NQ-79", catName: "Nghị quyết 79-NQ/TW (Bộ Chính trị)", q: "Theo quan điểm chỉ đạo, hội nhập quốc tế là sự nghiệp của đối tượng nào?", a: "Là sự nghiệp của toàn dân và của cả hệ thống chính trị.", ref: "Mục I, Khoản 2, Biểu mục 1 (Bản chất của hội nhập) - Nghị quyết 79" },
+            { id: 15, catCode: "NQ-79", catName: "Nghị quyết 79-NQ/TW (Bộ Chính trị)", q: "Nghị quyết yêu cầu bảo đảm Việt Nam luôn nằm trong số các quốc gia có đặc điểm gì nhất thế giới?", a: "Có môi trường đầu tư, kinh doanh hấp dẫn, an toàn, ổn định và thuận lợi nhất.", ref: "Mục II, Khoản 2, Điểm b (Mục tiêu cụ thể lĩnh vực kinh tế) - Nghị quyết 79" },
+            { id: 16, catCode: "NQ-79", catName: "Nghị quyết 79-NQ/TW (Bộ Chính trị)", q: "Để bảo đảm lợi ích quốc gia, cần giám sát chặt chẽ việc thực hiện các nội dung nào trong hội nhập?", a: "Giám sát chặt chẽ việc thực thi các cam kết quốc tế, các hiệp định thương mại tự do (FTA) và các thỏa thuận hợp tác đa phương, song phương.", ref: "Mục III, Khoản 2, Điểm c (Nhiệm vụ thực thi cam kết kinh tế) - Nghị quyết 79" },
+            { id: 17, catCode: "NQ-79", catName: "Nghị quyết 79-NQ/TW (Bộ Chính trị)", q: "Nghị quyết đã xác định hội nhập quốc tế trong lĩnh vực nào là một nhóm giải pháp riêng, độc lập, là bước phát triển mới về tư duy?", a: "Hội nhập quốc tế về khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số.", ref: "Mục III, Khoản 3 (Nhóm giải pháp độc lập về KHCN & Số) - Nghị quyết 79" },
+            { id: 18, catCode: "NQ-79", catName: "Nghị quyết 79-NQ/TW (Bộ Chính trị)", q: "Tại Nghị quyết, quan điểm chỉ đạo xác định yếu tố nào có vai trò 'quyết định' trong quá trình hội nhập?", a: "Nội lực (nguồn lực con người, thể chế, kinh tế trong nước) giữ vai trò quyết định; ngoại lực là quan trọng, đột phá.", ref: "Mục I, Khoản 2, Biểu mục 2 (Mối quan hệ nội lực - ngoại lực) - Nghị quyết 79" },
+            { id: 19, catCode: "NQ-79", catName: "Nghị quyết 79-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết, để nâng cao hiệu quả hội nhập, cần ưu tiên thu hút các dự án đầu tư nước ngoài có đặc điểm gì?", a: "Dự án có công nghệ cao, công nghệ sạch, quản trị hiện đại, có giá trị gia tăng cao, có tác động lan tỏa và kết nối chuỗi cung ứng toàn cầu.", ref: "Mục III, Khoản 2, Điểm a (Định hướng thu hút FDI thế hệ mới) - Nghị quyết 79" },
+
+            // 20 - 29: Nghị quyết 668-NQ/TW (Chế độ văn bản, lề lối)
+            { id: 20, catCode: "NQ-668", catName: "Nghị quyết 668-NQ/TW (Bộ Chính trị)", q: "Nghị quyết về văn bản quy định và lề lối làm việc (số 668-NQ/TW) được ban hành chính thức vào ngày nào?", a: "Ngày 24 tháng 6 năm 2024.", ref: "Phần tiêu đề ban hành - Nghị quyết số 668-NQ/TW" },
+            { id: 21, catCode: "NQ-668", catName: "Nghị quyết 668-NQ/TW (Bộ Chính trị)", q: "Nội dung trọng tâm xuyên suốt của Nghị quyết 668-NQ/TW là gì?", a: "Đổi mới, nâng cao chất lượng ban hành văn bản chế độ, quy định nội bộ; cải tiến chế độ hội họp và lề lối làm việc trong hệ thống.", ref: "Phần đặt vấn đề và Tên Nghị quyết số 668-NQ/TW (cụ thể hóa tại Nghị quyết 39 của Đảng ủy BIDV)" },
+            { id: 22, catCode: "NQ-668", catName: "Nghị quyết 668-NQ/TW (Bộ Chính trị)", q: "Hệ thống pháp luật/văn bản theo tinh thần Nghị quyết cần đạt tiêu chí gì?", a: "Đồng bộ, thống nhất, khả thi, công khai, minh bạch, dễ tiếp cận và có tính dự báo cao.", ref: "Mục I, Khoản 3 (Yêu cầu hệ thống quy định) - Nghị quyết 668 (cụ thể hóa tại Nghị quyết 16/NQ-HĐQT của BIDV)" },
+            { id: 23, catCode: "NQ-668", catName: "Nghị quyết 668-NQ/TW (Bộ Chính trị)", q: "Nghị quyết yêu cầu công tác xây dựng văn bản phải dựa trên yêu cầu nào?", a: "Dựa trên cơ sở khoa học, thực tiễn, đánh giá tác động kỹ lưỡng và bám sát các mục tiêu chiến lược phát triển.", ref: "Mục III, Khoản 1, Điểm a (Quy trình xây dựng văn bản) - Nghị quyết 668" },
+            { id: 24, catCode: "NQ-668", catName: "Nghị quyết 668-NQ/TW (Bộ Chính trị)", q: "Một trong những giải pháp quan trọng của Nghị quyết 668-NQ/TW trong thi hành pháp luật là gì?", a: "Tăng cường kiểm tra, giám sát thực thi, xử lý nghiêm minh các vi phạm; ứng dụng triệt để công nghệ thông tin vào công tác rà soát và kiểm soát tuân thủ.", ref: "Mục III, Khoản 2 (Giải pháp tổ chức thực thi văn bản) - Nghị quyết 668" },
+            { id: 25, catCode: "NQ-668", catName: "Nghị quyết 668-NQ/TW (Bộ Chính trị)", q: "Nghị quyết đặt ra yêu cầu gì đối với việc ban hành văn bản mới?", a: "Chỉ ban hành khi thực sự cần thiết; văn bản mới phải khắc phục tình trạng chồng chéo, mâu thuẫn và phải có điều khoản chuyển tiếp, hướng dẫn rõ ràng.", ref: "Mục III, Khoản 1, Điểm b (Nguyên tắc ban hành văn bản mới) - Nghị quyết 668" },
+            { id: 26, catCode: "NQ-668", catName: "Nghị quyết 668-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết, việc đổi mới pháp luật đóng vai trò gì?", a: "Đóng vai trò kiến tạo phát triển, khơi thông các nguồn lực và tạo động lực đột phá cho tăng trưởng kinh tế.", ref: "Mục I, Khoản 2 (Quan điểm về vai trò hệ thống quy định) - Nghị quyết 668" },
+            { id: 27, catCode: "NQ-668", catName: "Nghị quyết 668-NQ/TW (Bộ Chính trị)", q: "Yêu cầu về nội dung của văn bản chế độ theo Nghị quyết là gì?", a: "Ngắn gọn, súc tích, rõ người, rõ việc, rõ trách nhiệm, dễ hiểu và dễ thực hiện.", ref: "Mục III, Khoản 1, Điểm c (Hình thức và văn phong văn bản) - Nghị quyết 668" },
+            { id: 28, catCode: "NQ-668", catName: "Nghị quyết 668-NQ/TW (Bộ Chính trị)", q: "Nghị quyết nhấn mạnh việc rà soát văn bản cũ phải được thực hiện như thế nào?", a: "Phải thực hiện thường xuyên, định kỳ, kịp thời sửa đổi, bổ sung hoặc bãi bỏ những văn bản lạc hậu, gây cản trở hoạt động kinh doanh.", ref: "Mục III, Khoản 1, Điểm d (Công tác hệ thống hóa, rà soát) - Nghị quyết 668" },
+            { id: 29, catCode: "NQ-668", catName: "Nghị quyết 668-NQ/TW (Bộ Chính trị)", q: "Giai đoạn thực hiện Nghị quyết gắn liền với mục tiêu phát triển đất nước đến năm bao nhiêu?", a: "Đến năm 2030, tầm nhìn đến năm 2045.", ref: "Mục II (Mục tiêu và lộ trình thực hiện) - Nghị quyết 668" },
+
+            // 30 - 39: Nghị quyết 68-NQ/TW (Kinh tế tư nhân)
+            { id: 30, catCode: "NQ-68", catName: "Nghị quyết 68-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 68-NQ/TW, hiện nay, khu vực kinh tế tư nhân đóng góp khoảng bao nhiêu phần trăm Tổng sản phẩm nội địa (GDP)?", a: "Khoảng 45% GDP.", ref: "Mục I (Tình hình phát triển kinh tế tư nhân) - Nghị quyết 68" },
+            { id: 31, catCode: "NQ-68", catName: "Nghị quyết 68-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 68-NQ/TW, khu vực kinh tế tư nhân đang sử dụng khoảng bao nhiêu phần trăm tổng số lao động?", a: "Khoảng 85% tổng số lao động của cả nước.", ref: "Mục I (Đánh giá về lao động, việc làm) - Nghị quyết 68" },
+            { id: 32, catCode: "NQ-68", catName: "Nghị quyết 68-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 68-NQ/TW, mục tiêu đến năm 2030, phấn đấu có bao nhiêu doanh nghiệp hoạt động trong nền kinh tế?", a: "Có ít nhất 2 triệu doanh nghiệp hoạt động.", ref: "Mục II, Khoản 2 (Mục tiêu cụ thể đến năm 2030) - Nghị quyết 68" },
+            { id: 33, catCode: "NQ-68", catName: "Nghị quyết 68-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 68-NQ/TW, đến năm 2030, phấn đấu có ít nhất bao nhiêu doanh nghiệp lớn tham gia vào chuỗi giá trị toàn cầu?", a: "Ít nhất 10 đến 15 tập đoàn kinh tế tư nhân có quy mô lớn, tiềm lực mạnh.", ref: "Mục II, Khoản 2 (Chỉ tiêu phát triển tập đoàn lớn) - Nghị quyết 68" },
+            { id: 34, catCode: "NQ-68", catName: "Nghị quyết 68-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 68-NQ/TW, tỷ trọng đóng góp của kinh tế tư nhân vào Tổng sản phẩm nội địa (GDP) đến năm 2030 đạt khoảng bao nhiêu?", a: "Đạt khoảng 60% GDP.", ref: "Mục II, Khoản 2 (Chỉ tiêu đóng góp cấu thành GDP) - Nghị quyết 68" },
+            { id: 35, catCode: "NQ-68", catName: "Nghị quyết 68-NQ/TW (Bộ Chính trị)", q: "Tầm nhìn được xác định tại Nghị quyết số 68-NQ/TW, đến năm 2045, kinh tế tư nhân đóng góp khoảng bao nhiêu phần trăm Tổng sản phẩm nội địa (GDP)?", a: "Khoảng 65% GDP.", ref: "Mục II, Khoản 3 (Tầm nhìn chiến lược đến năm 2045) - Nghị quyết 68" },
+            { id: 36, catCode: "NQ-68", catName: "Nghị quyết 68-NQ/TW (Bộ Chính trị)", q: "Theo mục tiêu Nghị quyết số 68-NQ/TW, trong năm 2025, mục tiêu cắt giảm ít nhất bao nhiêu phần trăm thời gian xử lý các thủ tục hành chính?", a: "Cắt giảm ít nhất 20% thời gian xử lý thủ tục.", ref: "Mục III, Khoản 1, Điểm a (Cải cách thủ tục hành chính ngắn hạn) - Nghị quyết 68" },
+            { id: 37, catCode: "NQ-68", catName: "Nghị quyết 68-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 68-NQ/TW, phấn đấu đến năm 2028, môi trường đầu tư kinh doanh của Việt Nam thuộc nhóm mấy quốc gia hàng đầu ASEAN?", a: "Thuộc nhóm 3 quốc gia dẫn đầu ASEAN (Top 3 ASEAN).", ref: "Mục II, Khoản 2 (Chỉ tiêu về môi trường kinh doanh trung hạn) - Nghị quyết 68" },
+            { id: 38, catCode: "NQ-68", catName: "Nghị quyết 68-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 68-NQ/TW, cơ chế đặc biệt hỗ trợ doanh nghiệp nhỏ và vừa là miễn thuế thu nhập doanh nghiệp trong mấy năm đầu thành lập?", a: "Miễn thuế thu nhập doanh nghiệp trong 2 năm đầu kể từ khi có thu nhập chịu thuế.", ref: "Mục III, Khoản 3, Điểm b (Chính sách ưu đãi thuế hỗ trợ SME) - Nghị quyết 68" },
+            { id: 39, catCode: "NQ-68", catName: "Nghị quyết 68-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 68-NQ/TW, nhà nước có chính sách giảm bao nhiêu phần trăm tiền thuê đất cho các doanh nghiệp công nghệ cao trong 5 năm đầu?", a: "Giảm 50% tiền thuê đất.", ref: "Mục III, Khoản 4, Điểm a (Hỗ trợ tiếp cận đất đai cho DN công nghệ) - Nghị quyết 68" },
+
+            // 40 - 49: Nghị quyết 70-NQ/TW (Phát triển năng lượng)
+            { id: 40, catCode: "NQ-70", catName: "Nghị quyết 70-NQ/TW (Bộ Chính trị)", q: "Để đáp ứng yêu cầu tăng trưởng liên tục trên 10%, Nghị quyết số 70-NQ/TW yêu cầu năng lượng phải thực hiện vai trò gì?", a: "Đi trước một bước, bảo đảm cung cấp đầy đủ, vững chắc, an toàn nguồn năng lượng cho phát triển kinh tế - xã hội.", ref: "Mục I, Khoản 2 (Quan điểm chỉ đạo phát triển ngành năng lượng) - Nghị quyết 70" },
+            { id: 41, catCode: "NQ-70", catName: "Nghị quyết 70-NQ/TW (Bộ Chính trị)", q: "Tại Nghị quyết số 70-NQ/TW yêu cầu tổng cung năng lượng sơ cấp đến năm 2030 đạt khoảng bao nhiêu triệu tấn dầu quy đổi (MTOE)?", a: "Đạt khoảng 175 - 195 triệu tấn dầu quy đổi (MTOE).", ref: "Mục II, Khoản 2, Điểm a (Chỉ tiêu tổng cung năng lượng) - Nghị quyết 70" },
+            { id: 42, catCode: "NQ-70", catName: "Nghị quyết 70-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 70-NQ/TW, tổng công suất các nguồn điện đến năm 2030 đạt khoảng bao nhiêu Giga-oát (GW)?", a: "Đạt khoảng 150 - 160 GW.", ref: "Mục II, Khoản 2, Điểm b (Chỉ tiêu tổng công suất nguồn điện) - Nghị quyết 70" },
+            { id: 43, catCode: "NQ-70", catName: "Nghị quyết 70-NQ/TW (Bộ Chính trị)", q: "Tại Nghị quyết số 70-NQ/TW yêu cầu, tỷ lệ năng lượng tái tạo trong tổng cung năng lượng sơ cấp đến năm 2030 đạt khoảng bao nhiêu?", a: "Đạt khoảng 15 - 20%.", ref: "Mục II, Khoản 2, Điểm b (Cơ cấu nguồn năng lượng tái tạo) - Nghị quyết 70" },
+            { id: 44, catCode: "NQ-70", catName: "Nghị quyết 70-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 70-NQ/TW đến năm 2030, tỷ lệ giảm phát thải khí nhà kính từ hoạt động năng lượng so với kịch bản bình thường đạt bao nhiêu?", a: "Giảm 15%, hướng tới mục tiêu giảm 35% khi có hỗ trợ quốc tế.", ref: "Mục II, Khoản 2, Điểm c (Chỉ tiêu môi trường và giảm phát thải) - Nghị quyết 70" },
+            { id: 45, catCode: "NQ-70", catName: "Nghị quyết 70-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 70-NQ/TW, phấn đấu mức năng lượng sơ cấp trên đầu người thuộc nhóm mấy nước dẫn đầu ASEAN?", a: "Thuộc nhóm 4 nước dẫn đầu ASEAN (Top 4 ASEAN).", ref: "Mục II, Khoản 2, Điểm a (Chỉ tiêu tiêu thụ năng lượng bình quân) - Nghị quyết 70" },
+            { id: 46, catCode: "NQ-70", catName: "Nghị quyết 70-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 70-NQ/TW, Trong năm 2025, yêu cầu phải hoàn thành việc tháo gỡ các 'điểm nghẽn' về vấn đề gì?", a: "Tháo gỡ các điểm nghẽn về cơ chế giá điện, thị trường năng lượng cạnh tranh và thủ tục đầu tư dự án năng lượng quy mô lớn.", ref: "Mục III, Khoản 1 (Nhiệm vụ cấp bách tháo gỡ thể chế) - Nghị quyết 70" },
+            { id: 47, catCode: "NQ-70", catName: "Nghị quyết 70-NQ/TW (Bộ Chính trị)", q: "Nghị quyết số 70-NQ/TW yêu cầu cắt giảm bao nhiêu phần trăm thời gian thực hiện thủ tục hành chính ngành năng lượng?", a: "Cắt giảm tối thiểu 30% thời gian thực hiện.", ref: "Mục III, Khoản 5, Điểm a (Cải cách thủ tục ngành kinh tế kỹ thuật) - Nghị quyết 70" },
+            { id: 48, catCode: "NQ-70", catName: "Nghị quyết 70-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 70-NQ/TW, Đối với dầu khí, ưu tiên đầu tư hạ tầng kỹ thuật phục vụ nhập khẩu, dự trữ và tiêu thụ loại khí nào?", a: "Khí thiên nhiên hóa lỏng (LNG).", ref: "Mục III, Khoản 2, Điểm b (Phát triển phân khúc dầu khí hạ nguồn) - Nghị quyết 70" },
+            { id: 49, catCode: "NQ-70", catName: "Nghị quyết 70-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 70-NQ/TW, Đến năm 2030, cơ sở hạ tầng cung cấp khí thiên nhiên phải đáp ứng tối thiểu bao nhiêu phần trăm nhu cầu trong nước?", a: "Đáp ứng 100% nhu cầu tiêu thụ trong nước.", ref: "Mục II, Khoản 2, Điểm b (Mục tiêu hạ tầng cung ứng khí) - Nghị quyết 70" },
+
+            // 50 - 59: Nghị quyết 71-NQ/TW (Giáo dục & Đào tạo)
+            { id: 50, catCode: "NQ-71", catName: "Nghị quyết 71-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 71-NQ/TW, Đảng và Nhà nước ta luôn coi giáo dục và đào tạo là gì?", a: "Giáo dục và đào tạo là quốc sách hàng đầu, là sự nghiệp của Đảng, Nhà nước và của toàn dân.", ref: "Mục I, Khoản 2 (Quan điểm chỉ đạo cốt lõi về giáo dục) - Nghị quyết 71" },
+            { id: 51, catCode: "NQ-71", catName: "Nghị quyết 71-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 71-NQ/TW, mục tiêu đến năm 2030, chỉ số phát triển con người (HDI) đạt mức bao nhiêu?", a: "Đạt mức cao (thuộc nhóm các quốc gia có HDI cao trên thế giới).", ref: "Mục II, Khoản 2, Điểm a (Mục tiêu cụ thể đến năm 2030) - Nghị quyết số 71-NQ/TW" },
+            { id: 52, catCode: "NQ-71", catName: "Nghị quyết 71-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 71-NQ/TW, chi ngân sách nhà nước cho giáo dục và đào tạo phải đạt tối thiểu bao nhiêu % tổng chi ngân sách?", a: "Tối thiểu 20% tổng chi ngân sách nhà nước.", ref: "Mục III, Khoản 3, Điểm b (Nguồn lực tài chính cho giáo dục) - Nghị quyết số 71-NQ/TW" },
+            { id: 53, catCode: "NQ-71", catName: "Nghị quyết 71-NQ/TW (Bộ Chính trị)", q: "Tại Nghị quyết số 71-NQ/TW, tầm nhìn đến năm 2045 xác định hệ thống giáo dục Việt Nam đứng vào nhóm bao nhiêu quốc gia hàng đầu thế giới?", a: "Đứng vào nhóm 3 quốc gia hàng đầu khu vực ASEAN và thuộc nhóm các quốc gia có hệ thống giáo dục tiên tiến trên thế giới.", ref: "Mục II, Khoản 3 (Tầm nhìn đến năm 2045) - Nghị quyết số 71-NQ/TW" },
+            { id: 54, catCode: "NQ-71", catName: "Nghị quyết 71-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 71-NQ/TW, phấn đấu đến năm 2030 có ít nhất bao nhiêu nghiên cứu sinh trên 1 triệu dân?", a: "Có ít nhất 20 nghiên cứu sinh trên 1 triệu dân.", ref: "Mục II, Khoản 2, Điểm b (Chỉ tiêu cụ thể về giáo dục đại học và sau đại học) - Nghị quyết số 71-NQ/TW" },
+            { id: 55, catCode: "NQ-71", catName: "Nghị quyết 71-NQ/TW (Bộ Chính trị)", q: "Theo quan điểm chỉ đạo tại Nghị quyết số 71-NQ/TW, đối tượng nào được xác định là 'trung tâm' của quá trình giáo dục và đào tạo?", a: "Người học (học sinh, sinh viên, học viên).", ref: "Mục I, Khoản 2 (Quan điểm chỉ đạo) - Nghị quyết số 71-NQ/TW" },
+            { id: 56, catCode: "NQ-71", catName: "Nghị quyết 71-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 71-NQ/TW, nâng phụ cấp ưu đãi nghề đối với giáo viên mầm non và phổ thông lên mức tối thiểu bao nhiêu %?", a: "Nâng lên mức tối thiểu 35% (tùy theo vùng miền và đối tượng cụ thể để đảm bảo thu nhập thực tế).", ref: "Mục III, Khoản 4, Điểm a (Chính sách đối với đội ngũ nhà giáo) - Nghị quyết số 71-NQ/TW" },
+            { id: 57, catCode: "NQ-71", catName: "Nghị quyết 71-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 71-NQ/TW, phấn đấu đến năm 2030 có ít nhất bao nhiêu cơ sở giáo dục đại học thuộc nhóm 200 đại học hàng đầu Châu Á?", a: "Ít nhất 5 cơ sở giáo dục đại học.", ref: "Mục II, Khoản 2, Điểm b (Chỉ tiêu về xếp hạng đại học quốc tế) - Nghị quyết số 71-NQ/TW" },
+            { id: 58, catCode: "NQ-71", catName: "Nghị quyết 71-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 71-NQ/TW, đột phá phát triển giáo dục và đào tạo phải bắt đầu từ việc đổi mới cái gì trước tiên?", a: "Đổi mới tư duy và hoàn thiện thể chế, cơ chế quản lý giáo dục.", ref: "Mục III, Khoản 1 (Nhiệm vụ, giải pháp về đổi mới quản lý và hoàn thiện thể chế) - Nghị quyết số 71-NQ/TW" },
+            { id: 59, catCode: "NQ-71", catName: "Nghị quyết 71-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 71-NQ/TW, đến năm 2030, tỷ lệ người lao động có trình độ cao đẳng, đại học trở lên đạt bao nhiêu %?", a: "Đạt khoảng 25 - 30%.", ref: "Mục II, Khoản 2, Điểm c (Chỉ tiêu cơ cấu nguồn nhân lực) - Nghị quyết số 71-NQ/TW" },
+
+            // 60 - 64: Nghị quyết 72-NQ/TW (Y tế & Sức khỏe)
+            { id: 60, catCode: "NQ-72", catName: "Nghị quyết 72-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 72-NQ/TW, đến năm 2026, tỷ lệ bao phủ bảo hiểm y tế đạt trên bao nhiêu % dân số?", a: "Đạt trên 95% dân số.", ref: "Mục II, Khoản 2, Điểm a (Mục tiêu ngắn hạn đến năm 2026) - Nghị quyết số 72-NQ/TW" },
+            { id: 61, catCode: "NQ-72", catName: "Nghị quyết 72-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 72-NQ/TW, phấn đấu đến năm 2030, số năm sống khỏe mạnh đạt tối thiểu bao nhiêu năm?", a: "Tối thiểu 68 năm (trong tổng tuổi thọ trung bình).", ref: "Mục II, Khoản 2, Điểm b (Mục tiêu chất lượng sống đến năm 2030) - Nghị quyết số 72-NQ/TW" },
+            { id: 62, catCode: "NQ-72", catName: "Nghị quyết 72-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 72-NQ/TW, mục tiêu tuổi thọ trung bình của người dân Việt Nam đến năm 2030 đạt bao nhiêu tuổi?", a: "Đạt khoảng 75 tuổi.", ref: "Mục II, Khoản 2, Điểm b (Chỉ tiêu nhân khẩu học y tế) - Nghị quyết số 72-NQ/TW" },
+            { id: 63, catCode: "NQ-72", catName: "Nghị quyết 72-NQ/TW (Bộ Chính trị)", q: "Ngày nào hàng năm được thống nhất chọn là 'Ngày Sức khỏe toàn dân'?", a: "Ngày 7 tháng 4 hàng năm.", ref: "Mục III, Khoản 1, Điểm d (Truyền thông và phong trào sức khỏe) - Nghị quyết số 72-NQ/TW" },
+            { id: 64, catCode: "NQ-72", catName: "Nghị quyết 72-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 72-NQ/TW, tư duy quản trị ngành Y cần chuyển mạnh từ khám chữa bệnh sang tư duy gì?", a: "Chuyển từ tư duy 'chữa bệnh' sang tư duy 'phòng bệnh và quản lý, chăm sóc sức khỏe toàn diện, chủ động'.", ref: "Mục I, Khoản 2 (Quan điểm chỉ đạo định hướng ngành y tế) - Nghị quyết số 72-NQ/TW" },
+
+            // 65 - 74: Nghị quyết 79-NQ/TW (Quản lý Kinh tế Nhà nước)
+            { id: 65, catCode: "NQ-79-State", catName: "Nghị quyết 79-NQ/TW (Kinh tế Nhà nước)", q: "Theo Nghị quyết số 79-NQ/TW, kinh tế nhà nước giữ vai trò gì trong nền kinh tế thị trường?", a: "Giữ vai trò chủ đạo.", ref: "Mục I, Khoản 2 (Quan điểm chỉ đạo về thành phần kinh tế) - Nghị quyết số 79-NQ/TW" },
+            { id: 66, catCode: "NQ-79-State", catName: "Nghị quyết 79-NQ/TW (Kinh tế Nhà nước)", q: "Theo Nghị quyết số 79-NQ/TW về phát triển kinh tế nhà nước, đến năm 2030, kinh tế nhà nước góp phần đưa Việt Nam trở thành quốc gia như thế nào?", a: "Nước đang phát triển có công nghiệp hiện đại, thu nhập trung bình cao.", ref: "Mục II, Khoản 1 (Mục tiêu tổng quát đến năm 2030) - Nghị quyết số 79-NQ/TW" },
+            { id: 67, catCode: "NQ-79-State", catName: "Nghị quyết 79-NQ/TW (Kinh tế Nhà nước)", q: "Theo Nghị quyết số 79-NQ/TW, tầm nhìn đến năm 2045, kinh tế nhà nước góp phần đưa Việt Nam trở thành nước phát triển có thu nhập như thế nào?", a: "Nước phát triển, thu nhập cao.", ref: "Mục II, Khoản 2 (Tầm nhìn dài hạn đến năm 2045) - Nghị quyết số 79-NQ/TW" },
+            { id: 68, catCode: "NQ-79-State", catName: "Nghị quyết 79-NQ/TW (Kinh tế Nhà nước)", q: "Nghị quyết số 79-NQ/TW, mục tiêu cụ thể tới năm 2030, nợ công được kiểm soát không quá bao nhiêu % GDP?", a: "Không quá 60% GDP.", ref: "Mục II, Khoản 1, Điểm c (Chỉ tiêu an toàn tài chính vĩ mô) - Nghị quyết số 79-NQ/TW" },
+            { id: 69, catCode: "NQ-79-State", catName: "Nghị quyết 79-NQ/TW (Kinh tế Nhà nước)", q: "Theo Nghị quyết số 79-NQ/TW, mức dự trữ quốc gia phấn đấu đạt tối thiểu bao nhiêu % GDP vào năm 2030?", a: "Phấn đấu đạt tối thiểu từ 1,5% đến 2% GDP.", ref: "Mục II, Khoản 1, Điểm d (Chỉ tiêu tiềm lực tài chính quốc gia) - Nghị quyết số 79-NQ/TW" },
+            { id: 70, catCode: "NQ-79-State", catName: "Nghị quyết 79-NQ/TW (Kinh tế Nhà nước)", q: "Theo Nghị quyết số 79-NQ/TW, mục tiêu đến năm 2030 có bao nhiêu doanh nghiệp nhà nước vào nhóm 500 doanh nghiệp lớn nhất Đông Nam Á?", a: "Có ít nhất từ 5 đến 10 Doanh nghiệp nhà nước.", ref: "Mục II, Khoản 1, Điểm b (Chỉ tiêu phát triển DNNN quy mô khu vực) - Nghị quyết số 79-NQ/TW" },
+            { id: 71, catCode: "NQ-79-State", catName: "Nghị quyết 79-NQ/TW (Kinh tế Nhà nước)", q: "Theo Nghị quyết số 79-NQ/TW, phấn đấu có ít nhất bao nhiêu ngân hàng thương mại nhà nước thuộc nhóm 100 ngân hàng lớn nhất khu vực Châu Á?", a: "Có ít nhất từ 2 đến 3 ngân hàng thương mại nhà nước.", ref: "Mục II, Khoản 1, Điểm b (Chỉ tiêu về quy mô hệ thống ngân hàng nhà nước) - Nghị quyết số 79-NQ/TW" },
+            { id: 72, catCode: "NQ-79-State", catName: "Nghị quyết 79-NQ/TW (Kinh tế Nhà nước)", q: "Theo Nghị quyết số 79-NQ/TW, đến năm 2030, có bao nhiêu % tập đoàn kinh tế, tổng công ty nhà nước áp dụng nguyên tắc quản trị của OECD?", a: "Đạt 100% các tập đoàn kinh tế và tổng công ty nhà nước.", ref: "Mục III, Khoản 2, Điểm a (Nhiệm vụ đổi mới quản trị DNNN theo chuẩn quốc tế) - Nghị quyết số 79-NQ/TW" },
+            { id: 73, catCode: "NQ-79-State", catName: "Nghị quyết 79-NQ/TW (Kinh tế Nhà nước)", q: "Theo Nghị quyết số 79-NQ/TW, quan điểm chỉ đạo số 2 nhấn mạnh kinh tế nhà nước phải có vai trò như thế nào với các khu vực kinh tế khác?", a: "Kinh tế nhà nước giữ vai trò chủ đạo, là động lực định hướng, dẫn dắt, tạo điều kiện và thúc đẩy các khu vực kinh tế khác cùng phát triển; không chèn ép, không làm thay các khu vực kinh tế khác ở những lĩnh vực họ làm được.", ref: "Mục I, Khoản 2 (Quan điểm chỉ đạo về mối quan hệ giữa các thành phần kinh tế) - Nghị quyết số 79-NQ/TW" },
+            { id: 74, catCode: "NQ-79-State", catName: "Nghị quyết 79-NQ/TW (Kinh tế Nhà nước)", q: "Theo Nghị quyết số 79-NQ/TW, tỷ lệ huy động nguồn ngân sách nhà nước giai đoạn 2026 - 2030 đạt khoảng bao nhiêu % GDP?", a: "Đạt khoảng 15 - 16% GDP.", ref: "Mục III, Khoản 1, Điểm b (Kế hoạch huy động tài chính công trung hạn) - Nghị quyết số 79-NQ/TW" },
+
+            // 75 - 84: Nghị quyết 80-NQ/TW (Phát triển Văn hóa)
+            { id: 75, catCode: "NQ-80", catName: "Nghị quyết 80-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 80-NQ/TW về phát triển văn hóa Việt Nam, văn hóa được xác định là nguồn lực như thế nào của dân tộc?", a: "Là nền tảng tinh thần vững chắc của xã hội, là sức mạnh nội sinh, động lực quan trọng để phát triển đất nước và bảo vệ Tổ quốc.", ref: "Mục I, Khoản 2 (Quan điểm chỉ đạo về vị trí văn hóa) - Nghị quyết số 80-NQ/TW" },
+            { id: 76, catCode: "NQ-80", catName: "Nghị quyết 80-NQ/TW (Bộ Chính trị)", q: "Trong Nghị quyết số 80-NQ/TW, Việt Nam phấn đấu các ngành công nghiệp văn hóa đóng góp bao nhiêu % GDP vào năm 2030?", a: "Đóng góp khoảng 7% GDP.", ref: "Mục II, Khoản 1, Điểm c (Chỉ tiêu đóng góp kinh tế của văn hóa đến năm 2030) - Nghị quyết số 80-NQ/TW" },
+            { id: 77, catCode: "NQ-80", catName: "Nghị quyết 80-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 80-NQ/TW, tầm nhìn đến năm 2045, các ngành công nghiệp văn hóa phấn đấu đóng góp bao nhiêu % GDP?", a: "Phấn đấu đóng góp khoảng 10% GDP.", ref: "Mục II, Khoản 2 (Tầm nhìn phát triển kinh tế văn hóa đến năm 2045) - Nghị quyết số 80-NQ/TW" },
+            { id: 78, catCode: "NQ-80", catName: "Nghị quyết 80-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 80-NQ/TW, ngày nào hàng năm được thống nhất chọn là 'Ngày Văn hóa Việt Nam'?", a: "Ngày 19 tháng 4 hàng năm (Ngày Văn hóa các dân tộc Việt Nam).", ref: "Mục III, Khoản 2, Điểm b (Công tác bảo tồn, phát huy và tổ chức sự kiện văn hóa) - Nghị quyết số 80-NQ/TW" },
+            { id: 79, catCode: "NQ-80", catName: "Nghị quyết 80-NQ/TW (Bộ Chính trị)", q: "Nghị quyết số 80-NQ/TW, xác định đến năm 2045, chỉ số Sức mạnh mềm (Soft Power) của Việt Nam nằm trong Top mấy ASEAN?", a: "Nằm trong Top 3 ASEAN.", ref: "Mục II, Khoản 2 (Tầm nhìn quốc tế về vị thế văn hóa) - Nghị quyết số 80-NQ/TW" },
+            { id: 80, catCode: "NQ-80", catName: "Nghị quyết 80-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 80-NQ/TW, Việt Nam phấn đấu đến năm 2026, hoàn thành số hóa bao nhiêu % di sản văn hóa xếp hạng quốc gia?", a: "Hoàn thành số hóa 100% các di sản văn hóa vật thể, phi vật thể đã được xếp hạng quốc gia.", ref: "Mục II, Khoản 1, Điểm a (Mục tiêu ngắn hạn về số hóa văn hóa di sản) - Nghị quyết số 80-NQ/TW" },
+            { id: 81, catCode: "NQ-80", catName: "Nghị quyết 80-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 80-NQ/TW, bố trí tối thiểu bao nhiêu % tổng chi ngân sách nhà nước hằng năm cho phát triển văn hóa?", a: "Bố trí tối thiểu đạt từ 2% trở lên tổng chi ngân sách nhà nước hằng năm.", ref: "Mục III, Khoản 4, Điểm a (Đảm bảo nguồn lực tài chính công cho văn hóa) - Nghị quyết số 80-NQ/TW" },
+            { id: 82, catCode: "NQ-80", catName: "Nghị quyết 80-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 80-NQ/TW, đến năm 2030, phấn đấu xây dựng thành công bao nhiêu thương hiệu liên hoan nghệ thuật quốc tế?", a: "Từ 2 đến 3 thương hiệu liên hoan nghệ thuật quốc tế uy tín, định kỳ tại Việt Nam (ví dụ điện ảnh, âm nhạc, nghệ thuật biểu diễn).", ref: "Mục III, Khoản 3, Điểm c (Nhiệm vụ quảng bá văn hóa ra thế giới) - Nghị quyết số 80-NQ/TW" },
+            { id: 83, catCode: "NQ-80", catName: "Nghị quyết 80-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 80-NQ/TW, đến năm 2030, phấn đấu thành lập từ bao nhiêu trung tâm văn hóa Việt Nam tại nước ngoài?", a: "Thành lập từ 3 đến 5 trung tâm văn hóa Việt Nam tại các địa bàn trọng điểm quốc tế.", ref: "Mục III, Khoản 5, Điểm b (Hạ tầng thiết chế văn hóa đối ngoại) - Nghị quyết số 80-NQ/TW" },
+            { id: 84, catCode: "NQ-80", catName: "Nghị quyết 80-NQ/TW (Bộ Chính trị)", q: "Theo Nghị quyết số 80-NQ/TW, ai là chủ thể sáng tạo, thụ hưởng và bảo tồn văn hóa theo quan điểm chỉ đạo?", a: "Nhân dân (Cộng đồng các dân tộc Việt Nam).", ref: "Mục I, Khoản 2 (Quan điểm cốt lõi về chủ thể văn hóa) - Nghị quyết số 80-NQ/TW" },
+
+            // 85 - 97: Nghị quyết 12-NQ/ĐU (Kinh tế tư nhân BIDV)
+            { id: 85, catCode: "NQ-12", catName: "Nghị quyết 12-NQ/ĐU (Đảng ủy BIDV)", q: "Theo Nghị quyết số 12-NQ/ĐU của Đảng ủy BIDV, mục tiêu tổng quát là xây dựng BIDV theo mô hình nào?", a: "Mô hình Ngân hàng thương mại xanh, tiên phong dẫn dắt thị trường, ứng dụng nền tảng công nghệ số hiện đại đột phá phục vụ phát triển kinh tế tư nhân.", ref: "Mục II, Khoản 1 (Mục tiêu tổng quát phát triển dịch vụ KHTT) - Nghị quyết số 12-NQ/ĐU Đảng ủy BIDV" },
+            { id: 86, catCode: "NQ-12", catName: "Nghị quyết 12-NQ/ĐU (Đảng ủy BIDV)", q: "Đối tượng khách hàng nào được Nghị quyết số 12-NQ/ĐU của Đảng ủy BIDV ưu tiên tập trung để thu hút sử dụng dịch vụ?", a: "Các tập đoàn kinh tế tư nhân lớn, các doanh nghiệp nhỏ và vừa (SMEs), các doanh nghiệp khởi nghiệp đổi mới sáng tạo (Start-up) và các chuỗi liên kết giá trị sản xuất.", ref: "Mục III, Khoản 2, Điểm a (Phân khúc khách hàng tư nhân chiến lược) - Nghị quyết số 12-NQ/ĐU" },
+            { id: 87, catCode: "NQ-12", catName: "Nghị quyết 12-NQ/ĐU (Đảng ủy BIDV)", q: "Theo Nghị quyết số 12-NQ/ĐU, chính sách hỗ trợ lãi suất của Nhà nước cho doanh nghiệp vay vốn xanh là bao nhiêu?", a: "Được áp dụng theo đúng quy định gói hỗ trợ của Chính phủ và Ngân hàng Nhà nước trong từng thời kỳ (được BIDV cụ thể hóa qua gói tín dụng xanh ưu đãi lãi suất thấp hơn từ 0,5% - 1,5%/năm so với lãi suất thông thường từ nguồn lực nội bộ).", ref: "Mục III, Khoản 1, Điểm c (Thiết kế giải pháp nguồn vốn ưu đãi) - Nghị quyết số 12-NQ/ĐU" },
+            { id: 88, catCode: "NQ-12", catName: "Nghị quyết 12-NQ/ĐU (Đảng ủy BIDV)", q: "Giải pháp 'Go Global' tại Nghị quyết số 12-NQ/ĐU của Đảng ủy BIDV nhằm hỗ trợ đối tượng khách hàng nào?", a: "Hỗ trợ các doanh nghiệp tư nhân lớn của Việt Nam đầu tư, mở rộng hoạt động sản xuất kinh doanh ra thị trường quốc tế (đặc biệt tại các địa bàn BIDV có sự hiện diện như Lào, Campuchia, Myanmar...).", ref: "Mục III, Khoản 4, Điểm b (Hỗ trợ xúc tiến thương mại quốc tế cho kinh tế tư nhân) - Nghị quyết số 12-NQ/ĐU" },
+            { id: 89, catCode: "NQ-12", catName: "Nghị quyết 12-NQ/ĐU (Đảng ủy BIDV)", q: "Theo Nghị quyết số 12-NQ/ĐU của Đảng ủy BIDV, ứng dụng công nghệ 'Alternative Data' (Dữ liệu thay thế) nhằm mục đích gì?", a: "Để đánh giá năng lực hành vi, xếp hạng tín dụng tự động đối với các khách hàng doanh nghiệp siêu nhỏ, hộ kinh doanh chưa có đủ báo cáo tài chính chuẩn chỉnh, giúp tăng khả năng tiếp cận vốn vay.", ref: "Mục III, Khoản 3, Điểm a (Giải pháp công nghệ và đơn giản hóa thủ tục cấp tín dụng) - Nghị quyết số 12-NQ/ĐU" },
+            { id: 90, catCode: "NQ-12", catName: "Nghị quyết 12-NQ/ĐU (Đảng ủy BIDV)", q: "Hệ thống Ngân hàng điện tử mới dành cho khách hàng tổ chức trong Nghị quyết số 12-NQ/ĐU của Đảng ủy BIDV là gì?", a: "Hệ thống BIDV iBank (Nền tảng ngân hàng số thế hệ mới dành cho KHTN).", ref: "Mục III, Khoản 3, Điểm b (Phát triển kênh số Omni-channel cho KHDN) - Nghị quyết số 12-NQ/ĐU" },
+            { id: 91, catCode: "NQ-12", catName: "Nghị quyết 12-NQ/ĐU (Đảng ủy BIDV)", q: "Theo Nghị quyết số 12-NQ/ĐU của Đảng ủy BIDV, cải tiến sản phẩm cho vay theo dòng tiền nhằm hỗ trợ tài sản bảo đảm nào?", a: "Chấp nhận các tài sản bảo đảm linh hoạt như: Quyền đòi nợ, khoản phải thu hình thành trong tương lai, hàng hóa luân chuyển, quyền tài sản phát sinh từ hợp đồng kinh tế thay vì chỉ phụ thuộc vào bất động sản.", ref: "Mục III, Khoản 2, Điểm b (Cơ chế nới lỏng điều kiện về tài sản thế chấp) - Nghị quyết số 12-NQ/ĐU" },
+            { id: 92, catCode: "NQ-12", catName: "Nghị quyết 12-NQ/ĐU (Đảng ủy BIDV)", q: "Theo Nghị quyết số 12-NQ/ĐU của Đảng ủy BIDV, yêu cầu rà soát, loại bỏ các điều kiện kinh doanh như thế nào?", a: "Loại bỏ các quy trình, thủ tục rườm rà, các rào cản nội bộ không cần thiết; giảm bớt các điều kiện phê duyệt tín dụng mang tính hình thức để rút ngắn thời gian xử lý hồ sơ cho doanh nghiệp tư nhân.", ref: "Mục III, Khoản 1, Điểm a (Cải cách thể chế quy định kinh doanh nội bộ) - Nghị quyết số 12-NQ/ĐU" },
+            { id: 93, catCode: "NQ-12", catName: "Nghị quyết 12-NQ/ĐU (Đảng ủy BIDV)", q: "Tinh thần triển khai của các đơn vị trong hệ thống theo Nghị quyết số 12-NQ/ĐU của Đảng ủy BIDV được xác định như thế nào?", a: "Tinh thần 'Đồng hành, sẻ chia, chủ động, sáng tạo, quyết liệt và lấy khách hàng làm trung tâm'.", ref: "Mục IV, Khoản 1 (Tổ chức thực hiện tại các chi nhánh/đơn vị) - Nghị quyết số 12-NQ/ĐU" },
+            { id: 94, catCode: "NQ-12", catName: "Nghị quyết 12-NQ/ĐU (Đảng ủy BIDV)", q: "Diễn đàn nào được BIDV dự kiến dẫn dắt hoặc phối hợp tổ chức theo Nghị quyết số 12-NQ/ĐU của Đảng ủy BIDV?", a: "Diễn đàn Phát triển Kinh tế tư nhân thường niên hoặc các Hội thảo chuyên đề xúc tiến kết nối doanh nghiệp Việt Nam.", ref: "Mục III, Khoản 4, Điểm a (Vai trò dẫn dắt tạo lập hệ sinh thái đối thoại) - Nghị quyết số 12-NQ/ĐU" },
+            { id: 95, catCode: "NQ-12", catName: "Nghị quyết 12-NQ/ĐU (Đảng ủy BIDV)", q: "Theo Nghị quyết số 12 của Đảng ủy BIDV Ngân hàng ưu tiên tập trung nhóm khách hàng nào để thu hút khách hàng doanh nghiệp nhỏ và vừa sử dụng dịch vụ?", a: "Ưu tiên nhóm doanh nghiệp trong chuỗi cung ứng của các tập đoàn lớn, doanh nghiệp thuộc lĩnh vực sản xuất thiết yếu, xuất nhập khẩu và công nghệ xanh.", ref: "Mục III, Khoản 2, Điểm c (Chiến lược phát triển hệ sinh thái khách hàng SME) - Nghị quyết số 12-NQ/ĐU" },
+            { id: 96, catCode: "NQ-12", catName: "Nghị quyết 12-NQ/ĐU (Đảng ủy BIDV)", q: "Đơn vị nào làm đầu mối theo dõi và định kỳ hằng năm báo cáo kết quả thực hiện Nghị quyết số 12-NQ/Đảng ủy?", a: "Ban Kế hoạch Chiến lược phối hợp cùng Văn phòng Đảng ủy BIDV.", ref: "Mục IV, Khoản 2 (Phân công trách nhiệm giám sát, tổng hợp) - Nghị quyết số 12-NQ/ĐU" },
+            { id: 97, catCode: "NQ-12", catName: "Nghị quyết 12-NQ/ĐU (Đảng ủy BIDV)", q: "Theo Nghị quyết số 12-NQ/ĐU của Đảng ủy BIDV xác định vai trò gì trong việc thực hiện mục tiêu phát triển kinh tế tư nhân?", a: "Vai trò chủ lực, định hướng, tiên phong và là cầu nối tài chính vững chắc giúp khơi thông mọi nguồn lực cho kinh tế tư nhân phát triển.", ref: "Mục II, Khoản 2 (Vai trò vị thế của ngân hàng thương mại nhà nước) - Nghị quyết số 12-NQ/ĐU" },
+
+            // 98 - 106: Nghị quyết 15-NQ/ĐU (Chuyển đổi xanh BIDV)
+            { id: 98, catCode: "NQ-15", catName: "Nghị quyết 15-NQ/ĐU (Chuyển đổi xanh)", q: "Theo Nghị quyết số 15-NQ/ĐU của Đảng ủy BIDV, chuyển đổi xanh được BIDV xác định là gì trong chiến lược phát triển của BIDV?", a: "Là nhiệm vụ trọng tâm, xuyên suốt và là mục tiêu chiến lược dài hạn nhằm xây dựng định vị thương hiệu 'Ngân hàng Xanh' bền vững hàng đầu Việt Nam.", ref: "Mục I, Khoản 2 (Định vị chiến lược chuyển đổi xanh) - Nghị quyết số 15-NQ/ĐU" },
+            { id: 99, catCode: "NQ-15", catName: "Nghị quyết 15-NQ/ĐU (Chuyển đổi xanh)", q: "Theo Nghị quyết số 15-NQ/ĐU của Đảng ủy BIDV, mục tiêu gia tăng quy mô dư nợ tín dụng xanh/bền vững hằng năm là bao nhiêu?", a: "Tốc độ tăng trưởng dư nợ tín dụng xanh đạt từ 15% - 20%/năm.", ref: "Mục II, Khoản 2, Điểm a (Chỉ tiêu cụ thể phát triển danh mục tài sản xanh) - Nghị quyết số 15-NQ/ĐU" },
+            { id: 100, catCode: "NQ-15", catName: "Nghị quyết 15-NQ/ĐU (Chuyển đổi xanh)", q: "Theo Nghị quyết số 15-NQ/ĐU của Đảng ủy BIDV, đến năm 2030, BIDV phấn đấu giảm mức phát thải ròng nội bộ tối thiểu bao nhiêu %?", a: "Phấn đấu giảm tối thiểu 30% đến 40% lượng phát thải ròng nội bộ (gắn liền với mục tiêu Net Zero chung của quốc gia).", ref: "Mục II, Khoản 2, Điểm b (Chỉ tiêu về vận hành nội bộ xanh - Green Operations) - Nghị quyết số 15-NQ/ĐU" },
+            { id: 101, catCode: "NQ-15", catName: "Nghị quyết 15-NQ/ĐU (Chuyển đổi xanh)", q: "Theo Nghị quyết số 15-NQ/ĐU của Đảng ủy BIDV, lộ trình xanh hóa hoạt động nội bộ hướng tới mô hình ngân hàng nào?", a: "Mô hình Ngân hàng phát thải ròng bằng 0 (Net-Zero Bank / Ngân hàng Xanh trung hòa carbon).", ref: "Mục II, Khoản 1 (Tầm nhìn chiến lược) - Nghị quyết số 15-NQ/ĐU" },
+            { id: 102, catCode: "NQ-15", catName: "Nghị quyết 15-NQ/ĐU (Chuyển đổi xanh)", q: "Theo Nghị quyết số 15-NQ/ĐU của Đảng ủy BIDV, trụ cột ưu tiên và động lực phát triển mới của BIDV trong giai đoạn tới là gì?", a: "Chuyển đổi Xanh gắn liền với Chuyển đổi Số (Chuyển đổi kép).", ref: "Mục I, Khoản 2 (Quan điểm chỉ đạo) - Nghị quyết số 15-NQ/ĐU" },
+            { id: 103, catCode: "NQ-15", catName: "Nghị quyết 15-NQ/ĐU (Chuyển đổi xanh)", q: "Ngành xanh then chốt nào được BIDV ưu tiên bố trí nguồn vốn tín dụng theo Nghị quyết số 15-NQ/ĐU của Đảng ủy BIDV?", a: "Năng lượng tái tạo, năng lượng sạch; Nông nghiệp xanh/bền vững; Kinh tế tuần hoàn và các dự án giảm phát thải carbon.", ref: "Mục III, Khoản 1, Điểm b (Danh mục ngành xanh ưu tiên) - Nghị quyết số 15-NQ/ĐU" },
+            { id: 104, catCode: "NQ-15", catName: "Nghị quyết 15-NQ/ĐU (Chuyển đổi xanh)", q: "Theo Nghị quyết số 15-NQ/ĐU của Đảng ủy BIDV đặt mục tiêu giữ vững vị trí nào trên thị trường về quy mô dư nợ tín dụng xanh?", a: "Giữ vững vị trí số 1 (Dẫn đầu thị trường về quy mô và thị phần tín dụng xanh tại Việt Nam).", ref: "Mục II, Khoản 2, Điểm a (Chỉ tiêu quy mô kinh doanh) - Nghị quyết số 15-NQ/ĐU" },
+            { id: 105, catCode: "NQ-15", catName: "Nghị quyết 15-NQ/ĐU (Chuyển đổi xanh)", q: "Theo Nghị quyết số 15-NQ/ĐU của Đảng ủy BIDV, văn hóa nào được yêu cầu phát triển mạnh mẽ trong toàn hệ thống BIDV?", a: "Văn hóa tiêu dùng bền vững, thực hành xanh (Green Office/Green Culture) và ý thức bảo vệ môi trường.", ref: "Mục III, Khoản 4 (Phát triển văn hóa doanh nghiệp xanh) - Nghị quyết số 15-NQ/ĐU" },
+            { id: 106, catCode: "NQ-15", catName: "Nghị quyết 15-NQ/ĐU (Chuyển đổi xanh)", q: "Theo Nghị quyết số 15-NQ/ĐU của Đảng ủy BIDV, phương châm triển khai chuyển đổi xanh tại BIDV là gì?", a: "\"Chủ động, Kiên trì, Đồng bộ, Hiệu quả và Bền vững\".", ref: "Mục I, Khoản 2 (Phương châm thực hiện) - Nghị quyết số 15-NQ/ĐU" },
+
+            // 107 - 125: Nghị quyết 16-NQ/ĐU (Văn bản chế độ BIDV)
+            { id: 107, catCode: "NQ-16", catName: "Nghị quyết 16-NQ/ĐU (Văn bản chế độ)", q: "Mục tiêu của Nghị quyết số 16-NQ/ĐU của Đảng ủy BIDV là xây dựng hệ thống văn bản chế độ BIDV đến năm 2030 như thế nào?", a: "Hệ thống văn bản đồng bộ, tinh gọn, hiện đại, rõ ràng, dễ tiếp cận, vận hành tối ưu trên nền tảng số.", ref: "Mục II, Khoản 1 (Mục tiêu chiến lược hệ thống văn bản) - Nghị quyết số 16-NQ/ĐU" },
+            { id: 118, catCode: "NQ-16", catName: "Nghị quyết 16-NQ/ĐU (Văn bản chế độ)", q: "Nghị quyết số 16-NQ/ĐU của Đảng ủy BIDV trực tiếp thể chế hóa quan điểm của Nghị quyết Trung ương nào?", a: "Nghị quyết Trung ương về đổi mới phương thức lãnh đạo, lề lối làm việc và nâng cao chất lượng thể chế nội bộ (cụ thể hóa tinh thần Nghị quyết 668-NQ/TW của Bộ Chính trị).", ref: "Mục I, Khoản 1 (Căn cứ chính trị ban hành) - Nghị quyết số 16-NQ/ĐU" },
+            { id: 119, catCode: "NQ-16", catName: "Nghị quyết 16-NQ/ĐU (Văn bản chế độ)", q: "Yêu cầu đối với nội dung văn bản mới ban hành theo Nghị quyết số 16-NQ/ĐU của Đảng ủy BIDV là gì?", a: "Phải thực sự cần thiết, ngắn gọn, súc tích, dễ hiểu, dễ thực thi, rõ người, rõ việc, rõ trách nhiệm phê duyệt/kiểm tra.", ref: "Mục III, Khoản 1, Điểm a (Tiêu chuẩn văn bản mới) - Nghị quyết số 16-NQ/ĐU" },
+            { id: 120, catCode: "NQ-16", catName: "Nghị quyết 16-NQ/ĐU (Văn bản chế độ)", q: "Nghị quyết số 16-NQ/ĐU của của Đảng ủy BIDV, việc đổi mới văn bản chế độ phải gắn liền với yêu cầu nào về kế hoạch kinh doanh?", a: "Phải gắn liền với yêu cầu thực tiễn kinh doanh, thúc đẩy năng suất lao động và giảm thiểu rủi ro vận hành.", ref: "Mục I, Khoản 2 (Quan điểm chỉ đạo) - Nghị quyết số 16-NQ/ĐU" },
+            { id: 121, catCode: "NQ-16", catName: "Nghị quyết 16-NQ/ĐU (Văn bản chế độ)", q: "Nghị quyết số 16-NQ/ĐU của Đảng ủy BIDV hướng tới phục vụ yêu cầu phát triển của BIDV trong giai đoạn nào?", a: "Giai đoạn 2026 - 2030, tầm nhìn đến năm 2035 (Trọng tâm chiến lược phát triển bền vững).", ref: "Mục II (Phạm vi và thời gian triển khai mục tiêu) - Nghị quyết số 16-NQ/ĐU" },
+            { id: 122, catCode: "NQ-16", catName: "Nghị quyết 16-NQ/ĐU (Văn bản chế độ)", q: "Nghị quyết số 16-NQ/ĐU của Đảng ủy BIDV, hệ thống văn bản tinh gọn được kỳ vọng mang lại lợi ích gì cho cơ sở?", a: "Giảm tải thủ tục hành chính, rút ngắn thời gian phê duyệt tác nghiệp, nâng cao tính tự chủ và tăng năng lực cạnh tranh cho chi nhánh.", ref: "Mục III, Khoản 2 (Lợi ích tối ưu hóa vận hành cơ sở) - Nghị quyết số 16-NQ/ĐU" },
+            { id: 123, catCode: "NQ-16", catName: "Nghị quyết 16-NQ/ĐU (Văn bản chế độ)", q: "Việc rà soát văn bản cũ theo Nghị quyết số 16-NQ/ĐU của Đảng ủy BIDV được thực hiện như thế nào?", a: "Thực hiện thường xuyên, định kỳ hằng năm; kiên quyết loại bỏ văn bản hết hiệu lực, sửa đổi ngay văn bản chồng chéo.", ref: "Mục III, Khoản 1, Điểm c (Quy trình hệ thống hóa văn bản) - Nghị quyết số 16-NQ/ĐU" },
+            { id: 124, catCode: "NQ-16", catName: "Nghị quyết 16-NQ/ĐU (Văn bản chế độ)", q: "Tại Nghị quyết số 16-NQ/ĐU của Đảng ủy BIDV, chuyển đổi số trong công tác văn bản hướng tới điều gì?", a: "Hướng tới 'Số hóa toàn diện' (100% văn bản quy định được tra cứu tự động bằng AI, ký số và quản lý tập trung trên hệ thống).", ref: "Mục III, Khoản 3 (Giải pháp hạ tầng công nghệ công tác văn bản) - Nghị quyết số 16-NQ/ĐU" },
+            { id: 125, catCode: "NQ-16", catName: "Nghị quyết 16-NQ/ĐU (Văn bản chế độ)", q: "Nghị quyết số 16-NQ/ĐU của Đảng ủy BIDV yêu cầu thi hành văn bản phải đảm bảo tính chất gì?", a: "Tính nghiêm minh, thống nhất, tuyệt đối tuân thủ và kiểm soát rủi ro toàn diện.", ref: "Mục III, Khoản 2, Điểm b (Kỷ luật thực thi văn bản) - Nghị quyết số 16-NQ/ĐU" },
+
+            // 126 - 137: Nghị quyết 17-NQ/ĐU (Hội nhập quốc tế BIDV)
+            { id: 126, catCode: "NQ-17", catName: "Nghị quyết 17-NQ/ĐU (Hội nhập quốc tế)", q: "Chuẩn mực quản trị quốc tế nào BIDV phấn đấu đáp ứng đầy đủ theo Nghị quyết số 17-NQ/ĐU của Đảng ủy BIDV?", a: "Chuẩn mực quản trị ngân hàng hiện đại theo thông lệ quốc tế (Basel II, Basel III nâng cao và chuẩn mực quản trị doanh nghiệp OECD).", ref: "Mục II, Khoản 1 (Mục tiêu chuẩn hóa quản trị hội nhập) - Nghị quyết số 17-NQ/ĐU" },
+            { id: 127, catCode: "NQ-17", catName: "Nghị quyết 17-NQ/ĐU (Hội nhập quốc tế)", q: "Theo Nghị quyết số 17-NQ/ĐU của Đảng ủy BIDV, đối tác chiến lược nước ngoài nào cam kết hỗ trợ BIDV về quản trị và ngân hàng số?", a: "Ngân hàng KEB Hana Bank (Hàn Quốc).", ref: "Mục III, Khoản 1, Điểm b (Hợp tác chiến lược toàn diện) - Nghị quyết số 17-NQ/ĐU" },
+            { id: 128, catCode: "NQ-17", catName: "Nghị quyết 17-NQ/ĐU (Hội nhập quốc tế)", q: "Nghị quyết số 17-NQ/ĐU của Đảng ủy BIDV xác định nhiệm vụ đối với các hiện diện tại hải ngoại là gì?", a: "Kinh doanh hiệu quả, phát triển bền vững, giữ vai trò cầu nối đầu tư và tuân thủ tuyệt đối luật pháp nước sở tại.", ref: "Mục III, Khoản 2 (Định hướng hoạt động mạng lưới nước ngoài) - Nghị quyết số 17-NQ/ĐU" },
+            { id: 129, catCode: "NQ-17", catName: "Nghị quyết 17-NQ/ĐU (Hội nhập quốc tế)", q: "Công nghệ nào được Nghị quyết số 17-NQ/ĐU của Đảng ủy BIDV nhấn mạnh phục vụ chuyển đổi số ngân hàng quốc tế?", a: "Điện toán đám mây, dữ liệu lớn tập trung và các nền tảng số kết nối thanh toán xuyên biên giới liên thông.", ref: "Mục III, Khoản 3 (Giải pháp CNTT phục vụ kinh doanh quốc tế) - Nghị quyết số 17-NQ/ĐU" },
+            { id: 130, catCode: "NQ-17", catName: "Nghị quyết 17-NQ/ĐU (Hội nhập quốc tế)", q: "Theo Nghị quyết số 17-NQ/ĐU của Đảng ủy BIDV cam kết điều gì với cổ đông và nhà đầu tư nước ngoài?", a: "Cam kết minh bạch thông tin cao nhất, bảo vệ quyền lợi hợp pháp và gia tăng giá trị đầu tư dài hạn bền vững.", ref: "Mục III, Khoản 1, Điểm c (Quan hệ nhà đầu tư IR) - Nghị quyết số 17-NQ/ĐU" },
+            { id: 131, catCode: "NQ-17", catName: "Nghị quyết 17-NQ/ĐU (Hội nhập quốc tế)", q: "Theo Nghị quyết số 17-NQ/ĐU của Đảng ủy BIDV, tinh thần học tập kinh nghiệm từ Hana Bank tập trung vào lĩnh vực nào?", a: "Quản trị rủi ro tiên tiến, phát triển Ngân hàng số (Digital Banking) và mô hình quản lý bán lẻ hiện đại.", ref: "Mục III, Khoản 1, Điểm b - Nghị quyết số 17-NQ/ĐU" },
+            { id: 132, catCode: "NQ-17", catName: "Nghị quyết 17-NQ/ĐU (Hội nhập quốc tế)", q: "Nghị quyết số 17-NQ/ĐU của Đảng ủy BIDV, xác định Hoạt động kinh của BIDV tại các thị trường hải ngoại có tầm quan trọng như thế nào?", a: "Là bộ phận cấu thành không thể tách rời, mở rộng không gian sinh tồn và khẳng định vị thế thương hiệu BIDV quốc tế.", ref: "Mục I, Khoản 2 (Quan điểm chỉ đạo kinh doanh quốc tế) - Nghị quyết số 17-NQ/ĐU" },
+            { id: 133, catCode: "NQ-17", catName: "Nghị quyết 17-NQ/ĐU (Hội nhập quốc tế)", q: "Theo Nghị quyết số 17-NQ/ĐU của Đảng ủy BIDV, mục tiêu xây dựng BIDV hàng đầu khu vực nào qua hội nhập?", a: "Trở thành một trong những định chế tài chính hàng đầu khu vực Đông Nam Á (ASEAN).", ref: "Mục II, Khoản 1 (Mục tiêu tổng quát định vị thương hiệu) - Nghị quyết số 17-NQ/ĐU" },
+            { id: 134, catCode: "NQ-17", catName: "Nghị quyết 17-NQ/ĐU (Hội nhập quốc tế)", q: "Theo Nghị quyết số 17-NQ/ĐU của Đảng ủy BIDV, hỗ trợ các doanh nghiệp VN đầu tư ra nước ngoài thông qua giải pháp nào?", a: "Cung cấp gói giải pháp tài chính trọn gói: Tín dụng tài trợ dự án, thanh toán quốc tế, quản lý dòng tiền xuyên biên giới và tư vấn pháp lý địa bàn.", ref: "Mục III, Khoản 2, Điểm a (Hỗ trợ doanh nghiệp Việt vươn ra biển lớn) - Nghị quyết số 17-NQ/ĐU" },
+            { id: 135, catCode: "NQ-17", catName: "Nghị quyết 17-NQ/ĐU (Hội nhập quốc tế)", q: "Theo Nghị quyết số 17, công tác tuyên truyền về hội nhập quốc tế tại các cấp ủy Đảng cần được thực hiện theo phương thức nào?", a: "Tuyên truyền sâu rộng, thường xuyên, đa dạng hóa hình thức truyền thông và gắn liền với nhiệm vụ chính trị từng đơn vị.", ref: "Mục III, Khoản 5 (Công tác chính trị tư tưởng về hội nhập) - Nghị quyết số 17-NQ/ĐU" },
+            { id: 136, catCode: "NQ-17", catName: "Nghị quyết 17-NQ/ĐU (Hội nhập quốc tế)", q: "Theo Nghị quyết số 17 của Đảng ủy BIDV xác định nhiệm vụ gì trong việc phát triển các trung tâm tài chính tại Việt Nam?", a: "Chủ động tham gia tư vấn chính sách, cung cấp giải pháp hạ tầng và tiên phong đặt nền móng dịch vụ tài chính cao cấp tại các trung tâm tài chính quốc gia (TP.HCM, Đà Nẵng).", ref: "Mục III, Khoản 4 (Đóng góp thể chế tài chính quốc gia) - Nghị quyết số 17-NQ/ĐU" },
+            { id: 137, catCode: "NQ-17", catName: "Nghị quyết 17-NQ/ĐU (Hội nhập quốc tế)", q: "Các hiện diện tại hải ngoại của Ngân hàng phải tuyệt đối tuân thủ hệ thống pháp luật nào?", a: "Tuân thủ đồng thời cả hệ thống pháp luật nước sở tại (nơi đặt hiện diện) và hệ thống pháp luật quy định liên quan của Việt Nam.", ref: "Mục III, Khoản 2, Điểm b (Kỷ luật tuân thủ pháp lý quốc tế) - Nghị quyết số 17-NQ/ĐU" },
+
+            // 138 - 145: Nghị quyết 91-NQ/ĐU (KHCN & Chuyển đổi số BIDV)
+            { id: 138, catCode: "NQ-91", catName: "Nghị quyết 91-NQ/ĐU (Chuyển đổi số)", q: "Theo Nghị quyết số 91-NQ/ĐU của Đảng ủy BIDV, hoạt động khoa học công nghệ, đổi mới sáng tạo và chuyển đổi số được xác định có vị trí như thế nào?", a: "Là lực lượng sản xuất trực tiếp, là động lực then chốt, quyết định nhất mang tính đột phá để thực hiện chiến lược phát triển BIDV.", ref: "Mục I, Khoản 2 (Quan điểm chỉ đạo vai trò KHCN) - Nghị quyết số 91-NQ/ĐU" },
+            { id: 139, catCode: "NQ-91", catName: "Nghị quyết 91-NQ/ĐU (Chuyển đổi số)", q: "Yếu tố nào được Nghị quyết số 91-NQ/ĐU của Đảng ủy BIDV, xác định là 'tài sản chiến lược' của Ngân hàng?", a: "Dữ liệu sạch/Dữ liệu số tập trung (Data Asset).", ref: "Mục I, Khoản 2 (Quan điểm về quản trị dữ liệu) - Nghị quyết số 91-NQ/ĐU" },
+            { id: 140, catCode: "NQ-91", catName: "Nghị quyết 91-NQ/ĐU (Chuyển đổi số)", q: "Theo Nghị quyết số 91 của Đảng ủy BIDV, tầm nhìn đến năm 2045, Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam trở thành định chế tài chính như thế nào?", a: "Trở thành định chế tài chính hàng đầu Châu Á, có năng lực cạnh tranh quốc tế vượt trội và vận hành tối ưu hoàn toàn trên môi trường số.", ref: "Mục II, Khoản 3 (Tầm nhìn dài hạn đến 2045) - Nghị quyết số 91-NQ/ĐU" },
+            { id: 141, catCode: "NQ-91", catName: "Nghị quyết 91-NQ/ĐU (Chuyển đổi số)", q: "Theo Nghị quyết số 91 của Đảng ủy BIDV, một trong những mục tiêu tổng quát đến năm 2030 là xây dựng BIDV trở thành hàng đầu tại Việt Nam trong lĩnh vực gì?", a: "Dẫn đầu về Ngân hàng số (Digital Banking) và Đổi mới sáng tạo ứng dụng công nghệ.", ref: "Mục II, Khoản 1 (Mục tiêu tổng quát đến 2030) - Nghị quyết số 91-NQ/ĐU" },
+            { id: 142, catCode: "NQ-91", catName: "Nghị quyết 91-NQ/ĐU (Chuyển đổi số)", q: "Theo Nghị quyết số 91 của Đảng ủy BIDV, mục tiêu về chuyển đổi hoạt động của Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam hướng tới điều gì?", a: "Chuyển đổi từ mô hình ngân hàng truyền thống sang mô hình ngân hàng số lấy trải nghiệm khách hàng và xử lý tự động làm trung tâm.", ref: "Mục II, Khoản 2 (Định hướng dịch chuyển mô hình hoạt động) - Nghị quyết số 91-NQ/ĐU" },
+            { id: 143, catCode: "NQ-91", catName: "Nghị quyết 91-NQ/ĐU (Chuyển đổi số)", q: "Theo Nghị quyết số 91-NQ/ĐU của Đảng ủy BIDV, trong xây dựng hạ tầng dữ liệu, Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam hướng tới mô hình nào sau đây?", a: "Mô hình kiến trúc Dữ liệu tập trung hiện đại (Data Fabric / Data Lakehouse) để khai phá tối đa sức mạnh phân tích kinh doanh.", ref: "Mục III, Khoản 1 (Phát triển hạ tầng dữ liệu chiến lược) - Nghị quyết số 91-NQ/ĐU" },
+            { id: 144, catCode: "NQ-91", catName: "Nghị quyết 91-NQ/ĐU (Chuyển đổi số)", q: "Theo Nghị quyết số 91-NQ/ĐU của Đảng ủy BIDV, trong đổi mới sản phẩm dịch vụ, Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam ưu tiên phát triển loại sản phẩm nào?", a: "Sản phẩm số hóa toàn trình (End-to-End), cá nhân hóa trải nghiệm khách hàng theo thời gian thực.", ref: "Mục III, Khoản 2 (Đổi mới thiết kế sản phẩm dịch vụ số) - Nghị quyết số 91-NQ/ĐU" },
+            { id: 145, catCode: "NQ-91", catName: "Nghị quyết 91-NQ/ĐU (Chuyển đổi số)", q: "Theo Nghị quyết số 91-NQ/ĐU của Đảng ủy BIDV, tỷ lệ cán bộ có chuyên môn, kinh nghiệm về khoa học kỹ thuật trong cấp ủy và Ban lãnh đạo hệ thống cần đạt tối thiểu bao nhiêu?", a: "Đạt tỷ lệ tối thiểu theo lộ trình để đảm bảo năng lực dẫn dắt công nghệ, am hiểu và chỉ đạo trực tiếp chiến lược Chuyển đổi số thành công.", ref: "Mục III, Khoản 4 (Phát triển nguồn nhân lực và tổ chức bộ máy cấp ủy số) - Nghị quyết số 91-NQ/ĐU" }
+        ];
+
+        // Định hình màu sắc riêng biệt cho từng loại Nghị quyết
+        const categoryMeta = {
+            "NQ-57": { label: "Bộ Chính Trị NQ 57", color: "bg-indigo-50 border-indigo-200 text-indigo-700", badge: "bg-indigo-600 text-white" },
+            "NQ-68": { label: "Bộ Chính Trị NQ 68", color: "bg-amber-50 border-amber-200 text-amber-800", badge: "bg-amber-600 text-white" },
+            "NQ-70": { label: "Bộ Chính Trị NQ 70", color: "bg-red-50 border-red-200 text-red-700", badge: "bg-red-600 text-white" },
+            "NQ-71": { label: "Bộ Chính Trị NQ 71", color: "bg-pink-50 border-pink-200 text-pink-700", badge: "bg-pink-600 text-white" },
+            "NQ-72": { label: "Bộ Chính Trị NQ 72", color: "bg-cyan-50 border-cyan-200 text-cyan-700", badge: "bg-cyan-600 text-white" },
+            "NQ-79": { label: "Bộ Chính Trị NQ 79", color: "bg-purple-50 border-purple-200 text-purple-700", badge: "bg-purple-600 text-white" },
+            "NQ-79-State": { label: "Bộ Chính Trị NQ 79 (Kinh Tế)", color: "bg-violet-50 border-violet-200 text-violet-700", badge: "bg-violet-600 text-white" },
+            "NQ-80": { label: "Bộ Chính Trị NQ 80", color: "bg-rose-50 border-rose-200 text-rose-700", badge: "bg-rose-600 text-white" },
+            "NQ-12": { label: "Đảng Ủy NQ 12 (KTTN)", color: "bg-yellow-50 border-yellow-200 text-yellow-800", badge: "bg-bidv-gold text-slate-900" },
+            "NQ-15": { label: "Đảng Ủy NQ 15 (Xanh)", color: "bg-emerald-50 border-emerald-200 text-emerald-800", badge: "bg-bidv-green text-white" },
+            "NQ-16": { label: "Đảng Ủy NQ 16 (Văn bản)", color: "bg-teal-50 border-teal-200 text-teal-800", badge: "bg-teal-600 text-white" },
+            "NQ-17": { label: "Đảng Ủy NQ 17 (Hội nhập)", color: "bg-sky-50 border-sky-200 text-sky-800", badge: "bg-sky-600 text-white" },
+            "NQ-91": { label: "Đảng Ủy NQ 91 (Số)", color: "bg-blue-50 border-blue-200 text-blue-800", badge: "bg-bidv-blue text-white" }
+        };
+
+        // Quản lý trạng thái ứng dụng
+        let currentCategory = "";
+        let searchQuery = "";
+        let filterState = "all"; 
+        let isQuizMode = false;
+        let quizQuestions = [];
+        let revealedAnswers = {}; // Lưu vết ID các câu được click lật mở thủ công
+        let showLimit = 15; // Phân trang mặc định
+
+        // Đồng bộ dữ liệu yêu thích và tiến trình đã thuộc vào bộ nhớ thiết bị
+        let starredIds = JSON.parse(localStorage.getItem('bidv_hub_starred')) || [];
+        let learnedIds = JSON.parse(localStorage.getItem('bidv_hub_learned')) || [];
+
+        // Hàm bỏ dấu tiếng Việt phục vụ tìm kiếm thông minh nhanh chóng
+        function removeAccents(str) {
+            return str.normalize("NFD")
+                      .replace(/[\u0300-\u036f]/g, "")
+                      .replace(/đ/g, "d")
+                      .replace(/Đ/g, "D");
+        }
+
+        window.onload = function() {
+            renderCategories();
+            updateProgressStats();
+            applyFilters();
+        };
+
+        // Đồng bộ vẽ các thanh danh mục tùy chỉnh mượt mà theo giao diện
+        function renderCategories() {
+            const listContainer = document.getElementById("categoryList");
+            listContainer.innerHTML = "";
+
+            // Đếm số lượng câu hỏi thuộc mỗi nhóm
+            const counts = {};
+            rawDatabase.forEach(item => {
+                counts[item.catCode] = (counts[item.catCode] || 0) + 1;
+            });
+
+            // Vẽ danh sách nút bấm
+            Object.keys(categoryMeta).forEach(code => {
+                const meta = categoryMeta[code];
+                const count = counts[code] || 0;
+                
+                if (count > 0) {
+                    const isSelected = (currentCategory === code);
+                    const activeClass = isSelected 
+                        ? 'bg-bidv-blue text-white shadow-md border-bidv-blue' 
+                        : 'bg-slate-50 hover:bg-slate-100 text-slate-700 border-slate-200';
+
+                    const itemHtml = `
+                        <button onclick="setCategory('${code}')" class="inline-flex lg:flex items-center justify-between gap-2 px-3 py-2 rounded-xl text-xs font-bold transition-all shrink-0 border duration-150 ${activeClass}">
+                            <span class="truncate flex items-center gap-1.5">
+                                <i class="fa-solid fa-folder text-[10px] ${isSelected ? 'text-bidv-gold' : 'text-slate-400'}"></i>
+                                ${meta.label}
+                            </span>
+                            <span class="px-2 py-0.5 rounded-full text-[10px] ${isSelected ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-600'}">
+                                ${count}
+                            </span>
+                        </button>
+                    `;
+                    listContainer.insertAdjacentHTML('beforeend', itemHtml);
+                }
+            });
+        }
+
+        function setCategory(code) {
+            // Click lại chính danh mục đang chọn thì bỏ lọc
+            if (currentCategory === code) {
+                currentCategory = "";
+            } else {
+                currentCategory = code;
+            }
+            isQuizMode = false; 
+            renderCategories();
+            applyFilters();
+        }
+
+        function resetCategory() {
+            currentCategory = "";
+            renderCategories();
+            applyFilters();
+        }
+
+        function setFilterState(state) {
+            filterState = state;
+            const states = ['all', 'starred', 'learned', 'unlearned'];
+            states.forEach(s => {
+                const btn = document.getElementById(`stateBtn-${s}`);
+                if (s === state) {
+                    btn.className = "px-2.5 py-2 text-xs font-semibold rounded-lg bg-bidv-blue text-white shadow-sm transition-all flex items-center justify-center gap-1";
+                } else {
+                    btn.className = "px-2.5 py-2 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all flex items-center justify-center gap-1";
+                }
+            });
+            applyFilters();
+        }
+
+        function handleSearch() {
+            const input = document.getElementById("searchInput");
+            searchQuery = input.value;
+            
+            const clearBtn = document.getElementById("clearBtn");
+            if (searchQuery.length > 0) {
+                clearBtn.classList.remove("hidden");
+            } else {
+                clearBtn.classList.add("hidden");
+            }
+            applyFilters();
+        }
+
+        function clearSearch() {
+            const input = document.getElementById("searchInput");
+            input.value = "";
+            searchQuery = "";
+            document.getElementById("clearBtn").classList.add("hidden");
+            applyFilters();
+        }
+
+        // Tạo bộ đề trắc nghiệm thử thách phản xạ ngẫu nhiên
+        function generateRandomQuiz() {
+            const shuffled = [...rawDatabase].sort(() => 0.5 - Math.random());
+            quizQuestions = shuffled.slice(0, 5);
+            isQuizMode = true;
+            revealedAnswers = {}; 
+            
+            // Kích hoạt chế độ ôn luyện ẩn đáp án để thách thức người dùng tự nhẩm
+            document.getElementById("studyModeToggle").checked = true;
+            
+            applyFilters();
+        }
+
+        function quitQuizMode() {
+            isQuizMode = false;
+            applyFilters();
+        }
+
+        // Động cơ Lọc & Tìm kiếm
+        function applyFilters() {
+            let filteredList = isQuizMode ? quizQuestions : rawDatabase;
+
+            if (currentCategory) {
+                filteredList = filteredList.filter(item => item.catCode === currentCategory);
+            }
+
+            if (filterState === 'starred') {
+                filteredList = filteredList.filter(item => starredIds.includes(item.id));
+            } else if (filterState === 'learned') {
+                filteredList = filteredList.filter(item => learnedIds.includes(item.id));
+            } else if (filterState === 'unlearned') {
+                filteredList = filteredList.filter(item => !learnedIds.includes(item.id));
+            }
+
+            if (searchQuery.trim().length > 0) {
+                const cleanQuery = removeAccents(searchQuery).toLowerCase();
+                filteredList = filteredList.filter(item => {
+                    const cleanQ = removeAccents(item.q).toLowerCase();
+                    const cleanA = removeAccents(item.a).toLowerCase();
+                    const cleanRef = removeAccents(item.ref).toLowerCase();
+                    const idStr = item.id.toString();
+                    return cleanQ.includes(cleanQuery) || cleanA.includes(cleanQuery) || cleanRef.includes(cleanQuery) || idStr === cleanQuery;
+                });
+            }
+
+            // Đồng bộ bộ đếm kết quả
+            const counter = document.getElementById("resultsCount");
+            counter.innerText = `${filteredList.length} kết quả`;
+
+            // Chip thông báo bộ lọc
+            const chips = document.getElementById("activeFilterChips");
+            const chipCat = document.getElementById("chipCategory");
+            const chipSearch = document.getElementById("chipSearch");
+            const chipQuiz = document.getElementById("chipQuizMode");
+
+            if (currentCategory || searchQuery.length > 0 || isQuizMode) {
+                chips.classList.remove("hidden");
+                if (currentCategory) {
+                    chipCat.classList.remove("hidden");
+                    document.getElementById("chipCategoryText").innerText = categoryMeta[currentCategory].label;
+                } else {
+                    chipCat.classList.add("hidden");
+                }
+                if (searchQuery.length > 0) {
+                    chipSearch.classList.remove("hidden");
+                    document.getElementById("chipSearchText").innerText = searchQuery;
+                } else {
+                    chipSearch.classList.add("hidden");
+                }
+                if (isQuizMode) {
+                    chipQuiz.classList.remove("hidden");
+                } else {
+                    chipQuiz.classList.add("hidden");
+                }
+            } else {
+                chips.classList.add("hidden");
+            }
+
+            // Hiển thị thanh cảnh báo chế độ tự luyện
+            const isStudyMode = document.getElementById("studyModeToggle").checked;
+            const tipAlert = document.getElementById("quizTipAlert");
+            if (isStudyMode) {
+                tipAlert.classList.remove("hidden");
+            } else {
+                tipAlert.classList.add("hidden");
+            }
+
+            renderCards(filteredList);
+        }
+
+        // Vẽ các thẻ câu hỏi lên giao diện
+        function renderCards(list) {
+            const container = document.getElementById("cardsContainer");
+            container.innerHTML = "";
+
+            if (list.length === 0) {
+                container.innerHTML = `
+                    <div class="bg-white rounded-2xl p-8 md:p-12 text-center border border-slate-100 shadow-sm">
+                        <div class="w-14 h-14 bg-slate-50 text-slate-400 rounded-full flex items-center justify-center mx-auto mb-3 border border-slate-100">
+                            <i class="fa-solid fa-ban text-xl"></i>
+                        </div>
+                        <h4 class="text-slate-700 font-bold text-base md:text-lg">Không tìm thấy câu hỏi phù hợp</h4>
+                        <p class="text-slate-400 text-xs md:text-sm mt-1 max-w-md mx-auto">Vui lòng điều chỉnh lại từ khóa hoặc bấm nút "Bỏ lọc" danh mục để xem lại toàn bộ câu hỏi.</p>
+                        <button onclick="clearAllFilters()" class="mt-4 px-4 py-2 bg-bidv-blue text-white font-bold text-xs rounded-xl hover:bg-bidv-dark shadow-sm transition-all">
+                            Xem lại toàn bộ câu hỏi
+                        </button>
+                    </div>
+                `;
+                document.getElementById("showMoreContainer").classList.add("hidden");
+                return;
+            }
+
+            const isPaginated = list.length > showLimit;
+            const renderedSlice = isPaginated ? list.slice(0, showLimit) : list;
+
+            if (isPaginated) {
+                document.getElementById("showMoreContainer").classList.remove("hidden");
+            } else {
+                document.getElementById("showMoreContainer").classList.add("hidden");
+            }
+
+            const isStudyMode = document.getElementById("studyModeToggle").checked;
+
+            renderedSlice.forEach(item => {
+                const isStarred = starredIds.includes(item.id);
+                const isLearned = learnedIds.includes(item.id);
+                const meta = categoryMeta[item.catCode] || { label: "Nghị quyết", color: "bg-slate-50 border-slate-200 text-slate-700", badge: "bg-slate-600 text-white" };
+
+                const displayedQuestion = highlightMatch(item.q, searchQuery);
+                const displayedAnswer = highlightMatch(item.a, searchQuery);
+                const displayedRef = highlightMatch(item.ref, searchQuery);
+
+                // Nếu bật chế độ ôn luyện, đáp án sẽ ẩn trừ phi đã lật mở thủ công
+                const isRevealed = !isStudyMode || revealedAnswers[item.id];
+
+                const cardHtml = `
+                    <div onclick="handleCardClick(event, ${item.id})" class="bg-white rounded-2xl border ${isLearned ? 'border-emerald-200' : 'border-slate-100'} shadow-sm hover:shadow-md transition-all duration-200 relative overflow-hidden flex flex-col cursor-pointer hover:border-blue-100">
+                        
+                        <!-- Top Metadata Header -->
+                        <div class="px-4 py-3 border-b border-slate-100 flex gap-2 justify-between items-center bg-slate-50/50">
+                            <div class="flex items-center gap-2">
+                                <span class="text-xs font-extrabold text-slate-400">#${item.id}</span>
+                                <span class="text-[10px] md:text-xs font-extrabold px-2 py-0.5 rounded-full border ${meta.color}">
+                                    ${meta.label}
+                                </span>
+                            </div>
+                            
+                            <!-- Bảng tương tác lưu nhãn trạng thái -->
+                            <div class="flex items-center gap-2" onclick="preventPropagation(event)">
+                                <!-- Nhãn đã thuộc lòng -->
+                                <button onclick="toggleLearned(${item.id})" class="text-[10px] md:text-xs font-bold flex items-center gap-1 px-2.5 py-1.5 rounded-lg border transition-all ${isLearned ? 'bg-emerald-50 text-emerald-700 border-emerald-200' : 'bg-white text-slate-500 hover:text-slate-800 border-slate-200'}">
+                                    <i class="${isLearned ? 'fa-solid fa-circle-check text-emerald-600' : 'fa-regular fa-circle text-slate-400'}"></i>
+                                    <span>${isLearned ? 'Thuộc lòng' : 'Chưa thuộc'}</span>
+                                </button>
+
+                                <!-- Nút yêu thích -->
+                                <button onclick="toggleStarred(${item.id})" class="p-1.5 rounded-lg border border-slate-200 hover:bg-slate-50 text-slate-400 hover:text-amber-500 transition-all ${isStarred ? 'bg-amber-50 text-amber-500 border-amber-200' : 'bg-white'}">
+                                    <i class="${isStarred ? 'fa-solid' : 'fa-regular'} fa-star text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="p-4 md:p-5 flex-1 flex flex-col justify-between space-y-3">
+                            <div>
+                                <h4 class="text-sm md:text-base font-bold text-slate-800 leading-relaxed">${displayedQuestion}</h4>
+                            </div>
+
+                            <!-- Vùng đáp án mặc định hiển thị -->
+                            <div id="answer-block-${item.id}" class="transition-all duration-200 ${isRevealed ? 'block' : 'hidden'}">
+                                <div class="bg-slate-50 border-l-4 border-emerald-500 rounded-r-xl p-3 md:p-4">
+                                    <div class="text-[10px] md:text-xs font-bold text-emerald-600 uppercase tracking-wider flex items-center gap-1 mb-1.5">
+                                        <i class="fa-regular fa-lightbulb"></i> Câu trả lời gợi ý
+                                    </div>
+                                    <p class="text-slate-700 text-xs md:text-sm leading-relaxed font-semibold">${displayedAnswer}</p>
+                                    
+                                    <!-- Tham chiếu gốc -->
+                                    <div class="mt-2 pt-2 border-t border-slate-200/50 flex items-start gap-1 text-[10px] md:text-xs text-slate-400 font-medium italic">
+                                        <i class="fa-solid fa-scroll text-slate-300 mt-0.5 shrink-0"></i>
+                                        <span>Gốc: ${displayedRef}</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Trạng thái gợi ý tương tác lật thẻ khi ẩn -->
+                            <div id="click-to-reveal-hint-${item.id}" class="${isRevealed ? 'hidden' : 'flex'} items-center gap-1.5 text-xs text-bidv-blue/80 font-semibold italic bg-blue-50/50 py-1.5 px-3 rounded-lg border border-blue-100/40 w-fit">
+                                <i class="fa-regular fa-hand-pointer animate-bounce"></i> Chạm vào thẻ này để lật mở câu trả lời
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.insertAdjacentHTML('beforeend', cardHtml);
+            });
+        }
+
+        // Chặn bọt sự kiện lan truyền khi bấm nút tương tác góc trên
+        function preventPropagation(event) {
+            event.stopPropagation();
+        }
+
+        // Nhấp trực tiếp vào bất cứ vị trí nào trên thẻ câu hỏi để lật mở đáp án khi đang ẩn
+        function handleCardClick(event, id) {
+            const isStudyMode = document.getElementById("studyModeToggle").checked;
+            if (!isStudyMode) return; // Nếu không bật chế độ ôn luyện tự giấu thì không cần xử lý lật thẻ
+
+            const ansBlock = document.getElementById(`answer-block-${id}`);
+            const hintBlock = document.getElementById(`click-to-reveal-hint-${id}`);
+
+            if (ansBlock.classList.contains("hidden")) {
+                revealedAnswers[id] = true;
+                ansBlock.classList.remove("hidden");
+                hintBlock.classList.add("hidden");
+            } else {
+                revealedAnswers[id] = false;
+                ansBlock.classList.add("hidden");
+                hintBlock.classList.remove("hidden");
+            }
+        }
+
+        function loadMoreCards() {
+            showLimit += 20;
+            applyFilters();
+        }
+
+        document.getElementById("studyModeToggle").addEventListener("change", function() {
+            // Reset các câu lật mở thủ công về mặc định khi chuyển trạng thái cấu hình
+            revealedAnswers = {};
+            applyFilters();
+        });
+
+        // Tìm kiếm thông minh bôi màu từ khóa
+        function highlightMatch(text, query) {
+            if (!query || query.trim().length === 0) return text;
+            try {
+                const escapedQuery = query.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+                const regex = new RegExp(`(${escapedQuery})`, 'gi');
+                return text.replace(regex, `<span class="highlight">$1</span>`);
+            } catch (e) {
+                return text;
+            }
+        }
+
+        function toggleStarred(id) {
+            if (starredIds.includes(id)) {
+                starredIds = starredIds.filter(x => x !== id);
+            } else {
+                starredIds.push(id);
+            }
+            localStorage.setItem('bidv_hub_starred', JSON.stringify(starredIds));
+            applyFilters();
+        }
+
+        function toggleLearned(id) {
+            if (learnedIds.includes(id)) {
+                learnedIds = learnedIds.filter(x => x !== id);
+            } else {
+                learnedIds.push(id);
+            }
+            localStorage.setItem('bidv_hub_learned', JSON.stringify(learnedIds));
+            updateProgressStats();
+            applyFilters();
+        }
+
+        // Cập nhật biểu đồ tiến độ học tập trên header
+        function updateProgressStats() {
+            const total = rawDatabase.length;
+            const learned = learnedIds.length;
+            const percentage = Math.round((learned / total) * 100);
+
+            document.getElementById("learnedCount").innerText = learned;
+            document.getElementById("totalQuestionsCount").innerText = total;
+            document.getElementById("progressText").innerText = `${percentage}%`;
+
+            const circle = document.getElementById("progressCircle");
+            const radius = circle.r.baseVal.value;
+            const circumference = 2 * Math.PI * radius;
+            const offset = circumference - (percentage / 100) * circumference;
+            circle.style.strokeDashoffset = offset;
+
+            const cheer = document.getElementById("cheeringMsg");
+            if (percentage === 0) cheer.innerText = "Bắt đầu học ngay thôi! 🎯";
+            else if (percentage < 30) cheer.innerText = "Tuyệt vời, cố gắng lên nào! 🚀";
+            else if (percentage < 60) cheer.innerText = "Tiến độ học tập rất vững chắc! 👏";
+            else if (percentage < 90) cheer.innerText = "Gần như đã nắm rõ mọi nghị quyết! 🔥";
+            else if (percentage < 100) cheer.innerText = "Hết mình vì kỷ nguyên mới! 🌟";
+            else cheer.innerText = "XUẤT SẮC! Sẵn sàng chinh phục mọi kỳ thi! 🏆";
+        }
+
+        function clearAllFilters() {
+            currentCategory = "";
+            searchQuery = "";
+            filterState = "all";
+            isQuizMode = false;
+            document.getElementById("searchInput").value = "";
+            document.getElementById("studyModeToggle").checked = false;
+            document.getElementById("clearBtn").classList.add("hidden");
+            setFilterState('all');
+            renderCategories();
+            applyFilters();
+        }
+    </script>
+</body>
+</html>
